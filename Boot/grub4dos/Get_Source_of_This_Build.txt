@@ -1,0 +1,7 @@
+Get the source code of this build by using anonymous svn in this way:
+
+svn co -r 371 http://grub4dos-chenall.googlecode.com/svn/branches/yaya-0.4.6a grub4dos
+
+and now you may "cd grub4dos" and do a "make" to compile.
+
+			

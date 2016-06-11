@@ -1,0 +1,4 @@
+#!gpxe
+initrd http://192.168.1.100/images/pmagic/pmagic_2013_02_28.iso
+#initrd http://192.168.1.100/images/HBCD152.ISO
+chain http://192.168.1.100/memdisk iso

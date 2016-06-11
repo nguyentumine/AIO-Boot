@@ -1,0 +1,4 @@
+[SetupData]
+BootDevice="ramdisk(0)"
+BootPath="\i386\System32\"
+OsLoadOptions="/fastdetect /minint /rdimageoffset=8192 /rdimagelength=3161088 /rdpath=\WIM\XP.wim"

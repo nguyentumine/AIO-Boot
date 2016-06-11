@@ -1,0 +1,686 @@
+#!ipxe
+
+#set boot-url http://${proxydhcp}/next-server
+set boot-url http://${next-server}
+set iscsi-server 192.168.1.100
+set iqn iqn.2008-08.com.starwindsoftware:test
+set nfs-server ${next-server}
+set cifs-server //${next-server}
+#set boot-url http://192.168.1.100
+
+# Setup some basic convenience variables
+set menu-timeout 5000
+set submenu-timeout ${menu-timeout}
+
+# Ensure we have menu-default set to something
+isset ${menu-default} || set menu-default exit
+
+######## MAIN MENU ###################
+:start
+menu Welcome to iPXE's Boot Menu
+item
+item --gap -- ------------------------- Utilities ------------------------------
+item	winpe		Windows PE
+item	minixp		Windows XP Mini
+item	disk_util	Disk Utilities
+item	backuprecovery	Backup & Recovery
+item	dosprogs	DOS Programs
+item	livelinux	Linux ISO Live
+item	antivirus	Antivirus
+item	dart		Microsoft Diagnostics and Recovery Toolset (DaRT)
+item	grub4dos	Load Grub4dos
+item --gap -- ------------------------------ Advanced ---------------------------------
+item config       Configure settings
+item shell      Enter iPXE shell
+item reboot     Reboot
+item exit       Exit (boot local disk)
+choose --default exit --timeout 30000 target && goto ${target}
+
+########## UTILITY ITEMS ####################
+:shell
+echo Type exit to get the back to the menu
+shell
+set menu-timeout 0
+goto start
+
+:failed
+echo Booting failed, dropping to shell
+goto shell
+
+:reboot
+reboot
+
+:exit
+exit
+
+:cancel
+echo You cancelled the menu, dropping you to a shell
+ 
+:config
+config
+goto start
+ 
+:back
+set submenu-timeout 0
+clear submenu-default
+goto start
+
+################################ antivirus
+:antivirus
+menu Antivirus
+item	bitdefender		Bitdefender Rescue CD
+item	avg				AVG Rescue CD
+item	avira			Avira Rescue System
+item	comodo			COMODO Resuce Disk
+item	back			Back to top menu...
+iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
+choose selected && goto ${selected} || goto start
+:menu-recovery-timed
+choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+:bitdefender
+initrd ${boot-url}/Files/bitdefender/boot/initfs.i386-pc || goto failed
+kernel ${boot-url}/Files/bitdefender/boot/kernel.i386-pc root=/dev/nfs real_root=/dev/nfs nfsroot=${next-server}:/bitdefender ip=dhcp loop=/rescue/livecd.squashfs looptype=squashfs livecd.nfsif=${net0/mac} initrd udev cdroot lang=en || goto failed
+boot || goto failed
+goto start
+
+:avg
+initrd ${boot-url}/Files/Antivirus/avg-rescue-cd.iso
+kernel ${boot-url}/Boot/memdisk iso || goto failed
+boot || goto failed
+goto start
+
+:avira
+kernel ${boot-url}/Files/avira/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/avira
+initrd ${boot-url}/Files/avira/casper/initrd.lz || goto failed
+boot || goto failed
+goto start
+
+:comodo
+initrd ${boot-url}/Files/Antivirus/comodo-rescue-disk.iso
+kernel ${boot-url}/Boot/memdisk iso || goto failed
+boot || goto failed
+goto start
+
+################################ disk utilities
+:disk_util
+menu Disk Utilities
+item	mpw				MiniTool Partition Wizard 9
+item	acronisdd		Acronis Disk Director 12
+item	pmagic			Parted Magic
+item	paragonhd15		Paragon Hard Disk Manager 15
+item	systemrescuecd	System Rescue Cd
+item	gparted			Gparted Partition Editor
+item	partlogic		Partition Logic
+item	back			Back to top menu...
+iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
+choose selected && goto ${selected} || goto start
+:menu-recovery-timed
+choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+:mpw
+initrd ${boot-url}/Files/Disk/mpw.iso
+kernel ${boot-url}/Boot/memdisk iso || goto failed
+boot || goto failed
+goto start
+
+:acronisdd
+initrd ${boot-url}/Files/Acronis/add12.iso
+kernel ${boot-url}/Boot/memdisk iso || goto failed
+boot || goto failed
+goto start
+
+:paragonhd15
+initrd ${boot-url}/Files/Disk/phd15bios.iso
+kernel ${boot-url}/Boot/memdisk iso || goto failed
+boot || goto failed
+goto start
+
+:pmagic
+cpuid --ext 29 && set arch 64 || set arch 32
+initrd ${boot-url}/Files/pmagic/initrd.img
+initrd ${boot-url}/Files/pmagic/fu.img
+initrd ${boot-url}/Files/pmagic/m${arch}.img
+initrd ${boot-url}/Files/pmagic/files.cgz
+chain ${boot-url}/Files/pmagic/bzImage${arch} initrd=initrd.img initrd=fu.img initrd=m${arch}.img initrd=files.cgz
+boot || goto failed
+goto start
+
+:gparted
+initrd ${boot-url}/Files/gparted/live/initrd.img || goto failed
+kernel ${boot-url}/Files/gparted/live/vmlinuz boot=live config components union=overlay username=user noswap noeject ip= vga=788 fetch=${boot-url}/Files/gparted/live/filesystem.squashfs || goto failed
+boot || goto failed
+goto start
+
+:systemrescuecd
+cpuid --ext 29 && set arch 64 || set arch 32
+kernel ${boot-url}/Files/systemrescuecd/isolinux/rescue${arch} dodhcp netboot=${boot-url}/Files/systemrescuecd/sysrcd.dat setkmap=us dostartx || goto failed
+initrd ${boot-url}/Files/systemrescuecd/isolinux/initram.igz || goto failed
+boot || goto failed
+goto start
+
+:partlogic
+initrd ${boot-url}/Files/Disk/partlogic.iso
+kernel ${boot-url}/Boot/memdisk iso raw || goto failed
+boot || goto failed
+goto start
+
+################################ Backup & Recovery
+:backuprecovery
+menu Backup & Recovery
+item	acronis2016		Acronis True Image 2016
+item	acronisba		Acronis Backup Advanced Universal
+item	EaseUStodo		EaseUS Todo Backup Advanced Server 9.1
+item	AOMEIbt			AOMEI Backupper TechPlus 3.2
+item	R-DriveImage	R-Drive Image
+item	mpdr			MiniTool Power Data Recovery 7
+item	redobackup		Redo Backup and Recovery
+item	asd5s			Acronis Snap Deploy 5 Standalone Utility
+item	asd5m			Acronis Snap Deploy 5 Master Image Creator
+item	asd5a			Acronis Snap Deploy 5 Agent
+item	clonezilla		Clonezilla
+item	acronissd4		Acronis Snap Deploy 4
+item	acronis2015		Acronis True Image 2015
+item	acronis2014		Acronis True Image 2014
+item	acronis2013		Acronis True Image 2013
+item	acronis2012		Acronis True Image 2012
+item	acronis2011		Acronis True Image 2011
+item	back			Back to top menu...
+iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
+choose selected && goto ${selected} || goto start
+:menu-recovery-timed
+choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+:AOMEIbt
+initrd ${boot-url}/Files/amlnx.iso
+kernel ${boot-url}/Boot/memdisk iso || goto failed
+boot || goto failed
+goto start
+
+:EaseUStodo
+initrd ${boot-url}/Files/etbas.iso
+kernel ${boot-url}/Boot/memdisk iso || goto failed
+boot || goto failed
+goto start
+
+:R-DriveImage
+initrd ${boot-url}/Files/R-DriveImage.iso
+kernel ${boot-url}/Boot/memdisk iso || goto failed
+boot || goto failed
+goto start
+
+:acronis2016
+initrd ${boot-url}/Files/Acronis/ati16.iso
+kernel ${boot-url}/Boot/memdisk iso raw || goto failed
+boot || goto failed
+goto start
+
+:acronisba
+initrd ${boot-url}/Files/Acronis/abr64.iso
+kernel ${boot-url}/Boot/memdisk iso raw || goto failed
+boot || goto failed
+goto start
+
+:asd5s
+initrd ${boot-url}/Files/Acronis/asd5s.iso
+kernel ${boot-url}/Boot/memdisk iso raw || goto failed
+boot || goto failed
+goto start
+
+:asd5m
+initrd ${boot-url}/Files/Acronis/asd5s.iso
+kernel ${boot-url}/Boot/memdisk iso raw || goto failed
+boot || goto failed
+goto start
+
+:asd5a
+initrd ${boot-url}/Files/Acronis/asd5s.iso
+kernel ${boot-url}/Boot/memdisk iso raw || goto failed
+boot || goto failed
+goto start
+
+:asd4
+initrd ${boot-url}/Files/Acronis/ASD4_en-US.iso
+kernel ${boot-url}/Boot/memdisk iso raw || goto failed
+boot || goto failed
+goto start
+
+:acronis2015
+initrd ${boot-url}/Files/Acronis/ati15.iso
+kernel ${boot-url}/Boot/memdisk iso raw || goto failed
+boot || goto failed
+goto start
+
+:acronis2014
+initrd ${boot-url}/Files/Acronis/ati14.iso
+kernel ${boot-url}/Boot/memdisk iso raw || goto failed
+boot || goto failed
+goto start
+
+:acronis2013
+initrd ${boot-url}/Files/Acronis/ati13.iso
+kernel ${boot-url}/Boot/memdisk iso raw || goto failed
+boot || goto failed
+goto start
+
+:acronis2012
+initrd ${boot-url}/Files/Acronis/ATIH2012PP_en-US.iso
+kernel ${boot-url}/Boot/memdisk iso raw || goto failed
+boot || goto failed
+goto start
+
+:acronis2011
+initrd ${boot-url}/Files/Acronis/ATIH2011PP_en-US.iso
+kernel ${boot-url}/Boot/memdisk iso raw || goto failed
+boot || goto failed
+goto start
+
+:redobackup
+kernel ${boot-url}/Files/redobackup/casper/vmlinuz boot=casper netboot=nfs nfsroot=${nfs-server}:/redobackup
+initrd ${boot-url}/Files/redobackup/casper/initrd.lz
+boot || goto failed
+goto start
+
+:mpdr
+kernel ${boot-url}/Files/mpdr/casper/vmlinuz.efi boot=casper netboot=nfs nfsroot=${nfs-server}:/mpdr
+initrd ${boot-url}/Files/mpdr/casper/initrd.lz
+boot || goto failed
+goto start
+
+:clonezilla
+initrd ${boot-url}/Files/clonezilla/initrd.img || goto failed
+kernel ${boot-url}/Files/clonezilla/vmlinuz boot=live username=user union=overlay config components quiet noswap edd=on nomodeset nodmraid locales= keyboard-layouts= ocs_live_run="ocs-live-general" ocs_live_extra_param="" ocs_live_batch=no net.ifnames=0 nosplash noprompt fetch=${boot-url}/Files/clonezilla/filesystem.squashfs || goto failed
+boot || goto failed
+goto start
+
+################################# dosprogs
+:dosprogs
+menu					DOS Programs
+item	abd15			Active Boot Disk 15
+item	hddr2011		HDD Regenerator 2011
+item	HDAT251			HDAT2 5.1
+item	MHDD46			MHDD 4.6
+item	Victoria352		Victoria 3.52
+item	MemTest86501	MemTest86+ 5.01
+item	MemTest86630	MemTest86 6.3.0 (PassMark)
+item	gmp785			GoldMemory Pro 7.85
+item	Ghost115		Symantec Ghost 11.5
+item	bbm131			BootIt Bare Metal 1.31
+item	HDDaRTs			HDDaRTs
+item	Kon-Boot250		Kon-Boot for Windows 2.5.0
+item	PlopBootManager	Plop Boot Manager
+item	VMtesting		VMtesting
+item	FreeDos			FreeDos
+item	back			Back to top menu...
+iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
+choose selected && goto ${selected} || goto start
+:menu-recovery-timed
+choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+:HDAT251
+initrd ${boot-url}/Files/DOS/HDAT251.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+:MHDD46
+initrd ${boot-url}/Files/DOS/MHDD.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+:Victoria352
+initrd ${boot-url}/Files/DOS/vcr35r.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+:MemTest86501
+initrd ${boot-url}/Files/DOS/MT501.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+:MemTest86630
+initrd ${boot-url}/Files/DOS/Memtest86-6.3.0.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+:gmp785
+initrd ${boot-url}/Files/DOS/GoldMem.img
+chain ${boot-url}/Boot/memdisk raw || goto failed
+goto start
+
+:Ghost115
+initrd ${boot-url}/Files/DOS/Ghost.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+:bbm131
+initrd ${boot-url}/Files/DOS/bbm.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+:HDDaRTs
+initrd ${boot-url}/Files/DOS/HDDaRTs.ima
+chain ${boot-url}/Boot/memdisk raw || goto failed
+goto start
+
+:Kon-Boot250
+initrd ${boot-url}/Files/DOS/kon-bootCD.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+:PlopBootManager
+initrd ${boot-url}/Files/DOS/plpbt.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+:abd15
+initrd ${boot-url}/Files/DOS/ActiveBootDiskDOS.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+:hddr2011
+initrd ${boot-url}/Files/DOS/ActivePasswordChanger5.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+:VMtesting
+initrd ${boot-url}/Files/DOS/vmtce.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+:FreeDos
+initrd ${boot-url}/Files/DOS/fd11src.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+################################# Microsoft Diagnostics and Recovery Toolset (DaRT)
+:dart
+menu	Microsoft Diagnostics and Recovery Toolset (DaRT)
+item	DaRT_10_x64		DaRT_10_x64
+item	DaRT_10_x86		DaRT_10_x86
+item	DaRT_8.1_x64	DaRT_8.1_x64
+item	DaRT_8.1_x86	DaRT_8.1_x86
+item	DaRT_7_x64		DaRT_7_x64
+item	DaRT_7_x86		DaRT_7_x86
+item	DaRT_XP			DaRT_XP
+item	back			Back to top menu...
+iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
+choose selected && goto ${selected} || goto start
+:menu-recovery-timed
+choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+:DaRT_10_x64
+  #cpuid --ext 29 && set arch amd64 || set arch x86
+  kernel ${boot-url}/Boot/wimboot/wimboot
+  initrd ${boot-url}/Boot/wimboot/Bootmgr10		bootmgr
+  initrd ${boot-url}/Boot/wimboot/Bootmgr10.exe	bootmgr.exe
+  initrd ${boot-url}/Boot/wimboot/BCD			BCD
+  initrd ${boot-url}/Boot/boot.sdi				boot.sdi
+  initrd ${boot-url}/WIM/DaRT_10_x64.wim		boot.wim
+  boot || goto failed
+goto start  
+
+:DaRT_10_x86
+  #set arch x86
+  kernel ${boot-url}/Boot/wimboot/wimboot
+  initrd ${boot-url}/Boot/wimboot/Bootmgr10		bootmgr
+  initrd ${boot-url}/Boot/wimboot/Bootmgr10.exe	bootmgr.exe
+  initrd ${boot-url}/Boot/wimboot/BCD			BCD
+  initrd ${boot-url}/Boot/boot.sdi				boot.sdi
+  initrd ${boot-url}/WIM/DaRT_10_x86.wim		boot.wim
+  boot || goto failed
+goto start
+
+:DaRT_8.1_x64
+  #cpuid --ext 29 && set arch amd64 || set arch x86
+  kernel ${boot-url}/Boot/wimboot/wimboot
+  initrd ${boot-url}/Boot/wimboot/Bootmgr81		bootmgr
+  initrd ${boot-url}/Boot/wimboot/Bootmgr81.exe	bootmgr.exe
+  initrd ${boot-url}/Boot/wimboot/BCD			BCD
+  initrd ${boot-url}/Boot/boot.sdi				boot.sdi
+  initrd ${boot-url}/WIM/DaRT_8.1_x64.wim		boot.wim
+  boot || goto failed
+goto start  
+
+:DaRT_8.1_x86
+  #set arch x86
+  kernel ${boot-url}/Boot/wimboot/wimboot
+  initrd ${boot-url}/Boot/wimboot/Bootmgr81		bootmgr
+  initrd ${boot-url}/Boot/wimboot/Bootmgr81.exe	bootmgr.exe
+  initrd ${boot-url}/Boot/wimboot/BCD			BCD
+  initrd ${boot-url}/Boot/boot.sdi				boot.sdi
+  initrd ${boot-url}/WIM/DaRT_8.1_x86.wim		boot.wim
+  boot || goto failed
+goto start
+
+:DaRT_7_x64
+  #cpuid --ext 29 && set arch amd64 || set arch x86
+  kernel ${boot-url}/Boot/wimboot/wimboot
+  initrd ${boot-url}/Boot/wimboot/Bootmgr70		bootmgr
+  initrd ${boot-url}/Boot/wimboot/Bootmgr70.exe	bootmgr.exe
+  initrd ${boot-url}/Boot/wimboot/BCD			BCD
+  initrd ${boot-url}/Boot/boot.sdi				boot.sdi
+  initrd ${boot-url}/WIM/DaRT_7_x64.wim			boot.wim
+  boot || goto failed
+goto start  
+
+:DaRT_7_x86
+  #set arch x86
+  kernel ${boot-url}/Boot/wimboot/wimboot
+  initrd ${boot-url}/Boot/wimboot/Bootmgr70		bootmgr
+  initrd ${boot-url}/Boot/wimboot/Bootmgr70.exe	bootmgr.exe
+  initrd ${boot-url}/Boot/wimboot/BCD			BCD
+  initrd ${boot-url}/Boot/boot.sdi				boot.sdi
+  initrd ${boot-url}/WIM/DaRT_7_x86.wim			boot.wim
+  boot || goto failed
+goto start
+
+:DaRT_XP
+initrd ${boot-url}/Files/DaRT_XP.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+################################# winpe
+:winpe
+menu	Windows PE
+item	win10pe64		Windows 10 PE x64
+item	win10pe32		Windows 10 PE x86
+item	win81pe64		Windows 8.1 PE x64
+item	win81pe32		Windows 8.1 PE x86
+item	win7pe64		Windows 7 PE x64
+item	win7pe32		Windows 7 PE x86
+item	back			Back to top menu...
+iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
+choose selected && goto ${selected} || goto start
+:menu-recovery-timed
+choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+:win10pe64
+  #cpuid --ext 29 && set arch amd64 || set arch x86
+  kernel ${boot-url}/Boot/wimboot/wimboot
+  initrd ${boot-url}/Boot/wimboot/Bootmgr10		bootmgr
+  initrd ${boot-url}/Boot/wimboot/Bootmgr10.exe	bootmgr.exe
+  initrd ${boot-url}/Boot/wimboot/BCD			BCD
+  initrd ${boot-url}/Boot/boot.sdi				boot.sdi
+  initrd ${boot-url}/WIM/w10pe64.wim			boot.wim
+  boot || goto failed
+goto start  
+
+:win10pe32
+  #set arch x86
+  kernel ${boot-url}/Boot/wimboot/wimboot
+  initrd ${boot-url}/Boot/wimboot/Bootmgr10		bootmgr
+  initrd ${boot-url}/Boot/wimboot/Bootmgr10.exe	bootmgr.exe
+  initrd ${boot-url}/Boot/wimboot/BCD			BCD
+  initrd ${boot-url}/Boot/boot.sdi				boot.sdi
+  initrd ${boot-url}/WIM/w10pe32.wim			boot.wim
+  boot || goto failed
+goto start
+
+:win81pe64
+  #cpuid --ext 29 && set arch amd64 || set arch x86
+  kernel ${boot-url}/Boot/wimboot/wimboot
+  initrd ${boot-url}/Boot/wimboot/Bootmgr81		bootmgr
+  initrd ${boot-url}/Boot/wimboot/Bootmgr81.exe	bootmgr.exe
+  initrd ${boot-url}/Boot/wimboot/BCD			BCD
+  initrd ${boot-url}/Boot/boot.sdi				boot.sdi
+  initrd ${boot-url}/WIM/w8.1pe64.wim			boot.wim
+  boot || goto failed
+goto start  
+
+:win81pe32
+  #set arch x86
+  kernel ${boot-url}/Boot/wimboot/wimboot
+  initrd ${boot-url}/Boot/wimboot/Bootmgr81		bootmgr
+  initrd ${boot-url}/Boot/wimboot/Bootmgr81.exe	bootmgr.exe
+  initrd ${boot-url}/Boot/wimboot/BCD			BCD
+  initrd ${boot-url}/Boot/boot.sdi				boot.sdi
+  initrd ${boot-url}/WIM/w8.1pe64.wim			boot.wim
+  boot || goto failed
+goto start
+
+:win7pe64
+  #cpuid --ext 29 && set arch amd64 || set arch x86
+  kernel ${boot-url}/Boot/wimboot/wimboot
+  initrd ${boot-url}/Boot/wimboot/Bootmgr70		bootmgr
+  initrd ${boot-url}/Boot/wimboot/Bootmgr70.exe	bootmgr.exe
+  initrd ${boot-url}/Boot/wimboot/BCD			BCD
+  initrd ${boot-url}/Boot/boot.sdi				boot.sdi
+  initrd ${boot-url}/WIM/w7pe64.wim				boot.wim
+  boot || goto failed
+goto start  
+
+:win7pe32
+  #set arch x86
+  kernel ${boot-url}/Boot/wimboot/wimboot
+  initrd ${boot-url}/Boot/wimboot/Bootmgr70		bootmgr
+  initrd ${boot-url}/Boot/wimboot/Bootmgr70.exe	bootmgr.exe
+  initrd ${boot-url}/Boot/wimboot/BCD			BCD
+  initrd ${boot-url}/Boot/boot.sdi				boot.sdi
+  initrd ${boot-url}/WIM/w7pe32.wim			boot.wim
+  boot || goto failed
+goto start
+
+################################# minixp
+:minixp
+initrd ${boot-url}/Files/MiniXP.iso
+chain ${boot-url}/Boot/memdisk iso raw || goto failed
+goto start
+
+################################# Linux ISO Live
+:livelinux
+menu	Linux ISO Live
+item	ubuntu64			Ubuntu Live		[64-bit]
+item	linuxmint			Linux Mint
+item	centos				CentOS Minimal	[64-bit]
+item	ubuntu32			Ubuntu Live		[32-bit]
+item	back			Back to top menu...
+iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
+choose selected && goto ${selected} || goto start
+:menu-recovery-timed
+choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+:linuxmint
+kernel /Files/linuxmint/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/linuxmint
+initrd /Files/linuxmint/casper/initrd.lz
+boot || goto failed
+goto start
+
+:ubuntu64
+kernel ${boot-url}/Files/ubuntu64/casper/vmlinuz.efi root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/ubuntu64
+initrd ${boot-url}/Files/ubuntu64/casper/initrd.lz
+boot || goto failed
+goto start
+
+:ubuntu32
+kernel ${boot-url}/Files/ubuntu32/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/ubuntu32
+initrd ${boot-url}/Files/ubuntu32/casper/initrd.lz
+boot || goto failed
+goto start
+
+:centos
+kernel ${boot-url}/Files/centos/images/pxeboot/vmlinuz method=${boot-url}/Files/centos devfs=nomount
+initrd ${boot-url}/Files/centos/images/pxeboot/initrd.img
+boot || goto failed
+goto start
+
+######################## other items
+
+:pxelinux
+#dhcp
+dhcp net0
+set 210:string tftp://${next-server}/
+#set 210:string tftp://${dhcp-server}/
+chain ${210:string}pxelinux.0 || goto failed
+goto start
+
+#use menu.ipxe as alt boot file name, not http://${dhcp-server}/menu.ipxe
+:grub4dos
+dhcp net0
+#set netX/next-server 192.168.1.100
+set 210:string tftp://${dhcp-server}/Boot/grub4dos/
+chain ${210:string}grldr || goto failed
+goto start
+
+:grub_cd
+chain ${boot-url}/grub.exe --config-file="cdrom --init;map --hook;root (cd0);chainloader (cd0)" || goto failed
+goto start
+
+:grub_startrom
+chain ${boot-url}/grub.exe keeppxe --config-file="pxe detect;chainloader --force --raw (pd)/startrom.0" || goto failed
+goto start
+
+:grub_floppy
+chain ${boot-url}/grub.exe keeppxe --config-file="map --mem (pd)/images/98.ima (fd0);map --hook;root (fd0);chainloader+1;boot" || goto failed
+goto start
+
+
+:grub_hd0
+chain ${boot-url}/grub.exe --config-file="rootnoverify (hd0);chainloader +1" || goto failed
+goto start
+
+:undi_dos
+kernel ${boot-url}/memdisk keeppxe ACTION=install NETSHARE=sharename 
+initrd ${boot-url}/images/undis3c.imz
+boot || goto failed
+goto start
+
+:bootsan
+#sanhook --drive 0x81 ${root-path} #hook a drive
+#sanboot --no-describe iscsi:10.0.4.1:::1:iqn.2010-04.org.ipxe.dolphin:liveinstall #boot from another media
+dhcp net0
+set keep-san 1
+#sanboot iscsi:${iscsi-server}:tcp:3260:0:${iqn}
+sanboot iscsi:${iscsi-server}::::${iqn}
+#boot || goto failed
+goto start
+
+:bootaoe
+dhcp net0
+set keep-san 1
+sanboot aoe:e0.0
+#boot || goto failed
+goto start
+
+:hdt
+sanboot --no-describe ${boot-url}/_iso/hdt-0.5.2.iso || goto failed
+goto start
+
+:netbootme
+imgfree
+chain http://static.netboot.me/gpxe/netbootme.kpxe
+
+
+#######################################################
+  
+#Memdisk via iPXE vs. ISO Boot HTTP via iPXE:
+#
+#Memdisk via iPXE does the following things: 
+#1) Emulates a CD-ROM allowing a Network-Based Install. 
+#2) Masks actual system RAM because the environment memdisk creates "hides" a certain amount of RAM to allow for the ISO - This amount is generally 2x ISO Size (Maximum 2GB - I think).
+#3) Preloads the ISO into memory before executing the ISO. This slows boot time a bit.
+#
+#ISO Boot over HTTP via iPXE:
+#1) Does not emulate a CD-ROM. It is a Block Device.
+#2) Does not mask system RAM.
+#3) Executes as it reads: Faster than memdisk and no "preloading" of the ISO is required.
+#4) Does not hold the ISO as a readable device once the ISO is loaded unless loaded into the iBFT.

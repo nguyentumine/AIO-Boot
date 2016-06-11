@@ -1,0 +1,2 @@
+#!gpxe
+chain menu.c32 /pxelinux.cfg/default
