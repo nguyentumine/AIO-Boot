@@ -1,7 +1,0 @@
-#!gpxe
-set use-cached 1
-dhcp net0
-#imgload pxelinux.0
-#boot pxelinux.0
-chain pxelinux.0
-

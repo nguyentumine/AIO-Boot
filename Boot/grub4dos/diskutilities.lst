@@ -85,12 +85,6 @@ map --hook
 kernel	(0xff)/isolinux/rescue32 isoloop=/Files/Linux/systemrescuecd.iso setkmap=us dostartx
 initrd	(0xff)/isolinux/initram.igz
 
-title Partition Logic\n%copyfile% 'partlogic.iso' %intodir% '/Files/Disk/'
-find --set-root --ignore-floppies /Files/Disk/partlogic.iso
-map --mem /Files/Disk/partlogic.iso (0xff)
-map --hook
-chainloader (0xff)
-
 title %backlst%
 fallback +1
 find --set-root --ignore-floppies --ignore-cd /Boot/grub4dos/menu.lst

@@ -1,5 +1,5 @@
 [SetupData]
 BootDevice = "ramdisk(0)"
 BootPath = "\I386\System32\"
-OsLoadOptions = "/fastdetect /minint /rdexportascd /rdpath=\ISO\MSDaRT50.iso"
+OsLoadOptions = "/fastdetect /minint /rdexportascd /rdpath=\Files\DaRT_XP.iso"
 Architecture = "I386" 

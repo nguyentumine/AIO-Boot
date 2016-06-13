@@ -20,15 +20,15 @@ isset ${menu-default} || set menu-default exit
 menu Welcome to iPXE's Boot Menu
 item
 item --gap -- ------------------------- Utilities ------------------------------
-item	winpe		Windows PE
-item	minixp		Windows XP Mini
+item	winpe		Boot WinPE
+item	minixp		Win XP Mini
 item	disk_util	Disk Utilities
 item	backuprecovery	Backup & Recovery
 item	dosprogs	DOS Programs
 item	livelinux	Linux ISO Live
 item	antivirus	Antivirus
 item	dart		Microsoft Diagnostics and Recovery Toolset (DaRT)
-item	grub4dos	Load Grub4dos
+#item	grub4dos	Load Grub4dos
 item --gap -- ------------------------------ Advanced ---------------------------------
 item config       Configure settings
 item shell      Enter iPXE shell
@@ -111,7 +111,6 @@ item	pmagic			Parted Magic
 item	paragonhd15		Paragon Hard Disk Manager 15
 item	systemrescuecd	System Rescue Cd
 item	gparted			Gparted Partition Editor
-item	partlogic		Partition Logic
 item	back			Back to top menu...
 iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
 choose selected && goto ${selected} || goto start
@@ -156,12 +155,6 @@ goto start
 cpuid --ext 29 && set arch 64 || set arch 32
 kernel ${boot-url}/Files/systemrescuecd/isolinux/rescue${arch} dodhcp netboot=${boot-url}/Files/systemrescuecd/sysrcd.dat setkmap=us dostartx || goto failed
 initrd ${boot-url}/Files/systemrescuecd/isolinux/initram.igz || goto failed
-boot || goto failed
-goto start
-
-:partlogic
-initrd ${boot-url}/Files/Disk/partlogic.iso
-kernel ${boot-url}/Boot/memdisk iso raw || goto failed
 boot || goto failed
 goto start
 
@@ -481,7 +474,7 @@ goto start
 
 ################################# winpe
 :winpe
-menu	Windows PE
+menu	Boot WinPE
 item	win10pe64		Windows 10 PE x64
 item	win10pe32		Windows 10 PE x86
 item	win81pe64		Windows 8.1 PE x64
