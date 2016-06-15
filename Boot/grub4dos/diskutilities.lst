@@ -23,12 +23,13 @@ title MiniTool Partition Wizard Boot Disk 9\n%copyfile% 'mpw.iso' %intodir% '/Fi
 	map /Files/Disk/mpw.iso (0xff) || map --mem /Files/Disk/mpw.iso (0xff)
 	map --hook
 	chainloader (0xff)
-
-title Paragon Hard Disk Manager 15\n%copyfile% 'phd15bios.iso' %intodir% '/Files/Disk/'
-	find --set-root --ignore-floppies /Files/Disk/phd15bios.iso
-	map /Files/Disk/phd15bios.iso (0xff) || map --mem /Files/Disk/phd15bios.iso (0xff)
+	
+title Partition Guru\n%copyfile% 'PartitionGuru.img' %intodir% '/Files/DOS/'
+	find --set-root --ignore-floppies /Files/DOS/PartitionGuru.img
+	map /Files/DOS/PartitionGuru.img (fd0) || map --mem /Files/DOS/PartitionGuru.img (fd0)
 	map --hook
-	chainloader (0xff)
+	root (fd0)
+	chainloader /kernel.sys
 
 title Acronis Disk Director 12\n%copyfile% 'add12.iso' %intodir% '/Files/Acronis/'
 	find --set-root --ignore-floppies /Files/Acronis/add12.iso
