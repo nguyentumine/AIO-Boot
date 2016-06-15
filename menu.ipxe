@@ -79,8 +79,8 @@ choose selected && goto ${selected} || goto start
 choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
 
 :bitdefender
-initrd ${boot-url}/Files/bitdefender/boot/initfs.i386-pc || goto failed
-kernel ${boot-url}/Files/bitdefender/boot/kernel.i386-pc root=/dev/nfs real_root=/dev/nfs nfsroot=${next-server}:/bitdefender ip=dhcp loop=/rescue/livecd.squashfs looptype=squashfs livecd.nfsif=${net0/mac} initrd udev cdroot lang=en || goto failed
+initrd ${boot-url}/Files/Antivirus/bitdefender/boot/initfs.i386-pc || goto failed
+kernel ${boot-url}/Files/Antivirus/bitdefender/boot/kernel.i386-pc root=/dev/nfs real_root=/dev/nfs nfsroot=${next-server}:/Antivirus/bitdefender ip=dhcp loop=/rescue/livecd.squashfs looptype=squashfs livecd.nfsif=${net0/mac} initrd udev cdroot lang=en || goto failed
 boot || goto failed
 goto start
 
@@ -91,8 +91,8 @@ boot || goto failed
 goto start
 
 :avira
-kernel ${boot-url}/Files/avira/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/avira
-initrd ${boot-url}/Files/avira/casper/initrd.lz || goto failed
+kernel ${boot-url}/Files/Antivirus/avira/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Antivirus/avira
+initrd ${boot-url}/Files/Antivirus/avira/casper/initrd.lz || goto failed
 boot || goto failed
 goto start
 
@@ -137,24 +137,24 @@ goto start
 
 :pmagic
 cpuid --ext 29 && set arch 64 || set arch 32
-initrd ${boot-url}/Files/pmagic/initrd.img
-initrd ${boot-url}/Files/pmagic/fu.img
-initrd ${boot-url}/Files/pmagic/m${arch}.img
-initrd ${boot-url}/Files/pmagic/files.cgz
-chain ${boot-url}/Files/pmagic/bzImage${arch} initrd=initrd.img initrd=fu.img initrd=m${arch}.img initrd=files.cgz
+initrd ${boot-url}/Files/Linux/pmagic/initrd.img
+initrd ${boot-url}/Files/Linux/pmagic/fu.img
+initrd ${boot-url}/Files/Linux/pmagic/m${arch}.img
+initrd ${boot-url}/Files/Linux/pmagic/files.cgz
+chain ${boot-url}/Files/Linux/pmagic/bzImage${arch} initrd=initrd.img initrd=fu.img initrd=m${arch}.img initrd=files.cgz
 boot || goto failed
 goto start
 
 :gparted
-initrd ${boot-url}/Files/gparted/live/initrd.img || goto failed
-kernel ${boot-url}/Files/gparted/live/vmlinuz boot=live config components union=overlay username=user noswap noeject ip= vga=788 fetch=${boot-url}/Files/gparted/live/filesystem.squashfs || goto failed
+initrd ${boot-url}/Files/Linux/gparted/live/initrd.img || goto failed
+kernel ${boot-url}/Files/Linux/gparted/live/vmlinuz boot=live config components union=overlay username=user noswap noeject ip= vga=788 fetch=${boot-url}/Files/Linux/gparted/live/filesystem.squashfs || goto failed
 boot || goto failed
 goto start
 
 :systemrescuecd
 cpuid --ext 29 && set arch 64 || set arch 32
-kernel ${boot-url}/Files/systemrescuecd/isolinux/rescue${arch} dodhcp netboot=${boot-url}/Files/systemrescuecd/sysrcd.dat setkmap=us dostartx || goto failed
-initrd ${boot-url}/Files/systemrescuecd/isolinux/initram.igz || goto failed
+kernel ${boot-url}/Files/Linux/systemrescuecd/isolinux/rescue${arch} dodhcp netboot=${boot-url}/Files/Linux/systemrescuecd/sysrcd.dat setkmap=us dostartx || goto failed
+initrd ${boot-url}/Files/Linux/systemrescuecd/isolinux/initram.igz || goto failed
 boot || goto failed
 goto start
 
@@ -269,20 +269,20 @@ boot || goto failed
 goto start
 
 :redobackup
-kernel ${boot-url}/Files/redobackup/casper/vmlinuz boot=casper netboot=nfs nfsroot=${nfs-server}:/redobackup
-initrd ${boot-url}/Files/redobackup/casper/initrd.lz
+kernel ${boot-url}/Files/Linux/redobackup/casper/vmlinuz boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/redobackup
+initrd ${boot-url}/Files/Linux/redobackup/casper/initrd.lz
 boot || goto failed
 goto start
 
 :mpdr
-kernel ${boot-url}/Files/mpdr/casper/vmlinuz.efi boot=casper netboot=nfs nfsroot=${nfs-server}:/mpdr
-initrd ${boot-url}/Files/mpdr/casper/initrd.lz
+kernel ${boot-url}/Files/BackupRecovery/mpdr/casper/vmlinuz.efi boot=casper netboot=nfs nfsroot=${nfs-server}:/BackupRecovery/mpdr
+initrd ${boot-url}/Files/BackupRecovery/mpdr/casper/initrd.lz
 boot || goto failed
 goto start
 
 :clonezilla
-initrd ${boot-url}/Files/clonezilla/initrd.img || goto failed
-kernel ${boot-url}/Files/clonezilla/vmlinuz boot=live username=user union=overlay config components quiet noswap edd=on nomodeset nodmraid locales= keyboard-layouts= ocs_live_run="ocs-live-general" ocs_live_extra_param="" ocs_live_batch=no net.ifnames=0 nosplash noprompt fetch=${boot-url}/Files/clonezilla/filesystem.squashfs || goto failed
+initrd ${boot-url}/Files/Linux/clonezilla/initrd.img || goto failed
+kernel ${boot-url}/Files/Linux/clonezilla/vmlinuz boot=live username=user union=overlay config components quiet noswap edd=on nomodeset nodmraid locales= keyboard-layouts= ocs_live_run="ocs-live-general" ocs_live_extra_param="" ocs_live_batch=no net.ifnames=0 nosplash noprompt fetch=${boot-url}/Files/Linux/clonezilla/filesystem.squashfs || goto failed
 boot || goto failed
 goto start
 
@@ -311,7 +311,7 @@ choose selected && goto ${selected} || goto start
 choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
 
 :HDAT251
-initrd ${boot-url}/Files/DOS/HDAT251.iso
+initrd ${boot-url}/Files/DOS/hdat2cd_51.iso
 chain ${boot-url}/Boot/memdisk iso raw || goto failed
 goto start
 
@@ -566,33 +566,41 @@ item	ubuntu64			Ubuntu Live		[64-bit]
 item	linuxmint			Linux Mint
 item	centos				CentOS Minimal	[64-bit]
 item	ubuntu32			Ubuntu Live		[32-bit]
-item	back			Back to top menu...
+item	deft				DEFT-Zero Linux Live (GUI mode)
+item	bugtraq				Bugtraq [based Ubuntu]
+item	back				Back to top menu...
 iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
 choose selected && goto ${selected} || goto start
 :menu-recovery-timed
 choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
 
 :linuxmint
-kernel /Files/linuxmint/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/linuxmint
-initrd /Files/linuxmint/casper/initrd.lz
+kernel ${boot-url}/Files/Linux/linuxmint/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/linuxmint
+initrd ${boot-url}/Files/Linux/linuxmint/casper/initrd.lz
 boot || goto failed
 goto start
 
 :ubuntu64
-kernel ${boot-url}/Files/ubuntu64/casper/vmlinuz.efi root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/ubuntu64
-initrd ${boot-url}/Files/ubuntu64/casper/initrd.lz
+kernel ${boot-url}/Files/Linux/ubuntu64/casper/vmlinuz.efi root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/ubuntu64
+initrd ${boot-url}/Files/Linux/ubuntu64/casper/initrd.lz
 boot || goto failed
 goto start
 
 :ubuntu32
-kernel ${boot-url}/Files/ubuntu32/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/ubuntu32
-initrd ${boot-url}/Files/ubuntu32/casper/initrd.lz
+kernel ${boot-url}/Files/Linux/ubuntu32/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/ubuntu32
+initrd ${boot-url}/Files/Linux/ubuntu32/casper/initrd.lz
 boot || goto failed
 goto start
 
 :centos
-kernel ${boot-url}/Files/centos/images/pxeboot/vmlinuz method=${boot-url}/Files/centos devfs=nomount
-initrd ${boot-url}/Files/centos/images/pxeboot/initrd.img
+kernel ${boot-url}/Files/Linux/centos/images/pxeboot/vmlinuz method=${boot-url}/Files/Linux/centos devfs=nomount
+initrd ${boot-url}/Files/Linux/centos/images/pxeboot/initrd.img
+boot || goto failed
+goto start
+
+:deft
+kernel ${boot-url}/Files/Linux/deft/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/deft
+initrd ${boot-url}/Files/Linux/deft/casper/initrd.lz
 boot || goto failed
 goto start
 
