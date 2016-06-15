@@ -567,7 +567,7 @@ item	linuxmint			Linux Mint
 item	centos				CentOS Minimal	[64-bit]
 item	ubuntu32			Ubuntu Live		[32-bit]
 item	deft				DEFT-Zero Linux Live (GUI mode)
-item	bugtraq				Bugtraq [based Ubuntu]
+item	backbox				BackBox Linux amd64
 item	back				Back to top menu...
 iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
 choose selected && goto ${selected} || goto start
@@ -601,6 +601,12 @@ goto start
 :deft
 kernel ${boot-url}/Files/Linux/deft/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/deft
 initrd ${boot-url}/Files/Linux/deft/casper/initrd.lz
+boot || goto failed
+goto start
+
+:backbox
+kernel ${boot-url}/Files/Linux/backbox/casper/vmlinuz.efi root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/backbox
+initrd ${boot-url}/Files/Linux/backbox/casper/initrd.gz
 boot || goto failed
 goto start
 
