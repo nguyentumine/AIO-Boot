@@ -163,6 +163,7 @@ goto start
 menu Backup & Recovery
 item	acronis2016		Acronis True Image 2016
 item	acronisba		Acronis Backup Advanced Universal
+item	MacriumReflect	Macrium Reflect 6.1
 item	EaseUStodo		EaseUS Todo Backup Advanced Server 9.1
 item	AOMEIbt			AOMEI Backupper TechPlus 3.2
 item	R-DriveImage	R-Drive Image
@@ -183,6 +184,17 @@ iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-reco
 choose selected && goto ${selected} || goto start
 :menu-recovery-timed
 choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+:MacriumReflect
+  #cpuid --ext 29 && set arch amd64 || set arch x86
+  kernel ${boot-url}/Boot/wimboot/wimboot
+  initrd ${boot-url}/Boot/wimboot/Bootmgr10		bootmgr
+  initrd ${boot-url}/Boot/wimboot/Bootmgr10.exe	bootmgr.exe
+  initrd ${boot-url}/Boot/wimboot/BCD			BCD
+  initrd ${boot-url}/Boot/boot.sdi				boot.sdi
+  initrd ${boot-url}/Files/WIM/MacriumReflect.wim		boot.wim
+  boot || goto failed
+goto start
 
 :AOMEIbt
 initrd ${boot-url}/Files/amlnx.iso
@@ -269,8 +281,8 @@ boot || goto failed
 goto start
 
 :redobackup
-kernel ${boot-url}/Files/Linux/redobackup/casper/vmlinuz boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/redobackup
-initrd ${boot-url}/Files/Linux/redobackup/casper/initrd.lz
+kernel ${boot-url}/Files/BackupRecovery/redo/casper/vmlinuz boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/redo
+initrd ${boot-url}/Files/BackupRecovery/redo/casper/initrd.lz
 boot || goto failed
 goto start
 
@@ -408,7 +420,7 @@ choose --timeout ${submenu-timeout} --default ${submenu-default} selected && got
   initrd ${boot-url}/Boot/wimboot/Bootmgr10.exe	bootmgr.exe
   initrd ${boot-url}/Boot/wimboot/BCD			BCD
   initrd ${boot-url}/Boot/boot.sdi				boot.sdi
-  initrd ${boot-url}/WIM/DaRT_10_x64.wim		boot.wim
+  initrd ${boot-url}/Files/WIM/DaRT_10_x64.wim		boot.wim
   boot || goto failed
 goto start  
 
@@ -419,7 +431,7 @@ goto start
   initrd ${boot-url}/Boot/wimboot/Bootmgr10.exe	bootmgr.exe
   initrd ${boot-url}/Boot/wimboot/BCD			BCD
   initrd ${boot-url}/Boot/boot.sdi				boot.sdi
-  initrd ${boot-url}/WIM/DaRT_10_x86.wim		boot.wim
+  initrd ${boot-url}/Files/WIM/DaRT_10_x86.wim		boot.wim
   boot || goto failed
 goto start
 
@@ -430,7 +442,7 @@ goto start
   initrd ${boot-url}/Boot/wimboot/Bootmgr81.exe	bootmgr.exe
   initrd ${boot-url}/Boot/wimboot/BCD			BCD
   initrd ${boot-url}/Boot/boot.sdi				boot.sdi
-  initrd ${boot-url}/WIM/DaRT_8.1_x64.wim		boot.wim
+  initrd ${boot-url}/Files/WIM/DaRT_8.1_x64.wim		boot.wim
   boot || goto failed
 goto start  
 
@@ -441,7 +453,7 @@ goto start
   initrd ${boot-url}/Boot/wimboot/Bootmgr81.exe	bootmgr.exe
   initrd ${boot-url}/Boot/wimboot/BCD			BCD
   initrd ${boot-url}/Boot/boot.sdi				boot.sdi
-  initrd ${boot-url}/WIM/DaRT_8.1_x86.wim		boot.wim
+  initrd ${boot-url}/Files/WIM/DaRT_8.1_x86.wim		boot.wim
   boot || goto failed
 goto start
 
@@ -452,7 +464,7 @@ goto start
   initrd ${boot-url}/Boot/wimboot/Bootmgr70.exe	bootmgr.exe
   initrd ${boot-url}/Boot/wimboot/BCD			BCD
   initrd ${boot-url}/Boot/boot.sdi				boot.sdi
-  initrd ${boot-url}/WIM/DaRT_7_x64.wim			boot.wim
+  initrd ${boot-url}/Files/WIM/DaRT_7_x64.wim			boot.wim
   boot || goto failed
 goto start  
 
@@ -463,7 +475,7 @@ goto start
   initrd ${boot-url}/Boot/wimboot/Bootmgr70.exe	bootmgr.exe
   initrd ${boot-url}/Boot/wimboot/BCD			BCD
   initrd ${boot-url}/Boot/boot.sdi				boot.sdi
-  initrd ${boot-url}/WIM/DaRT_7_x86.wim			boot.wim
+  initrd ${boot-url}/Files/WIM/DaRT_7_x86.wim			boot.wim
   boot || goto failed
 goto start
 
@@ -494,7 +506,7 @@ choose --timeout ${submenu-timeout} --default ${submenu-default} selected && got
   initrd ${boot-url}/Boot/wimboot/Bootmgr10.exe	bootmgr.exe
   initrd ${boot-url}/Boot/wimboot/BCD			BCD
   initrd ${boot-url}/Boot/boot.sdi				boot.sdi
-  initrd ${boot-url}/WIM/w10pe64.wim			boot.wim
+  initrd ${boot-url}/Files/WIM/w10pe64.wim			boot.wim
   boot || goto failed
 goto start  
 
@@ -505,7 +517,7 @@ goto start
   initrd ${boot-url}/Boot/wimboot/Bootmgr10.exe	bootmgr.exe
   initrd ${boot-url}/Boot/wimboot/BCD			BCD
   initrd ${boot-url}/Boot/boot.sdi				boot.sdi
-  initrd ${boot-url}/WIM/w10pe32.wim			boot.wim
+  initrd ${boot-url}/Files/WIM/w10pe32.wim			boot.wim
   boot || goto failed
 goto start
 
@@ -516,7 +528,7 @@ goto start
   initrd ${boot-url}/Boot/wimboot/Bootmgr81.exe	bootmgr.exe
   initrd ${boot-url}/Boot/wimboot/BCD			BCD
   initrd ${boot-url}/Boot/boot.sdi				boot.sdi
-  initrd ${boot-url}/WIM/w8.1pe64.wim			boot.wim
+  initrd ${boot-url}/Files/WIM/w8.1pe64.wim			boot.wim
   boot || goto failed
 goto start  
 
@@ -527,7 +539,7 @@ goto start
   initrd ${boot-url}/Boot/wimboot/Bootmgr81.exe	bootmgr.exe
   initrd ${boot-url}/Boot/wimboot/BCD			BCD
   initrd ${boot-url}/Boot/boot.sdi				boot.sdi
-  initrd ${boot-url}/WIM/w8.1pe64.wim			boot.wim
+  initrd ${boot-url}/Files/WIM/w8.1pe64.wim			boot.wim
   boot || goto failed
 goto start
 
@@ -538,7 +550,7 @@ goto start
   initrd ${boot-url}/Boot/wimboot/Bootmgr70.exe	bootmgr.exe
   initrd ${boot-url}/Boot/wimboot/BCD			BCD
   initrd ${boot-url}/Boot/boot.sdi				boot.sdi
-  initrd ${boot-url}/WIM/w7pe64.wim				boot.wim
+  initrd ${boot-url}/Files/WIM/w7pe64.wim				boot.wim
   boot || goto failed
 goto start  
 
@@ -549,7 +561,7 @@ goto start
   initrd ${boot-url}/Boot/wimboot/Bootmgr70.exe	bootmgr.exe
   initrd ${boot-url}/Boot/wimboot/BCD			BCD
   initrd ${boot-url}/Boot/boot.sdi				boot.sdi
-  initrd ${boot-url}/WIM/w7pe32.wim			boot.wim
+  initrd ${boot-url}/Files/WIM/w7pe32.wim			boot.wim
   boot || goto failed
 goto start
 
@@ -563,20 +575,34 @@ goto start
 :livelinux
 menu	Linux ISO Live
 item	ubuntu64			Ubuntu Live		[64-bit]
-item	linuxmint			Linux Mint
+item	linuxmint64			Linux Mint		[64-bit]
 item	centos				CentOS Minimal	[64-bit]
+item	archlinux			Arch Linux		[64-bit]
+item	backbox				BackBox Linux	[64-bit]
+item	lubuntu64			Lubuntu Live	[64-bit]
+item	debian64			Debian Live		[64-bit]
+item	fedora23			Fedora 23 Live Workstation [64-bit]
 item	ubuntu32			Ubuntu Live		[32-bit]
+item	linuxmint32			Linux Mint		[32-bit]
+item	lubuntu32			Lubuntu Live	[32-bit]
+item	debian32			Debian Live		[32-bit]
 item	deft				DEFT-Zero Linux Live (GUI mode)
-item	backbox				BackBox Linux amd64
+item	elementaryos		elementary OS
 item	back				Back to top menu...
 iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
 choose selected && goto ${selected} || goto start
 :menu-recovery-timed
 choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
 
-:linuxmint
-kernel ${boot-url}/Files/Linux/linuxmint/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/linuxmint
-initrd ${boot-url}/Files/Linux/linuxmint/casper/initrd.lz
+:linuxmint32
+kernel ${boot-url}/Files/Linux/linuxmint32/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/linuxmint32
+initrd ${boot-url}/Files/Linux/linuxmint32/casper/initrd.lz
+boot || goto failed
+goto start
+
+:linuxmint64
+kernel ${boot-url}/Files/Linux/linuxmint64/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/linuxmint64
+initrd ${boot-url}/Files/Linux/linuxmint64/casper/initrd.lz
 boot || goto failed
 goto start
 
@@ -592,9 +618,27 @@ initrd ${boot-url}/Files/Linux/ubuntu32/casper/initrd.lz
 boot || goto failed
 goto start
 
+:lubuntu64
+kernel ${boot-url}/Files/Linux/lubuntu64/casper/vmlinuz.efi root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/lubuntu64
+initrd ${boot-url}/Files/Linux/lubuntu64/casper/initrd.lz
+boot || goto failed
+goto start
+
+:lubuntu32
+kernel ${boot-url}/Files/Linux/lubuntu32/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/lubuntu32
+initrd ${boot-url}/Files/Linux/lubuntu32/casper/initrd.lz
+boot || goto failed
+goto start
+
 :centos
 kernel ${boot-url}/Files/Linux/centos/images/pxeboot/vmlinuz method=${boot-url}/Files/Linux/centos devfs=nomount
 initrd ${boot-url}/Files/Linux/centos/images/pxeboot/initrd.img
+boot || goto failed
+goto start
+
+:elementaryos
+kernel ${boot-url}/Files/Linux/elementaryos/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/elementaryos
+initrd ${boot-url}/Files/Linux/elementaryos/casper/initrd.lz
 boot || goto failed
 goto start
 
@@ -607,6 +651,25 @@ goto start
 :backbox
 kernel ${boot-url}/Files/Linux/backbox/casper/vmlinuz.efi root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/backbox
 initrd ${boot-url}/Files/Linux/backbox/casper/initrd.gz
+boot || goto failed
+goto start
+
+:archlinux
+kernel	${boot-url}/Files/Linux/archlinux/arch/boot/x86_64/vmlinuz initrd=intel_ucode.img initrd=archiso.img archisobasedir=arch archiso_nfs_srv=${nfs-server}:/Linux/archlinux/ ip=:::::eth0:dhcp
+initrd	${boot-url}/Files/Linux/archlinux/arch/boot/intel_ucode.img
+initrd	${boot-url}/Files/Linux/archlinux/arch/boot/x86_64/archiso.img
+boot || goto failed
+goto start
+
+:debian64
+kernel	${boot-url}/Files/Linux/debian64/live/vmlinuz boot=live netboot=nfs nfsroot=${nfs-server}:/Linux/debian64/
+initrd	${boot-url}/Files/Linux/debian64/live/initrd.img
+boot || goto failed
+goto start
+
+:debian32
+kernel	${boot-url}/Files/Linux/debian32/live/vmlinuz boot=live netboot=nfs nfsroot=${nfs-server}:/Linux/debian32/
+initrd	${boot-url}/Files/Linux/debian32/live/initrd.img
 boot || goto failed
 goto start
 
