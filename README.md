@@ -5,6 +5,8 @@ Currently, there are many USB boot tool with many different features, so you wil
 
 Homepage: http://www.sitecuatui.com/
 
+My English is not good, I used Google to translate. Please sympathize with me.
+
 # Features
 AIO Boot was released with a lot of great features that other tools do not yet support.
 #### The bootloader is supported:
