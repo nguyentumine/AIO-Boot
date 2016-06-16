@@ -108,6 +108,7 @@ menu Disk Utilities
 item	mpw				MiniTool Partition Wizard 9
 item	acronisdd		Acronis Disk Director 12
 item	pmagic			Parted Magic
+item	PartitionGuru	PartitionGuru
 item	paragonhd15		Paragon Hard Disk Manager 15
 item	systemrescuecd	System Rescue Cd
 item	gparted			Gparted Partition Editor
@@ -142,6 +143,12 @@ initrd ${boot-url}/Files/Linux/pmagic/fu.img
 initrd ${boot-url}/Files/Linux/pmagic/m${arch}.img
 initrd ${boot-url}/Files/Linux/pmagic/files.cgz
 chain ${boot-url}/Files/Linux/pmagic/bzImage${arch} initrd=initrd.img initrd=fu.img initrd=m${arch}.img initrd=files.cgz
+boot || goto failed
+goto start
+
+:PartitionGuru
+initrd ${boot-url}/Files/DOS/PartitionGuru.img
+kernel ${boot-url}/Boot/memdisk iso || goto failed
 boot || goto failed
 goto start
 
@@ -303,6 +310,7 @@ goto start
 menu					DOS Programs
 item	abd15			Active Boot Disk 15
 item	hddr2011		HDD Regenerator 2011
+item	PartitionGuru	PartitionGuru
 item	HDAT251			HDAT2 5.1
 item	MHDD46			MHDD 4.6
 item	Victoria352		Victoria 3.52
@@ -578,16 +586,17 @@ item	ubuntu64			Ubuntu Live		[64-bit]
 item	linuxmint64			Linux Mint		[64-bit]
 item	centos				CentOS Minimal	[64-bit]
 item	archlinux			Arch Linux		[64-bit]
-item	backbox				BackBox Linux	[64-bit]
+item	backbox64			BackBox Linux	[64-bit]
 item	lubuntu64			Lubuntu Live	[64-bit]
 item	debian64			Debian Live		[64-bit]
-item	fedora23			Fedora 23 Live Workstation [64-bit]
+item	elementaryos64		elementary OS 	[64-bit]
 item	ubuntu32			Ubuntu Live		[32-bit]
 item	linuxmint32			Linux Mint		[32-bit]
+item	backbox32			BackBox Linux	[32-bit]
 item	lubuntu32			Lubuntu Live	[32-bit]
 item	debian32			Debian Live		[32-bit]
 item	deft				DEFT-Zero Linux Live (GUI mode)
-item	elementaryos		elementary OS
+item	elementaryos32		elementary OS 	[32-bit]
 item	back				Back to top menu...
 iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
 choose selected && goto ${selected} || goto start
@@ -636,9 +645,15 @@ initrd ${boot-url}/Files/Linux/centos/images/pxeboot/initrd.img
 boot || goto failed
 goto start
 
-:elementaryos
-kernel ${boot-url}/Files/Linux/elementaryos/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/elementaryos
-initrd ${boot-url}/Files/Linux/elementaryos/casper/initrd.lz
+:elementaryos32
+kernel ${boot-url}/Files/Linux/elementaryos32/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/elementaryos32
+initrd ${boot-url}/Files/Linux/elementaryos32/casper/initrd.lz
+boot || goto failed
+goto start
+
+:elementaryos64
+kernel ${boot-url}/Files/Linux/elementaryos64/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/elementaryos64
+initrd ${boot-url}/Files/Linux/elementaryos64/casper/initrd.lz
 boot || goto failed
 goto start
 
@@ -648,9 +663,15 @@ initrd ${boot-url}/Files/Linux/deft/casper/initrd.lz
 boot || goto failed
 goto start
 
-:backbox
-kernel ${boot-url}/Files/Linux/backbox/casper/vmlinuz.efi root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/backbox
-initrd ${boot-url}/Files/Linux/backbox/casper/initrd.gz
+:backbox64
+kernel ${boot-url}/Files/Linux/backbox64/casper/vmlinuz.efi root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/backbox64
+initrd ${boot-url}/Files/Linux/backbox64/casper/initrd.gz
+boot || goto failed
+goto start
+
+:backbox32
+kernel ${boot-url}/Files/Linux/backbox32/casper/vmlinuz root=/dev/nfs boot=casper netboot=nfs nfsroot=${nfs-server}:/Linux/backbox32
+initrd ${boot-url}/Files/Linux/backbox32/casper/initrd.gz
 boot || goto failed
 goto start
 
