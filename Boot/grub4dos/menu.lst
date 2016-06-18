@@ -13,91 +13,92 @@ color border=0xEEFFEE
 ## set vbe mode
 graphicsmode -1 640:800 480:600 24:32 || graphicsmode -1 -1 -1 24:32
 ## loading splashimage
+font /Boot/grub4dos/unifont-8.0.01.hex.gz
 #splashimage /Boot/grub4dos/splashimage.xpm || splashimage /Boot/grub4dos/splashimage.bmp
 default /default
 ## Menu AutoNumber
 write 0x8274 0x2001
 
 if exist /Boot/grub4dos/vi.lst set vi=1
-if %vi%==1 font /Boot/grub4dos/unifont-8.0.01.hex.gz && set av=Phần mềm Quét Virus && set disk=Tiện ích Ổ đĩa && set br=Sao lưu & phục hồi && set halt=Tắt máy && set reboot=Khởi động lại && set dos=Chương trình DOS && set phdnormal=Bắt đầu Paragon-RCD trong chế độ bình thường && set phdsafe=Bắt đầu Paragon-RCD trong chế độ an toàn && set mntldr=Tìm và boot Windows NT/2K/XP && set mbootmgr=load BOOTMGR của Windows Vista/7/8.1/10/2008 && set mcmldr=Tìm và load CMLDR, chế độ Recovery Console của Windows NT/2K/XP && set miosys=Chainload IO.SYS để boot MS-DOS/Windows 9x/Me && set mcmd=Vào chế độ dòng lệnh && set backlst=<-- Trở về menu chính && set cachedr=(lưu vào RAM) && set debugmode=chế độ VESA && set vesa=chế độ DEBUG && set installhd=Cài đặt vào ổ cứng HDD && set remixres=Chế độ trú - Tất cả dữ liệu và ứng dụng sẽ được lưu && set remixgue=Chế độ khách - Không có dữ liệu được lưu sau mỗi phiên && set extrfile=Extract file && set copyfile=Chép tập tin && set intodir=vào thư mục && set openfile=Mở tập tin && set winsetup=Cài Win && set wsetupd=Mở tập tin ISO của bộ cài đặt Windows. Chép thư mục 'sources' vào thư mục gốc của USB hoặc phân vùng mà bạn đang boot.
+if %vi%==1 set av=Phần mềm Quét Virus && set disk=Tiện ích Ổ đĩa && set br=Sao lưu & phục hồi && set halt=Tắt máy && set reboot=Khởi động lại && set dos=Chương trình DOS && set phdnormal=Bắt đầu Paragon-RCD trong chế độ bình thường && set phdsafe=Bắt đầu Paragon-RCD trong chế độ an toàn && set mntldr=Tìm và boot Windows NT/2K/XP && set mbootmgr=load BOOTMGR của Windows Vista/7/8.1/10/2008 && set mcmldr=Tìm và load CMLDR, chế độ Recovery Console của Windows NT/2K/XP && set miosys=Chainload IO.SYS để boot MS-DOS/Windows 9x/Me && set mcmd=Vào chế độ dòng lệnh && set backlst=<-- Trở về menu chính && set cachedr=(lưu vào RAM) && set debugmode=chế độ VESA && set vesa=chế độ DEBUG && set installhd=Cài đặt vào ổ cứng HDD && set remixres=Chế độ trú - Tất cả dữ liệu và ứng dụng sẽ được lưu && set remixgue=Chế độ khách - Không có dữ liệu được lưu sau mỗi phiên && set extrfile=Extract file && set copyfile=Chép tập tin && set intodir=vào thư mục && set openfile=Mở tập tin && set winsetup=Cài Win && set wsetupd=Mở tập tin ISO của bộ cài đặt Windows. Chép thư mục 'sources' vào thư mục gốc của USB hoặc phân vùng mà bạn đang boot.
 if not %vi%==1 set av=Antivirus && set disk=Disk Utilities && set br=Backup & Recovery && set halt=Poweroff && set reboot=Reboot && set dos=DOS Programs && set phdnormal=Start Paragon-RCD in normal mode && set phdsafe=Start Paragon-RCD in safe mode && set mntldr=find and load NTLDR of Windows NT/2K/XP && set mbootmgr=load BOOTMGR of Windows Vista/7/8.1/10/2008 && set mcmldr=find and load CMLDR, the Recovery Console of Windows NT/2K/XP && set miosys=Chainload IO.SYS for booting MS-DOS/Windows 9x/Me && set mcmd=commandline && set backlst=<-- Back to main menu && set cachedr=(cached to RAM) && set vesa=VESA mode && set debugmode=DEBUG mode && set installhd=Install to Hard Disk && set remixres=Resident mode - All your data and apps are saved && set remixgue=Guest mode - No data will be saved after each session && set extrfile=Extract file && set copyfile=Copy file && set intodir=into the folder && set openfile=Open file && set winsetup=Windows Setup && set wsetupd=Open the ISO file of Windows Installer. Copy the folder 'sources' in the root directory of your USB or partition you are booting.
 
 title Boot WinPE
-chainloader /Boot/bootmgr
+	chainloader /Boot/bootmgr
 
 iftitle [if exist /Files/MiniXP.iso] Windows XP Mini
-find --set-root --ignore-floppies --ignore-cd /Files/MiniXP.iso
-map /Files/MiniXP.iso (0xff) || map --mem /Files/MiniXP.iso (0xff)
-map --hook 
-chainloader (0xff)
+	find --set-root --ignore-floppies --ignore-cd /Files/MiniXP.iso
+	map /Files/MiniXP.iso (0xff) || map --mem /Files/MiniXP.iso (0xff)
+	map --hook 
+	chainloader (0xff)
 
 title %dos%
-find --set-root --ignore-floppies /Boot/grub4dos/dos.lst
-configfile /Boot/grub4dos/dos.lst
+	find --set-root --ignore-floppies /Boot/grub4dos/dos.lst
+	configfile /Boot/grub4dos/dos.lst
 
 title %br%
-find --set-root --ignore-floppies /Boot/grub4dos/backuprecovery.lst
-configfile /Boot/grub4dos/backuprecovery.lst
+	find --set-root --ignore-floppies /Boot/grub4dos/backuprecovery.lst
+	configfile /Boot/grub4dos/backuprecovery.lst
 
 title %disk%
-find --set-root --ignore-floppies /Boot/grub4dos/diskutilities.lst
-configfile /Boot/grub4dos/diskutilities.lst
+	find --set-root --ignore-floppies /Boot/grub4dos/diskutilities.lst
+	configfile /Boot/grub4dos/diskutilities.lst
 
 title %av%
-find --set-root --ignore-floppies /Boot/grub4dos/antivirus.lst
-configfile /Boot/grub4dos/antivirus.lst
+	find --set-root --ignore-floppies /Boot/grub4dos/antivirus.lst
+	configfile /Boot/grub4dos/antivirus.lst
 
 title Boot ISO Linux
-find --set-root --ignore-floppies /Boot/grub4dos/linux.lst
-configfile /Boot/grub4dos/linux.lst
+	find --set-root --ignore-floppies /Boot/grub4dos/linux.lst
+	configfile /Boot/grub4dos/linux.lst
 
 title Android
-find --set-root --ignore-floppies /Boot/grub4dos/android.lst
-configfile /Boot/grub4dos/android.lst
+	find --set-root --ignore-floppies /Boot/grub4dos/android.lst
+	configfile /Boot/grub4dos/android.lst
 
 title %winsetup%\n%wsetupd%
-chainloader /Boot/wsbootmgr
+	chainloader /Boot/wsbootmgr
 
 title Microsoft Diagnostics and Recovery Toolset (DaRT)
-chainloader /Boot/dartbootmgr
+	chainloader /Boot/dartbootmgr
 
 title Load Grub2
-chainloader (hd0)+1
+	chainloader /Boot/grub/g2ldr
 
 title Load Syslinux
-chainloader +1
+	chainloader +1
 
 title %reboot%
-reboot
+	reboot
 
 title %halt%
-halt
+	halt
 
 title %mntldr%
-fallback +1
-find --set-root --ignore-floppies --ignore-cd /ntldr
-map () (hd0)
-map (hd0) ()
-map --rehook
-find --set-root --ignore-floppies --ignore-cd /ntldr
-chainloader /ntldr
-savedefault --wait=2
+	fallback +1
+	find --set-root --ignore-floppies --ignore-cd /ntldr
+	map () (hd0)
+	map (hd0) ()
+	map --rehook
+	find --set-root --ignore-floppies --ignore-cd /ntldr
+	chainloader /ntldr
+	savedefault --wait=2
 
 #iftitle only show when command in [] returns true
 # set a variable named bootmgr where /bootmgr is found.
 iftitle [find --set-root --devices=h /bootmgr && call set bootmgr=%@root^%] %mbootmgr%
-fallback +1
-chainloader %bootmgr%/bootmgr
-savedefault --wait=2
+	fallback +1
+	chainloader %bootmgr%/bootmgr
+	savedefault --wait=2
 
 title %mcmldr%
-fallback +1
-find --set-root --ignore-floppies --ignore-cd /cmldr
-map () (hd0)
-map (hd0) ()
-map --rehook
-find --set-root --ignore-floppies --ignore-cd /cmldr
-chainloader /cmldr
+	fallback +1
+	find --set-root --ignore-floppies --ignore-cd /cmldr
+	map () (hd0)
+	map (hd0) ()
+	map --rehook
+	find --set-root --ignore-floppies --ignore-cd /cmldr
+	chainloader /cmldr
 #####################################################################
 # write string "cmdcons" to memory 0000:7C03 in 2 steps:
 #####################################################################
@@ -114,10 +115,10 @@ calc *0x7c03=0x00736E6F63646D63
 savedefault --wait=2
 
 title %miosys%
-fallback +1
-find --set-root --ignore-floppies --ignore-cd /io.sys
-chainloader /io.sys
-savedefault --wait=2
+	fallback +1
+	find --set-root --ignore-floppies --ignore-cd /io.sys
+	chainloader /io.sys
+	savedefault --wait=2
 #
 # Or in this way:
 #
@@ -128,7 +129,7 @@ savedefault --wait=2
 # See "Delimitors or comments between titles" in grub4dos_readme.txt.
 
 title %mcmd%
-commandline
+	commandline
 
 # In the end, font lines for unicode chars in unifont.hex format.
 # It should include all unicode chars used in the above menu code.

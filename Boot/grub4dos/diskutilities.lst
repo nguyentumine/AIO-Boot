@@ -92,7 +92,7 @@ title %backlst%
 	configfile /Boot/grub4dos/menu.lst
 
 title Load Grub2
-	chainloader (hd0)+1
+	chainloader /Boot/grub/g2ldr
 
 title Load Syslinux
 	chainloader +1
