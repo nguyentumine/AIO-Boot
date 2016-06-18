@@ -18,9 +18,9 @@ default /default
 ## Menu AutoNumber
 write 0x8274 0x2001
 
-title Acronis True Image 2016\n%copyfile% 'ati16.iso' %intodir% '/Files/Acronis/'
-	find --set-root --ignore-floppies /Files/Acronis/ati16.iso
-	map /Files/Acronis/ati16.iso (0xff) || map --mem /Files/Acronis/ati16.iso (0xff)
+title Acronis True Image 2016\n%copyfile% 'AcronisTrueImage2016.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/AcronisTrueImage2016.iso
+	map /Files/Acronis/AcronisTrueImage2016.iso (0xff) || map --mem /Files/Acronis/AcronisTrueImage2016.iso (0xff)
 	map --hook
 	chainloader (0xff)
 
@@ -30,9 +30,9 @@ title Symantec Ghost\n%copyfile% 'Ghost.iso' %intodir% '/Files/DOS/'
 	map --hook
 	chainloader (0xff)
 
-title Acronis Backup Advanced Universal\n%copyfile% 'abr64.iso' %intodir% '/Files/Acronis/'
-	find --set-root --ignore-floppies /Files/Acronis/abr64.iso
-	map /Files/Acronis/abr64.iso (0xff) || map --mem /Files/Acronis/abr64.iso (0xff)
+title Acronis Backup Advanced Universal 11.7\n%copyfile% 'AcronisBackupAdvancedUniversal.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/AcronisBackupAdvancedUniversal.iso
+	map /Files/Acronis/AcronisBackupAdvancedUniversal.iso (0xff) || map --mem /Files/Acronis/AcronisBackupAdvancedUniversal.iso (0xff)
 	map --hook
 	chainloader (0xff)
 
@@ -61,21 +61,9 @@ title R-Drive Image\n%copyfile% 'R-DriveImage.iso' %intodir% '/Files/BackupRecov
 	map --hook
 	chainloader (0xff)
 
-title Acronis Snap Deploy 5 Standalone Utility\n%copyfile% 'asd5s.iso' %intodir% '/Files/Acronis/'
-	find --set-root --ignore-floppies /Files/Acronis/asd5s.iso
-	map /Files/Acronis/asd5s.iso (0xff) || map --mem /Files/Acronis/ASD5_en-US.iso (0xff)
-	map --hook
-	chainloader (0xff)
-
-title Acronis Snap Deploy 5 Master Image Creator\n%copyfile% 'asd5m.iso' %intodir% '/Files/Acronis/'
-	find --set-root --ignore-floppies /Files/Acronis/asd5m.iso
-	map /Files/Acronis/asd5m.iso (0xff) || map --mem /Files/Acronis/asd5m.iso (0xff)
-	map --hook
-	chainloader (0xff)
-
-title Acronis Snap Deploy 5 Agent\n%copyfile% 'asd5a.iso' %intodir% '/Files/Acronis/'
-	find --set-root --ignore-floppies /Files/Acronis/asd5a.iso
-	map /Files/Acronis/asd5a.iso (0xff) || map --mem /Files/Acronis/asd5a.iso (0xff)
+title Acronis Snap Deploy 5\n%copyfile% 'ASD5_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/ASD5_en-US.iso
+	map /Files/Acronis/ASD5_en-US.iso (0xff) || map --mem /Files/Acronis/ASD5_en-US.iso (0xff)
 	map --hook
 	chainloader (0xff)
 
@@ -93,39 +81,39 @@ title Redo Backup and Recovery\n%copyfile% 'redobackup.iso' %intodir% '/Files/Ba
 	kernel	(0xff)/casper/vmlinuz boot=casper iso-scan/filename=/Files/BackupRecovery/redobackup.iso noprompt noeject
 	initrd	(0xff)/casper/initrd.lz
 
-title Acronis True Image 2015\n%copyfile% 'ati15.iso' %intodir% '/Files/Acronis/'
-	find --set-root --ignore-floppies /Files/Acronis/ati15.iso
-	map /Files/Acronis/ati15.iso (0xff) || map --mem /Files/Acronis/ati15.iso (0xff)
+title Acronis True Image 2015\n%copyfile% 'AcronisTrueImage2015_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/AcronisTrueImage2015_en-US.iso
+	map /Files/Acronis/AcronisTrueImage2015_en-US.iso (0xff) || map --mem /Files/Acronis/AcronisTrueImage2015_en-US.iso (0xff)
 	map --hook
 	chainloader (0xff)
 
-title Acronis True Image 2014\n%copyfile% 'ati14.iso' %intodir% '/Files/Acronis/'
-	find --set-root --ignore-floppies /Files/Acronis/ati14.iso
-	map /Files/Acronis/ati14.iso (0xff) || map --mem /Files/Acronis/ati14.iso (0xff)
+title Acronis True Image 2014\n%copyfile% 'ATIH2014P_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/ATIH2014P_en-US.iso
+	map /Files/Acronis/ATIH2014P_en-US.iso (0xff) || map --mem /Files/Acronis/ATIH2014P_en-US.iso (0xff)
 	map --hook
 	chainloader (0xff)
 
-title Acronis True Image 2013\n%copyfile% 'ati13.iso' %intodir% '/Files/Acronis/'
-	find --set-root --ignore-floppies /Files/Acronis/ati13.iso
-	map /Files/Acronis/ati13.iso (0xff) || map --mem /Files/Acronis/ati13.iso (0xff)
+title Acronis True Image 2013\n%copyfile% 'ATIH2013PP_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/ATIH2013PP_en-US.iso
+	map /Files/Acronis/ATIH2013PP_en-US.iso (0xff) || map --mem /Files/Acronis/ATIH2013PP_en-US.iso (0xff)
 	map --hook
 	chainloader (0xff)
 
-title Acronis True Image 2012\n%copyfile% 'ati12.iso' %intodir% '/Files/Acronis/'
-	find --set-root --ignore-floppies /Files/Acronis/ati12.iso
-	map /Files/Acronis/ati12.iso (0xff) || map --mem /Files/Acronis/ati12.iso (0xff)
+title Acronis True Image 2012\n%copyfile% 'ATIH2012PP_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/ATIH2012PP_en-US.iso
+	map /Files/Acronis/ATIH2012PP_en-US.iso (0xff) || map --mem /Files/Acronis/ATIH2012PP_en-US.iso (0xff)
 	map --hook
 	chainloader (0xff)
 
-title Acronis True Image 2011\n%copyfile% 'ati11.iso' %intodir% '/Files/Acronis/'
-	find --set-root --ignore-floppies /Files/Acronis/ati11.iso
-	map /Files/Acronis/ati11.iso (0xff) || map --mem /Files/Acronis/ati11.iso (0xff)
+title Acronis True Image 2011\n%copyfile% 'ATIH2011PP_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/ATIH2011PP_en-US.iso
+	map /Files/Acronis/ATIH2011PP_en-US.iso (0xff) || map --mem /Files/Acronis/ATIH2011PP_en-US.iso (0xff)
 	map --hook
 	chainloader (0xff)
 
-title Acronis Snap Deploy 4\n%copyfile% 'asd4.iso' %intodir% '/Files/Acronis/'
-	find --set-root --ignore-floppies /Files/Acronis/asd4.iso
-	map /Files/Acronis/asd4.iso (0xff) || map --mem /Files/Acronis/asd4.iso (0xff)
+title Acronis Snap Deploy 4\n%copyfile% 'ASD4_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/ASD4_en-US.iso
+	map /Files/Acronis/ASD4_en-US.iso (0xff) || map --mem /Files/Acronis/ASD4_en-US.iso (0xff)
 	map --hook
 	chainloader (0xff)
 

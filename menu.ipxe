@@ -125,7 +125,7 @@ boot || goto failed
 goto start
 
 :acronisdd
-initrd ${boot-url}/Files/Acronis/add12.iso
+initrd ${boot-url}/Files/Acronis/ADD12_en-US.iso
 kernel ${boot-url}/Boot/memdisk iso || goto failed
 boot || goto failed
 goto start
@@ -169,18 +169,16 @@ goto start
 :backuprecovery
 menu Backup & Recovery
 item	acronis2016		Acronis True Image 2016
-item	acronisba		Acronis Backup Advanced Universal
+item	acronisba		Acronis Backup Advanced Universal 11.7
 item	MacriumReflect	Macrium Reflect 6.1
 item	EaseUStodo		EaseUS Todo Backup Advanced Server 9.1
 item	AOMEIbt			AOMEI Backupper TechPlus 3.2
 item	R-DriveImage	R-Drive Image
 item	mpdr			MiniTool Power Data Recovery 7
 item	redobackup		Redo Backup and Recovery
-item	asd5s			Acronis Snap Deploy 5 Standalone Utility
-item	asd5m			Acronis Snap Deploy 5 Master Image Creator
-item	asd5a			Acronis Snap Deploy 5 Agent
+item	asd5			Acronis Snap Deploy 5
 item	clonezilla		Clonezilla
-item	acronissd4		Acronis Snap Deploy 4
+item	asd4			Acronis Snap Deploy 4
 item	acronis2015		Acronis True Image 2015
 item	acronis2014		Acronis True Image 2014
 item	acronis2013		Acronis True Image 2013
@@ -222,31 +220,19 @@ boot || goto failed
 goto start
 
 :acronis2016
-initrd ${boot-url}/Files/Acronis/ati16.iso
+initrd ${boot-url}/Files/Acronis/AcronisTrueImage2016.iso
 kernel ${boot-url}/Boot/memdisk iso raw || goto failed
 boot || goto failed
 goto start
 
 :acronisba
-initrd ${boot-url}/Files/Acronis/abr64.iso
+initrd ${boot-url}/Files/Acronis/AcronisBackupAdvancedUniversal.iso
 kernel ${boot-url}/Boot/memdisk iso raw || goto failed
 boot || goto failed
 goto start
 
-:asd5s
-initrd ${boot-url}/Files/Acronis/asd5s.iso
-kernel ${boot-url}/Boot/memdisk iso raw || goto failed
-boot || goto failed
-goto start
-
-:asd5m
-initrd ${boot-url}/Files/Acronis/asd5s.iso
-kernel ${boot-url}/Boot/memdisk iso raw || goto failed
-boot || goto failed
-goto start
-
-:asd5a
-initrd ${boot-url}/Files/Acronis/asd5s.iso
+:asd5
+initrd ${boot-url}/Files/Acronis/ASD5_en-US.iso
 kernel ${boot-url}/Boot/memdisk iso raw || goto failed
 boot || goto failed
 goto start
@@ -258,19 +244,19 @@ boot || goto failed
 goto start
 
 :acronis2015
-initrd ${boot-url}/Files/Acronis/ati15.iso
+initrd ${boot-url}/Files/Acronis/AcronisTrueImage2015_en-US.iso
 kernel ${boot-url}/Boot/memdisk iso raw || goto failed
 boot || goto failed
 goto start
 
 :acronis2014
-initrd ${boot-url}/Files/Acronis/ati14.iso
+initrd ${boot-url}/Files/Acronis/ATIH2014P_en-US.iso
 kernel ${boot-url}/Boot/memdisk iso raw || goto failed
 boot || goto failed
 goto start
 
 :acronis2013
-initrd ${boot-url}/Files/Acronis/ati13.iso
+initrd ${boot-url}/Files/Acronis/ATIH2013PP_en-US.iso
 kernel ${boot-url}/Boot/memdisk iso raw || goto failed
 boot || goto failed
 goto start
