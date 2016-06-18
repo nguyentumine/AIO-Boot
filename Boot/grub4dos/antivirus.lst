@@ -46,24 +46,24 @@ title COMODO Resuce Disk\n%copyfile% 'comodo.iso' %intodir% '/Files/Antivirus/'
 	chainloader (0xff)
 
 title %backlst%
-	fallback +1
-	find --set-root --ignore-floppies --ignore-cd /Boot/grub4dos/menu.lst
-	configfile /Boot/grub4dos/menu.lst
+fallback +1
+find --set-root --ignore-floppies --ignore-cd /Boot/grub4dos/menu.lst
+configfile /Boot/grub4dos/menu.lst
 
 title Load Grub2
-	chainloader /Boot/grub/g2ldr
+chainloader (hd0)+1
 
 title Load Syslinux
-	chainloader +1
+chainloader +1
 
 title %reboot%
-	reboot
+reboot
 
 title %halt%
-	halt
+halt
 
 title %mcmd%
-	commandline
+commandline
 
 # In the end, font lines for unicode chars in unifont.hex format.
 # It should include all unicode chars used in the above menu code.
