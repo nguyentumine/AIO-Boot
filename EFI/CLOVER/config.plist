@@ -338,6 +338,8 @@
 	</array>
 	<key>GUI</key>
 	<dict>
+		<key>Theme</key>
+		<string>BGM</string>
 		<key>#Custom</key>
 		<dict>
 			<key>Entries</key>

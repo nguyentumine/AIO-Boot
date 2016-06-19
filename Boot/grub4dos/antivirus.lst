@@ -53,7 +53,10 @@ title %backlst%
 title Load Grub2
 	chainloader /Boot/grub/g2ldr
 
-title Load Syslinux
+iftitle [ls /Boot/syslinux/syslinux.bin] Load Syslinux
+	chainloader /Boot/syslinux/syslinux.bin
+
+iftitle [ls /Boot/syslinux/notbin.txt] Load Syslinux
 	chainloader +1
 
 title %reboot%

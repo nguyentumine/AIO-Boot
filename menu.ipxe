@@ -68,6 +68,7 @@ goto start
 ################################ antivirus
 :antivirus
 menu Antivirus
+item	kaspersky		Kaspersky Rescue Disk 10
 item	bitdefender		Bitdefender Rescue CD
 item	avg				AVG Rescue CD
 item	avira			Avira Rescue System
@@ -77,6 +78,12 @@ iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-reco
 choose selected && goto ${selected} || goto start
 :menu-recovery-timed
 choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+:kaspersky
+initrd ${boot-url}/rescue/rescue.igz || goto failed
+kernel ${boot-url}/rescue/rescue vga=791 root=live kav_lang=en udev liveimg splash quiet doscsi nomodeset || goto failed
+boot || goto failed
+goto start
 
 :bitdefender
 initrd ${boot-url}/Files/Antivirus/bitdefender/boot/initfs.i386-pc || goto failed
