@@ -19,6 +19,7 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 - Boot via LAN with Tiny PXE Server.
 - Automatically identifying and boot into the operating system installed on HDD: FreeBSD, Mac OS X/Darwin, Windows 7/8.1/10/Vista, Windows NT/2000/XP, Windows 98/ME, MS-DOS, FreeDOS, Linux distributions, Android-x86 and Remix OS 32bit/64bit... You will not need to worry about problems boot error, error loss boot ...
 - One or more partitions, AIO Boot also supports hidden partition.
+- Support hotkeys for Grub2. At the main menu, if you want to boot into a certain menu, simply press their hot key. For example, to restart your computer, you simply press the "r" or "o" to shutdown.
 - Supports multiple languages, including Vietnamese, English, Russian and French...
 
 #### Some issues to be resolved:
@@ -39,7 +40,7 @@ Support most of WinPE, the above software and Linux distributions such as Ubuntu
 
 AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as NFS Server. Runn RunPXE.exe to activate PXE Server and NFS Server.
 # Download
-AIO boot Boot is a lightweight, less than 23 Mb.
+AIO boot Boot is a lightweight, less than 25 Mb.
 
 **File name:** AIOBoot-0.1.4.0.7z<br />
 **Size:** 24,4 MB<br />
