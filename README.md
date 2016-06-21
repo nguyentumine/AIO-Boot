@@ -31,6 +31,7 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 AIO Boot has many features but it's very simple and compact. The creation of the AIO Boot is even simpler with just a few clicks.
 - Unzip AIO Boot into the root directory of any USB or HDD partition that you want to create a boot.
 - Running *MakeBoot.exe*, then you can install *Grub2*, *Syslinux* and *Clover*.
+
 After you've created a bootable USB or HDD is complete, you can boot USB on VirtualBox virtual machines for testing.
 
 # Boot via LAN
