@@ -30,7 +30,7 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 # How to create a bootable USB
 AIO Boot has many features but it's very simple and compact. The creation of the AIO Boot is even simpler with just a few clicks.
 - Unzip AIO Boot into the root directory of any USB or HDD partition that you want to create a boot.
-- Running MakeBoot.exe and answer options to create.
+- Running *MakeBoot.exe*, then you can install *Grub2*, *Syslinux* and *Clover*.
 After you've created a bootable USB or HDD is complete, you can boot USB on VirtualBox virtual machines for testing.
 
 # Boot via LAN
@@ -42,10 +42,10 @@ AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as 
 # Download
 AIO boot Boot is a lightweight, less than 25 Mb.
 
-**File name:** AIOBoot-0.1.4.1.7z<br />
+**File name:** AIOBoot-0.2.0.0.7z<br />
 **Size:** 24,4 MB<br />
-**Version:** 0.1.4.1<br />
-**Last updated:** 20.06.2016<br />
+**Version:** 0.2.0.0<br />
+**Last updated:** 21.06.2016<br />
 
 **Download:** [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf) | [4shared](http://www.sitecuatui.com/out/aioboot4shared) [direct link]
 
