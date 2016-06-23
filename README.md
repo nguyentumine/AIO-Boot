@@ -10,8 +10,8 @@ My English is not good, I used Google to translate. Please sympathize with me.
 # Features
 AIO Boot was released with a lot of great features that other tools do not yet support.
 #### The bootloader is supported:
-- For Legacy-MBR: Grub2, grub4dos and syslinux.<br />
-- For UEFI-GPT: Grub2, Clover, refind.
+- For Legacy-MBR: Grub2, Grub4dos, Syslinux and Clover.<br />
+- For UEFI-GPT: Grub2, Clover and Refind.
 
 #### Some features are supported:
 - UEFI-GPT and MBR-Legacy.
@@ -29,8 +29,8 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 
 # How to create a bootable USB
 AIO Boot has many features but it's very simple and compact. The creation of the AIO Boot is even simpler with just a few clicks.
-- Unzip AIO Boot into the root directory of any USB or HDD partition that you want to create a boot.
-- Running *MakeBoot.exe*, then you can install *Grub2*, *Syslinux* and *Clover*.
+- Unzip AIOBoot into the root directory of any USB or HDD partition that you want to create a boot.
+- Running **AIOBoot.exe** then you can install *Grub2*, *Syslinux* and *Clover*.
 
 After you've created a bootable USB or HDD is complete, you can boot USB on VirtualBox virtual machines for testing.
 
@@ -39,7 +39,7 @@ Boot via LAN particularly useful for rescue work, ghost and install Win for net 
 
 Support most of WinPE, the above software and Linux distributions such as Ubuntu, CentOS and Linux Mint. Because time is limited, so I will try to support this tool much more.
 
-AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as NFS Server. Runn RunPXE.exe to activate PXE Server and NFS Server.
+AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as NFS Server. Run **AIOBoot.exe**, then click **Run PXE** to activate PXE Server and NFS Server.
 # Download
 AIO boot Boot is a lightweight, less than 19 Mb.
 
