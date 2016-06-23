@@ -41,12 +41,12 @@ Support most of WinPE, the above software and Linux distributions such as Ubuntu
 
 AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as NFS Server. Runn RunPXE.exe to activate PXE Server and NFS Server.
 # Download
-AIO boot Boot is a lightweight, less than 25 Mb.
+AIO boot Boot is a lightweight, less than 19 Mb.
 
-**File name:** AIOBoot-0.2.0.1.7z<br />
-**Size:** 24,4 MB<br />
-**Version:** 0.2.0.1<br />
-**Last updated:** 22.06.2016<br />
+**File name:** AIOBoot-0.2.1.0.7z<br />
+**Size:** 18,5 MB<br />
+**Version:** 0.2.1.0<br />
+**Last updated:** 23.06.2016<br />
 
 **Download:** [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf) | [4shared](http://www.sitecuatui.com/out/aioboot4shared) [direct link]
 
