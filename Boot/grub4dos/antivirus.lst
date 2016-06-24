@@ -7,10 +7,12 @@
 # appended to the file. The font lines should be in the unifont.hex format.
 
 title Kaspersky Rescue 10\n1. %copyfile% 'rescue.iso' %intodir% '/rescue/'\n2. %openfile% 'rescue.iso' & %copyfile% '/boot/rescue,/boot/rescue.igz' %intodir% '/rescue/'
-	kernel	/rescue/rescue root=live:CDLABEL=KRD10 rootfstype=auto vga=791 init=/init initrd=rescue.igz kav_lang=en udev liveimg splash quiet doscsi nomodeset
+	find --set-root --ignore-floppies /rescue/rescue.igz
+	kernel	/rescue/rescue root=live:CDLABEL=KRD10 rootfstype=auto vga=791 init=/init kav_lang=en udev liveimg splash quiet doscsi nomodeset
 	initrd	/rescue/rescue.igz
 
 title Bitdefender Rescue CD\n%copyfile% 'bitdefender.iso' %intodir% '/Files/Antivirus/'
+	find --set-root --ignore-floppies /Files/Antivirus/bitdefender.iso
 	#enable parttype output
 	debug 1
 	# make empty table entry in 4th position in ptn table
