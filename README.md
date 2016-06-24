@@ -21,6 +21,8 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 - One or more partitions, AIO Boot also supports hidden partition.
 - Support hotkeys for Grub2. At the main menu, if you want to boot into a certain menu, simply press their hot key. For example, to restart your computer, you simply press the "r" or "o" to shutdown.
 - Supports multiple languages, including Vietnamese, English, Russian and French...
+- Support YUMI for Syslinux. You need to reinstall Grub2 and Syslinux after each use YUMI.
+- Most of Syslinux menus will be supported in UEFI mode from Grub2.
 
 #### Some issues to be resolved:
 - Partition in FAT32 format can not save files larger than 4GB in size. If you want to save the file size is greater than 4GB, please format your USB or HDD to NTFS format.
@@ -43,10 +45,10 @@ AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as 
 # Download
 AIO boot Boot is a lightweight, less than 19 Mb.
 
-**File name:** AIOBoot-0.2.1.0.7z<br />
+**File name:** AIOBoot-0.2.1.2.7z<br />
 **Size:** 18,5 MB<br />
-**Version:** 0.2.1.0<br />
-**Last updated:** 23.06.2016<br />
+**Version:** 0.2.1.2<br />
+**Last updated:** 24.06.2016<br />
 
 **Download:** [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf) | [4shared](http://www.sitecuatui.com/out/aioboot4shared) [direct link]
 
