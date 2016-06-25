@@ -92,9 +92,9 @@ title Debian Live 8 [64-bit]\n%copyfile% 'debian-live-8-amd64.iso' %intodir% '/F
 	kernel	(0xff)/live/vmlinuz boot=live findiso=/Files/Linux/debian-live-8-amd64.iso components quiet splash
 	initrd	(0xff)/live/initrd.img
 
-title Fedora 23 Live Workstation [64-bit]\n%copyfile% 'Fedora-Live-Workstation-x86_64-23-10.iso' %intodir% '/Files/Linux/'
-	find --set-root --ignore-floppies /Files/Linux/Fedora-Live-Workstation-x86_64-23-10.iso
-	map /Files/Linux/Fedora-Live-Workstation-x86_64-23-10.iso (0xff) || map --mem /Files/Linux/Fedora-Live-Workstation-x86_64-23-10.iso (0xff)
+title Fedora 23 Live Workstation [64-bit]\n%copyfile% 'Fedora-Live-Workstation.iso' %intodir% '/Files/Linux/'
+	find --set-root --ignore-floppies /Files/Linux/Fedora-Live-Workstation.iso
+	map /Files/Linux/Fedora-Live-Workstation.iso (0xff) || map --mem /Files/Linux/Fedora-Live-Workstation.iso (0xff)
 	map --hook
 	kernel	(0xff)/isolinux/vmlinuz0 root=live:CDLABEL=Fedora-Live-WS-x86_64-23-10 rootfstype=auto ro rd.live.image quiet rhgb rd.luks=0 rd.md=0 rd.dm=0 iso-scan/filename=/Files/Linux/Fedora-Live-Workstation-x86_64-23-10.iso
 	initrd	(0xff)/isolinux/initrd0.img
@@ -105,6 +105,15 @@ title elementary OS [64-bit]\n%copyfile% 'elementaryos-amd64.iso' %intodir% '/Fi
 	map --hook
 	kernel	(0xff)/casper/vmlinuz boot=casper iso-scan/filename=/Files/Linux/elementaryos-amd64.iso quiet splash --
 	initrd	(0xff)/casper/initrd.lz
+	
+title Manjaro Linux [64-bit]\n%copyfile% 'manjaro-x86_64.iso' %intodir% '/Files/Linux/'
+	find --set-root --ignore-floppies /Files/Linux/manjaro-x86_64.iso
+	map /Files/Linux/manjaro-x86_64.iso (0xff) || map --mem /Files/Linux/manjaro-x86_64.iso (0xff)
+	map --hook
+	uuid () > nul
+	set UUID=%?%
+	kernel	(0xff)/manjaro/boot/x86_64/manjaro img_dev=/dev/disk/by-uuid/%UUID% img_loop=/Files/Linux/manjaro-x86_64.iso misobasedir=manjaro misolabel=MJRO1606 nouveau.modeset=1 i915.modeset=1 radeon.modeset=1 logo.nologo overlay=free quiet splash showopts
+	initrd	(0xff)/manjaro/boot/intel_ucode.img (0xff)/manjaro/boot/x86_64/manjaro.img
 	
 title DEFT-Zero Linux Live (GUI mode)\n%copyfile% 'deft.iso' %intodir% '/Files/Linux/'
 	find --set-root --ignore-floppies /Files/Linux/deft.iso
@@ -272,6 +281,15 @@ title BackBox Linux [32-bit]\n%copyfile% 'backbox-i386.iso' %intodir% '/Files/Li
 	map --hook
 	kernel	(0xff)/casper/vmlinuz file=/cdrom/preseed/backbox.seed boot=casper iso-scan/filename=/Files/Linux/backbox-i386.iso quiet splash --
 	initrd	(0xff)/casper/initrd.gz
+	
+title Manjaro Linux [32-bit]\n%copyfile% 'manjaro-i686.iso' %intodir% '/Files/Linux/'
+	find --set-root --ignore-floppies /Files/Linux/manjaro-i686.iso
+	map /Files/Linux/manjaro-i686.iso (0xff) || map --mem /Files/Linux/manjaro-i686.iso (0xff)
+	map --hook
+	uuid () > nul
+	set UUID=%?%
+	kernel	(0xff)/manjaro/boot/i686/manjaro img_dev=/dev/disk/by-uuid/%UUID% img_loop=/Files/Linux/manjaro-i686.iso misobasedir=manjaro misolabel=MJRO1606 nouveau.modeset=1 i915.modeset=1 radeon.modeset=1 logo.nologo overlay=free quiet splash showopts
+	initrd	(0xff)/manjaro/boot/intel_ucode.img (0xff)/manjaro/boot/i686/manjaro.img
 
 title %backlst%
 	fallback +1

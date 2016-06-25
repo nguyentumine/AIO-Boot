@@ -583,6 +583,7 @@ item	backbox64			BackBox Linux	[64-bit]
 item	lubuntu64			Lubuntu Live	[64-bit]
 item	debian64			Debian Live		[64-bit]
 item	elementaryos64		elementary OS 	[64-bit]
+item	manjaro64			Manjaro Linux	[64-bit]
 item	ubuntu32			Ubuntu Live		[32-bit]
 item	linuxmint32			Linux Mint		[32-bit]
 item	backbox32			BackBox Linux	[32-bit]
@@ -590,6 +591,7 @@ item	lubuntu32			Lubuntu Live	[32-bit]
 item	debian32			Debian Live		[32-bit]
 item	deft				DEFT-Zero Linux Live (GUI mode)
 item	elementaryos32		elementary OS 	[32-bit]
+item	manjaro32			Manjaro Linux	[32-bit]
 item	back				Back to top menu...
 iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
 choose selected && goto ${selected} || goto start
@@ -672,6 +674,20 @@ goto start
 kernel	${boot-url}/Files/Linux/archlinux/arch/boot/x86_64/vmlinuz initrd=intel_ucode.img initrd=archiso.img archisobasedir=arch archiso_nfs_srv=${nfs-server}:/Linux/archlinux/ ip=:::::eth0:dhcp
 initrd	${boot-url}/Files/Linux/archlinux/arch/boot/intel_ucode.img
 initrd	${boot-url}/Files/Linux/archlinux/arch/boot/x86_64/archiso.img
+boot || goto failed
+goto start
+
+:manjaro64
+kernel	${boot-url}/Files/Linux/manjaro-x86_64/manjaro/boot/x86_64/manjaro initrd=intel_ucode.img initrd=manjaro.img misobasedir=manjaro miso_nfs_srv=${nfs-server}:/Linux/manjaro-x86_64/ ip=:::::eth0:dhcp
+initrd	${boot-url}/Files/Linux/manjaro-x86_64/manjaro/boot/intel_ucode.img
+initrd	${boot-url}/Files/Linux/manjaro-x86_64/manjaro/boot/x86_64/manjaro.img
+boot || goto failed
+goto start
+
+:manjaro32
+kernel	${boot-url}/Files/Linux/manjaro-i686/manjaro/boot/i686/manjaro initrd=intel_ucode.img initrd=manjaro.img misobasedir=manjaro miso_nfs_srv=${nfs-server}:/Linux/manjaro-i686/ ip=:::::eth0:dhcp
+initrd	${boot-url}/Files/Linux/manjaro-i686/manjaro/boot/intel_ucode.img
+initrd	${boot-url}/Files/Linux/manjaro-i686/manjaro/boot/i686/manjaro.img
 boot || goto failed
 goto start
 
