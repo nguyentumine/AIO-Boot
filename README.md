@@ -45,12 +45,12 @@ AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as 
 # Download
 AIO boot Boot is a lightweight, less than 19 Mb.
 
-**File name:** AIOBoot-0.2.1.3.7z<br />
+**File name:** AIOBoot-0.2.1.4.7z<br />
 **Size:** 18,5 MB<br />
-**Version:** 0.2.1.3<br />
+**Version:** 0.2.1.4<br />
 **Last updated:** 25.06.2016<br />
 
-**Download:** [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf) | [4shared](http://www.sitecuatui.com/out/aioboot4shared) [direct link]
+**Download:** [Mirrorcreator] (http://www.sitecuatui.com/out/aiobootmr) | [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf)
 
 To download the software WinPE and list, [see here](http://www.sitecuatui.com/out/aiobootlink).
 
