@@ -46,7 +46,34 @@ title COMODO Resuce Disk\n%copyfile% 'comodo.iso' %intodir% '/Files/Antivirus/'
 	map /Files/Antivirus/comodo.iso (0xff) || map --mem /Files/Antivirus/comodo.iso (0xff)
 	map --hook
 	chainloader (0xff)
-
+	
+title ESET SysRescue Live\n%extrfile% 'eset-sysrescue.xxx.enu.iso' %intodir% '/Files/Antivirus/eset/'
+	find --set-root --ignore-floppies /Files/Antivirus/eset/casper/vmlinuz
+	kernel	/Files/Antivirus/eset/casper/vmlinuz boot=casper cdrom-detect/try-usb=true noprompt floppy.allowed_drive_mask=0 ignore_uuid live-media-path=/Files/Antivirus/eset/casper/ quiet splash --
+	initrd	/Files/Antivirus/eset/casper/initrd.lz
+	
+title Dr.Web LiveDisk\n%extrfile% 'drweb-livedisk-xx-cd.iso' %intodir% '/Files/Antivirus/drweb/'
+	find --set-root --ignore-floppies /Files/Antivirus/drweb/casper/vmlinuz
+	kernel	/Files/Antivirus/drweb/casper/vmlinuz boot=casper cdrom-detect/try-usb=true noprompt floppy.allowed_drive_mask=0 ignore_uuid live-media-path=/Files/Antivirus/drweb/casper/ quiet splash --
+	initrd	/Files/Antivirus/drweb/casper/initrd.lz
+	
+title Anvi Rescue Disk\n%copyfile% 'anvi.iso' %intodir% '/Files/Antivirus/'
+	find --set-root --ignore-floppies /Files/Antivirus/anvi.iso
+	map /Files/Antivirus/anvi.iso (0xff) || map --mem /Files/Antivirus/anvi.iso (0xff)
+	map --hook
+	kernel	(0xff)/CDlinux/bzImage quiet CDL_LANG=en_US.UTF-8 vga=788 CDL_DIR=/Files/Antivirus/ CDL_IMG=anvi.iso
+	initrd	(0xff)/CDlinux/initrd
+	
+title F-Secure Rescue CD\n%extrfile% 'rescue-cd-xxx.iso' %intodir% '/Files/Antivirus/f-secure/'
+	find --set-root --ignore-floppies /Files/Antivirus/f-secure/boot/isolinux/fsecure/linux
+	kernel	/Files/Antivirus/f-secure/boot/isolinux/fsecure/linux noprompt knoppix_dir=Files/Antivirus/f-secure/KNOPPIX ramdisk_size=100000 lang=en vt.default_utf8=0 apm=power-off quiet nomce loglevel=1 nolapic_timer nosound console=tty10 video=noblank
+	initrd	/Files/Antivirus/f-secure/boot/isolinux/fsecure/minirt.gz
+	
+title Panda Cloud Cleaner\n%extrfile% 'PandaCloudCleanerFull.iso' %intodir% '/Files/Antivirus/Panda/'
+	find --set-root --ignore-floppies /Files/Antivirus/Panda/live/vmlinuz
+	linux	/Files/Antivirus/Panda/live/vmlinuz boot=live live-media-path=/Files/Antivirus/Panda/live config locales=en_US.UTF-8 quiet
+	initrd	/Files/Antivirus/Panda/live/initrd.img
+	
 title %backlst%
 	fallback +1
 	find --set-root --ignore-floppies --ignore-cd /Boot/grub4dos/menu.lst

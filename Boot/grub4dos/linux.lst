@@ -32,11 +32,11 @@ title Parted Magic [64-bit]\n%copyfile% 'pmagic.iso' %intodir% '/Files/Linux/'
 	kernel	(0xff)/pmagic/bzImage64 iso_filename=/Files/Linux/pmagic.iso directory=boot edd=on vga=normal
 	initrd	(0xff)/pmagic/initrd.img (0xff)/pmagic/fu.img (0xff)/pmagic/m64.img
 
-title Linux Mint 17.3 [64-bit]\n%copyfile% 'linuxmint-17.3-64bit.iso' %intodir% '/Files/Linux/'
-	find --set-root --ignore-floppies /Files/Linux/linuxmint-17.3-64bit.iso
-	map /Files/Linux/linuxmint-17.3-64bit.iso (0xff) || map --mem /Files/Linux/linuxmint-17.3-64bit.iso (0xff)
+title Linux Mint [64-bit]\n%copyfile% 'linuxmint-64bit.iso' %intodir% '/Files/Linux/'
+	find --set-root --ignore-floppies /Files/Linux/linuxmint-64bit.iso
+	map /Files/Linux/linuxmint-64bit.iso (0xff) || map --mem /Files/Linux/linuxmint-64bit.iso (0xff)
 	map --hook
-	kernel	(0xff)/casper/vmlinuz file=/cdrom/preseed/linuxmint.seed boot=casper iso-scan/filename=/Files/Linux/linuxmint-17.3-64bit.iso quiet splash --
+	kernel	(0xff)/casper/vmlinuz file=/cdrom/preseed/linuxmint.seed boot=casper iso-scan/filename=/Files/Linux/linuxmint-64bit.iso quiet splash --
 	initrd	(0xff)/casper/initrd.lz
 
 title Lubuntu 16.04 Desktop [64-bit]\n%copyfile% 'lubuntu-16.04-desktop-amd64.iso' %intodir% '/Files/Linux/'
@@ -149,6 +149,11 @@ title Tails Live [64-bit]\n%copyfile% 'tails.iso' %intodir% '/Files/Linux/'
 	map --hook
 	kernel	(0xff)/live/vmlinuz2 findiso=/Files/Linux/tails.iso boot=live config live-media=removable apparmor=1 security=apparmor nopersistence noprompt timezone=Etc/UTC block.events_dfl_poll_msecs=1000 splash noautologin module=Tails quiet
 	initrd	(0xff)/live/initrd2.img
+	
+title Slacko Puppy [64-bit]\n%extrfile% 'slacko64-xxx-uefi.iso' %intodir% '/Files/Antivirus/slacko64/'
+	find --set-root --ignore-floppies /Files/Linux/slacko64/vmlinuz
+	kernel	/Files/Linux/slacko64/vmlinuz psubdir=/Files/Linux/slacko64/ psubok=TRUE
+	initrd	/Files/Linux/slacko64/initrd.gz
 
 title Slackware 14.1 install (DVD)\n%copyfile% 'slackware64-14.1-install-dvd.iso' %intodir% '/Files/Linux/'
 	find --set-root --ignore-floppies /Files/Linux/slackware64-14.1-install-dvd.iso
@@ -156,7 +161,7 @@ title Slackware 14.1 install (DVD)\n%copyfile% 'slackware64-14.1-install-dvd.iso
 	map --hook
 	chainloader (0xff)
 	
-title Solus Operating System 1.1\n%copyfile% 'Solus.iso' %intodir% '/Files/Linux/'
+title Solus Operating System\n%copyfile% 'Solus.iso' %intodir% '/Files/Linux/'
 	find --set-root --ignore-floppies /Files/Linux/Solus.iso
 	map /Files/Linux/Solus.iso (0xff) || map --mem /Files/Linux/Solus.iso (0xff)
 	map --hook
@@ -226,11 +231,11 @@ title Ubuntu 12.04 Desktop [32-bit]\n%copyfile% 'ubuntu-12.04.5-desktop-i386.iso
 	kernel	(0xff)/casper/vmlinuz boot=casper iso-scan/filename=/Files/Linux/ubuntu-12.04.5-desktop-i386.iso noprompt noeject
 	initrd	(0xff)/casper/initrd.lz
 
-title Linux Mint 17.3 [32-bit]\n%copyfile% 'linuxmint-17.3-32bit.iso' %intodir% '/Files/Linux/'
-	find --set-root --ignore-floppies /Files/Linux/linuxmint-17.3-32bit.iso
-	map /Files/Linux/linuxmint-17.3-32bit.iso (0xff) || map --mem /Files/Linux/linuxmint-17.3-32bit.iso (0xff)
+title Linux Mint 17.3 [32-bit]\n%copyfile% 'linuxmint-32bit.iso' %intodir% '/Files/Linux/'
+	find --set-root --ignore-floppies /Files/Linux/linuxmint-32bit.iso
+	map /Files/Linux/linuxmint-32bit.iso (0xff) || map --mem /Files/Linux/linuxmint-32bit.iso (0xff)
 	map --hook
-	kernel	(0xff)/casper/vmlinuz file=/cdrom/preseed/linuxmint.seed boot=casper iso-scan/filename=/Files/Linux/linuxmint-17.3-32bit.iso quiet splash --
+	kernel	(0xff)/casper/vmlinuz file=/cdrom/preseed/linuxmint.seed boot=casper iso-scan/filename=/Files/Linux/linuxmint-32bit.iso quiet splash --
 	initrd	(0xff)/casper/initrd.lz
 
 title Lubuntu 16.04 Desktop [32-bit]\n%copyfile% 'lubuntu-16.04-desktop-i386.iso' %intodir% '/Files/Linux/'
@@ -274,6 +279,11 @@ title openSUSE Tumbleweed GNOME/KDE Live [32-bit]\n%copyfile% 'openSUSE-Tumblewe
 	map --hook
 	kernel	(0xff)/boot/i386/loader/linux isofrom_device=$imgdevpath isofrom_system=/Files/Linux/openSUSE-Tumbleweed-Live-i686-Current.iso LANG=en_US.UTF-8
 	initrd	(0xff)/boot/i386/loader/initrd
+	
+title Slacko Puppy [32-bit]\n%extrfile% 'slacko-xxx-uefi.iso' %intodir% '/Files/Antivirus/slacko/'
+	find --set-root --ignore-floppies /Files/Linux/slacko/vmlinuz
+	kernel	/Files/Linux/slacko/vmlinuz psubdir=/Files/Linux/slacko/ psubok=TRUE
+	initrd	/Files/Linux/slacko/initrd.gz
 	
 title BackBox Linux [32-bit]\n%copyfile% 'backbox-i386.iso' %intodir% '/Files/Linux/'
 	find --set-root --ignore-floppies /Files/Linux/backbox-i386.iso
