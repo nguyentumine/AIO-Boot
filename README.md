@@ -23,6 +23,7 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 - Supports multiple languages, including Vietnamese, English, Russian and French...
 - Support YUMI for Syslinux. You need to reinstall Grub2 and Syslinux after each use YUMI.
 - Most of Syslinux menus will be supported in UEFI mode from Grub2.
+- Multiple sets of Windows setup files- XP, 2000, 2003, Vista, WIndows 7, Server 2008, Windows 8, Server 2012, both 32 and 64 bit versions are supported. Both BIOS and (U)EFI mode are supported.
 
 #### Some issues to be resolved:
 - Partition in FAT32 format can not save files larger than 4GB in size. If you want to save the file size is greater than 4GB, please format your USB or HDD to NTFS format.
@@ -43,12 +44,12 @@ Support most of WinPE, the above software and Linux distributions such as Ubuntu
 
 AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as NFS Server. Run **AIOBoot.exe**, then click **Run PXE** to activate PXE Server and NFS Server.
 # Download
-AIO boot Boot is a lightweight, less than 25 Mb.
+AIO boot Boot is a lightweight, less than 37 Mb.
 
-**File name:** AIOBoot-0.2.1.8.7z<br />
-**Size:** 24,5 MB<br />
-**Version:** 0.2.1.8<br />
-**Last updated:** 03.07.2016<br />
+**File name:** AIOBoot-0.3.0.1.7z<br />
+**Size:** 36,3 MB<br />
+**Version:** 0.3.0.1<br />
+**Last updated:** 22.07.2016<br />
 
 **Download:** [Mirrorcreator] (http://www.sitecuatui.com/out/aiobootmr) | [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf)
 
