@@ -1,0 +1,61 @@
+### Start
+### backbox-4.6-amd64.iso
+set iso_path=""
+
+set menu_color_normal=white/black
+set menu_color_highlight=black/light-gray
+
+menuentry "[1] Try BackBox without installing" --hotkey=1 {
+	set gfxpayload=keep
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	if [ -f (loop)/casper/vmlinuz.efi ]; then
+		set vmlinuzf="vmlinuz.efi"
+	else
+		set vmlinuzf="vmlinuz"
+	fi
+	linux	(loop)/casper/${vmlinuzf}  file=/cdrom/preseed/backbox.seed boot=casper iso-scan/filename=${iso_path} quiet splash --
+	initrd	(loop)/casper/initrd.gz
+}
+menuentry "[2] Install BackBox" --hotkey=2 {
+	set gfxpayload=keep
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	if [ -f (loop)/casper/vmlinuz.efi ]; then
+		set vmlinuzf="vmlinuz.efi"
+	else
+		set vmlinuzf="vmlinuz"
+	fi
+	linux	(loop)/casper/${vmlinuzf}  file=/cdrom/preseed/backbox.seed boot=casper only-ubiquity iso-scan/filename=${iso_path} quiet splash --
+	initrd	(loop)/casper/initrd.gz
+}
+menuentry "[3] OEM install (for manufacturers)" --hotkey=3 {
+	set gfxpayload=keep
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	if [ -f (loop)/casper/vmlinuz.efi ]; then
+		set vmlinuzf="vmlinuz.efi"
+	else
+		set vmlinuzf="vmlinuz"
+	fi
+	linux	(loop)/casper/${vmlinuzf}  file=/cdrom/preseed/backbox.seed boot=casper only-ubiquity iso-scan/filename=${iso_path} quiet splash oem-config/enable=true --
+	initrd	(loop)/casper/initrd.gz
+}
+menuentry "[4] Check disc for defects" --hotkey=4 {
+	set gfxpayload=keep
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	if [ -f (loop)/casper/vmlinuz.efi ]; then
+		set vmlinuzf="vmlinuz.efi"
+	else
+		set vmlinuzf="vmlinuz"
+	fi
+	linux	(loop)/casper/${vmlinuzf}  boot=casper integrity-check iso-scan/filename=${iso_path} quiet splash --
+	initrd	(loop)/casper/initrd.gz
+}
+menuentry "[5] Test memory" --hotkey=5 {
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	linux16	(loop)/install/mt86plus
+}
+### End

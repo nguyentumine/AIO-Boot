@@ -1,5 +1,5 @@
 # AIO Boot
-AIO Boot is a tool that can help you create a bootable USB with Grub2, Grub4dos, Syslinux, Clover and rEFInd. AIO Boot can boot Windows and most Linux distributions and boot via LAN using Tiny PXE Server.
+AIO Boot is a tool that can help you create a bootable USB with Grub2, ~~Grub4dos, Syslinux,~~ Clover and rEFInd. AIO Boot can boot Windows and most Linux distributions and boot via LAN using Tiny PXE Server.
 
 Currently, there are many USB boot tool with many different features, so you will hardly be able to select a tool to use (unless you have a lot of USB). Also for that reason that I released AIO Boot tool.
 
@@ -10,13 +10,16 @@ My English is not good, I used Google to translate. Please sympathize with me.
 # Features
 AIO Boot was released with a lot of great features that other tools do not yet support.
 #### The bootloader is supported:
-- For Legacy-MBR: Grub2, Grub4dos, Syslinux and Clover.<br />
-- For UEFI-GPT: Grub2, Clover and Refind.
+- For Legacy-MBR: Grub2, ~~Grub4dos, Syslinux~~ and Clover [Legacy].<br />
+- For UEFI-GPT: Grub2, Clover [UEFI] and rEFInd.
 
 #### Some features are supported:
 - UEFI-GPT and MBR-Legacy.
 - USB and HDD with FAT32 or NTFS format ...
 - Boot via LAN with Tiny PXE Server.
+- Integration of package through **AIOCreator.exe** tool.
+- Bypass the Secure Boot on the UEFI mode via **Shimx64.efi** (need tester). If your computer has a Secure Boot section, turn it on, then boot **/EFI/Boot/shimx64.efi**.
+- Support boot via LAN using UEFI mode.
 - Automatically identifying and boot into the operating system installed on HDD: FreeBSD, Mac OS X/Darwin, Windows 7/8.1/10/Vista, Windows NT/2000/XP, Windows 98/ME, MS-DOS, FreeDOS, Linux distributions, Android-x86 and Remix OS 32bit/64bit... You will not need to worry about problems boot error, error loss boot ...
 - One or more partitions, AIO Boot also supports hidden partition.
 - Support hotkeys for Grub2. At the main menu, if you want to boot into a certain menu, simply press their hot key. For example, to restart your computer, you simply press the "r" or "o" to shutdown.
@@ -33,7 +36,7 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 # How to create a bootable USB
 AIO Boot has many features but it's very simple and compact. The creation of the AIO Boot is even simpler with just a few clicks.
 - Unzip AIOBoot into the root directory of any USB or HDD partition that you want to create a boot.
-- Running **AIOBoot.exe** then you can install *Grub2*, *Syslinux* and *Clover*.
+- Running **AIOCreator.exe** then you can install *Grub2*, ~~*Syslinux* and~~ *Clover*.
 
 After you've created a bootable USB or HDD is complete, you can boot USB on VirtualBox virtual machines for testing.
 
@@ -42,17 +45,15 @@ Boot via LAN particularly useful for rescue work, ghost and install Win for net 
 
 Support most of WinPE, the above software and Linux distributions such as Ubuntu, CentOS and Linux Mint. Because time is limited, so I will try to support this tool much more.
 
-AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as NFS Server. Run **AIOBoot.exe**, then click **Run PXE** to activate PXE Server and NFS Server.
+AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as NFS Server. Run **AIOCreator.exe**, then click **Run PXE** to activate PXE Server and NFS Server.
 # Download
-AIO boot Boot is a lightweight, less than 37 Mb.
+AIO boot Boot is a lightweight, less than 34 Mb.
 
-**File name:** AIOBoot-0.3.2.1.7z<br />
-**Size:** 36,5 MB<br />
-**Version:** 0.3.2.1.<br />
-**Last updated:** 03.08.2016<br />
+**File name:** AIOBoot-v0.9.7z<br />
+**Size:** 33,7 MB<br />
+**Version:** 0.9.<br />
+**Last updated:** 19.08.2016<br />
 
-**Download:** [Mirrorcreator] (http://www.sitecuatui.com/out/aiobootmr) | [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf)
-
-To download the software WinPE and list, [see here](http://www.sitecuatui.com/out/aiobootlink).
+**Download:** [Google Drive](http://www.sitecuatui.com/out/aiogd) | [Mirrorcreator](http://www.sitecuatui.com/out/aiobootmr) | [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf)
 
 AIO Boot is constructed from a variety of sources, certainly still a lot of flaws, eager for sympathy. I would love to hear from you so that I can improve this tool better.

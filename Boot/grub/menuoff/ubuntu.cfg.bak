@@ -1,0 +1,63 @@
+### Start
+### ubuntu-16.04.1-desktop-amd64.iso
+if loadfont /boot/grub/font.pf2 ; then
+	set gfxmode=auto
+	insmod efi_gop
+	insmod efi_uga
+	insmod gfxterm
+	terminal_output gfxterm
+fi
+
+set menu_color_normal=white/black
+set menu_color_highlight=black/light-gray
+
+set iso_path=""
+menuentry "[1] Try Ubuntu without installing" --hotkey=1 {
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	set gfxpayload=keep
+	if [ -f (loop)/casper/vmlinuz.efi ]; then
+		set vmlinuzf="vmlinuz.efi"
+	else
+		set vmlinuzf="vmlinuz"
+	fi
+	linux	(loop)/casper/${vmlinuzf}  file=/cdrom/preseed/ubuntu.seed boot=casper iso-scan/filename=${iso_path} quiet splash ---
+	initrd	(loop)/casper/initrd.lz
+}
+menuentry "[2] Install Ubuntu" --hotkey=2 {
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	set gfxpayload=keep
+	if [ -f (loop)/casper/vmlinuz.efi ]; then
+		set vmlinuzf="vmlinuz.efi"
+	else
+		set vmlinuzf="vmlinuz"
+	fi
+	linux	(loop)/casper/${vmlinuzf}  file=/cdrom/preseed/ubuntu.seed boot=casper iso-scan/filename=${iso_path} only-ubiquity quiet splash ---
+	initrd	(loop)/casper/initrd.lz
+}
+menuentry "[3] OEM install (for manufacturers)" --hotkey=3 {
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	set gfxpayload=keep
+	if [ -f (loop)/casper/vmlinuz.efi ]; then
+		set vmlinuzf="vmlinuz.efi"
+	else
+		set vmlinuzf="vmlinuz"
+	fi
+	linux	(loop)/casper/${vmlinuzf}  file=/cdrom/preseed/ubuntu.seed boot=casper iso-scan/filename=${iso_path} only-ubiquity quiet splash oem-config/enable=true ---
+	initrd	(loop)/casper/initrd.lz
+}
+menuentry "[4] Check disc for defects" --hotkey=4 {
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	set gfxpayload=keep
+	if [ -f (loop)/casper/vmlinuz.efi ]; then
+		set vmlinuzf="vmlinuz.efi"
+	else
+		set vmlinuzf="vmlinuz"
+	fi
+	linux	(loop)/casper/${vmlinuzf}  boot=casper iso-scan/filename=${iso_path} integrity-check quiet splash ---
+	initrd	(loop)/casper/initrd.lz
+}
+### End

@@ -1,6 +1,0 @@
-#ifndef _SYSLINUX_VERSION_H
-#define _SYSLINUX_VERSION_H
-
-#define __STDC_VERSION__ 200000L
-
-#endif /* _SYSLINUX_VERSION_H */

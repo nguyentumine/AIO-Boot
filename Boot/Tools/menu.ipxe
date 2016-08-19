@@ -1,0 +1,156 @@
+#!ipxe
+
+#set boot-url http://${proxydhcp}/next-server
+set boot-url http://${next-server}
+set iscsi-server 192.168.1.100
+set iqn iqn.2008-08.com.starwindsoftware:test
+set nfs-server ${next-server}
+set cifs-server //${next-server}
+#set boot-url http://192.168.1.100
+
+# Setup some basic convenience variables
+set menu-timeout 5000
+set submenu-timeout ${menu-timeout}
+
+# Ensure we have menu-default set to something
+isset ${menu-default} || set menu-default exit
+
+######## MAIN MENU ###################
+:start
+menu Welcome to iPXE's Boot Menu
+item
+item --gap -- ------------------------- Utilities ------------------------------
+item winpe WinPE
+item diskutilities		Disk Utilities
+item backuprecovery		Backup & Recovery
+item dosprogs			DOS Programs
+item livelinux			Linux ISO Live
+item antivirus			Antivirus
+item --gap -- ------------------------------ Advanced ---------------------------------
+item config       Configure settings
+item shell      Enter iPXE shell
+item reboot     Reboot
+item exit       Exit (boot local disk)
+choose --default exit --timeout 30000 target && goto ${target}
+
+########## UTILITY ITEMS ####################
+:shell
+echo Type exit to get the back to the menu
+shell
+set menu-timeout 0
+goto start
+
+:failed
+echo Booting failed, dropping to shell
+goto shell
+
+:reboot
+reboot
+
+:exit
+exit
+
+:cancel
+echo You cancelled the menu, dropping you to a shell
+ 
+:config
+config
+goto start
+ 
+:back
+set submenu-timeout 0
+clear submenu-default
+goto start
+
+################################ Start antivirus
+:antivirus
+menu Antivirus
+### add new menu for Antivirus, dont edit this line
+item	back			Back to top menu...
+iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
+choose selected && goto ${selected} || goto start
+:menu-recovery-timed
+choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+### add new menu content for Antivirus, dont edit this line
+################################ End antivirus
+
+################################ Start diskutilities
+:diskutilities
+menu Disk Utilities
+### add new menu for Disk Utilities, dont edit this line
+item back Back to top menu...
+iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
+choose selected && goto ${selected} || goto start
+:menu-recovery-timed
+choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+### add new menu content for Disk Utilities, dont edit this line
+################################ End diskutilities
+
+################################ Start backuprecovery
+:backuprecovery
+menu Backup & Recovery
+### add new menu for Backup & Recovery, dont edit this line
+item back Back to top menu...
+iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
+choose selected && goto ${selected} || goto start
+:menu-recovery-timed
+choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+### add new menu content for Backup & Recovery, dont edit this line
+################################ End backuprecovery
+
+################################# Start dosprogs
+:dosprogs
+menu DOS Programs
+### add new menu for DOS Program, dont edit this line
+item back Back to top menu...
+iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
+choose selected && goto ${selected} || goto start
+:menu-recovery-timed
+choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+### add new menu content for DOS Program, dont edit this line
+################################# End dosprogs
+
+################################# Start winpe
+:winpe
+menu WinPE
+### add new menu for WinPE, dont edit this line
+item back Back to top menu...
+iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
+choose selected && goto ${selected} || goto start
+:menu-recovery-timed
+choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+### add new menu content for WinPE, dont edit this line
+################################# End winpe
+
+################################# Start livelinux
+:livelinux
+menu	Linux OS
+### add new menu for Linux OS, dont edit this line
+item	back				Back to top menu...
+iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
+choose selected && goto ${selected} || goto start
+:menu-recovery-timed
+choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+### add new menu content for Linux OS, dont edit this line
+################################# End livelinux
+
+#######################################################
+  
+#Memdisk via iPXE vs. ISO Boot HTTP via iPXE:
+#
+#Memdisk via iPXE does the following things: 
+#1) Emulates a CD-ROM allowing a Network-Based Install. 
+#2) Masks actual system RAM because the environment memdisk creates "hides" a certain amount of RAM to allow for the ISO - This amount is generally 2x ISO Size (Maximum 2GB - I think).
+#3) Preloads the ISO into memory before executing the ISO. This slows boot time a bit.
+#
+#ISO Boot over HTTP via iPXE:
+#1) Does not emulate a CD-ROM. It is a Block Device.
+#2) Does not mask system RAM.
+#3) Executes as it reads: Faster than memdisk and no "preloading" of the ISO is required.
+#4) Does not hold the ISO as a readable device once the ISO is loaded unless loaded into the iBFT.
