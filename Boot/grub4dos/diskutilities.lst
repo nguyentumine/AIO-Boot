@@ -1,0 +1,119 @@
+# This is a sample menu.lst file. You should make some changes to it.
+# The old install method of booting via the stage-files has been removed.
+# Please install GRLDR boot strap code to MBR with the bootlace.com
+# utility under DOS/Win9x or Linux.
+#
+# It must be UTF-8 encoding for multi-lingual support. Font lines can be
+# appended to the file. The font lines should be in the unifont.hex format.
+
+color blue/green yellow/red white/magenta white/magenta
+timeout 30
+## menu border color
+color border=0xEEFFEE
+## set vbe mode
+graphicsmode -1 640:800 480:600 24:32 || graphicsmode -1 -1 -1 24:32
+## loading splashimage
+splashimage /Boot/grub4dos/splashimage.xpm || splashimage /Boot/grub4dos/splashimage.bmp
+default /default
+## Menu AutoNumber
+write 0x8274 0x2001
+
+title MiniTool Partition Wizard Boot Disk 9\n%copyfile% 'mpw.iso' %intodir% '/Files/Disk/'
+	find --set-root --ignore-floppies /Files/Disk/mpw.iso
+	map /Files/Disk/mpw.iso (0xff) || map --mem /Files/Disk/mpw.iso (0xff)
+	map --hook
+	chainloader (0xff)
+	
+title Partition Guru\n%copyfile% 'PartitionGuru.img' %intodir% '/Files/DOS/'
+	find --set-root --ignore-floppies /Files/DOS/PartitionGuru.img
+	map /Files/DOS/PartitionGuru.img (fd0) || map --mem /Files/DOS/PartitionGuru.img (fd0)
+	map --hook
+	root (fd0)
+	chainloader /kernel.sys
+
+title Acronis Disk Director 12\n%copyfile% 'ADD12_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/ADD12_en-US.iso
+	map /Files/Acronis/ADD12_en-US.iso (0xff) || map --mem /Files/Acronis/ADD12_en-US.iso (0xff)
+	map --hook
+	chainloader (0xff)
+
+title Parted Magic [64-bit]\n%copyfile% 'pmagic.iso' %intodir% '/Files/Linux/'
+	find --set-root --ignore-floppies /Files/Linux/pmagic.iso
+	map /Files/Linux/pmagic.iso (0xff) || map --mem /Files/Linux/pmagic.iso (0xff)
+	map --hook
+	kernel	(0xff)/pmagic/bzImage64 iso_filename=/Files/Linux/pmagic.iso directory=boot edd=on vga=normal
+	initrd	(0xff)/pmagic/initrd.img (0xff)/pmagic/fu.img (0xff)/pmagic/m64.img
+
+title Parted Magic [32-bit]\n%copyfile% 'pmagic.iso' %intodir% '/Files/Linux/'
+	find --set-root --ignore-floppies /Files/Linux/pmagic.iso
+	map /Files/Linux/pmagic.iso (0xff) || map --mem /Files/Linux/pmagic.iso (0xff)
+	map --hook
+	kernel	(0xff)/pmagic/bzImage iso_filename=/Files/Linux/pmagic.iso directory=boot edd=on vga=normal
+	initrd	(0xff)/pmagic/initrd.img (0xff)/pmagic/fu.img (0xff)/pmagic/m32.img
+
+title GParted Live\n%copyfile% 'gparted-live-amd64.iso' %intodir% '/Files/Linux/'
+	find --set-root --ignore-floppies /Files/Linux/gparted-live-amd64.iso
+	map /Files/Linux/gparted-live-amd64.iso (0xff) || map --mem /Files/Linux/gparted-live-amd64.iso (0xff)
+	map --hook
+	kernel	(0xff)/live/vmlinuz boot=live union=overlay username=user config components quiet noswap noeject vga=791 ip=frommedia nosplash findiso=/Files/Linux/gparted-live-amd64.iso
+	initrd	(0xff)/live/initrd.img
+
+title System RescueCD std-64bit %cachedr%\n%copyfile% 'systemrescuecd.iso' %intodir% '/Files/Linux/'
+	find --set-root --ignore-floppies /Files/Linux/systemrescuecd.iso
+	map /Files/Linux/systemrescuecd.iso (0xff) || map --mem /Files/Linux/systemrescuecd.iso (0xff)
+	map --hook
+	kernel	(0xff)/isolinux/rescue64 isoloop=/Files/Linux/systemrescuecd.iso setkmap=us dostartx docache
+	initrd	(0xff)/isolinux/initram.igz
+
+title System RescueCD std-64bit\n%copyfile% 'systemrescuecd.iso' %intodir% '/Files/Linux/'
+	find --set-root --ignore-floppies /Files/Linux/systemrescuecd.iso
+	map /Files/Linux/systemrescuecd.iso (0xff) || map --mem /Files/Linux/systemrescuecd.iso (0xff)
+	map --hook
+	kernel	(0xff)/isolinux/rescue64 isoloop=/Files/Linux/systemrescuecd.iso setkmap=us dostartx
+	initrd	(0xff)/isolinux/initram.igz
+
+title System RescueCD std-32bit %cachedr%\n%copyfile% 'systemrescuecd.iso' %intodir% '/Files/Linux/'
+	find --set-root --ignore-floppies /Files/Linux/systemrescuecd.iso
+	map /Files/Linux/systemrescuecd.iso (0xff) || map --mem /Files/Linux/systemrescuecd.iso (0xff)
+	map --hook
+	kernel	(0xff)/isolinux/rescue32 isoloop=/Files/Linux/systemrescuecd.iso setkmap=us dostartx docache
+	initrd	(0xff)/isolinux/initram.igz
+
+title System RescueCD std-32bit\n%copyfile% 'systemrescuecd.iso' %intodir% '/Files/Linux/'
+	find --set-root --ignore-floppies /Files/Linux/systemrescuecd.iso
+	map /Files/Linux/systemrescuecd.iso (0xff) || map --mem /Files/Linux/systemrescuecd.iso (0xff)
+	map --hook
+	kernel	(0xff)/isolinux/rescue32 isoloop=/Files/Linux/systemrescuecd.iso setkmap=us dostartx
+	initrd	(0xff)/isolinux/initram.igz
+
+title %backlst%
+	fallback +1
+	find --set-root --ignore-floppies --ignore-cd /Boot/grub4dos/menu.lst
+	configfile /Boot/grub4dos/menu.lst
+
+title Load Grub2
+	chainloader /Boot/grub/g2ldr
+
+iftitle [ls /Boot/syslinux/syslinux.bin] Load Syslinux
+	chainloader /Boot/syslinux/syslinux.bin
+
+iftitle [ls /Boot/syslinux/notbin.txt] Load Syslinux
+	chainloader +1
+
+title %reboot%
+	reboot
+
+title %halt%
+	halt
+
+title %mcmd%
+	commandline
+
+# In the end, font lines for unicode chars in unifont.hex format.
+# It should include all unicode chars used in the above menu code.
+# Surely normal ASCII chars are not necessary to be included here.
+
+5173:10100810082000003FF8010001000100FFFE010002800280044008203018C006
+542F:010000801FFC1004100410041FFC10001000100017FC24042404440487FC0404
+673A:100011F011101110FD10111031103910551055109110111211121212120E1400
+91CD:001000F83F000100FFFE01001FF011101FF011101FF001003FF80100FFFE0000

@@ -1,0 +1,150 @@
+# This is a sample menu.lst file. You should make some changes to it.
+# The old install method of booting via the stage-files has been removed.
+# Please install GRLDR boot strap code to MBR with the bootlace.com
+# utility under DOS/Win9x or Linux.
+#
+# It must be UTF-8 encoding for multi-lingual support. Font lines can be
+# appended to the file. The font lines should be in the unifont.hex format.
+
+color blue/green yellow/red white/magenta white/magenta
+timeout 30
+## menu border color
+color border=0xEEFFEE
+## set vbe mode
+graphicsmode -1 640:800 480:600 24:32 || graphicsmode -1 -1 -1 24:32
+## loading splashimage
+splashimage /Boot/grub4dos/splashimage.xpm || splashimage /Boot/grub4dos/splashimage.bmp
+default /default
+## Menu AutoNumber
+write 0x8274 0x2001
+
+title Acronis True Image 2016\n%copyfile% 'AcronisTrueImage2016.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/AcronisTrueImage2016.iso
+	map /Files/Acronis/AcronisTrueImage2016.iso (0xff) || map --mem /Files/Acronis/AcronisTrueImage2016.iso (0xff)
+	map --hook
+	chainloader (0xff)
+
+title Symantec Ghost\n%copyfile% 'Ghost.iso' %intodir% '/Files/DOS/'
+	find --set-root --ignore-floppies /Files/DOS/Ghost.iso
+	map /Files/DOS/Ghost.iso (0xff) || map --mem /Files/DOS/Ghost.iso (0xff)
+	map --hook
+	chainloader (0xff)
+
+title Acronis Backup Advanced Universal 11.7\n%copyfile% 'AcronisBackupAdvancedUniversal.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/AcronisBackupAdvancedUniversal.iso
+	map /Files/Acronis/AcronisBackupAdvancedUniversal.iso (0xff) || map --mem /Files/Acronis/AcronisBackupAdvancedUniversal.iso (0xff)
+	map --hook
+	chainloader (0xff)
+
+title EaseUS Todo Backup Advanced Server 9.1\n%copyfile% 'etbas.iso' %intodir% '/Files/BackupRecovery/'
+	find --set-root --ignore-floppies /Files/BackupRecovery/etbas.iso
+	map /Files/BackupRecovery/etbas.iso (0xff) || map --mem /Files/BackupRecovery/etbas.iso (0xff)
+	map --hook
+	chainloader (0xff)
+
+title AOMEI Backupper TechPlus 3.2\n%copyfile% 'amlnx.iso' %intodir% '/Files/BackupRecovery/'
+	find --set-root --ignore-floppies /Files/BackupRecovery/amlnx.iso
+	map /Files/BackupRecovery/amlnx.iso (0xff) || map --mem /Files/BackupRecovery/amlnx.iso (0xff)
+	map --hook
+	chainloader (0xff)
+
+title MiniTool Power Data Recovery 7\n%copyfile% 'mpdr.iso' %intodir% '/Files/BackupRecovery/'
+	find --set-root --ignore-floppies /Files/BackupRecovery/mpdr.iso
+	map /Files/BackupRecovery/mpdr.iso (0xff) || map --mem /Files/BackupRecovery/mpdr.iso (0xff)
+	map --hook
+	kernel	(0xff)/casper/vmlinuz.efi boot=casper iso-scan/filename=/Files/BackupRecovery/mpdr.iso quiet splash ---
+	initrd	(0xff)/casper/initrd.lz
+
+title R-Drive Image\n%copyfile% 'R-DriveImage.iso' %intodir% '/Files/BackupRecovery/'
+	find --set-root --ignore-floppies /Files/BackupRecovery/R-DriveImage.iso
+	map /Files/BackupRecovery/R-DriveImage.iso (0xff) || map --mem /Files/BackupRecovery/R-DriveImage.iso (0xff)
+	map --hook
+	chainloader (0xff)
+
+title Acronis Snap Deploy 5\n%copyfile% 'ASD5_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/ASD5_en-US.iso
+	map /Files/Acronis/ASD5_en-US.iso (0xff) || map --mem /Files/Acronis/ASD5_en-US.iso (0xff)
+	map --hook
+	chainloader (0xff)
+
+title Clonezilla Live\n%copyfile% 'clonezilla-live-amd64.iso' %intodir% '/Files/Linux/'
+	find --set-root --ignore-floppies /Files/Linux/clonezilla-live-amd64.iso
+	map /Files/Linux/clonezilla-live-amd64.iso (0xff) || map --mem /Files/Linux/clonezilla-live-amd64.iso (0xff)
+	map --hook
+	kernel	(0xff)/live/vmlinuz boot=live union=overlay username=user config components quiet noswap nolocales edd=on nomodeset nodmraid ocs_live_run=\"ocs-live-general\" ocs_live_extra_param=\"\" keyboard-layouts= ocs_live_batch=\"no\" locales= vga=788 ip=frommedia nosplash toram=filesystem.squashfs findiso=/Files/Linux/clonezilla-live-amd64.iso
+	initrd	(0xff)/live/initrd.img
+
+title Redo Backup and Recovery\n%copyfile% 'redobackup.iso' %intodir% '/Files/BackupRecovery/'
+	find --set-root --ignore-floppies /Files/BackupRecovery/redobackup.iso
+	map /Files/BackupRecovery/redobackup.iso (0xff) || map --mem /Files/BackupRecovery/redobackup.iso (0xff)
+	map --hook
+	kernel	(0xff)/casper/vmlinuz boot=casper iso-scan/filename=/Files/BackupRecovery/redobackup.iso noprompt noeject
+	initrd	(0xff)/casper/initrd.lz
+
+title Acronis True Image 2015\n%copyfile% 'AcronisTrueImage2015_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/AcronisTrueImage2015_en-US.iso
+	map /Files/Acronis/AcronisTrueImage2015_en-US.iso (0xff) || map --mem /Files/Acronis/AcronisTrueImage2015_en-US.iso (0xff)
+	map --hook
+	chainloader (0xff)
+
+title Acronis True Image 2014\n%copyfile% 'ATIH2014P_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/ATIH2014P_en-US.iso
+	map /Files/Acronis/ATIH2014P_en-US.iso (0xff) || map --mem /Files/Acronis/ATIH2014P_en-US.iso (0xff)
+	map --hook
+	chainloader (0xff)
+
+title Acronis True Image 2013\n%copyfile% 'ATIH2013PP_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/ATIH2013PP_en-US.iso
+	map /Files/Acronis/ATIH2013PP_en-US.iso (0xff) || map --mem /Files/Acronis/ATIH2013PP_en-US.iso (0xff)
+	map --hook
+	chainloader (0xff)
+
+title Acronis True Image 2012\n%copyfile% 'ATIH2012PP_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/ATIH2012PP_en-US.iso
+	map /Files/Acronis/ATIH2012PP_en-US.iso (0xff) || map --mem /Files/Acronis/ATIH2012PP_en-US.iso (0xff)
+	map --hook
+	chainloader (0xff)
+
+title Acronis True Image 2011\n%copyfile% 'ATIH2011PP_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/ATIH2011PP_en-US.iso
+	map /Files/Acronis/ATIH2011PP_en-US.iso (0xff) || map --mem /Files/Acronis/ATIH2011PP_en-US.iso (0xff)
+	map --hook
+	chainloader (0xff)
+
+title Acronis Snap Deploy 4\n%copyfile% 'ASD4_en-US.iso' %intodir% '/Files/Acronis/'
+	find --set-root --ignore-floppies /Files/Acronis/ASD4_en-US.iso
+	map /Files/Acronis/ASD4_en-US.iso (0xff) || map --mem /Files/Acronis/ASD4_en-US.iso (0xff)
+	map --hook
+	chainloader (0xff)
+
+title %backlst%
+	fallback +1
+	find --set-root --ignore-floppies --ignore-cd /Boot/grub4dos/menu.lst
+	configfile /Boot/grub4dos/menu.lst
+
+title Load Grub2
+	chainloader /Boot/grub/g2ldr
+
+iftitle [ls /Boot/syslinux/syslinux.bin] Load Syslinux
+	chainloader /Boot/syslinux/syslinux.bin
+
+iftitle [ls /Boot/syslinux/notbin.txt] Load Syslinux
+	chainloader +1
+
+title %reboot%
+	reboot
+
+title %halt%
+	halt
+
+title %mcmd%
+	commandline
+
+# In the end, font lines for unicode chars in unifont.hex format.
+# It should include all unicode chars used in the above menu code.
+# Surely normal ASCII chars are not necessary to be included here.
+
+5173:10100810082000003FF8010001000100FFFE010002800280044008203018C006
+542F:010000801FFC1004100410041FFC10001000100017FC24042404440487FC0404
+673A:100011F011101110FD10111031103910551055109110111211121212120E1400
+91CD:001000F83F000100FFFE01001FF011101FF011101FF001003FF80100FFFE0000

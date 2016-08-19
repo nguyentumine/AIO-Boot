@@ -1,0 +1,161 @@
+# This is a sample menu.lst file. You should make some changes to it.
+# The old install method of booting via the stage-files has been removed.
+# Please install GRLDR boot strap code to MBR with the bootlace.com
+# utility under DOS/Win9x or Linux.
+#
+# It must be UTF-8 encoding for multi-lingual support. Font lines can be
+# appended to the file. The font lines should be in the unifont.hex format.
+
+color blue/green yellow/red white/magenta white/magenta
+timeout 30
+## menu border color
+color border=0xEEFFEE
+## set vbe mode
+graphicsmode -1 640:800 480:600 24:32 || graphicsmode -1 -1 -1 24:32
+## loading splashimage
+splashimage /Boot/grub4dos/splashimage.xpm || splashimage /Boot/grub4dos/splashimage.bmp
+default /default
+## Menu AutoNumber
+write 0x8274 0x2001
+
+title [32-bit] Remix OS - %remixres%\n%extrfile% 'Remix_OS_for_PC_32bit_xxx.iso' %intodir% '/Files/Android/Remix_OS_32bit/'
+	find --set-root --ignore-floppies /Files/Android/Remix_OS_32bit/kernel
+	kernel	/Files/Android/Remix_OS_32bit/kernel vga=791 root=/dev/ram0 androidboot.hardware=remix_x86 androidboot.selinux=permissive quiet SRC=/Files/Android/Remix_OS_32bit DATA= CREATE_DATA_IMG=1
+	initrd	/Files/Android/Remix_OS_32bit/initrd.img
+
+title [32-bit] Remix OS - %remixgue%\n%extrfile% 'Remix_OS_for_PC_32bit_xxx.iso' %intodir% '/Files/Android/Remix_OS_32bit/'
+	find --set-root --ignore-floppies /Files/Android/Remix_OS_32bit/kernel
+	kernel	/Files/Android/Remix_OS_32bit/kernel vga=791 root=/dev/ram0 androidboot.hardware=remix_x86 androidboot.selinux=permissive quiet SRC=/Files/Android/Remix_OS_32bit DATA= DATA_IN_MEM=1
+	initrd	/Files/Android/Remix_OS_32bit/initrd.img
+
+title [32-bit] Remix OS - %installhd%\n%extrfile% 'Remix_OS_for_PC_32bit_xxx.iso' %intodir% '/Files/Android/Remix_OS_32bit/'
+	find --set-root --ignore-floppies /Files/Android/Remix_OS_32bit/kernel
+	kernel	/Files/Android/Remix_OS_32bit/kernel vga=791 root=/dev/ram0 androidboot.hardware=remix_x86 androidboot.selinux=permissive quiet SRC=/Files/Android/Remix_OS_32bit DATA= INSTALL=1
+	initrd	/Files/Android/Remix_OS_32bit/initrd.img
+
+title [64-bit] Remix OS - %remixres%\n%extrfile% 'Remix_OS_for_PC_64bit_xxx.iso' %intodir% '/Files/Android/Remix_OS_64bit/'
+	find --set-root --ignore-floppies /Files/Android/Remix_OS_64bit/kernel
+	kernel	/Files/Android/Remix_OS_64bit/kernel vga=791 root=/dev/ram0 androidboot.hardware=remix_x86_64 androidboot.selinux=permissive quiet SRC=/Files/Android/Remix_OS_64bit DATA= CREATE_DATA_IMG=1
+	initrd	/Files/Android/Remix_OS_64bit/initrd.img
+
+title [64-bit] Remix OS - %remixgue%\n%extrfile% 'Remix_OS_for_PC_64bit_xxx.iso' %intodir% '/Files/Android/Remix_OS_64bit/'
+	find --set-root --ignore-floppies /Files/Android/Remix_OS_64bit/kernel
+	kernel	/Files/Android/Remix_OS_64bit/kernel vga=791 root=/dev/ram0 androidboot.hardware=remix_x86_64 androidboot.selinux=permissive quiet SRC=/Files/Android/Remix_OS_64bit DATA= DATA_IN_MEM=1
+	initrd	/Files/Android/Remix_OS_64bit/initrd.img
+
+title [64-bit] Remix OS - %installhd%\n%extrfile% 'Remix_OS_for_PC_64bit_xxx.iso' %intodir% '/Files/Android/Remix_OS_64bit/'
+	find --set-root --ignore-floppies /Files/Android/Remix_OS_64bit/kernel
+	kernel	/Files/Android/Remix_OS_64bit/kernel vga=791 root=/dev/ram0 androidboot.hardware=remix_x86_64 androidboot.selinux=permissive quiet SRC=/Files/Android/Remix_OS_64bit DATA= INSTALL=1
+	initrd	/Files/Android/Remix_OS_64bit/initrd.img
+	
+title [32-bit] Android-x86 v6 - Live\n%extrfile% 'android-x86-6.0-rc1.iso' %intodir% '/Files/Android/android-x86-6/'
+	find --set-root --ignore-floppies /Files/Android/android-x86-6/system.sfs
+	kernel	/Files/Android/android-x86-6/kernel root=/dev/ram0 androidboot.hardware=android_x86 quiet DATA= SRC=/Files/Android/android-x86-6
+	initrd	/Files/Android/android-x86-6/initrd.img
+
+title [32-bit] Android-x86 v6 - %debugmode%\n%extrfile% 'android-x86-6.0-rc1.iso' %intodir% '/Files/Android/android-x86-6/'
+	find --set-root --ignore-floppies /Files/Android/android-x86-6/system.sfs
+	kernel	/Files/Android/android-x86-6/kernel root=/dev/ram0 androidboot.hardware=android_x86 DATA= DEBUG=2 SRC=/Files/Android/android-x86-6
+	initrd	/Files/Android/android-x86-6/initrd.img
+
+title [32-bit] Android-x86 v6 - %installhd%\n%extrfile% 'android-x86-6.0-rc1.iso' %intodir% '/Files/Android/android-x86-6/'
+	find --set-root --ignore-floppies /Files/Android/android-x86-6/system.sfs
+	kernel	/Files/Android/android-x86-6/kernel root=/dev/ram0 androidboot.hardware=android_x86 DEBUG= INSTALL=1 SRC=/Files/Android/android-x86-6
+	initrd	/Files/Android/android-x86-6/initrd.img
+
+title [64-bit] Android-x86 v6 - Live\n%extrfile% 'android-x86_64-6.0-rc1.iso' %intodir% '/Files/Android/android-x86_64-6/'
+	find --set-root --ignore-floppies /Files/Android/android-x86_64-6/system.sfs
+	kernel	/Files/Android/android-x86_64-6/kernel root=/dev/ram0 androidboot.hardware=android_x86_64 quiet DATA= SRC=/Files/Android/android-x86_64-6
+	initrd	/Files/Android/android-x86_64-6/initrd.img
+
+title [64-bit] Android-x86 v6 - %debugmode%\n%extrfile% 'android-x86_64-6.0-rc1.iso' %intodir% '/Files/Android/android-x86_64-6/'
+	find --set-root --ignore-floppies /Files/Android/android-x86_64-6/system.sfs
+	kernel	/Files/Android/android-x86_64-6/kernel root=/dev/ram0 androidboot.hardware=android_x86_64 DATA= DEBUG=2 SRC=/Files/Android/android-x86_64-6
+	initrd	/Files/Android/android-x86_64-6/initrd.img
+
+title [64-bit] Android-x86 v6 - %installhd%\n%extrfile% 'android-x86_64-6.0-rc1.iso' %intodir% '/Files/Android/android-x86_64-6/'
+	find --set-root --ignore-floppies /Files/Android/android-x86_64-6/system.sfs
+	kernel	/Files/Android/android-x86_64-6/kernel root=/dev/ram0 androidboot.hardware=android_x86_64 DEBUG= INSTALL=1 SRC=/Files/Android/android-x86_64-6
+	initrd	/Files/Android/android-x86_64-6/initrd.img
+
+title [32-bit] Android-x86 v5 - Live\n%extrfile% 'android-x86-5.1-rc1.iso' %intodir% '/Files/Android/android-x86-5/'
+	find --set-root --ignore-floppies /Files/Android/android-x86-5/system.sfs
+	kernel	/Files/Android/android-x86-5/kernel vga=791 root=/dev/ram0 androidboot.hardware=android_x86 quiet SRC=/Files/Android/android-x86-5 DATA=
+	initrd	/Files/Android/android-x86-5/initrd.img
+
+title [32-bit] Android-x86 v5 - %vesa%\n%extrfile% 'android-x86-5.1-rc1.iso' %intodir% '/Files/Android/android-x86-5/'
+	find --set-root --ignore-floppies /Files/Android/android-x86-5/system.sfs
+	kernel	/Files/Android/android-x86-5/kernel vga=788 root=/dev/ram0 androidboot.hardware=android_x86 quiet nomodeset SRC=/Files/Android/android-x86-5 DATA=
+	initrd	/Files/Android/android-x86-5/initrd.img
+
+title [32-bit] Android-x86 v5 - %debugmode%\n%extrfile% 'android-x86-5.1-rc1.iso' %intodir% '/Files/Android/android-x86-5/'
+	find --set-root --ignore-floppies /Files/Android/android-x86-5/system.sfs
+	kernel	/Files/Android/android-x86-5/kernel vga=788 root=/dev/ram0 androidboot.hardware=android_x86 DEBUG=2 SRC=/Files/Android/android-x86-5 DATA=
+	initrd	/Files/Android/android-x86-5/initrd.img
+
+title [32-bit] Android-x86 v5 - %installhd%\n%extrfile% 'android-x86-5.1-rc1.iso' %intodir% '/Files/Android/android-x86-5/'
+	find --set-root --ignore-floppies /Files/Android/android-x86-5/system.sfs
+	kernel	/Files/Android/android-x86-5/kernel vga=791 root=/dev/ram0 androidboot.hardware=android_x86 SRC=/Files/Android/android-x86-5 INSTALL=1 DEBUG=
+	initrd	/Files/Android/android-x86-5/initrd.img
+
+title [64-bit] Android-x86 v5 - Live\n%extrfile% 'android-x86_64-5.1-rc1.img' %intodir% '/Files/Android/android-x86_64-5/'
+	find --set-root --ignore-floppies /Files/Android/android-x86_64-5/system.sfs
+	kernel	/Files/Android/android-x86_64-5/kernel vga=791 root=/dev/ram0 androidboot.hardware=android_x86_64 quiet DATA= SRC=/Files/Android/android-x86_64-5
+	initrd	/Files/Android/android-x86_64-5/initrd.img
+
+title [64-bit] Android-x86 v5 - %debugmode%\n%extrfile% 'android-x86_64-5.1-rc1.img' %intodir% '/Files/Android/android-x86_64-5/'
+	find --set-root --ignore-floppies /Files/Android/android-x86_64-5/system.sfs
+	kernel	/Files/Android/android-x86_64-5/kernel vga=788 root=/dev/ram0 androidboot.hardware=android_x86_64 DATA= DEBUG=2 SRC=/Files/Android/android-x86_64-5
+	initrd	/Files/Android/android-x86_64-5/initrd.img
+
+title [64-bit] Android-x86 v5 - %installhd%\n%extrfile% 'android-x86_64-5.1-rc1.img' %intodir% '/Files/Android/android-x86_64-5/'
+	find --set-root --ignore-floppies /Files/Android/android-x86_64-5/system.sfs
+	kernel	/Files/Android/android-x86_64-5/kernel vga=791 root=/dev/ram0 androidboot.hardware=android_x86_64 DEBUG= INSTALL=1 SRC=/Files/Android/android-x86_64-5
+	initrd	/Files/Android/android-x86_64-5/initrd.img
+
+title Android-x86 v4 - Live\n%extrfile% 'android-x86-4.4-r5.iso' %intodir% '/Files/Android/android-x86-4/'
+	find --set-root --ignore-floppies /Files/Android/android-x86-4/system.sfs
+	kernel	/Files/Android/android-x86-4/kernel vga=791 root=/dev/ram0 androidboot.hardware=android_x86 quiet DATA= SRC=/Files/Android/android-x86-4
+	initrd	/Files/Android/android-x86-4/initrd.img
+
+title Android-x86 v4 - %debugmode%\n%extrfile% 'android-x86-4.4-r5.iso' %intodir% '/Files/Android/android-x86-4/'
+	find --set-root --ignore-floppies /Files/Android/android-x86-4/system.sfs
+	kernel	/Files/Android/android-x86-4/kernel root=/dev/ram0 androidboot.hardware=android_x86 DATA= DEBUG=2 SRC=/Files/Android/android-x86-4
+	initrd	/Files/Android/android-x86-4/initrd.img
+
+title Android-x86 v4 - %installhd%\n%extrfile% 'android-x86-4.4-r5.iso' %intodir% '/Files/Android/android-x86-4/'
+	find --set-root --ignore-floppies /Files/Android/android-x86-4/system.sfs
+	kernel	/Files/Android/android-x86-4/kernel vga=791 root=/dev/ram0 androidboot.hardware=android_x86 DEBUG= INSTALL=1 SRC=/Files/Android/android-x86-4
+	initrd	/Files/Android/android-x86-4/initrd.img
+
+title %backlst%
+	fallback +1
+	find --set-root --ignore-floppies --ignore-cd /Boot/grub4dos/menu.lst
+	configfile /Boot/grub4dos/menu.lst
+
+title Load Grub2
+	chainloader /Boot/grub/g2ldr
+
+iftitle [ls /Boot/syslinux/syslinux.bin] Load Syslinux
+	chainloader /Boot/syslinux/syslinux.bin
+
+iftitle [ls /Boot/syslinux/notbin.txt] Load Syslinux
+	chainloader +1
+
+title %reboot%
+	reboot
+
+title %halt%
+	halt
+
+title %mcmd%
+	commandline
+
+# In the end, font lines for unicode chars in unifont.hex format.
+# It should include all unicode chars used in the above menu code.
+# Surely normal ASCII chars are not necessary to be included here.
+
+5173:10100810082000003FF8010001000100FFFE010002800280044008203018C006
+542F:010000801FFC1004100410041FFC10001000100017FC24042404440487FC0404
+673A:100011F011101110FD10111031103910551055109110111211121212120E1400
+91CD:001000F83F000100FFFE01001FF011101FF011101FF001003FF80100FFFE0000

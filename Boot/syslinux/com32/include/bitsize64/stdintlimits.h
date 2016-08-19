@@ -1,0 +1,23 @@
+/*
+ * bits64/stdintlimits.h
+ */
+
+#define INT_FAST16_MIN	INT64_MIN
+#define INT_FAST32_MIN	INT64_MIN
+#define INT_FAST16_MAX	INT64_MAX
+#define INT_FAST32_MAX	INT64_MAX
+#define UINT_FAST16_MAX UINT64_MAX
+#define UINT_FAST32_MAX UINT64_MAX
+
+#define INTPTR_MIN	INT64_MIN
+#define INTPTR_MAX	INT64_MAX
+#define UINTPTR_MAX	UINT64_MAX
+
+#define PTRDIFF_MIN	INT64_MIN
+#define PTRDIFF_MAX	INT64_MAX
+
+/* sig_atomic_t limit */
+# define SIG_ATOMIC_MAX         INT32_MAX //(2147483647)
+# define SIG_ATOMIC_MIN         (-SIG_ATOMIC_MAX-1) //(-2147483647-1)
+/* size_t limit */
+# define SIZE_MAX		UINT64_MAX
