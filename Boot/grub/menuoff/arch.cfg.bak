@@ -1,0 +1,25 @@
+### Start
+### archlinux-2016.08.01-dual.iso
+set iso_path=""
+menuentry "[1] Arch Linux (x86_64)" --hotkey=1 {
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	probe -u $root --set=uuid
+	probe -l (loop) --set=isolabel
+	linux	(loop)/arch/boot/x86_64/vmlinuz archisobasedir=arch archisolabel=${isolabel} img_dev=/dev/disk/by-uuid/${uuid} img_loop=${iso_path}
+	initrd	(loop)/arch/boot/intel_ucode.img (loop)/arch/boot/x86_64/archiso.img
+}
+menuentry "[2] Arch Linux (i686)" --hotkey=2 {
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	probe -u $root --set=uuid
+	probe -l (loop) --set=isolabel
+	linux	(loop)/arch/boot/i686/vmlinuz archisobasedir=arch archisolabel=${isolabel} img_dev=/dev/disk/by-uuid/${uuid} img_loop=${iso_path}
+	initrd	(loop)/arch/boot/intel_ucode.img (loop)/arch/boot/i686/archiso.img
+}
+menuentry "[3] Run Memtest86+ (RAM test)" --hotkey=3 {
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	linux16	(loop)/arch/boot/memtest
+}
+### End

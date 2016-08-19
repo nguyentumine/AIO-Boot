@@ -1,0 +1,35 @@
+### Start
+### debian-live-8.5.0-amd64-cinnamon-desktop.iso
+set iso_path=""
+
+# Global options
+set timeout=90
+set default=0
+set fallback=1
+set pager=1
+
+menuentry "[1] Debian Live" --hotkey=1 {
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	linux	(loop)/live/vmlinuz boot=live components quiet splash findiso=${iso_path}
+	initrd	(loop)/live/initrd.img
+}
+menuentry "[2] Debian Live (failsafe)" --hotkey=2 {
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	linux	(loop)/live/vmlinuz boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal findiso=${iso_path}
+	initrd	(loop)/live/initrd.img
+}
+menuentry "[3] Debian Install" --hotkey=3 {
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	linux	(loop)/install/vmlinuz findiso=${iso_path} vga=788  --- quiet
+	initrd	(loop)/install/initrd.gz
+}
+menuentry "[4] Debian Graphical install" --hotkey=4 {
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	linux	(loop)/install/gtk/vmlinuz findiso=${iso_path} video=vesa:ywrap,mtrr vga=788  --- quiet
+	initrd	(loop)/install/gtk/initrd.gz
+}
+### End
