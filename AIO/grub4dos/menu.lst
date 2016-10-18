@@ -1,0 +1,47 @@
+# This is a sample menu.lst file. You should make some changes to it.
+# The old install method of booting via the stage-files has been removed.
+# Please install GRLDR boot strap code to MBR with the bootlace.com
+# utility under DOS/Win9x or Linux.
+#
+# It must be UTF-8 encoding for multi-lingual support. Font lines can be
+# appended to the file. The font lines should be in the unifont.hex format.
+
+color blue/green yellow/red white/magenta white/magenta
+timeout 30
+## menu border color
+color border=0xEEFFEE
+## set vbe mode
+graphicsmode -1 640:800 480:600 24:32 || graphicsmode -1 -1 -1 24:32
+## loading splashimage
+## splashimage /boot/grub/splashimage.xpm || splashimage /boot/grub/splashimage.bmp
+## unifont-9.0.02.hex.gz
+font /AIO/grub4dos/unifont.hex.gz
+default /default
+## Menu AutoNumber
+write 0x8274 0x2001
+
+title ...Back to Grub2
+fallback +1
+find --set-root --ignore-floppies --ignore-cd /AIO/grub/i386-pc/core.img
+kernel /AIO/grub/i386-pc/core.img
+
+title Reboot
+reboot
+
+title Poweroff
+halt
+
+title Commandline
+commandline
+
+# In the end, font lines for unicode chars in unifont.hex format.
+# It should include all unicode chars used in the above menu code.
+# Surely normal ASCII chars are not necessary to be included here.
+
+5173:10100810082000003FF8010001000100FFFE010002800280044008203018C006
+542F:010000801FFC1004100410041FFC10001000100017FC24042404440487FC0404
+673A:100011F011101110FD10111031103910551055109110111211121212120E1400
+91CD:001000F83F000100FFFE01001FF011101FF011101FF001003FF80100FFFE0000
+
+
+

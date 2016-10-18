@@ -4,6 +4,7 @@ AIO Boot is a tool that can help you create a bootable USB with Grub2, ~~Grub4do
 Currently, there are many USB boot tool with many different features, so you will hardly be able to select a tool to use (unless you have a lot of USB). Also for that reason that I released AIO Boot tool.
 
 Homepage: http://www.sitecuatui.com/
+Please check the [Releases](https://github.com/nguyentumine/AIO-Boot/releases) page for latest information.
 
 My English is not good, I used Google to translate. Please sympathize with me.
 
@@ -27,6 +28,8 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 - Support YUMI for Syslinux. You need to reinstall Grub2 and Syslinux after each use YUMI.
 - Most of Syslinux menus will be supported in UEFI mode from Grub2.
 - Multiple sets of Windows setup files- XP, 2000, 2003, Vista, WIndows 7, Server 2008, Windows 8, Server 2012, both 32 and 64 bit versions are supported. Both BIOS and (U)EFI mode are supported.
+- Support to restore the Windows bootloader for both Legacy and UEFI mode.
+- Supports installing Windows 7 on a USB 3.0 port. This will help you resolve the error: A required CD/DVD drive device driver is missing. If you have a driver floppy disk, CD, DVD, or USB flash drive, please insert it now.
 
 #### Some issues to be resolved:
 - Partition in FAT32 format can not save files larger than 4GB in size. If you want to save the file size is greater than 4GB, please format your USB or HDD to NTFS format.
@@ -35,8 +38,8 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 
 # How to create a bootable USB
 AIO Boot has many features but it's very simple and compact. The creation of the AIO Boot is even simpler with just a few clicks.
-- Unzip AIOBoot into the root directory of any USB or HDD partition that you want to create a boot.
-- Running **AIOCreator.exe** then you can install *Grub2*, ~~*Syslinux* and~~ *Clover*.
+- Once you have downloaded the application, you need to select the drive where the necessary files should be extracted. This should be the bootable USB or HDD you wish to create.
+- After unpacking, the application will be launched automatically, and you can install either Grub2 or Clover with only a single mouse click. Additionally, you can run PXE and choose either Legacy or UEFI mode.
 
 After you've created a bootable USB or HDD is complete, you can boot USB on VirtualBox virtual machines for testing.
 
@@ -47,13 +50,13 @@ Support most of WinPE, the above software and Linux distributions such as Ubuntu
 
 AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as NFS Server. Run **AIOCreator.exe**, then click **Run PXE** to activate PXE Server and NFS Server.
 # Download
-AIO boot Boot is a lightweight, less than 34 Mb.
+AIO boot Boot is a lightweight, less than 48 Mb.
 
-**File name:** AIOBoot-v0.9.7z<br />
-**Size:** 33,7 MB<br />
-**Version:** 0.9.<br />
-**Last updated:** 19.08.2016<br />
+**File name:** AIO_Boot_Extractor.exe<br />
+**Size:** 47,1 MB<br />
+**Version:** 0.9.0.3<br />
+**Last updated:** 18.10.2016<br />
 
-**Download:** [Google Drive](http://www.sitecuatui.com/out/aiogd) | [Mirrorcreator](http://www.sitecuatui.com/out/aiobootmr) | [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf)
+**Download:** [Google Drive](http://www.sitecuatui.com/out/aiogd) | [Softpedia](http://www.softpedia.com/get/System/Boot-Manager-Disk/AIO-Boot.shtml) | [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf)
 
 AIO Boot is constructed from a variety of sources, certainly still a lot of flaws, eager for sympathy. I would love to hear from you so that I can improve this tool better.

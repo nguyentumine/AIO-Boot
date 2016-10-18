@@ -1,0 +1,28 @@
+Unless otherwise specified, wimlib and its associated programs, scripts,
+documentation, and other files may be redistributed and/or modified under the
+terms of the GNU General Public License; either version 3 of the License, or (at
+your option) any later version.  There is NO WARRANTY, to the extent permitted
+by law.  See the file COPYING.GPLv3 for more details.
+
+Alternatively, when not prohibited by conflict with a third-party software
+license, the library portion of wimlib may be redistributed and/or modified
+under the terms of the GNU Lesser General Public License; either version 3 of
+the License, or (at your option) any later version.  There is NO WARRANTY, to
+the extent permitted by law.  See the file COPYING.LGPLv3 for more details.
+
+----------------------------------------
+
+NOTE! The primary reason for the GPL/LGPL "dual licensing" for the library is
+that on UNIX-like systems, wimlib can optionally be linked to the third-party
+library "libntfs-3g", which is licensed GPLv2+.  Under some interpretations of
+the GPL, this would require that wimlib be licensed under the GPL as well.
+However, a binary copy of wimlib that was compiled without libntfs-3g support
+(for example; the exception may be applicable in other situations as well)
+logically cannot be affected by libntfs-3g's license and should therefore be
+free to be redistributed under the LGPL instead of the GPL.
+
+NOTE! The file COPYING.CC0 contains a public domain dedication.  This public
+domain dedication does not apply to wimlib as a whole, but rather to individual
+source code files which the author(s) have elected to place into the public
+domain, as noted in the corresponding file headers.  As usual, such code carries
+NO WARRANTY, to the extent permitted by law.  See COPYING.CC0 for more details.
