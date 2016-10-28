@@ -17,6 +17,7 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 #### Some features are supported:
 - UEFI-GPT and MBR-Legacy.
 - USB and HDD with FAT32 or NTFS format ...
+- Supports boot into Legacy mode for the hard disk in GPT style.
 - Boot via LAN with Tiny PXE Server.
 - Integration of package through **AIOCreator.exe** tool.
 - Bypass the Secure Boot on the UEFI mode via **Shimx64.efi** (need tester). If your computer has a Secure Boot section, turn it on, then boot **/EFI/Boot/shimx64.efi**.
@@ -25,11 +26,11 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 - One or more partitions, AIO Boot also supports hidden partition.
 - Support hotkeys for Grub2. At the main menu, if you want to boot into a certain menu, simply press their hot key. For example, to restart your computer, you simply press the "r" or "o" to shutdown.
 - Supports multiple languages, including Vietnamese, English, Russian and French...
-- Support YUMI for Syslinux. You need to reinstall Grub2 and Syslinux after each use YUMI.
-- Most of Syslinux menus will be supported in UEFI mode from Grub2.
 - Multiple sets of Windows setup files- XP, 2000, 2003, Vista, WIndows 7, Server 2008, Windows 8, Server 2012, both 32 and 64 bit versions are supported. Both BIOS and (U)EFI mode are supported.
 - Support to restore the Windows bootloader for both Legacy and UEFI mode.
-- Supports installing Windows 7 on a USB 3.0 port. This will help you resolve the error: A required CD/DVD drive device driver is missing. If you have a driver floppy disk, CD, DVD, or USB flash drive, please insert it now.
+- Supports installing Windows 7 on a USB 3.0 port. This will help you resolve the error: `A required CD/DVD drive device driver is missing. If you have a driver floppy disk, CD, DVD, or USB flash drive, please insert it now`.
+- Support to edit and delete the MENU (except for Windows packages).
+- Automatically identifies the DOS program to integrate.
 
 #### Some issues to be resolved:
 - Partition in FAT32 format can not save files larger than 4GB in size. If you want to save the file size is greater than 4GB, please format your USB or HDD to NTFS format.

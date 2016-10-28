@@ -230,6 +230,8 @@
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
 		<false/>
+		<key>SkipHibernateTimeout</key>
+		<false/>
 		<key>Fast</key>
 		<false/>
 		<key>Legacy</key>
@@ -309,7 +311,7 @@
 			<key>#IMEI</key>
 			<string>0x1e208086</string>
 		</dict>
-		<key>#InjectString</key>
+		<key>#Inject</key>
 		<false/>
 		<key>UseIntelHDMI</key>
 		<false/>
@@ -746,8 +748,15 @@
 		<true/>
 		<key>#NvidiaWeb</key>
 		<false/>
+	</dict>
+	<key>BootGraphics</key>
+	<dict>
 		<key>#DefaultBackgroundColor</key>
 		<string>0xF0F0F0</string>
+		<key>UIScale</key>
+		<integer>1</integer>
+		<key>EFILoginHiDPI</key>
+		<integer>1</integer>
 	</dict>
 </dict>
 </plist>
