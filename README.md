@@ -4,6 +4,7 @@ AIO Boot is a tool that can help you create a bootable USB with Grub2, ~~Grub4do
 Currently, there are many USB boot tool with many different features, so you will hardly be able to select a tool to use (unless you have a lot of USB). Also for that reason that I released AIO Boot tool.
 
 Homepage: http://www.sitecuatui.com/
+
 Please check the [Releases](https://github.com/nguyentumine/AIO-Boot/releases) page for latest information.
 
 My English is not good, I used Google to translate. Please sympathize with me.
@@ -13,6 +14,7 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 #### The bootloader is supported:
 - For Legacy-MBR: Grub2, ~~Grub4dos, Syslinux~~ and Clover [Legacy].<br />
 - For UEFI-GPT: Grub2, Clover [UEFI] and rEFInd.
+- Boot from LAN: Tiny PXE Server, iPXE and FreeNFS.
 
 #### Some features are supported:
 - UEFI-GPT and MBR-Legacy.
@@ -51,13 +53,13 @@ Support most of WinPE, the above software and Linux distributions such as Ubuntu
 
 AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as NFS Server. Run **AIOCreator.exe**, then click **Run PXE** to activate PXE Server and NFS Server.
 # Download
-AIO boot Boot is a lightweight, less than 48 Mb.
+AIO boot Boot is a lightweight, less than 42 Mb.
 
 **File name:** AIO_Boot_Extractor.exe<br />
-**Size:** 47,1 MB<br />
-**Version:** 0.9.0.3<br />
-**Last updated:** 18.10.2016<br />
+**Size:** 41,5 MB<br />
+**Version:** 0.9.0.5<br />
+**Last updated:** 01.11.2016<br />
 
-**Download:** [Google Drive](http://www.sitecuatui.com/out/aiogd) | [Softpedia](http://www.softpedia.com/get/System/Boot-Manager-Disk/AIO-Boot.shtml) | [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf)
+**Download:** [Google Drive](http://www.sitecuatui.com/out/aiogd) | [Softpedia](http://www.softpedia.com/get/System/Boot-Manager-Disk/AIO-Boot.shtml) | [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf) | [Softpedia](http://www.softpedia.com/get/System/Boot-Manager-Disk/AIO-Boot.shtml) | [SourceForge](https://sourceforge.net/projects/aioboot/)
 
 AIO Boot is constructed from a variety of sources, certainly still a lot of flaws, eager for sympathy. I would love to hear from you so that I can improve this tool better.
