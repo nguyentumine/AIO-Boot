@@ -1,0 +1,131 @@
+################################################################
+Language	:	Tiếng Việt
+Credits		:	Nguyễn Tứ (www.sitecuatui.com)
+Date		:	06.12.2016
+Info		:	Vui lòng không thêm, xóa hoặc di chuyển các dòng, không xóa "%s". Nếu bạn muốn gửi bản dịch của chính bạn, hoặc có bất kỳ câu hỏi, đừng quên gửi email đến info@sitecuatui.com. Cám ơn đã trợ giúp!
+################################################################
+
+
+
+##### BEGIN #####
+Tiếng Việt
+Chính
+Tích hợp
+Giới thiệu
+Bootloaders
+Chạy PXE
+Thiết lập
+Công cụ
+Sửa MENU
+Trợ giúp
+Đĩa hiện tại:
+Đĩa
+Tên
+Loại
+Kích cỡ
+Phân vùng hiện tại:
+Ổ
+Nhãn
+Định dạng
+Thiết bị tháo rời (USB, SD Cards...)
+Ổ cứng cố định
+RAM disk
+Chưa biết
+AIO Boot là một tiện ích để tạo một ổ khởi động cho USB và HDD. AIO Boot được xây dựng từ nhiều nguồn khác nhau.
+Tôi rất muốn nghe ý kiến từ bạn để tôi có thể cải thiện công cụ này tốt hơn. Cám ơn vì tất cả.!
+Tên ứng dụng
+Phiên bản
+Trang chủ
+Bản quyền
+1. Chọn gói
+2. Chọn tập tin
+Tải về
+OK
+Vui lòng chọn tệp tin trên ổ đĩa của bạn...
+Chọn tập tin ISO hoặc WIM trên ổ đĩa của bạn...
+Chọn tập tin ISO trên ổ đĩa của bạn...
+Mount tập tin ISO, sau đó chọn đến tập tin "I386/TXTSETUP.SIF" hoặc "AMD64/TXTSETUP.SIF"...
+Vui lòng chọn một tập tin hợp lệ!
+Tên tập tin chỉ được bao gồm các ký tự [A-Z], các chữ số [0-9] và dấu ["_", "-"]. Vui lòng đổi tên tập tin và thử lại!
+Tập tin lớn hơn 4GB không thể được lưu trữ trên một phân vùng FAT32.%sĐịnh dạng phân vùng này sang exFAT hoặc NTFS sẽ giải quyết vấn đề này.
+Đang xử lý, vui lòng chờ...
+Không đóng cửa sổ này cho đến khi xử lý xong!
+Không nhận dạng được tập tin này!
+Lỗi: vui lòng liên hệ với tác giả để được hỗ trợ!
+Lỗi: vui lòng đóng các ứng dụng mà bạn đang dùng để đọc tập tin BCD/WinLegacy và thử lại!
+Lỗi: vui lòng đóng các ứng dụng mà bạn đang dùng để đọc tập tin %s và thử lại!';
+Tập tin không hợp lệ!
+Lỗi: Dung lượng còn trống không đủ!
+Xong. Chúc vui!
+Lỗi
+Cảnh báo
+Thông tin
+Xác nhận
+Đang chép
+Đang chép các tập tin cần thiết...
+Đang giải nén
+Đang kiểm tra tập tin, vui lòng chờ
+Vui lòng nhập tên menu mà bạn muốn hiển thị
+Đang thêm menu...
+Đang chuẩn bị các tập tin...
+Vui lòng đóng Regedit.exe để tiếp tục!
+Hủy
+Tiếp tục
+Đang dọn dẹp, vui lòng chờ...
+Vì kích thước của tập tin không cho phép lưu trữ trên một phân vùng FAT32.%sChúng ta sẽ chia nhỏ tập tin này, bạn có đồng ý không?
+Đang chia nhỏ
+Có
+Không
+Ổ đĩa này là kiểu GPT. Bạn cần phải chép thư mục "EFI" vào một phân vùng có định dạng "FAT32" hoặc "FAT16".
+Ổ đĩa này là kiểu GPT. Chỉ có Grub2, rEFInd và Clover[UEFI] được hỗ trợ.
+Hiện tại chúng tôi không hỗ trợ thiết bị này!
+đã được cài đặt...
+đã được cài đặt rồi...
+%s chưa được cài đặt. %s yêu cầu %s phải được cài đặt trước.%sBạn có muốn cài đặt Grub2 luôn không?
+Hãy chọn ổ đĩa mà bạn đã cài đặt Windows phiên bản mới nhất.
+Nếu có thể, hãy thử tính năng này trên Windows 7 hoặc các phiên bản mới hơn để được hỗ trợ tốt nhất.
+Không tìm thấy phân vùng Hệ thống.
+đã được phục hồi.
+Đã không tìm thấy bất cứ một ổ đĩa nào mà Windows đã được cài đặt ở chế độ %s.
+Bạn cần phải định dạng lại ổ đĩa này để có thể cài đặt Syslinux.
+Vui lòng định dạng lại ổ đĩa này thành FAT32 hoặc NTFS.
+Vui lòng lựa chọn phân vùng mà bạn đã cài đặt Windows ở chế độ Legacy BIOS.
+Vui lòng lựa chọn phân vùng mà bạn đã cài đặt Windows ở chế độ UEFI.
+Vui lòng khởi động vào chế độ UEFI và thử lại.
+Bạn đang dùng phiên bản mới nhất!
+Hiện đang có phiên bản mới mà bạn có thể cập nhật ngay bây giờ.%sPhiên bản %s, phát hành ngày %s.%sBạn có muốn đóng ứng dụng này và cập nhật ngay không?
+Hiện tại, không có MENU nào để có thể chỉnh sửa.
+Xóa?
+Tên của MENU
+Lưu lại
+sau khi bạn đã chỉnh sửa.
+Đang xóa tệp...
+Đã lưu
+Cập nhật
+Mặc định
+Chỉ tệp
+Cũng cài đặt Clover cho chế độ Legacy
+Vui lòng lựa chọn phân vùng để cài đặt Grub2, Clover và rEFInd cho chế độ UEFI.
+Bạn cần phải tải về phiên bản mới nhất của AIO Boot và phân vùng lại đĩa này để tiếp tục.
+Đĩa cứng kiểu GPT chỉ hỗ trợ chế độ UEFI.%sNếu bạn chỉ sử dụng chế độ UEFI, bạn không cần phải làm gì ngay bây giờ.%sNếu bạn muốn hỗ trợ chế độ Legacy, hãy định dạng đĩa cứng sang kiểu MBR.
+Để hỗ trợ Grub2, Clover[UEFI], rEFInd và UEFI Shell ở chế độ UEFI, bạn cần phải tạo một phân vùng ở định dạng FAT32 hoặc FAT16 trên đĩa cứng này.
+Bạn có thể sử dụng DiskPart hoặc GParted để tạo thêm phân vùng mới.%sVui lòng thử lại sau khi đã tạo xong phân vùng mới.
+Ổ đĩa này là kiểu GPT. Chúng ta cần phải chép thư mục "EFI" vào phân vùng "EFI System Partition (ESP)". Bạn có muốn làm nó ngay bây giờ không?
+%s: Bạn sẽ khởi động trực tiếp vào Grub2 mỗi khi bạn bật máy tính.%s: Bạn cần phải chọn tập tin "/EFI/Grub2/bootx64.efi" để khởi động vào Grub2.
+Để hỗ trợ chế độ Legacy BIOS trên ổ cứng ở kiểu GPT. Chúng ta cần dành riêng một phân vùng mới.
+1. Phân vùng này có kích thước càng nhỏ càng tốt. Khoảng 1MB hoặc lớn hơn nhưng không lớn hơn 10MB.%s2. Tất cả dữ liệu trên phân vùng này sẽ bị mất. Vì thế, bạn cần phải tạo thêm một phân vùng mới.
+Hãy tiếp tục sau khi bạn đã tạo phân vùng này như yêu cầu.
+Máy tính của tôi có UEFI 32-bit.
+Đừng bảo tôi nhập tên MENU.
+Không cần phải xác minh tệp tin.
+Cấu hình PXE Boot cho chế độ UEFI.
+Lưu lại
+Đây là danh sách mà Grub2 hỗ trợ.%sNgôn ngữ của bạn là gì?
+Vui lòng chọn một mục trong danh sách xổ xuống
+Thiết lập của bạn đã được lưu!
+Vui lòng định dạng lại phân vùng này ở FAT32.%sHoặc cài đặt Grub2 và chọn tùy chọn để cài đặt Clover.
+Cài đặt Bootloader
+Khôi phục khởi động Windows
+Tiny PXE Server đang chạy, vui lòng đóng nó lại nếu bạn muốn chạy lại!
+UEFI hay Legacy mode?
+##### END #####

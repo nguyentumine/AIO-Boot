@@ -1,5 +1,5 @@
 # AIO Boot
-AIO Boot is a tool that can help you create a bootable USB with Grub2, ~~Grub4dos, Syslinux,~~ Clover and rEFInd. AIO Boot can boot Windows and most Linux distributions and boot via LAN using Tiny PXE Server.
+AIO Boot is a tool that can help you create a bootable USB with Grub2, Grub4dos, Syslinux, Clover and rEFInd. AIO Boot can boot Windows and most Linux distributions and boot via LAN using Tiny PXE Server.
 
 Currently, there are many USB boot tool with many different features, so you will hardly be able to select a tool to use (unless you have a lot of USB). Also for that reason that I released AIO Boot tool.
 
@@ -11,7 +11,7 @@ My English is not good, I used Google to translate. Please sympathize with me.
 # Features
 AIO Boot was released with a lot of great features that other tools do not yet support.
 #### The bootloader is supported:
-- For Legacy-MBR: Grub2, ~~Grub4dos, Syslinux~~ and Clover [Legacy].<br />
+- For Legacy-MBR: Grub2, Grub4dos, Syslinux and Clover [Legacy].<br />
 - For UEFI-GPT: Grub2, Clover [UEFI] and rEFInd.
 - Boot from LAN: Tiny PXE Server, iPXE and FreeNFS.
 
@@ -30,7 +30,7 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 - Multiple sets of Windows setup files- XP, 2000, 2003, Vista, WIndows 7, Server 2008, Windows 8, Server 2012, both 32 and 64 bit versions are supported. Both BIOS and (U)EFI mode are supported.
 - Support to restore the Windows bootloader for both Legacy and UEFI mode.
 - Supports installing Windows 7 on a USB 3.0 port. This will help you resolve the error: `A required CD/DVD drive device driver is missing. If you have a driver floppy disk, CD, DVD, or USB flash drive, please insert it now`.
-- Support to edit and delete the MENU (except for Windows packages).
+- Support to edit and delete the MENU ~~(except for Windows packages)~~.
 - Automatically identifies the DOS program to integrate.
 
 #### Some issues to be resolved:
@@ -55,10 +55,10 @@ AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as 
 AIO boot Boot is a lightweight, less than 44 Mb.
 
 **File name:** AIO_Boot_Extractor.exe<br />
-**Size:** 43,3 MB<br />
-**Version:** 0.9.1.5<br />
-**Last updated:** 03.12.2016<br />
-**MD5 checksum:** e2b9389f98be55407f8e534ecbe5c939<br />
+**Size:** 43,4 MB<br />
+**Version:** 0.9.1.7<br />
+**Last updated:** 07.12.2016<br />
+**MD5 checksum:** 8e4d0cb18803166fa3fa291882526889<br />
 
 **Download:** [Google Drive](http://www.sitecuatui.com/out/aiogd) | [Softpedia](http://www.softpedia.com/get/System/Boot-Manager-Disk/AIO-Boot.shtml) | [SourceForge](https://sourceforge.net/projects/aioboot/) | [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf)
 
