@@ -36,7 +36,6 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 #### Some issues to be resolved:
 - Partition in FAT32 format can not save files larger than 4GB in size. If you want to save the file size is greater than 4GB, please format your USB or HDD to NTFS format.
 - To be able to boot UEFI, you need a FAT32 partition. If you want to use NTFS, but still supports UEFI, please create a FAT32 partition and copy that folder into the EFI.
-- Use BootICE to create multiple partitions and USB. AIO Boot helps you can boot on all the hidden partition.
 
 # How to create a bootable USB
 AIO Boot has many features but it's very simple and compact. The creation of the AIO Boot is even simpler with just a few clicks.
@@ -52,13 +51,13 @@ Support most of WinPE, the above software and Linux distributions such as Ubuntu
 
 AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as NFS Server. Run **AIOCreator.exe**, then click **Run PXE** to activate PXE Server and NFS Server.
 # Download
-AIO boot Boot is a lightweight, less than 44 Mb.
+AIO boot Boot is a lightweight, less than 42 Mb.
 
 **File name:** AIO_Boot_Extractor.exe<br />
-**Size:** 43,4 MB<br />
-**Version:** 0.9.1.7<br />
-**Last updated:** 07.12.2016<br />
-**MD5 checksum:** 8e4d0cb18803166fa3fa291882526889<br />
+**Size:** 41,6 MB<br />
+**Version:** 0.9.2<br />
+**Last updated:** 12.12.2016<br />
+**MD5 checksum:** 6dce375d36e44a9d79e548cae4838b57<br />
 
 **Download:** [Google Drive](http://www.sitecuatui.com/out/aiogd) | [Softpedia](http://www.softpedia.com/get/System/Boot-Manager-Disk/AIO-Boot.shtml) | [SourceForge](https://sourceforge.net/projects/aioboot/) | [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf)
 

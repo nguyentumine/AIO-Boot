@@ -8,7 +8,7 @@ Info		:	Please do not add, delete or move the line, do not remove "%s". If you w
 
 
 ##### BEGIN #####
-English
+German
 Main
 Integration
 About
