@@ -128,4 +128,5 @@ Cài đặt Bootloader
 Khôi phục khởi động Windows
 Tiny PXE Server đang chạy, vui lòng đóng nó lại nếu bạn muốn chạy lại!
 UEFI hay Legacy mode?
+Vui lòng chọn phiên bản 32-bit hay 64-bit
 ##### END #####

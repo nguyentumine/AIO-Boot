@@ -128,4 +128,5 @@ Install Bootloader
 Restore Windows Bootloader
 Tiny PXE Server is running, please close it if you want to rerun!
 UEFI or Legacy mode?
+Please select 32-bit or 64-bit version
 ##### END #####
