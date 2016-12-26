@@ -129,4 +129,8 @@ Restore Windows Bootloader
 Tiny PXE Server is running, please close it if you want to rerun!
 UEFI or Legacy mode?
 Please select 32-bit or 64-bit version
+Windows only
+All others
+WinPE Required
+Please follow the steps below first:%s1. Download "boot%s.wim".%s2. Copy it to "%s\AIO\WinPXE\sources\".%sYou can download it from here:
 ##### END #####

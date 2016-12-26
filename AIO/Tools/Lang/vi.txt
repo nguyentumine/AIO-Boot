@@ -129,4 +129,8 @@ Khôi phục khởi động Windows
 Tiny PXE Server đang chạy, vui lòng đóng nó lại nếu bạn muốn chạy lại!
 UEFI hay Legacy mode?
 Vui lòng chọn phiên bản 32-bit hay 64-bit
+Chỉ Windows
+Những thứ khác
+Yêu cầu WinPE
+Vui lòng thực hiện các bước dưới đây trước:%s1. Tải về "boot%s.wim".%s2. Chép nó vào "%s\AIO\WinPXE\sources\".%sBạn có thể tải nó ở đây:
 ##### END #####
