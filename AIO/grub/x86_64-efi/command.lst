@@ -95,7 +95,6 @@ help: minicmd
 hexdump_random: random
 initrd16: linux16
 initrd: linux
-initrdefi: linuxefi
 keymap: keylayouts
 kfreebsd_loadenv: bsd
 kfreebsd_module: bsd
@@ -112,7 +111,6 @@ legacy_password: legacycfg
 legacy_source: legacycfg
 linux16: linux16
 linux: linux
-linuxefi: linuxefi
 list_trusted: verify
 loadbios: loadbios
 loadfont: font
@@ -134,7 +132,6 @@ nativedisk: nativedisk
 net_add_addr: net
 net_add_dns: net
 net_add_route: net
-net_bootp6: net
 net_bootp: net
 net_del_addr: net
 net_del_dns: net

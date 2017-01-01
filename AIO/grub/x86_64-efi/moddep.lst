@@ -27,7 +27,6 @@ gzio:
 cbmemc: cbtable terminfo normal
 video:
 test_blockarg: extcmd normal
-linuxefi: boot
 gfxterm: video font
 cbtable:
 mul_test: functional_test

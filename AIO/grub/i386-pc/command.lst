@@ -61,7 +61,6 @@
 *xnu_splash: xnu
 *zfskey: zfscrypt
 .: configfile
-915resolution: 915resolution
 [: test
 authenticate: normal
 background_color: gfxterm_background
@@ -104,7 +103,6 @@ gdbstub_stop: gdb
 gptsync: gptsync
 help: minicmd
 hexdump_random: random
-hwmatch: hwmatch
 initrd16: linux16
 initrd: linux
 keymap: keylayouts
@@ -140,7 +138,6 @@ nativedisk: nativedisk
 net_add_addr: net
 net_add_dns: net
 net_add_route: net
-net_bootp6: net
 net_bootp: net
 net_del_addr: net
 net_del_dns: net

@@ -17,7 +17,7 @@ title Auto-detect and use F6 SATA/RAID/SCSI Driver\nUse if your internal disk is
 #http://www.rmprepusb.com
 map --unmap=0:0xFF
 map --unhook && map --rehook
-ls /AIO/Tools/DPMS/DPMS.ISO > nul || find --set-root --devices=hf /AIO/Tools/DPMS/DPMS.ISO
+if NOT exist /AIO/Tools/DPMS/DPMS.ISO  find --set-root --devices=hf /AIO/Tools/DPMS/DPMS.ISO ;; if NOT exist /AIO/Tools/DPMS/DPMS.ISO pause --wait=20 Please download "DPMS.ISO" from "https://goo.gl/AhnqTb" and copy it to "/AIO/Tools/DPMS". && configfile /AIO/Menu/XPSetup.lst
 map /AIO/Tools/DPMS/DPMS.ISO (0xfa)|| map --mem /AIO/Tools/DPMS/DPMS.ISO (0xfa)
 map --hook
 root (0xfa)
@@ -35,7 +35,7 @@ title Auto-detect and use F6 SATA/RAID/SCSI Driver + Firadisk\nTry this entry if
 #http://www.rmprepusb.com
 map --unmap=0:0xFF
 map --unhook && map --rehook
-ls /AIO/Tools/DPMS/DPMS.ISO > nul || find --set-root --devices=hf /AIO/Tools/DPMS/DPMS.ISO
+if NOT exist /AIO/Tools/DPMS/DPMS.ISO  find --set-root --devices=hf /AIO/Tools/DPMS/DPMS.ISO ;; if NOT exist /AIO/Tools/DPMS/DPMS.ISO pause --wait=20 Please download "DPMS.ISO" from "https://goo.gl/AhnqTb" and copy it to "/AIO/Tools/DPMS". && configfile /AIO/Menu/XPSetup.lst
 map /AIO/Tools/DPMS/DPMS.ISO (0xfa)|| map --mem /AIO/Tools/DPMS/DPMS.ISO (0xfa)
 map --hook
 root (0xfa)

@@ -22,7 +22,6 @@ write 0x8274 0x2001
 
 title ...Back to Grub2
 fallback +1
-find --set-root --ignore-floppies --ignore-cd /AIO/grub/i386-pc/core.img
 kernel /AIO/grub/i386-pc/core.img
 
 title Reboot

@@ -188,7 +188,6 @@ nilfs2: fshelp
 lsmmap:
 gcry_sha1: crypto
 cmosdump:
-915resolution:
 mmap: boot
 tar: archelp
 png: bufio bitmap
@@ -243,7 +242,6 @@ part_acorn:
 newc: archelp
 macho:
 iorw: extcmd
-hwmatch: pci normal
 cat: extcmd
 afs: fshelp
 sleep_test: datetime functional_test

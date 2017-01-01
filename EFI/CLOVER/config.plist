@@ -173,6 +173,8 @@
 		<string>0x64</string>
 		<key>#ResetValue</key>
 		<string>0xFE</string>
+		<key>DisableASPM</key>
+		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>#DoubleFirstState</key>
@@ -221,8 +223,8 @@
 	<key>Boot</key>
 	<dict>
 		<key>#Arguments</key>
-		<string>-v arch=i386 slide=0 darkwake=0</string>
-		<key>Arguments</key>
+		<string>-v arch=x86_64 slide=0 darkwake=0</string>
+		<key>##Arguments</key>
 		<string>kext-dev-mode=1 rootless=0</string>
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
@@ -230,7 +232,13 @@
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
 		<false/>
+		<key>NeverDoRecovery</key>
+		<true/>
 		<key>SkipHibernateTimeout</key>
+		<false/>
+		<key>StrictHibernate</key>
+		<false/>
+		<key>DisableCloverHotkeys</key>
 		<false/>
 		<key>Fast</key>
 		<false/>
@@ -255,11 +263,15 @@
 		<integer>3140</integer>
 		<key>#QPI</key>
 		<integer>4800</integer>
+		<key>#TDP</key>
+		<integer>95</integer>
 		<key>#Type</key>
 		<string>0x0201</string>
 		<key>#SavingMode</key>
 		<integer>7</integer>
 		<key>#TurboDisable</key>
+		<true/>
+		<key>#HWPEnable</key>
 		<true/>
 	</dict>
 	<key>Devices</key>

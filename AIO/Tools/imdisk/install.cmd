@@ -7,6 +7,7 @@ title ImDisk Virtual Disk Driver setup
 echo ImDisk Virtual Disk Driver setup
 echo.
 
+set IMDISK_SILENT_SETUP=1
 set IMDISK_TOTAL_DEVICES=0
 set IMDISK_VALID_DEVICES=0
 set IMDISK_PENDING_REMOVAL_DEVICES=0

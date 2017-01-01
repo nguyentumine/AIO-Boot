@@ -1,5 +1,5 @@
 ***********************************************************
-WinContig 2.0.0.2
+WinContig 2.1.0.0
 Copyright © 2006-2016 Marco D'Amato
 Web: http://wincontig.mdtzone.it/en/index.htm
 E-mail: md@mdtzone.it
@@ -32,6 +32,8 @@ Die Verwendung dieses Produktes für einen beliebigen Zeitraum stellt Ihr Einvers
 Installation
 ====================================================================
 WinContig ist eine eigenständige ausführbare Datei, die keine Installation oder zusätzliche DLLs erfordert. Um sie zu nutzen, extrahieren Sie den Inhalt des ZIP-Archivs in einen beliebigen Ordner und doppelklicken Sie die ausführbare Datei.
+
+HINWEIS: Vor der Installation der aktuellen Version von WinContig muss die alte Version entfernt werden. Bei der ersten Ausführung werden alle Einstellungen auf die Standardwerte zurückgesetzt.
 
 
 ==================================================================== 

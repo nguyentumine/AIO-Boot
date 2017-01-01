@@ -1,5 +1,5 @@
 ﻿***********************************************************
-WinContig 2.0.0.2
+WinContig 2.1.0.0
 Copyright ©2006-2016 Marco D'Amato
 Web: http://wincontig.mdtzone.it/en/index.htm
 E-mail: md@mdtzone.it

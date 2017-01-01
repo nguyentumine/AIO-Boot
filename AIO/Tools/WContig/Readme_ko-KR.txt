@@ -1,5 +1,5 @@
 ***********************************************************
-WinContig 2.0.0.2
+WinContig 2.1.0.0
 저작권 ⓒ2006-2016 Marco D'Amato
 웹사이트: http://wincontig.mdtzone.it/en/index.htm
 이메일: md@mdtzone.it
