@@ -35,6 +35,6 @@ grub_target_img_ldflags='@TARGET_IMG_BASE_LDFLAGS@'
 grub_version="2.02~beta3"
 grub_package="grub"
 grub_package_string="GRUB 2.02 - AIO Boot v0.9"
-grub_package_version="2.02~aioboot-v0.9"
+grub_package_version="2.02~~aio~boot~v0.9"
 grub_package_name="GRUB"
 grub_package_bugreport="bug-grub@gnu.org"
