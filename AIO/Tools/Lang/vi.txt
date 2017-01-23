@@ -31,8 +31,8 @@ Thiết bị tháo rời (USB, SD Cards...)
 Ổ cứng cố định
 RAM disk
 Chưa biết
-AIO Boot là một tiện ích để tạo một ổ khởi động cho USB và HDD. AIO Boot được xây dựng từ nhiều nguồn khác nhau.
-Tôi rất muốn nghe ý kiến từ bạn để tôi có thể cải thiện công cụ này tốt hơn. Cám ơn vì tất cả.!
+AIO Boot là một tiện ích để tạo một ổ khởi động cho USB và HDD sử dụng Grub2, Grub4dos, Syslinux, Clover và rEFInd. AIO Boot sở hữu các tính năng độc nhất, nâng cao và thân thiện.%sĐây là phần mềm miễn phí, vui lòng không trả bất cứ khoản phí nào để sử dụng phần mềm này. Bất cứ hành vi mua hoặc bán là bị cấm.%sCông cụ này là 100%% sạch, nó là không có hại cho máy tính của bạn.%sXin hãy giúp đỡ cộng đồng này bằng cách đóng góp ý tưởng của bạn và báo cáo các lỗi. Hãy chia sẻ hoặc đóng góp các bài viết của bạn, video và các liên kết liên quan để nhiều người có thể biết và sử dụng công cụ này.
+Đừng quên liên hệ với tác giả khi bạn có bất kỳ câu hỏi, email info@sitecuatui.com. Tôi rất muốn nghe ý kiến từ bạn để tôi có thể cải thiện công cụ này tốt hơn. Cám ơn vì tất cả.!
 Tên ứng dụng
 Phiên bản
 Trang chủ
@@ -120,7 +120,7 @@ Máy tính của tôi có UEFI 32-bit.
 Không cần phải xác minh tệp tin.
 Cấu hình PXE Boot cho chế độ UEFI.
 Lưu lại
-Đây là danh sách mà Grub2 hỗ trợ.%sNgôn ngữ của bạn là gì?
+Đây là danh sách mà Grub2 hỗ trợ. Ngôn ngữ của bạn là gì?
 Vui lòng chọn một mục trong danh sách xổ xuống
 Thiết lập của bạn đã được lưu!
 Vui lòng định dạng lại phân vùng này ở FAT32.%sHoặc cài đặt Grub2 và chọn tùy chọn để cài đặt Clover.

@@ -24,15 +24,15 @@ Name
 Type
 Size
 Current Drive:
-Letter
+Drive
 Label
 FileSystem
 Removable media
 Fixed media
 RAM disk
 Unknow
-AIO Boot is a tool that can help you create a bootable USB/HDD with Grub2, Grub4dos, Syslinux, Clover and rEFInd. AIO Boot is constructed from a variety of sources.
-I would love to hear from you so that I can improve this tool better. Thank for everything!
+AIO Boot is a tool that can help you create a bootable USB/HDD with Grub2, Grub4dos, Syslinux, Clover and rEFInd. AIO Boot own unique features, advanced and friendly.%sThis is free software, please do not pay any fees to use this software. Any act of buying or selling is prohibited.%sThis tool is 100%% clean, it is not harmful to your computer.%sPlease help this community by contributing your ideas and report bugs. Feel free to share or contribute your articles, videos, and links related to more people can know and use this tool.
+Don't forget to contact the author if you have any questions, email info@sitecuatui.com. I would love to hear from you so that I can improve this tool better. Thank for everything!
 Name
 Version
 Homepage
@@ -120,7 +120,7 @@ Don't ask me enter Name of MENU.
 No need to verify the file.
 Configure PXE Boot for UEFI mode.
 Set
-Here is the list of languages that Grub2 is supported.%sWhat is your language?
+Here is the list of languages that Grub2 is supported. What is your language?
 Please select an item in the drop-down list
 Your settings have been saved!
 Please format this Drive to FAT32.%sOr install Grub2 and select the option to install Clover.
