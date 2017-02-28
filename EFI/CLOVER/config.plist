@@ -71,8 +71,6 @@
 				<true/>
 				<key>FixUSB_1000</key>
 				<true/>
-				<key>NewWay_80000000</key>
-				<true/>
 				<key>FIX_RTC_20000</key>
 				<true/>
 				<key>FIX_TMR_40000</key>
@@ -273,6 +271,8 @@
 		<true/>
 		<key>#HWPEnable</key>
 		<true/>
+		<key>#HWPValue</key>
+		<string>0x30002a01</string>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -304,7 +304,7 @@
 			<key>#Inject</key>
 			<string>0x0887</string>
 		</dict>
-		<key>FakeID</key>
+		<key>#FakeID</key>
 		<dict>
 			<key>#ATI</key>
 			<string>0x67501002</string>
@@ -352,8 +352,6 @@
 	</array>
 	<key>GUI</key>
 	<dict>
-		<key>Theme</key>
-		<string>BGM</string>
 		<key>#Custom</key>
 		<dict>
 			<key>Entries</key>
@@ -477,7 +475,7 @@
 		<key>#TextOnly</key>
 		<false/>
 		<key>Theme</key>
-		<string>metal</string>
+		<string>BGM</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -545,6 +543,8 @@
 		<string>040000001402000000010000000004040004000004030000000100001102010500000000000000000000000000000000</string>
 		<key>AppleRTC</key>
 		<true/>
+		<key>DellSMBIOSPatch</key>
+		<false/>
 		<key>AsusAICPUPM</key>
 		<false/>
 		<key>Debug</key>
@@ -602,26 +602,6 @@
 				<string>IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>AAAAAAAAAAAAAA==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Second Stage patch 1</string>
-				<key>Find</key>
-				<data>hcB0XUg=</data>
-				<key>Name</key>
-				<string>IOGraphicsFamily</string>
-				<key>Replace</key>
-				<data>McB0W0g=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Second Stage patch 2</string>
-				<key>Find</key>
-				<data>QYjE6wM=</data>
-				<key>Name</key>
-				<string>IOGraphicsFamily</string>
-				<key>Replace</key>
-				<data>QYjE6yM=</data>
 			</dict>
 		</array>
 	</dict>

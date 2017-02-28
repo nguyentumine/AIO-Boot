@@ -24,15 +24,15 @@ Info		:	Пожалуйста, не добавлять,не удалять или
 Тип
 Размер
 Текущий диск:
-Drive
+Диск
 Метка
 FileSystem
 Съемные Носители
 Фиксированный Носитель
 RAM диск
 Неизвестный
-AIO Boot is a tool that can help you create a bootable USB/HDD with Grub2, Grub4dos, Syslinux, Clover and rEFInd. AIO Boot own unique features, advanced and friendly.%sThis is free software, please do not pay any fees to use this software. Any act of buying or selling is prohibited.%sThis tool is 100%% clean, it is not harmful to your computer.%sPlease help this community by contributing your ideas and report bugs. Feel free to share or contribute your articles, videos, and links related to more people can know and use this tool.
-Don't forget to contact the author if you have any questions, email info@sitecuatui.com. I would love to hear from you so that I can improve this tool better. Thank for everything!
+AIO Boot является инструментом, который может помочь вам создать загрузочный USB/HDD с Grub2, Grub4dos, Syslinux, Clover а также rEFInd. AIO Boot это собственные уникальные особенности, расширенный и дружественный.%sЭто свободное программное обеспечение, пожалуйста, не платить никаких сборов, чтобы использовать это программное обеспечение. Любой акт покупки или продажи запрещен.%sЭтот инструмент 100%% чистыи, не вреден для вашего компьютера.%sПожалуйста, помогите этому сообществу, внося свой идеи и сообщить об ошибках. Не стесняйтесь делиться или внести свой вклад в статью, видео, ссылки, связанные с большим количеством людей которые могут узнать и использовать этот инструмент.
+Не забудьте связаться с автором, если у вас есть какие-либо вопросы, Эл. адрес info@sitecuatui.com. Я хотел бы услышать от вас, как я могу улучшить этот инструмент. Спасибо за все!
 Имя
 Версия
 Домашняя Страница
@@ -119,7 +119,7 @@ Cтиль-GPT на жесткий диск поддерживается толь
 Не спрашивайте меня, введите имя меню.
 Нет необходимости проверки файла.
 Настройка загрузки PXE для режима UEFI.
-Устанавить
+Установить
 Вот список языков Grub2 которые поддерживается. Какой твой язык?
 Пожалуйста, выберите элемент в раскрывающемся списке
 Ваши настройки были сохранены!

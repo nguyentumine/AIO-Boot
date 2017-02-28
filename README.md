@@ -3,7 +3,7 @@ AIO Boot is a tool that can help you create a bootable USB with Grub2, Grub4dos,
 
 Currently, there are many USB boot tool with many different features, so you will hardly be able to select a tool to use (unless you have a lot of USB). Also for that reason that I released AIO Boot tool.
 
-Homepage: http://www.sitecuatui.com/<br />
+Homepage: [AIO Boot](https://www.sitecuatui.com/aio-boot-v0-9/)<br />
 Please check the [Releases](https://github.com/nguyentumine/AIO-Boot/releases) page for latest information.
 
 My English is not good, I used Google to translate. Please sympathize with me.
@@ -54,10 +54,10 @@ AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as 
 AIO boot Boot is a lightweight, less than 38 Mb.
 
 **File name:** AIO_Boot_Extractor.exe<br />
-**Size:** 36,6 MB<br />
-**Version:** 0.9.3.1<br />
-**Last updated:** 25.01.2017<br />
-**MD5 checksum:** 2691ff1d8361c064673f626c9f67482c<br />
+**Size:** 36,9 MB<br />
+**Version:** 0.9.3.2<br />
+**Last updated:** 28.02.2017<br />
+**MD5 checksum:** df69b4044af7a99c16c341ff7c59d574<br />
 
 **Download:** [Google Drive](http://www.sitecuatui.com/out/aiogd) | [Softpedia](http://www.softpedia.com/get/System/Boot-Manager-Disk/AIO-Boot.shtml) | [SourceForge](https://sourceforge.net/projects/aioboot/) | [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf)
 
