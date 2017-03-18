@@ -133,4 +133,5 @@ Chỉ Windows
 Những thứ khác
 Yêu cầu WinPE
 Vui lòng thực hiện các bước dưới đây trước:%s1. Tải về "boot%s.wim".%s2. Chép nó vào "%s\AIO\WinPXE\sources\".%sBạn có thể tải nó ở đây:
+Secure Boot đang bật. Điều này có thể ngăn cản khởi động vào các hệ điều hành không phải Windows. Vui lòng tắt tùy chọn này trong BIOS.
 ##### END #####
