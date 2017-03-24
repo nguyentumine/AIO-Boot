@@ -134,4 +134,8 @@ All others
 WinPE Required
 Please follow the steps below first:%s1. Download "boot%s.wim".%s2. Copy it to "%s\AIO\WinPXE\sources\".%sYou can download it from here:
 Secure Boot is on. This may prevent booting to non-Windows operating systems. Please disable this option in BIOS.
+Grub2 Language
+Font Size
+Small
+Large
 ##### END #####

@@ -134,4 +134,8 @@ UEFI или Legacy mode?
 WinPE Обязательный
 Пожалуйста, следуйте инструкциям приведенным ниже:%s1. Скачать "boot%s.wim".%s2. Скопируйте его "%s\AIO\WinPXE\sources\".%sВы можете скачать его здесь:
 Secure Boot is on. This may prevent booting to non-Windows operating systems. Please disable this option in BIOS.
+Язык для Grub2
+Размер шрифта
+Маленький
+Большие
 ##### END #####

@@ -603,6 +603,35 @@
 				<key>Replace</key>
 				<data>AAAAAAAAAAAAAA==</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ATI Connector patch new way</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Name</key>
+				<string>AMD6000Controller</string>
+				<key>MatchOS</key>
+				<string>10.9,10.10,10.11</string>
+				<key>Find</key>
+				<data>AAQAAAQDAAAAAQAAIQMCBAQAAAAUAgAAAAEAAAAABAMQAAAAEAAAAAABAAAAAAAB</data>
+				<key>Replace</key>
+				<data>BAAAABQCAAAAAQAAAAAEBAAEAAAEAwAAAAEAABECAQUAAAAAAAAAAAAAAAAAAAAA</data>
+			</dict>
+		</array>
+		<key>#BootPatches</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Example</string>
+				<key>MatchOS</key>
+				<string>All</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>RXh0ZXJuYWw=</data>
+				<key>Replace</key>
+				<data>SW50ZXJuYWw=</data>
+			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
