@@ -19,13 +19,18 @@ AIO Boot was released with a lot of great features that other tools do not yet s
 - UEFI-GPT and MBR-Legacy.
 - USB and HDD with FAT32 or NTFS format ...
 - Supports boot into Legacy mode for the hard disk in GPT style.
+- [Boot directly to UEFI mode from Legacy mode using Clover](https://www.sitecuatui.com/uefi-legacy-clover/). Your computer does not need UEFI support.
 - Boot via LAN with Tiny PXE Server.
 - Integration of package through **AIOCreator.exe** tool.
 - Bypass the Secure Boot on the UEFI mode via **Shimx64.efi** (need tester). If your computer has a Secure Boot section, turn it on, then boot **/EFI/Boot/shimx64.efi**.
 - Support boot via LAN using UEFI mode.
 - Automatically identifying and boot into the operating system installed on HDD: FreeBSD, Mac OS X/Darwin, Windows 7/8.1/10/Vista, Windows NT/2000/XP, Windows 98/ME, MS-DOS, FreeDOS, Linux distributions, Android-x86 and Remix OS 32bit/64bit... You will not need to worry about problems boot error, error loss boot ...
 - One or more partitions, AIO Boot also supports hidden partition.
-- Support hotkeys for Grub2. At the main menu, if you want to boot into a certain menu, simply press their hot key. For example, to restart your computer, you simply press the "r" or "o" to shutdown.
+- Support hotkeys for Grub2. At the main menu, if you want to boot into a certain menu, simply press their hot key. For example, to restart your computer, you simply press the "F7" or "F6" to shutdown.
+- Support password protection for Grub2.
+  - Anyone who does not have a password can not boot, edit menus, and use the Grub2 command line.
+  - The password uses the **PBKDF2** method to encrypt so no one can know the password you have set.
+  - Anyone can change or remove passwords if they have access to Grub2 files.
 - Supports multiple languages, including Vietnamese, English, Russian and French...
 - Multiple sets of Windows setup files- XP, 2000, 2003, Vista, WIndows 7, Server 2008, Windows 8, Server 2012, both 32 and 64 bit versions are supported. Both BIOS and (U)EFI mode are supported.
 - Support to restore the Windows bootloader for both Legacy and UEFI mode.
@@ -54,10 +59,10 @@ AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as 
 AIO boot Boot is a lightweight, less than 37 Mb.
 
 **File name:** AIO_Boot_Extractor.exe<br />
-**Size:** 38,0 MB<br />
-**Version:** 0.9.3.5<br />
-**Last updated:** 24.03.2017<br />
-**MD5 checksum:** b4f79122cde17a2204fd86e69d2ec9bb<br />
+**Size:** 37,5 MB<br />
+**Version:** 0.9.3.6<br />
+**Last updated:** 27.03.2017<br />
+**MD5 checksum:** a3f360d583f7367ef756bb8c52e65164<br />
 
 **Download:** [Google Drive](http://www.sitecuatui.com/out/aiogd) | [Softpedia](http://www.softpedia.com/get/System/Boot-Manager-Disk/AIO-Boot.shtml) | [SourceForge](https://sourceforge.net/projects/aioboot/) | [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf)
 
