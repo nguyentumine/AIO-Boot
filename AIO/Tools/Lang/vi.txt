@@ -138,4 +138,16 @@ Ngôn ngữ Grub2
 Kích thước chữ
 Nhỏ
 Lớn
+Tạo mới mật khẩu cho Grub2.
+Tạo mới
+Thay đổi hoặc loại bỏ mật khẩu của Grub2.
+Loại bỏ
+Bạn sẽ tạo mật khẩu mới hoặc loại bỏ nó?
+Tên người dùng
+Mật khẩu mới
+Giá trị không được chứa dấu cách ở đầu hoặc cuối.
+Tên người dùng chỉ được chứa các ký tự [A-Z], chữ số [0-9] và khoảng trống [' '].
+Tên người dùng và mật khẩu mới đã được tạo.
+Gỡ cài đặt
+Hãy đảm bảo rằng máy tính của bạn được khởi động mà không cần sử dụng đến Grub2 của AIO Boot. Nếu máy tính của bạn chỉ có thể khởi động thông qua Grub2 của AIO Boot, việc gỡ cài đặt sẽ là nguyên nhân khiến máy tính của bạn không thể khởi động được.%sĐể khôi phục bộ nạp khởi động của Windows, vui lòng sử dụng nút Bootloaders hoặc sử dụng đĩa DVD.%sBấm Tiếp tục khi bạn đã có thể khởi động vào hệ điều hành mà không còn sử dụng Grub2 của AIO Boot.
 ##### END #####

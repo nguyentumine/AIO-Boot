@@ -138,4 +138,16 @@ Secure Boot is on. This may prevent booting to non-Windows operating systems. Pl
 Размер шрифта
 Маленький
 Большие
+Create a new password for Grub2.
+Create New
+Change or remove Grub2 password.
+Remove
+Will you create a new password or remove it?
+New Username
+New Password
+Value must not contain spaces at the beginning or the end.
+The Username must contain only [A-Z] characters, digits [0-9] and space ['' ''].
+New username and password have been created.
+Uninstall
+Make sure your computer is booted without using the AIO Boot's Grub2. If your computer can only boot through the AIO Boot's Grub2, uninstalling will cause your computer to fail to boot.%sTo restore the Windows boot loader, please use the Bootloaders button or use the DVD.%sClick Continue when you are able to boot into the operating system without using Grub2 of AIO Boot.
 ##### END #####
