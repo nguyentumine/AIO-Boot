@@ -133,21 +133,21 @@ UEFI или Legacy mode?
 Все остальные
 WinPE Обязательный
 Пожалуйста, следуйте инструкциям приведенным ниже:%s1. Скачать "boot%s.wim".%s2. Скопируйте его "%s\AIO\WinPXE\sources\".%sВы можете скачать его здесь:
-Secure Boot is on. This may prevent booting to non-Windows operating systems. Please disable this option in BIOS.
+Безопасная загрузка включена. Это может помешать загрузке операционные системы Не-Windows. Отключите эту опцию в BIOS.
 Язык для Grub2
 Размер шрифта
 Маленький
 Большие
-Create a new password for Grub2.
-Create New
-Change or remove Grub2 password.
-Remove
-Will you create a new password or remove it?
-New Username
-New Password
-Value must not contain spaces at the beginning or the end.
-The Username must contain only [A-Z] characters, digits [0-9] and space ['' ''].
-New username and password have been created.
-Uninstall
-Make sure your computer is booted without using the AIO Boot's Grub2. If your computer can only boot through the AIO Boot's Grub2, uninstalling will cause your computer to fail to boot.%sTo restore the Windows boot loader, please use the Bootloaders button or use the DVD.%sClick Continue when you are able to boot into the operating system without using Grub2 of AIO Boot.
+Создайте новый пароль для Grub2.
+Создавать новое
+Изменение или удаление пароля Grub2.
+Удалить
+Будете ли вы создавать новый пароль или удалить его?
+Новое имя пользователя
+Новый пароль
+Значение не должно содержать пробелов в начале или в конце.
+Имя пользователя должно содержать только буквы [A-Z] и Цифры [0-9] без пробелов ['' ''].
+Создано новое имя пользователя и пароль.
+Удалить
+Убедитесь, что ваш компьютер загружен без использования AIO Boot's Grub2. Если ваш компьютер может загружаться только через AIO Boot's Grub2, При деинсталляции ваш компьютер не загрузится.%sЧтобы восстановить загрузчик Windows, Используйте кнопку Bootloaders или используйте DVD-диск.%sНажмите Продолжать, когда вы сможете загрузиться в операционную систему, не используя Grub2 из AIO.
 ##### END #####
