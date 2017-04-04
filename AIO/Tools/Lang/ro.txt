@@ -1,153 +1,164 @@
 ﻿################################################################
-Language	:	Romanian (Untranslated)
-Credits		:	Nguyễn Tứ (www.sitecuatui.com)
-Date		:	22.01.2017
-Info		:	Please do not add, delete or move the line, do not remove "%s". If you want to submit your own or have any questions, do not forget to send an email to info@sitecuatui.com. Thank for help!
+Language	:	Romanian
+Credits		:	Denis Cojocaru (dene.09@mail.ru)
+Date		:	31.03.2017
+Info		:	Vă rugăm să nu adăugați, ștergeti sau muta linia "%s". Dacă aveți întrebări, nu uitați să trimiteți un e-mail info@sitecuatui.com. Multumim!
 ################################################################
 
 
 
 ##### BEGIN #####
 Romanian
-Main
-Integration
-About
+Principal
+Integrare
+Despre Noi
 Bootloaders
-Run PXE
-Settings
-Tools
-MENU Editor
-Help
-Current Disk:
-Disk
-Name
-Type
-Size
+Pornire PXE
+Setările
+Instrumente
+MENIU Editor
+Ajutor
+Discul Current:
+Disc
+Nume
+Tip
+Mărimea
 Current Drive:
-Drive
-Label
+Litera
+Marcaj
 FileSystem
-Removable media
-Fixed media
-RAM disk
-Unknow
-AIO Boot is a tool that can help you create a bootable USB/HDD with Grub2, Grub4dos, Syslinux, Clover and rEFInd. AIO Boot own unique features, advanced and friendly.%sThis is free software, please do not pay any fees to use this software. Any act of buying or selling is prohibited.%sThis tool is 100%% clean, it is not harmful to your computer.%sPlease help this community by contributing your ideas and report bugs. Feel free to share or contribute your articles, videos, and links related to more people can know and use this tool.
-Don't forget to contact the author if you have any questions, email info@sitecuatui.com. I would love to hear from you so that I can improve this tool better. Thank for everything!
-Name
-Version
-Homepage
-Copyright
-1. Select Pack
-2. Select File
-Download
+Mass-Media amovibil
+Suporturi fixe
+Disc RAM
+Necunoscut
+AIO Boot este un instrument care vă poate ajuta să creați un boot USB/HDD cu Grub2, Grub4dos, Syslinux, Clover și rEFInd. AIO Boot este construit dintr-o varietate de surse.
+Mi-ar plăcea să aud de la tine, cum as putea îmbunătăți acest instrument mai bine. Multumesc!
+Nume
+Versiune
+Pagina principala
+Drepturi de autor
+1. Selectaţi pachetul
+2. Selectați Fișierul
+Descarca
 OK
-Please select the file on your drive...
-Select ISO file or WIM file on your drive...
-Select ISO file on your drive...
-Mount ISO file, then select "I386/TXTSETUP.SIF" or "AMD64/TXTSETUP.SIF"...
-Please select a valid file!
-Filename can only contain alphanumeric characters (letters , numbers ) and . Please rename the file and try again!
-Files larger than 4GB can NOT be stored on a FAT32 volume.%sFormatting the partition as exFAT or NTFS will resolve this issue.
-Processing, please wait...
-Do not close this window until this is done!
-Could not detect this file!
-Error, please contact to author for support!
-Error: Please close the application you are using to read BCD/WinLegacy file and try again!
-Error: Please close the application you are using to read %s file and try again!
-Invalid file!
-Error: The remaining space is insufficient!
-Done. Happy booting!
-Error
-Warning
-Information
+Vă rugăm să selectați fișierul pe unitatea ...
+Selectați fișierul ISO sau fișier WIM pe unitatea ...
+Selectați fișierul ISO pe unitatea ...
+Monteaza fișier ISO, apoi selectați "I386/TXTSETUP.SIF" sau "AMD64/TXTSETUP.SIF"...
+Vă rugăm să selectați un fișier valid!
+Nume de fișier poate conține numai caractere alfanumerice (litere, cifre ) și . Vă rugăm să redenumiți fișierul și încercați din nou!
+Fișierele mai mari de 4GB nu pot fi stocate pe un volum FAT32.%sFormatarea partiției ca exFAT sau NTFS va rezolva această problemă.
+Procesare, vă rugăm să așteptați ...
+Nu închideți această fereastră până când acest lucru se face!
+Nu a putut detecta acest fișier!
+Eroare, vă rugăm să contactați autorului pentru sprijin!
+Eroare: Vă rugăm să închideți aplicația pe care o utilizați pentru a citi BCD / fișierul WinLegacy și încercați din nou!
+Eroare: Vă rugăm să închideți aplicația pe care o utilizați pentru a citi fișierul %s și încercați din nou!
+Fișier invalid!
+Eroare: spațiul rămas este insuficient!
+Terminat. boot-are fericita!
+Eroare
+Avertizare
+Informație
 Confirm
-Copying
-Copying the required files...
-Extracting
-Checking file, please wait...
-Please enter the name of the menu
-Adding menu...
-Preparing files...
-Please close Regedit.exe to continue!
-Cancel
-Continue
-Cleaning up, please wait...
-Because the size of the file does not allow stored on a FAT32 partition.%sWe will split this file, do you agree?
-Splitting
-Yes
-No
-The selected disk is of the GPT partition style. You need to copy the folder "EFI" to a partition is formatted in "FAT32" or "FAT16".
-The selected disk is of the GPT partition style. Only Grub2, rEFInd and Clover are supported.
-Currently we do not support this device!
-has been installed...
-is already installed...
-%s has not been installed. %s requires that %s must be installed.%sDo you want to install Grub2 right away?
-Please select the drive where you installed the latest Windows version.
-If possible, try this feature on Windows 7 or newer version to get the best support.
-Did not find the System partition.
-has been restored.
-Have not found any drive that Windows is installed in %s mode.
-You need to reformat the drive to be able to install Syslinux.
-Please format the drive to FAT32 or NTFS.
-Please select the partition that you have installed Windows in Legacy BIOS mode.
-Please select the partition that you have installed Windows in UEFI mode.
-Please boot in UEFI mode and try again.
-You are using the latest version!
-We have a new version that you can update right now.%sVersion %s, released on %s.%sDo you want to close this application and update now?
-Currently, there is no MENU to be able to edit.
-Remove?
-Name of MENU
-Save
-after you've edited.
-Deleting files...
-Saved
-Update
-Default
-File Only
-Clover will also be installed for Legacy mode
-Please select the partition to install Grub2, Clover and rEFInd for UEFI mode.
-You need to download the latest version of AIO Boot and repartition this disk to continue.
-GPT-style hard disk only support UEFI mode.%sIf you only use UEFI mode, you do not need to do anything right now.%sIf you want to support Legacy mode, format the hard disk to MBR style.
-To support Grub2, Clover, rEFInd and UEFI Shell in UEFI mode, you need to create a partition in FAT32 or FAT16 format on this hard disk.
-You can use DiskPart or GParted to create new partition.%sPlease try again after you have created a new partition.
-The selected disk is of the GPT partition style. We need to copy the folder "EFI" into "EFI System Partition (ESP)". Do you want to do it right now?
-%s: You will boot directly into Grub2 every time you turn on the computer.%s: You need to select the files "/EFI/Grub2/bootx64.efi" to boot into Grub2.
-To support Legacy BIOS mode on a hard drive in GPT style. We need to dedicate a new partition.
-1. This partition size as small as possible. Approximately 1MB or larger but not larger than 10MB.%s2. All data in this partition will be lost. Therefore, you need to create a new partition.
-Please continue after you have created this partition as required.
-My computer has 32-bit UEFI firmware.
-Don't ask me enter Name of MENU.
-No need to verify the file.
-Configure PXE Boot for UEFI mode.
-Set
-Here is the list of languages that Grub2 is supported. What is your language?
-Please select an item in the drop-down list
-Your settings have been saved!
-Please format this Drive to FAT32.%sOr install Grub2 and select the option to install Clover.
-Install Bootloader
-Restore Windows Bootloader
-Tiny PXE Server is running, please close it if you want to rerun!
-UEFI or Legacy mode?
-Please select 32-bit or 64-bit version
-Windows only
-All others
-WinPE Required
-Please follow the steps below first:%s1. Download "boot%s.wim".%s2. Copy it to "%s\AIO\WinPXE\sources\".%sYou can download it from here:
-Secure Boot is on. This may prevent booting to non-Windows operating systems. Please disable this option in BIOS.
-Grub2 Language
-Font Size
-Small
-Large
-Create a new password for Grub2.
-Create New
-Change or remove Grub2 password.
-Remove
-Will you create a new password or remove it?
-New Username
-New Password
-Value must not contain spaces at the beginning or the end.
-The Username must contain only [A-Z] characters, digits [0-9] and space ['' ''].
-New username and password have been created.
-Uninstall
-Make sure your computer is booted without using the AIO Boot's Grub2. If your computer can only boot through the AIO Boot's Grub2, uninstalling will cause your computer to fail to boot.%sTo restore the Windows boot loader, please use the Bootloaders button or use the DVD.%sClick Continue when you are able to boot into the operating system without using Grub2 of AIO Boot.
+Copiere
+Se copiază fișierele necesare ...
+Extragere
+Verificare fișier, vă rugăm să așteptați ...
+Vă rugăm să introduceți numele meniului
+Adăugarea meniu ...
+Se pregătesc fișierele ...
+Vă rugăm să închideți Regedit.exe pentru a continua!
+Anulare
+Continua
+Curățenie, vă rugăm să așteptați ...
+Deoarece dimensiunea fișierului nu permite stocate pe o partiție FAT32.%sVom împărți acest fișier, sunteți de acord?
+Despicare
+Da
+Nu
+Discul selectat este GPT. Trebuie să copiați folderul "EFI" la o partiție care este formatat în "FAT32" sau "FAT16".
+Discul selectat este GPT. Numai Grub2, rEFInd și Clover le suporta.
+În prezent, nu acceptăm acest aparat!
+A fost instalat ...
+este deja instalat ...
+%s nu a fost instalat. %s impune ca %s trebuie instalat.%sDoriți să instalați Grub2 imediat?
+Vă rugăm să selectați unitatea în care ați instalat cea mai recentă versiune pentru Windows.
+Dacă este posibil, încercați această caracteristică pe Windows 7 sau o versiune mai nouă pentru a obține cel mai bun suport.
+Nu a fost găsită partiția de sistem.
+A fost restaurată.
+Nu s-au găsit nici o unitate care este instalat Windows în modul %s .
+Trebuie să modificați unitatea pentru a putea instala Syslinux.
+Vă rugăm să formatați unitatea in FAT32 sau NTFS.
+Vă rugăm să selectați partiția in care ați instalat Windows în modul BIOS Legacy.
+Vă rugăm să selectați partiția in care ați instalat Windows în modul UEFI.
+Vă rugăm să porniți în modul UEFI și încercați din nou.
+Utilizați cea mai recentă versiune!
+Avem o nouă versiune pe care o puteți actualiza chiar acum.%sVersiune %s, lansat %s.%sDoriți să închideți această aplicație și actualizați acum?
+În prezent, nu există nici un meniu pentru a putea modifica.
+Sterge?
+Numele meniului
+Salvați
+după ce ați editat.
+Se șterg fișierele ...
+Salvate
+Actualizați
+Mod implicit
+Numai fișier
+Clover va fi, de asemenea, instalat in modul Legacy
+Vă rugăm să selectați partiția pentru a instala Grub2, Clover și rEFInd pentru UEFI.
+Ai nevoie să descărci cea mai recentă versiune de AIO Boot și repartiția discului pentru a continua.
+GPT-hard disc suporta NUMAI modul UEFI.%sNumai dacă utilizați modul UEFI, nu trebuie să faceți nimic acum.%sÎn cazul în care doriți să suporte modul Legacy, formatați hard disc-ul in MBR.
+Suport Grub2, Clover, rEFInd si UEFI Shell in modul UEFI, aveți nevoie sa creati o partiție în format FAT32 sau FAT16 pe acest hard disc.
+Aveți posibilitatea să utilizați DiskPart sau GParted pentru a crea o nouă partiție.%sVă rugăm să încercați din nou după ce ați creat o nouă partiție.
+Discul selectat este in formatul GPT. Avem nevoie să copiați folderul "EFI" in "EFI System Partition (ESP)". Vrei să o faci chiar acum?
+%s: Veti porni direct in Grub2 de fiecare dată când porniți calculatorul.%s: Trebuie să selectezi fișierele "/EFI/Grub2/bootx64.efi" pentru a porni în Grub2.
+Suporta modul BIOS Legacy pe un hard disc in format GPT. Avem nevoie să dedice o nouă partiție.
+1. Această dimensiune a partiție cât mai mică posibil. Aproximativ 1MB sau mai mare, dar nu mai mare de 10MB.%s2. Toate datele din această partiție vor fi pierdute. Prin urmare, trebuie să creați o nouă partiție.
+Vă rugăm să continuați după ce ați creat această partiție în funcție de necesități.
+Calculatorul are UEFI firmware-ul pe 32-bit.
+Nu-mi cere să introduc numele meniului.
+Nu este nevoie pentru a verifica fișierul.
+Configurați PXE pentru modul UEFI.
+Seteaza
+Aici este lista de limbi Grub2 care se suporta.%sCare este limba ta?
+Vă rugăm să selectați un element din lista drop-down
+Setarile tale au fost salvate!
+Vă rugăm să formatați această unitate in FAT32.%sSau instalați Grub2 și selectați opțiunea de a instala Clover.
+Instalare Bootloader
+Restabilire Windows Bootloader
+Tiny PXE Server se execută, vă rugăm să-l închideți, dacă doriți să rulați din nou!
+UEFI sau mod Legacy?
+Vă rugăm să selectați versiunea pe 32-bit sau pe 64-bit
+Numai windows
+Toate
+WinPE Obligatoriu
+Vă rugăm să urmați pașii de mai jos, mai întâi:%s1. Descarca "boot%s.wim".%s2. Copiați-l in "%s\AIO\WinPXE\sources\".%sil puteți descărca de aici:
+Boot Secure este pornit. Acest lucru poate împiedica încărcarea de pe sistemele de operare nu-Windows. Vă rugăm să dezactivați această opțiune din BIOS.
+Limba Grub2
+Marimea fontului
+Mic
+Mare
+Creați o parolă nouă pentru Grub2.
+Creaza nou
+Modificarea sau stergerea parolei Grub2.
+Sterge
+Vei crea o parolă nouă sau o stergeți?
+Nume de utilizator nou
+Parolă Nouă
+Valoarea nu trebuie să conțină spații la început sau la sfârșit.
+Numele de utilizator trebuie să conțină numai caractere [A-Z], cifre [0-9] și spațiul [ '' ''].
+Noul nume de utilizator și parola au fost create.
+Dezinstalați
+Asigurați-vă că computerul este pornit, fără a utiliza AIO Boot Grub2. În cazul în care computerul poate porni numai prin AIO Boot Grub2, dezinstalarea va determina computerul să nu pornească.%sPentru a restaura Windows boot loader, vă rugăm să folosiți butonul Bootloaders sau folositi DVD-ul.%sFaceți clic pe „Continuați“, atunci când sunti în măsură să incarcati sistemul de operare fără a utiliza Grub2 AIO Boot.
+Divizarea fișierului
+Extragerea fișierului
+Actualizarea fișierelor
+Adăugarea de fișiere suplimentare
+Anularea
+Anulat
+Sters
+Auto detectare
+Alte
+pachet Special
+Nu s-a putut detecta acest fișier, vă rugăm să selectați un pachet enumerat în listă!
 ##### END #####

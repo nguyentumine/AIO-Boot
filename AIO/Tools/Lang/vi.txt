@@ -150,4 +150,15 @@ Tên người dùng chỉ được chứa các ký tự [A-Z], chữ số [0-9] 
 Tên người dùng và mật khẩu mới đã được tạo.
 Gỡ cài đặt
 Hãy đảm bảo rằng máy tính của bạn được khởi động mà không cần sử dụng đến Grub2 của AIO Boot. Nếu máy tính của bạn chỉ có thể khởi động thông qua Grub2 của AIO Boot, việc gỡ cài đặt sẽ là nguyên nhân khiến máy tính của bạn không thể khởi động được.%sĐể khôi phục bộ nạp khởi động của Windows, vui lòng sử dụng nút Bootloaders hoặc sử dụng đĩa DVD.%sBấm Tiếp tục khi bạn đã có thể khởi động vào hệ điều hành mà không còn sử dụng Grub2 của AIO Boot.
+Đang chia nhỏ tệp tin
+Đang giải nén tệp tin
+Đang cập nhật các tập tin
+Đang thêm các tập tin bổ sung
+Đang hủy
+Đã hủy
+Đã xóa
+Tự động nhận dạng
+Khác
+Gói đặc biệt
+Không nhận dạng được tập tin này, vui lòng chọn một gói được liệt kê trong danh sách!
 ##### END #####

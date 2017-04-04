@@ -26,6 +26,7 @@ item backuprecovery		Backup & Recovery
 item dosprogs			DOS Programs
 item livelinux			Linux ISO Live
 item antivirus			Antivirus
+item specialpack		Special Pack
 item --gap -- ------------------------------ Advanced ---------------------------------
 item config       Configure settings
 item shell      Enter iPXE shell
@@ -61,6 +62,19 @@ goto start
 set submenu-timeout 0
 clear submenu-default
 goto start
+
+################################ Start specialpack
+:specialpack
+menu Special Pack
+### add new menu for Special Pack, dont edit this line
+item	back			Back to top menu...
+iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
+choose selected && goto ${selected} || goto start
+:menu-recovery-timed
+choose --timeout ${submenu-timeout} --default ${submenu-default} selected && goto ${selected} || goto start
+
+### add new menu content for Special Pack, dont edit this line
+################################ End specialpack
 
 ################################ Start antivirus
 :antivirus
