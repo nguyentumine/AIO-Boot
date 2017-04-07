@@ -31,7 +31,7 @@ Mass-Media amovibil
 Suporturi fixe
 Disc RAM
 Necunoscut
-AIO Boot este un instrument care vă poate ajuta să creați un boot USB/HDD cu Grub2, Grub4dos, Syslinux, Clover și rEFInd. AIO Boot este construit dintr-o varietate de surse.
+AIO Boot este un instrument care vă poate ajuta să creați un boot USB/HDD cu Grub2, Grub4dos, Syslinux, Clover și rEFInd. AIO Boot este construit dintr-o varietate de surse.%sAcesta este software liber, vă rugăm să nu plătiti taxe pentru a utiliza acest software.Orice act de cumpărare sau de vânzare este interzisă.%sAcest instrument este de 100 %% curat, nu este dăunător pentru computer.%sVă rugăm să ajutati această comunitate contribuind ideile dumneavoastră și să raportati erorile. Simțiți-vă liber pentru a partaja sau de a contribui la articole, materiale video, link-uri, legate de numărul mare de persoane care pot învăța și de a folosi acest instrument.
 Mi-ar plăcea să aud de la tine, cum as putea îmbunătăți acest instrument mai bine. Multumesc!
 Nume
 Versiune
@@ -161,4 +161,5 @@ Auto detectare
 Alte
 pachet Special
 Nu s-a putut detecta acest fișier, vă rugăm să selectați un pachet enumerat în listă!
+This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sWould you like to create a 4Gb file for persistent mode?
 ##### END #####

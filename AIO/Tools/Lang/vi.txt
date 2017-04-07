@@ -161,4 +161,5 @@ Tự động nhận dạng
 Khác
 Gói đặc biệt
 Không nhận dạng được tập tin này, vui lòng chọn một gói được liệt kê trong danh sách!
+Hệ điều hành này có hỗ trợ chế độ lưu trú.%sCó nghĩa rằng dữ liệu của bạn sẽ được lưu lại sau mỗi phiên.%sBạn có muốn tạo một tệp tin 4GB cho chế độ lưu trú không?
 ##### END #####

@@ -161,4 +161,5 @@ WinPE Обязательный
 Другие
 Специальный пакет
 Не удалось обнаружить этот файл, выберите пакет, указанный в списке!
+This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sWould you like to create a 4Gb file for persistent mode?
 ##### END #####
