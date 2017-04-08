@@ -1,5 +1,5 @@
 #!ipxe
-
+console --x 1024 --y 768
 #set boot-url http://${proxydhcp}/next-server
 set boot-url http://${next-server}
 set iscsi-server 192.168.1.100

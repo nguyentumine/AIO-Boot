@@ -161,5 +161,6 @@ Auto Detect
 Others
 Special Pack
 Could not detect this file, please select a package listed in the list!
-This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sWould you like to create a 4Gb file for persistent mode?
+This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sThe speed of the operating system depends on the read and write speed of the hard drive.%sWould you like to create a 4Gb file for persistent mode?
+This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sThe speed of the operating system depends on the read and write speed of the hard drive.%sWe will create a file of size corresponding to the data you want to save.
 ##### END #####
