@@ -32,7 +32,7 @@ Thiết bị tháo rời (USB, SD Cards...)
 RAM disk
 Chưa biết
 AIO Boot là một tiện ích để tạo một ổ khởi động cho USB và HDD sử dụng Grub2, Grub4dos, Syslinux, Clover và rEFInd. AIO Boot sở hữu các tính năng độc nhất, nâng cao và thân thiện.%sĐây là phần mềm miễn phí, vui lòng không trả bất cứ khoản phí nào để sử dụng phần mềm này. Bất cứ hành vi mua hoặc bán là bị cấm.%sCông cụ này là 100%% sạch, nó là không có hại cho máy tính của bạn.%sXin hãy giúp đỡ cộng đồng này bằng cách đóng góp ý tưởng của bạn và báo cáo các lỗi. Hãy chia sẻ hoặc đóng góp các bài viết của bạn, video và các liên kết liên quan để nhiều người có thể biết và sử dụng công cụ này.
-Đừng quên liên hệ với tác giả khi bạn có bất kỳ câu hỏi, email info@sitecuatui.com. Tôi rất muốn nghe ý kiến từ bạn để tôi có thể cải thiện công cụ này tốt hơn. Cám ơn vì tất cả.!
+Đừng quên liên hệ với tác giả khi bạn có bất kỳ câu hỏi, email info@sitecuatui.com. Tôi rất muốn nghe ý kiến từ bạn để tôi có thể cải thiện công cụ này tốt hơn.
 Tên ứng dụng
 Phiên bản
 Trang chủ
@@ -163,4 +163,7 @@ Gói đặc biệt
 Không nhận dạng được tập tin này, vui lòng chọn một gói được liệt kê trong danh sách!
 Hệ điều hành này có hỗ trợ chế độ lưu trú.%sCó nghĩa rằng dữ liệu của bạn sẽ được lưu lại sau mỗi phiên.%sTốc độ của hệ điều hành phụ thuộc vào tốc độ đọc và ghi của ổ cứng.%sBạn có muốn tạo một tệp tin 4GB cho chế độ lưu trú không?
 Hệ điều hành này có hỗ trợ chế độ lưu trú.%sCó nghĩa rằng dữ liệu của bạn sẽ được lưu lại sau mỗi phiên.%sTốc độ của hệ điều hành phụ thuộc vào tốc độ đọc và ghi của ổ cứng.%sChúng ta sẽ tạo một tệp có kích thước tương ứng với dữ liệu bạn muốn lưu.
+Hình nền Grub2
+Xin chân thành cám ơn đến:--Tất cả những người đang sử dụng công cụ này.--Google.--GNU (Đội ngũ phát triển Grub2).--Đội ngũ phát triển Clover, rEFInd, Grub4dos và Syslinux.--Tác giả của 7-Zip, Tiny PXE Server, FreeNFS, BOOTICE, mkisofs, wget, wimlib, Easy2Boot và WinSetupFromUSB.--Những người phiên dịch các ngôn ngữ: Denis Cojocaru (tiếng Nga và Romania).
+Quản lý phân vùng
 ##### END #####

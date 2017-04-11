@@ -8,15 +8,15 @@ Info		:	Vă rugăm să nu adăugați, ștergeti sau muta linia "%s". Dacă aveț
 
 
 ##### BEGIN #####
-Romanian
+Română
 Principal
 Integrare
-Despre Noi
+Despre Noi!
 Bootloaders
 Pornire PXE
-Setările
+Setări
 Instrumente
-MENIU Editor
+Modificare MENIU
 Ajutor
 Discul Current:
 Disc
@@ -32,7 +32,7 @@ Suporturi fixe
 Disc RAM
 Necunoscut
 AIO Boot este un instrument care vă poate ajuta să creați un boot USB/HDD cu Grub2, Grub4dos, Syslinux, Clover și rEFInd. AIO Boot este construit dintr-o varietate de surse.%sAcesta este software liber, vă rugăm să nu plătiti taxe pentru a utiliza acest software.Orice act de cumpărare sau de vânzare este interzisă.%sAcest instrument este de 100 %% curat, nu este dăunător pentru computer.%sVă rugăm să ajutati această comunitate contribuind ideile dumneavoastră și să raportati erorile. Simțiți-vă liber pentru a partaja sau de a contribui la articole, materiale video, link-uri, legate de numărul mare de persoane care pot învăța și de a folosi acest instrument.
-Mi-ar plăcea să aud de la tine, cum as putea îmbunătăți acest instrument mai bine. Multumesc!
+Mi-ar plăcea să aud de la tine, cum as putea îmbunătăți acest instrument mai bine.
 Nume
 Versiune
 Pagina principala
@@ -94,7 +94,7 @@ Vă rugăm să selectați partiția in care ați instalat Windows în modul UEFI
 Vă rugăm să porniți în modul UEFI și încercați din nou.
 Utilizați cea mai recentă versiune!
 Avem o nouă versiune pe care o puteți actualiza chiar acum.%sVersiune %s, lansat %s.%sDoriți să închideți această aplicație și actualizați acum?
-În prezent, nu există nici un meniu pentru a putea modifica.
+În prezent, nu există nici un MENIU pentru a putea modifica.
 Sterge?
 Numele meniului
 Salvați
@@ -119,7 +119,7 @@ Calculatorul are UEFI firmware-ul pe 32-bit.
 Nu-mi cere să introduc numele meniului.
 Nu este nevoie pentru a verifica fișierul.
 Configurați PXE pentru modul UEFI.
-Seteaza
+Aplica
 Aici este lista de limbi Grub2 care se suporta.%sCare este limba ta?
 Vă rugăm să selectați un element din lista drop-down
 Setarile tale au fost salvate!
@@ -161,6 +161,9 @@ Auto detectare
 Alte
 pachet Special
 Nu s-a putut detecta acest fișier, vă rugăm să selectați un pachet enumerat în listă!
-This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sThe speed of the operating system depends on the read and write speed of the hard drive.%sWould you like to create a 4Gb file for persistent mode?
-This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sThe speed of the operating system depends on the read and write speed of the hard drive.%sWe will create a file of size corresponding to the data you want to save.
+Acest sistem de operare acceptă modul persistent.%sAcest lucru înseamnă că datele vor fi salvate după fiecare sesiune.%sViteza sistemului de operare depinde de viteza de citire și scriere a hard discului.%sDoriți să creați un fișier 4Gb pentru modul persistent?
+Acest sistem de operare acceptă modul persistent.%sAcest lucru înseamnă că datele vor fi salvate după fiecare sesiune.%sViteza sistemului de operare depinde de viteza de citire și scriere a hard discului.%sVom crea un fișier de dimensiune corespunzătoare pentru datele care doriți să salvați.
+Context Grub2
+Sincere mulțumiri pentru:--Toți oamenii care folosesc acest instrument.--Google.--GNU (echipa de dezvoltare Grub2).--Echipa de dezvoltare Clover, rEFInd, Grub4dos și Syslinux.--Autor al 7-Zip, Tiny PXE Server, FreeNFS, BOOTICE, mkisofs, wget, wimlib, Easy2Boot și WinSetupFromUSB.--Limbile interpret: Denis Cojocaru (rusă și română).
+Partițiile Gestionați
 ##### END #####
