@@ -1,8 +1,3 @@
-###### Start
-
-title \n
-root
-
 title for MENU
 set ISOPATH=
 if NOT %DPMS%==1 map --unhook
@@ -28,5 +23,3 @@ boot
 #we should not get here but just in case of errors above...
 map --unhook
 map --unmap=0:0xff && map --rehook
-
-###### End

@@ -1,5 +1,5 @@
 ################################################################
-Language	:	English
+Language	:	Turkish
 Credits		:	Nguyễn Tứ (www.sitecuatui.com)
 Date		:	06.12.2016
 Info		:	Please do not add, delete or move the line, do not remove "%s". If you want to submit your own or have any questions, do not forget to send an email to info@sitecuatui.com. Thank for help!
@@ -8,7 +8,7 @@ Info		:	Please do not add, delete or move the line, do not remove "%s". If you w
 
 
 ##### BEGIN #####
-English
+Turkish
 Main
 Integration
 About

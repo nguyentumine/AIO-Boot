@@ -1,0 +1,15 @@
+### Start NOCHANGE
+color black/cyan yellow/cyan
+write 0x8274 0x2001
+timeout 10
+ls /AIO/Tools/grub4dos/windefault > nul && default /AIO/Tools/grub4dos/windefault
+### End NOCHANGE
+### Start NOCHANGE
+title ...Back to Grub2
+fallback +1
+kernel /AIO/grub/i386-pc/core.img
+### End NOCHANGE
+### Start NOCHANGE
+title \n
+root
+### End NOCHANGE

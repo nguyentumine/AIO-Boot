@@ -1,16 +1,20 @@
+### Start NOCHANGE
 color black/cyan yellow/cyan
 write 0x8274 0x2001
 timeout 10
 ls /AIO/Tools/grub4dos/windefault > nul && default /AIO/Tools/grub4dos/windefault
 #Thank to WinSetupFromUSB
-
+### End NOCHANGE
+### Start NOCHANGE
 title ...Back to Grub2
 ls /AIO/Tools/grub4dos/usbdrive.tag > nul || find --set-root --devices=hf /AIO/Tools/grub4dos/usbdrive.tag > nul
 chainloader /AIO/grub/g2ldr
-
+### End NOCHANGE
+### Start NOCHANGE
 title \n
 root
-
+### End NOCHANGE
+### Start NOCHANGE
 title Auto-detect and use F6 SATA/RAID/SCSI Driver\nUse if your internal disk is not detected or getting BSOD 0x0000007B\nSelect once before Text mode of Setup or starting PE1\nCurrently 32 bit versions are supported.\nCreated by Chenall (www.chenall.net/) & Modified by Steve Si (www.rmprepusb.com)
 #http://bbs.wuyou.com/viewthread.php?tid=197550
 #http://chenall.net/
@@ -28,7 +32,8 @@ map --unmap=0xfa
 map --rehook
 ls /AIO/Tools/grub4dos/usbdrive.tag > nul || find --set-root --devices=hf /AIO/Tools/grub4dos/usbdrive.tag
 configfile /AIO/Menu/XPSetup.lst
-
+### End NOCHANGE
+### Start NOCHANGE
 title Auto-detect and use F6 SATA/RAID/SCSI Driver + Firadisk\nTry this entry if the one above does not work on particular machine\nUse once, before Text mode of Setup
 #http://bbs.wuyou.com/viewthread.php?tid=197550
 #http://chenall.net/
@@ -47,5 +52,8 @@ map --rehook
 ls (0)/txtsetup.oem && set LOADFIRA=1 && set DPMS=1
 ls /AIO/Tools/grub4dos/usbdrive.tag > nul || find --set-root --devices=hf /AIO/Tools/grub4dos/usbdrive.tag
 configfile /AIO/Menu/XPSetup.lst
-
-#F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6##F6# #DO NOT REMOVE THESE LINES
+### End NOCHANGE
+### Start NOCHANGE
+title \n
+root
+### End NOCHANGE
