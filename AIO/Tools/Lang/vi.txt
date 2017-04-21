@@ -166,4 +166,39 @@ Hệ điều hành này có hỗ trợ chế độ lưu trú.%sCó nghĩa rằng
 Hình nền Grub2
 Xin chân thành cám ơn đến:--Tất cả những người đang sử dụng công cụ này.--Google.--GNU (Đội ngũ phát triển Grub2).--Đội ngũ phát triển Clover, rEFInd, Grub4dos và Syslinux.--Tác giả của 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot và WinSetupFromUSB.--Những người phiên dịch các ngôn ngữ: Denis Cojocaru (tiếng Nga và Romania).
 Quản lý phân vùng
+Kích thước (MB)
+Tệp tin đầu vào
+Tệp tin đầu ra
+Nhấp vào đây để chọn tệp tin ISO trên ổ đĩa của bạn...
+Nhấp vào đây để chọn nơi mà bạn sẽ lưu tệp tin ".PartIMG" trên ổ đĩa của bạn...
+Tạo
+Tệp tin này rỗng.
+Không thể lấy được thông tin của tệp tin này.
+Có thể tệp tin này sẽ không được hỗ trợ để khởi động. Bạn có muốn tiếp tục không?
+Vui lòng nhập kích thước cho tệp tin mà bạn muốn tạo.
+Vui lòng nhập nhãn cho tệp tin mà bạn muốn tạo.
+Tệp tin đầu ra đã tồn tại, bạn có muốn thay thế tệp hiện có không?
+Vui lòng nhập một kích thước ít nhất là %s.
+Dung lượng còn trống trên ổ %s là không đủ.
+Ổ đĩa %s có định dạng là FAT32, nó chỉ có thể lưu trữ tệp tin có kích thước tối đa là 4GB.
+ImDisk chưa được cài đặt, bạn có muốn cài đặt ImDisk ngay bây giờ không?
+Đã không thể cài đặt ImDisk.
+Đang tạo và gắn tệp tin...
+Đang trích xuất tệp tin ISO...
+Đang cập nhật các tệp tin cấu hình...
+Dung lượng của tệp tin PartIMG không đủ, vui lòng tăng nó lên khoảng %s và thử lại.
+Đã không thể thiết đặt Nhãn cho tệp tin PartIMG.
+Đã không thể bỏ gắn ổ %s, vui lòng làm điều này thủ công.%sSau đó xóa tệp tin PartIMG ở nơi mà bạn đã chọn.
+Gắn ISO, sau đó chọn đến tệp sources\install.wim trong ổ đĩa đó...
+Nhấp vào đây để chọn tệp sources\install.wim trong ổ đĩa của bạn...
+Nhấp vào đây để chọn nơi mà bạn sẽ lưu tệp tin ".VHD" trên ổ đĩa của bạn...
+Chỉ hỗ trợ Windows 7 và các phiên bản mới hơn.
+Đang tạo và gắn tệp tin VHD...
+Đang áp dụng hình ảnh...
+Đang bỏ gắn tệp tin VHD...
+Đã không thể tạo và gắn tệp tin VHD.
+Không thể áp dụng hình ảnh vào phân vùng VHD.
+Dung lượng của tệp tin VHD không đủ, vui lòng tăng nó lên và thử lại.
+Đã không thể bỏ gắn ổ %s, vui lòng làm điều này thủ công.%sSau đó xóa tệp tin VHD ở nơi mà bạn đã chọn.
+Chọn phiên bản
 ##### END #####

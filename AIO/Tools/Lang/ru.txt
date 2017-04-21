@@ -166,4 +166,39 @@ WinPE Обязательный
 Обои для GRUB2
 Искренне благодарю:--Всех пользователей которые используют этот инструмент.--Google.--GNU (Группу разработчиков Grub2).--Команда разработчиков Clover, rEFInd, Grub4dos и Syslinux.--Авторы 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot и WinSetupFromUSB.--Переводчик языков: Denis Cojocaru (русский и румынский).
 Управление разделами
+Size in MB
+Input file
+Output file
+Click here to select the ISO file on your drive...
+Click here to choose where you will save the ".PartIMG" file on your drive...
+Create
+This file is empty.
+Unable to obtain information of this file.
+Maybe this file will not be supported for boot. Do you want to continue?
+Please enter a size for the file you want to create.
+Please enter a label for the file you want to create.
+The output file already exists, would you like to replace this file?
+Please enter a size that is at least %s.
+The free space on the %s drive is not enough.
+The %s drive is formatted as FAT32, it can only store files up to 4GB in size.
+ImDisk is not installed, do you want to install ImDisk right now?
+ImDisk was not installed.
+Creating and mounting file...
+Extracting ISO file...
+Updating configuration files...
+The size of the PartIMG file is not enough, please increase it to about %s and try again.
+Could not set Label for PartIMG file.
+Unable to unmount %s, please do this manually.%sThen delete the PartIMG file where you chose.
+Mount ISO, then select the sources\install.wim file on that drive...
+Click here to select the sources\install.wim file in your drive...
+Click here to choose where you will save the ".VHD" file on your drive...
+Only support Windows 7 and later.
+Creating and mounting VHD file...
+Applying image...
+Unmounting VHD file...
+Could not create and mount VHD file.
+Can not apply image to VHD partition.
+The size of the VHD file is not enough, please increase it and try again.
+Could not unmount %s drive, please do this manually.%sThen delete the VHD file where you chose.
+Choose version
 ##### END #####
