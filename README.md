@@ -60,9 +60,9 @@ AIO boot Boot is a lightweight, less than 37 Mb.
 
 **File name:** AIO_Boot_Extractor.exe<br />
 **Size:** 35,9 MB<br />
-**Version:** 0.9.4.8<br />
-**Last updated:** 21.04.2017<br />
-**MD5 checksum:** f629a352a0463017a0fc40ad922fc027<br />
+**Version:** 0.9.4.9<br />
+**Last updated:** 22.04.2017<br />
+**MD5 checksum:** 0781397b8c02d91737501978ddd90be6<br />
 
 **Download:** [Google Drive](http://www.sitecuatui.com/out/aiogd) | [Softpedia](http://www.softpedia.com/get/System/Boot-Manager-Disk/AIO-Boot.shtml) | [SourceForge](https://sourceforge.net/projects/aioboot/) | [Mega.co.nz](http://www.sitecuatui.com/out/aiobootmega) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf)
 

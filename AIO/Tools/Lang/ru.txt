@@ -1,7 +1,7 @@
 ﻿################################################################
 Language	:	Russian
 Credits		:	Denis Cojocaru (dene.09@mail.ru)
-Date		:	11.04.2017
+Date		:	21.04.2017
 Info		:	Пожалуйста, не добавлять,не удалять или перемещать линию "%s". Если вы хотите представить свой собственный или какие-либо вопросы, не забудьте отправить по электронной почте info@sitecuatui.com. Благодарим Вас за помощь!
 ################################################################
 
@@ -166,39 +166,39 @@ WinPE Обязательный
 Обои для GRUB2
 Искренне благодарю:--Всех пользователей которые используют этот инструмент.--Google.--GNU (Группу разработчиков Grub2).--Команда разработчиков Clover, rEFInd, Grub4dos и Syslinux.--Авторы 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot и WinSetupFromUSB.--Переводчик языков: Denis Cojocaru (русский и румынский).
 Управление разделами
-Size in MB
-Input file
-Output file
-Click here to select the ISO file on your drive...
-Click here to choose where you will save the ".PartIMG" file on your drive...
-Create
-This file is empty.
-Unable to obtain information of this file.
-Maybe this file will not be supported for boot. Do you want to continue?
-Please enter a size for the file you want to create.
-Please enter a label for the file you want to create.
-The output file already exists, would you like to replace this file?
-Please enter a size that is at least %s.
-The free space on the %s drive is not enough.
-The %s drive is formatted as FAT32, it can only store files up to 4GB in size.
-ImDisk is not installed, do you want to install ImDisk right now?
-ImDisk was not installed.
-Creating and mounting file...
-Extracting ISO file...
-Updating configuration files...
-The size of the PartIMG file is not enough, please increase it to about %s and try again.
-Could not set Label for PartIMG file.
-Unable to unmount %s, please do this manually.%sThen delete the PartIMG file where you chose.
-Mount ISO, then select the sources\install.wim file on that drive...
-Click here to select the sources\install.wim file in your drive...
-Click here to choose where you will save the ".VHD" file on your drive...
-Only support Windows 7 and later.
-Creating and mounting VHD file...
-Applying image...
-Unmounting VHD file...
-Could not create and mount VHD file.
-Can not apply image to VHD partition.
-The size of the VHD file is not enough, please increase it and try again.
-Could not unmount %s drive, please do this manually.%sThen delete the VHD file where you chose.
-Choose version
+Размер в МБ
+Входной файл
+Выходной файл
+Нажмите здесь, чтобы выбрать файл ISO на вашем диске ...
+Нажмите здесь, чтобы выбрать, где вы будете сохранять файл «.PartIMG» на вашем диске ...
+Создать
+Этот файл пуст.
+Не удалось получить информацию об этом файле.
+Возможно, этот файл не будет поддерживаться для загрузке. Вы хотите продолжить?
+Укажите размер файла, который вы хотите создать.
+Введите метку для файла, который вы хотите создать.
+Выходной файл уже существует, вы хотели бы заменить этот файл?
+Укажите размер не менее %s.
+Свободное место на %s привода недостаточно.
+Диск %s отформатирован как FAT32, он может хранить файлы размером до 4 ГБ.
+ImDisk не установлен, вы хотите установить ImDisk прямо сейчас?
+ImDisk не был установлен.
+Создание и монтирование файла ...
+Извлечение ISO-файла ...
+Обновление файлов конфигурации ...
+Размер файла PartIMG недостаточен, увеличьте его до %s и повторите попытку.
+Не удалось установить метку для файла PartIMG.
+Невозможно размонтировать %s, сделайте это вручную.%sЗатем удалите файл PartIMG.
+Монтируйте образ ISO, затем выберите файл sources\install.wim на этом диске ...
+Нажмите здесь, чтобы выбрать sources\install.wim  в вашем накопителе ...
+Нажмите здесь, чтобы выбрать, где вы будете сохранять файл ".VHD" на вашем диске ...
+Поддерживаются только Windows 7 и более поздние версии.
+Создание и монтирование VHD файла ...
+Применение изображения ...
+Отключение VHD-файла ...
+Не удалось создать и монтировать файл VHD.
+Не удается применить образ к разделу VHD.
+Размер VHD-файла недостаточен, пожалуйста, увеличьте его и повторите попытку.
+Не удалось отключить %s диск, сделайте это вручную.%sЗатем удалите VHD-файл, который вы выберите.
+Выберите версию
 ##### END #####

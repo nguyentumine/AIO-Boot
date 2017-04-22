@@ -1,3 +1,45 @@
+Version 1.11.0:
+	Fixed a data corruption bug (incorrect compression) when storing an
+	already highly-compressed file in an LZX-compressed WIM with a chunk
+	size greater than or equal to 64K.  Note that this is not the default
+	setting and such WIMs are not supported by Microsoft's WIM software, so
+	only users who used the --chunk-size option to wimlib-imagex or the
+	wimlib_set_output_chunk_size() API function may have been affected.
+	This bug was introduced in wimlib v1.10.0.  See
+	https://wimlib.net/forums/viewtopic.php?f=1&t=300 for more details.
+
+	On all platforms, sparse files are now extracted as sparse.
+
+	Sparse files captured from UNIX-style filesystems are now marked as
+	sparse in the resulting WIM image.
+
+	Added support for storing Linux-style extended attributes in WIM images.
+	When the --unix-data option is used on Linux, wimlib-imagex now captures
+	and applies extended attributes, in addition to the already-supported
+	standard UNIX file permissions (owner/group/mode) and special files.
+
+	--delta-from is now supported by wimappend.  (Previously it was only
+	supported by wimcapture.)
+
+	On Windows, improved the way in which files deduplicated with Windows'
+	Data Deduplication feature are captured.
+
+	The development files needed to link with wimlib using Visual Studio are
+	now included in the Windows release archives.
+
+	wimlib.h can now be included by Visual Studio without errors.
+
+	The example programs can now be compiled in C++ mode, and they also now
+	work on Windows.
+
+	Updated 'mkwinpeimg' to work correctly on images that have a "windows"
+	(lower case) directory rather than a "Windows" (upper case) directory.
+
+	Fixed configuring with --enable-ssse3-sha1 from release tarball
+	(the file nasm_lt.sh was missing).
+
+	Made some documentation improvements.
+
 Version 1.10.0:
 	The LZX compression ratio has been slightly improved.  The default mode,
 	LZX level 50, is now almost as good as the old LZX level 100, while

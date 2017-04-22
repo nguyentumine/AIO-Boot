@@ -1,6 +1,6 @@
                                   INTRODUCTION
 
-This is wimlib version 1.10.0 (August 2016).  wimlib is a C library for
+This is wimlib version 1.11.0 (January 2017).  wimlib is a C library for
 creating, modifying, extracting, and mounting files in the Windows Imaging
 Format (WIM files).  wimlib and its command-line frontend 'wimlib-imagex'
 provide a free and cross-platform alternative to Microsoft's WIMGAPI, ImageX,
@@ -53,17 +53,18 @@ as additional capabilities.  wimlib-imagex works on both UNIX-like systems and
 Windows, although some features differ between the platforms.
 
 Run `wimlib-imagex' with no arguments to see an overview of the available
-commands and their syntax.  For additional documentation:
+commands and their syntax.  Note that the commands have both long and short
+forms, e.g. `wimlib-imagex apply' is equivalent to `wimapply'.  For additional
+documentation:
 
   * If you have installed wimlib-imagex on a UNIX-like system, you will find
     further documentation in the man pages; run `man wimlib-imagex' to get
     started.
 
   * If you have downloaded the Windows binary distribution, you will find the
-    documentation for wimlib-imagex in PDF format in the "doc" directory,
-    ready for viewing with any PDF viewer.  Please note that although the PDF
-    files are converted from UNIX-style "man pages", they do document
-    Windows-specific behavior when appropriate.
+    documentation for wimlib-imagex in PDF format in the "doc" directory.  Note
+    that although the documentation is written in the style of UNIX manual
+    pages, it does document Windows-specific behavior when relevant.
 
                                   COMPRESSION
 
@@ -76,7 +77,7 @@ algorithms used can be found at https://wimlib.net/compression.html.
 
                                   NTFS SUPPORT
 
-WIM images may contain data, such as alternate data streams and
+WIM images may contain data, such as named data streams and
 compression/encryption flags, that are best represented on the NTFS filesystem
 used on Windows.  Also, WIM images may contain security descriptors which are
 specific to Windows and cannot be represented on other operating systems.
@@ -101,28 +102,19 @@ and then re-applied later.
 
                                    WINDOWS PE
 
-A major use for wimlib and wimlib-imagex is to create customized images of
-Windows PE, the Windows Preinstallation Environment, on either UNIX-like systems
-or Windows without having to rely on Microsoft's software and its restrictions
-and limitations.
+wimlib can also be used to create customized images of Windows PE on either
+UNIX-like systems or Windows.  Windows PE (Preinstallation Environment) is a
+lightweight version of Windows that runs entirely from memory and can be used to
+perform maintenance or to install Windows.  It is the operating system that runs
+when you boot from the Windows installation media.
 
-Windows PE is a lightweight version of Windows that can run entirely from memory
-and can be used to install Windows from local media or a network drive or
-perform maintenance.  It is the operating system that runs when you boot from
-the Windows installation media.
+A copy of Windows PE can be found on the installation media for Windows (Vista
+or later) as the file `sources/boot.wim', or in the Windows Automated
+Installation Kit (WAIK), which is free to download from Microsoft.
 
-You can find Windows PE on the installation media for Windows (Vista or later)
-as the file `sources/boot.wim'.  Windows PE can also be found in the Windows
-Automated Installation Kit (WAIK), which is free to download from Microsoft,
-inside the `WinPE.cab' file, which you can extract natively on Windows, or on
-UNIX-like systems if you install either the `cabextract' or `p7zip' programs.
-
-In addition, Windows installations and recovery partitions frequently contain a
-WIM containing an image of the Windows Recovery Environment, which is similar to
-Windows PE.
-
-A shell script `mkwinpeimg' is distributed with wimlib on UNIX-like systems to
-ease the process of creating and customizing a bootable Windows PE image.
+A shell script `mkwinpeimg' is provided with wimlib on UNIX-like systems to
+simplify the process of creating and customizing a bootable Windows PE image,
+sourcing the needed files from the Windows installation media or from the WAIK.
 
                                   DEPENDENCIES
 
@@ -238,12 +230,12 @@ science papers.
 The code in ntfs-3g_apply.c and ntfs-3g_capture.c uses the NTFS-3G library,
 which is a library for reading and writing to NTFS filesystems (the filesystem
 used by recent versions of Windows).  See
-http://www.tuxera.com/community/ntfs-3g-download/ for more information.
+http://www.tuxera.com/community/open-source-ntfs-3g/ for more information.
 
 A limited number of other free programs can handle some parts of the WIM
 file format:
 
-  * 7-zip is able to extract and create WIMs (as well as files in many
+  * 7-Zip is able to extract and create WIMs (as well as files in many
     other archive formats).  However, wimlib is designed specifically to handle
     WIM files and provides features previously only available in Microsoft's
     implementation, such as the ability to mount WIMs read-write as well as
@@ -258,9 +250,9 @@ If you are looking for an archive format that provides features similar to WIM
 but was designed primarily for UNIX, you may want to consider SquashFS
 (http://squashfs.sourceforge.net/).  However, you may find that wimlib works
 surprisingly well on UNIX.  It will store hard links and symbolic links, and it
-has optional support for storing UNIX owners, groups, modes, and special files
-such as device nodes and FIFOs.  Actually, I use it to back up my own files on
-Linux!
+supports storing standard UNIX file permissions (owners, groups, and modes);
+special files such as device nodes and FIFOs; and extended attributes.
+Actually, I use it to back up my own files on Linux!
 
                                     HISTORY
 

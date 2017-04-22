@@ -1,7 +1,7 @@
 ﻿################################################################
 Language	:	Romanian
 Credits		:	Denis Cojocaru (dene.09@mail.ru)
-Date		:	11.04.2017
+Date		:	21.04.2017
 Info		:	Vă rugăm să nu adăugați, ștergeti sau muta linia "%s". Dacă aveți întrebări, nu uitați să trimiteți un e-mail info@sitecuatui.com. Multumim!
 ################################################################
 
@@ -166,39 +166,39 @@ Acest sistem de operare acceptă modul persistent.%sAcest lucru înseamnă că d
 Imagini de fundal pentru Grub2
 Cu sinceritate, datorită:--oamenilor care folosesc acest instrument.--Google.--GNU (echipa de dezvoltare Grub2).--Echipa de dezvoltare Clover, rEFInd, Grub4dos și Syslinux.--Autorii al 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot și WinSetupFromUSB.--Traducător de limbi: Denis Cojocaru (rusă și română).
 Managementul partițiilor
-Size in MB
-Input file
-Output file
-Click here to select the ISO file on your drive...
-Click here to choose where you will save the ".PartIMG" file on your drive...
-Create
-This file is empty.
-Unable to obtain information of this file.
-Maybe this file will not be supported for boot. Do you want to continue?
-Please enter a size for the file you want to create.
-Please enter a label for the file you want to create.
-The output file already exists, would you like to replace this file?
-Please enter a size that is at least %s.
-The free space on the %s drive is not enough.
-The %s drive is formatted as FAT32, it can only store files up to 4GB in size.
-ImDisk is not installed, do you want to install ImDisk right now?
-ImDisk was not installed.
-Creating and mounting file...
-Extracting ISO file...
-Updating configuration files...
-The size of the PartIMG file is not enough, please increase it to about %s and try again.
-Could not set Label for PartIMG file.
-Unable to unmount %s, please do this manually.%sThen delete the PartIMG file where you chose.
-Mount ISO, then select the sources\install.wim file on that drive...
-Click here to select the sources\install.wim file in your drive...
-Click here to choose where you will save the ".VHD" file on your drive...
-Only support Windows 7 and later.
-Creating and mounting VHD file...
-Applying image...
-Unmounting VHD file...
-Could not create and mount VHD file.
-Can not apply image to VHD partition.
-The size of the VHD file is not enough, please increase it and try again.
-Could not unmount %s drive, please do this manually.%sThen delete the VHD file where you chose.
-Choose version
+Mărime în MB
+Fișier de intrare
+Fisier de iesire
+Faceți clic aici pentru a selecta fișierul ISO de pe unitatea dvs. ...
+Faceți clic aici pentru a alege unde veți salva fișierul ".PartIMG" pe unitatea dvs. ...
+Crează
+Acest fișier este gol.
+Imposibil de obținut informații despre acest fișier.
+Poate că acest fișier nu va fi acceptat pentru încărcare. Vrei sa continui?
+Introduceți o dimensiune pentru fișierul pe care doriți să-l creați.
+Introduceți un marcaj pentru fișierul pe care doriți să-l creați.
+Fișierul de ieșire există deja, doriți să înlocuiți acest fișier?
+Introduceți o dimensiune care să fie cel puțin %s.
+Spațiul liber pe %s unitatea nu este suficientă.
+Unitatea %s este formatată ca FAT32, poate stoca numai fișiere de până la 4GB.
+ImDisk nu este instalat, vrei să instalezi ImDisk chiar acum?
+ImDiskul nu a fost instalat.
+Crearea și montarea fișierului ...
+Dezarhivarea fișierului ISO ...
+Actualizarea fișierelor de configurare ...
+Dimensiunea fișierului PartIMG nu este suficientă, creșteți-l la aproximativ %s și încercați din nou.
+Nu s-a putut seta marca pentru fișierul PartIMG.
+Nu se poate demonta %s, faceți acest lucru manual.%sApoi ștergeți fișierul PartIMG.
+Montați ISO, apoi selectați fișierul sources\install.wim pe această unitate ...
+Faceți clic aici pentru a selecta fișierul sources\install.wim în unitatea dvs. ...
+Faceți clic aici pentru a alege unde veți salva fișierul ".VHD" pe unitatea dvs. ...
+Se suporta numai Windows 7 și versiuni ulterioare.
+Crearea și montarea fișierului VHD ...
+Aplicarea imaginii ...
+Demontarea fișierului VHD ...
+Nu am putut crea și monta un fișier VHD.
+Nu se poate aplica imaginea în partiția VHD.
+Mărimea fișierului VHD nu este suficientă, creșteți-l și încercați din nou.
+Nu am putut dezactiva unitatea %s, faceți acest lucru manual.%sApoi ștergeți fișierul VHD pe care il alegeti.
+Alegeți versiunea
 ##### END #####

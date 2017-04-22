@@ -18,16 +18,19 @@ The Windows distribution of wimlib is a ZIP file containing the following items:
   * Very short batch scripts (e.g. wimapply.cmd) which are shortcuts to the
     corresponding wimlib-imagex commands (e.g. `wimlib-imagex apply').
 
+  * The library itself in DLL format (libwim-15.dll).  wimlib-imagex.exe
+    requires this to run.
+
   * The documentation, including this file, the generic README.txt, and
     PDF documentation for wimlib-imagex in the 'doc' directory.
-
-  * The library itself (libwim-15.dll).  The C header wimlib.h is not
-    included; download the source if you want it.
 
   * License files for all software included.  These are all free software
     licenses.  COPYING.txt is the main license, and it refers to
     COPYING.GPLv3.txt and COPYING.LGPLv3.txt.  The other licenses are for
     third-party software included in the library.
+
+  * Development files in the 'devel' directory.  These are only needed if you
+    are developing C or C++ applications that use wimlib.
 
 Note that there are separate ZIP files for 32-bit (i686) and 64-bit (x86_64)
 binaries.  They are both fully supported, but you should prefer the 64-bit
@@ -91,7 +94,7 @@ from source, potentially with customizations.  Although wimlib's build system is
 designed for UNIX-like systems and is easiest to use on Linux, it's possible to
 build Windows binaries on Windows using Cygwin with MinGW.  To do this, follow
 the instructions below.  For the sake of example, I'll assume you are building a
-64-bit version of wimlib v1.10.0.
+64-bit version of wimlib v1.11.0.
 
 Run the Cygwin installer, available from https://www.cygwin.com/setup-x86.exe.
 When you get to the package selection screen, choose the following additional
@@ -104,13 +107,13 @@ packages from category "Devel":
     - mingw64-x86_64-pkg-config
     - mingw64-x86_64-winpthreads
 
-Download wimlib's source code from https://wimlib.net/downloads/wimlib-1.10.0.tar.gz.
+Download wimlib's source code from https://wimlib.net/downloads/wimlib-1.11.0.tar.gz.
 
 Start a Cygwin terminal and run the following commands:
 
     cd /cygdrive/c/Users/example/Downloads # (or wherever you downloaded the source to)
-    tar xf wimlib-1.10.0.tar.gz
-    cd wimlib-1.10.0
+    tar xf wimlib-1.11.0.tar.gz
+    cd wimlib-1.11.0
     ./configure --host=x86_64-w64-mingw32
     make
 
@@ -129,10 +132,8 @@ libwim-15.dll will be linked to several other DLLs which you will need as well:
         - zlib1.dll
 
 These DLLs can be found in "C:\cygwin\usr\x86_64-w64-mingw32\sys-root\mingw\bin"
-and must be placed alongside libwim-15.dll for it to run portably.  (In the
-official binary release, these third-party libraries are linked to libwim-15.dll
-statically rather than dynamically --- or are unnecessary, in the case of
-libxml2's dependencies.)
+and must be placed alongside libwim-15.dll for it to run portably.  But see
+below for an alternative.
 
 Building 32-bit binaries is very similar, but you'll need to replace "x86_64"
 with "i686" everywhere in the above instructions, and libwim-15.dll will also
@@ -140,3 +141,33 @@ depend on libgcc_s_sjlj-1.dll.  Note that you can build both 32-bit and 64-bit
 binaries from the same Cygwin installation, provided that you install both the
 mingw64-i686-* and mingw64-x86_64-* packages; and you can run the Cygwin setup
 program to install more packages at any time.
+
+In the official binary releases from wimlib.net, libwim-15.dll's dependent
+libraries are linked in statically rather than dynamically, so it does not
+depend on any DLLs other than standard Windows DLLs.  If you want to do this,
+install the following additional Cygwin packages:
+
+    - p7zip         (category "Archiver")
+    - autoconf      (category "Devel")
+    - automake      (category "Devel")
+    - git           (category "Devel")
+    - libtool       (category "Devel")
+    - nasm          (category "Devel")
+    - pkg-config    (category "Devel")
+    - ghostscript   (category "Graphics")
+    - wget          (category "Web")
+
+Then, in a Cygwin terminal, clone the git repository, checkout the wimlib
+version you want, bootstrap the repository, and run the Windows release script:
+
+    git clone git://wimlib.net/wimlib
+    cd wimlib
+    git checkout v1.11.0
+    ./bootstrap
+    ./tools/make-windows-release x86_64
+
+The release script will download and build libxml2 and winpthreads as static
+libraries, then build wimlib, then do some final tasks and bundle the resulting
+files up into a ZIP archive.  If successful you'll end up with a file like
+"wimlib-1.11.0-windows-x86_64-bin.zip", just like the official releases.  For
+32-bit binaries just use "i686" instead of "x86_64".
