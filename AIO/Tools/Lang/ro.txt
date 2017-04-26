@@ -201,4 +201,6 @@ Nu se poate aplica imaginea în partiția VHD.
 Mărimea fișierului VHD nu este suficientă, creșteți-l și încercați din nou.
 Nu am putut dezactiva unitatea %s, faceți acest lucru manual.%sApoi ștergeți fișierul VHD pe care il alegeti.
 Alegeți versiunea
+Please extract all "sources\*.wim" files and integrate them in "WinPE 7/8.1/10".
+Integrate this package as a WinPE?
 ##### END #####

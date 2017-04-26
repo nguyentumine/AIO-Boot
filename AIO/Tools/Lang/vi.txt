@@ -201,4 +201,6 @@ Không thể áp dụng hình ảnh vào phân vùng VHD.
 Dung lượng của tệp tin VHD không đủ, vui lòng tăng nó lên và thử lại.
 Đã không thể bỏ gắn ổ %s, vui lòng làm điều này thủ công.%sSau đó xóa tệp tin VHD ở nơi mà bạn đã chọn.
 Chọn phiên bản
+Vui lòng trích xuất tất cả các tệp tin "sources\*.wim" và tích hợp ở mục "WinPE 7/8.1/10".
+Tích hợp gói này như là một WinPE?
 ##### END #####

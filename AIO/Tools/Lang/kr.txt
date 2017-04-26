@@ -201,4 +201,6 @@ Can not apply image to VHD partition.
 The size of the VHD file is not enough, please increase it and try again.
 Could not unmount %s drive, please do this manually.%sThen delete the VHD file where you chose.
 Choose version
+Please extract all "sources\*.wim" files and integrate them in "WinPE 7/8.1/10".
+Integrate this package as a WinPE?
 ##### END #####

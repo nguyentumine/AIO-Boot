@@ -201,4 +201,6 @@ ImDisk не был установлен.
 Размер VHD-файла недостаточен, пожалуйста, увеличьте его и повторите попытку.
 Не удалось отключить %s диск, сделайте это вручную.%sЗатем удалите VHD-файл, который вы выберите.
 Выберите версию
+Please extract all "sources\*.wim" files and integrate them in "WinPE 7/8.1/10".
+Integrate this package as a WinPE?
 ##### END #####
