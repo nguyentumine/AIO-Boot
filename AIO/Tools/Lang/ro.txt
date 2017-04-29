@@ -1,7 +1,7 @@
 ﻿################################################################
 Language	:	Romanian
 Credits		:	Denis Cojocaru (dene.09@mail.ru)
-Date		:	21.04.2017
+Date		:	26.04.2017
 Info		:	Vă rugăm să nu adăugați, ștergeti sau muta linia "%s". Dacă aveți întrebări, nu uitați să trimiteți un e-mail info@sitecuatui.com. Multumim!
 ################################################################
 
@@ -18,12 +18,12 @@ Setări
 Instrumente
 Modificare MENIU
 Ajutor
-Discul Current:
+Unitatea principală:
 Disc
 Nume
 Tip
 Mărimea
-Current Drive:
+Partiția Currentă:
 Litera
 Marcaj
 FileSystem
@@ -107,7 +107,7 @@ Numai fișier
 Clover va fi, de asemenea, instalat in modul Legacy
 Vă rugăm să selectați partiția pentru a instala Grub2, Clover și rEFInd pentru UEFI.
 Ai nevoie să descărci cea mai recentă versiune de AIO Boot și repartiția discului pentru a continua.
-GPT-hard disc suporta NUMAI modul UEFI.%sNumai dacă utilizați modul UEFI, nu trebuie să faceți nimic acum.%sÎn cazul în care doriți să suporte modul Legacy, formatați hard disc-ul in MBR.
+GPT-hard disc suporta NUMAI modul UEFI.%sNumai dacă utilizați modul UEFI, nu trebuie să faceți nimic acum.
 Suport Grub2, Clover, rEFInd si UEFI Shell in modul UEFI, aveți nevoie sa creati o partiție în format FAT32 sau FAT16 pe acest hard disc.
 Aveți posibilitatea să utilizați DiskPart sau GParted pentru a crea o nouă partiție.%sVă rugăm să încercați din nou după ce ați creat o nouă partiție.
 Discul selectat este in formatul GPT. Avem nevoie să copiați folderul "EFI" in "EFI System Partition (ESP)". Vrei să o faci chiar acum?
@@ -201,6 +201,7 @@ Nu se poate aplica imaginea în partiția VHD.
 Mărimea fișierului VHD nu este suficientă, creșteți-l și încercați din nou.
 Nu am putut dezactiva unitatea %s, faceți acest lucru manual.%sApoi ștergeți fișierul VHD pe care il alegeti.
 Alegeți versiunea
-Please extract all "sources\*.wim" files and integrate them in "WinPE 7/8.1/10".
-Integrate this package as a WinPE?
+Vă rugăm să extrageți toate fișierele "sources\*.Wim" și să le integrați in "WinPE 7/8.1/10".
+Integrați acest pachet ca WinPE?
+Please extract all files to the root directory of your USB or Hard drive first!%sSee the home page for more information.
 ##### END #####

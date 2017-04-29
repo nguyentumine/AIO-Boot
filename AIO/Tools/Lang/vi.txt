@@ -107,7 +107,7 @@ Chỉ tệp
 Cũng cài đặt Clover cho chế độ Legacy
 Vui lòng lựa chọn phân vùng để cài đặt Grub2, Clover và rEFInd cho chế độ UEFI.
 Bạn cần phải tải về phiên bản mới nhất của AIO Boot và phân vùng lại đĩa này để tiếp tục.
-Đĩa cứng kiểu GPT chỉ hỗ trợ chế độ UEFI.%sNếu bạn chỉ sử dụng chế độ UEFI, bạn không cần phải làm gì ngay bây giờ.%sNếu bạn muốn hỗ trợ chế độ Legacy, hãy định dạng đĩa cứng sang kiểu MBR.
+Đĩa cứng kiểu GPT chỉ hỗ trợ chế độ UEFI.%sNếu bạn chỉ sử dụng chế độ UEFI, bạn không cần phải làm gì ngay bây giờ.
 Để hỗ trợ Grub2, Clover[UEFI], rEFInd và UEFI Shell ở chế độ UEFI, bạn cần phải tạo một phân vùng ở định dạng FAT32 hoặc FAT16 trên đĩa cứng này.
 Bạn có thể sử dụng DiskPart hoặc GParted để tạo thêm phân vùng mới.%sVui lòng thử lại sau khi đã tạo xong phân vùng mới.
 Ổ đĩa này là kiểu GPT. Chúng ta cần phải chép thư mục "EFI" vào phân vùng "EFI System Partition (ESP)". Bạn có muốn làm nó ngay bây giờ không?
@@ -203,4 +203,5 @@ Dung lượng của tệp tin VHD không đủ, vui lòng tăng nó lên và th�
 Chọn phiên bản
 Vui lòng trích xuất tất cả các tệp tin "sources\*.wim" và tích hợp ở mục "WinPE 7/8.1/10".
 Tích hợp gói này như là một WinPE?
+Vui lòng chép tất cả tập tin vào thư mục gốc của USB hoặc ổ cứng trước đã!%sXem trang chủ để biết thêm thông tin.
 ##### END #####

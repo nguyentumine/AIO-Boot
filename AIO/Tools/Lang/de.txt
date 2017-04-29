@@ -107,7 +107,7 @@ File Only
 Clover will also be installed for Legacy mode
 Please select the partition to install Grub2, Clover and rEFInd for UEFI mode.
 You need to download the latest version of AIO Boot and repartition this disk to continue.
-GPT-style hard disk only support UEFI mode.%sIf you only use UEFI mode, you do not need to do anything right now.%sIf you want to support Legacy mode, format the hard disk to MBR style.
+GPT-style hard disk only support UEFI mode.%sIf you only use UEFI mode, you do not need to do anything right now.
 To support Grub2, Clover, rEFInd and UEFI Shell in UEFI mode, you need to create a partition in FAT32 or FAT16 format on this hard disk.
 You can use DiskPart or GParted to create new partition.%sPlease try again after you have created a new partition.
 The selected disk is of the GPT partition style. We need to copy the folder "EFI" into "EFI System Partition (ESP)". Do you want to do it right now?
@@ -203,4 +203,5 @@ Could not unmount %s drive, please do this manually.%sThen delete the VHD file w
 Choose version
 Please extract all "sources\*.wim" files and integrate them in "WinPE 7/8.1/10".
 Integrate this package as a WinPE?
+Please extract all files to the root directory of your USB or Hard drive first!%sSee the home page for more information.
 ##### END #####
