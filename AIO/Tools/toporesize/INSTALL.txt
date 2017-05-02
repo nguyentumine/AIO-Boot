@@ -1,0 +1,5 @@
+Please unzip all files into any folder. The program may be run by executing topoenlarge.bat
+a shortcut to topoenlarge.bat may be created anywhere. This program makes no modifications to the registry and may be removed by simply deleting it.
+
+
+To use the e2fsprogs utilities manually you may want to copy them to a folder in your path.

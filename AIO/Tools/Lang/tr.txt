@@ -204,4 +204,7 @@ Choose version
 Please extract all "sources\*.wim" files and integrate them in "WinPE 7/8.1/10".
 Integrate this package as a WinPE?
 Please extract all files to the root directory of your USB or Hard drive first!%sSee the home page for more information.
+Custom
+Creating
+Can not create file larger than 4GB on FAT32 partition.
 ##### END #####

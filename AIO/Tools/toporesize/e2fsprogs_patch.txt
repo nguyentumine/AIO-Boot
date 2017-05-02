@@ -1,0 +1,66 @@
+download 1.40.6 src from http://e2fsprogs.sourceforge.net
+download cygwin with gcc(c++), make installed
+./configure
+# patch the missing lockf() problem on cygwin
+do some patch on /lib/uuid/gen_uuid.c
+./configure --disable-uuidd
+make
+find . -name '*.exe'
+
+
+=======================================
+patch for missing lockf on cygwin
+======================================
+#ifdef __CYGWIN__
+/* ref: http://www.cygwin.com/ml/cygwin/2003-05/msg01593.html */
+#include <unistd.h>
+#include <errno.h>
+
+# define F_ULOCK 0      /* Unlock a previously locked region.  */
+# define F_LOCK  1      /* Lock a region for exclusive use.  */
+
+int fcntl_flock(int fd, int op)
+{
+  struct flock fl;
+/* lock applies to entire file */
+  fl.l_whence = fl.l_start = fl.l_len = 0;
+  fl.l_pid = getpid ();/* shouldn't be necessary */
+  switch (op & ~LOCK_NB) {/* translate to fcntl() operation */
+  case LOCK_EX:/* exclusive */
+    fl.l_type = F_WRLCK;
+    break;
+  case LOCK_SH:/* shared */
+    break;
+  case LOCK_SH:/* shared */
+    fl.l_type = F_RDLCK;
+    break;
+  case LOCK_UN:/* unlock */
+    fl.l_type = F_UNLCK;
+    break;
+  default:/* default */
+    errno = EINVAL;
+    return -1;
+  }
+  return (fcntl (fd,(op & LOCK_NB) ? F_SETLK : F_SETLKW,&fl) == -1) ? -1 :
+  0;
+}
+
+int flock(int fd,int op)
+{ return fcntl_flock(fd,op); }
+
+/* this is a dirty mapping don't support len */
+int lockf(int fd, int cmd, off_t len)
+{
+        if (len != 0) /* don't support other offset */
+                return -1;
+        if (cmd == F_LOCK)
+                return -1;
+        if (cmd == F_LOCK)
+                return fcntl_flock(fd, LOCK_EX);
+        if (cmd == F_ULOCK)
+                return fcntl_flock(fd, LOCK_UN);
+}
+
+#endif
+
+static int get_random_fd(void)  // put the patch code before this function

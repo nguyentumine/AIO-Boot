@@ -203,5 +203,8 @@ Nu am putut dezactiva unitatea %s, faceți acest lucru manual.%sApoi ștergeți 
 Alegeți versiunea
 Vă rugăm să extrageți toate fișierele "sources\*.Wim" și să le integrați in "WinPE 7/8.1/10".
 Integrați acest pachet ca WinPE?
-Please extract all files to the root directory of your USB or Hard drive first!%sSee the home page for more information.
+Vă rugăm să extrageți toate fișierele în directorul rădăcină al USB sau hard diskului dvs.!%sConsultați pagina de pornire pentru mai multe informații.
+Custom
+Creating
+Can not create file larger than 4GB on FAT32 partition.
 ##### END #####
