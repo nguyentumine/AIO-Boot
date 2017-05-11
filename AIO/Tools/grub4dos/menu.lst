@@ -20,6 +20,15 @@ default /default
 ## Menu AutoNumber
 write 0x8274 0x2001
 
+iftitle [if exist /AIO/Tools/MS/bootmgr && if exist /AIO/Menu/WinLegacy] WinPE & Setup\n Run WinPE & Setup
+chainloader /AIO/Tools/MS/bootmgr
+
+iftitle [if exist /AIO/Menu/XPSetup.lst] Windows XP/2003 Setup\n Run Windows XP/2003 Setup
+configfile /AIO/Menu/XPSetup.lst
+
+iftitle [if exist /AIO/Menu/WinVHD.lst] Windows VHD\n Run Windows VHD
+configfile /AIO/Menu/WinVHD.lst
+
 title ...Back to Grub2
 fallback +1
 kernel /AIO/grub/i386-pc/core.img

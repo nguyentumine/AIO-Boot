@@ -1,7 +1,7 @@
 ﻿################################################################
 Language	:	Romanian
 Credits		:	Denis Cojocaru (dene.09@mail.ru)
-Date		:	26.04.2017
+Date		:	08.05.2017
 Info		:	Vă rugăm să nu adăugați, ștergeti sau muta linia "%s". Dacă aveți întrebări, nu uitați să trimiteți un e-mail info@sitecuatui.com. Multumim!
 ################################################################
 
@@ -146,7 +146,7 @@ Vei crea o parolă nouă sau o stergeți?
 Nume de utilizator nou
 Parolă Nouă
 Valoarea nu trebuie să conțină spații la început sau la sfârșit.
-Numele de utilizator trebuie să conțină numai caractere [A-Z], cifre [0-9] și spațiul [ '' ''].
+Numele de utilizator trebuie să conțină numai caractere [A-Z], cifre [0-9] și spațiul ['' ''].
 Noul nume de utilizator și parola au fost create.
 Dezinstalați
 Asigurați-vă că computerul este pornit, fără a utiliza AIO Boot Grub2. În cazul în care computerul poate porni numai prin AIO Boot Grub2, dezinstalarea va determina computerul să nu pornească.%sPentru a restaura Windows boot loader, vă rugăm să folosiți butonul Bootloaders sau folositi DVD-ul.%sFaceți clic pe „Continuați“, atunci când sunti în măsură să incarcati sistemul de operare fără a utiliza Grub2 AIO Boot.
@@ -164,7 +164,7 @@ Nu s-a putut detecta acest fișier, vă rugăm să selectați un pachet enumerat
 Acest sistem de operare acceptă modul persistent.%sAcest lucru înseamnă că datele vor fi salvate după fiecare sesiune.%sViteza sistemului de operare depinde de viteza de citire și scriere a hard discului.%sDoriți să creați un fișier 4Gb pentru modul persistent?
 Acest sistem de operare acceptă modul persistent.%sAcest lucru înseamnă că datele vor fi salvate după fiecare sesiune.%sViteza sistemului de operare depinde de viteza de citire și scriere a hard discului.%sVom crea un fișier de dimensiune corespunzătoare pentru datele care doriți să salvați.
 Imagini de fundal pentru Grub2
-Cu sinceritate, datorită:--oamenilor care folosesc acest instrument.--Google.--GNU (echipa de dezvoltare Grub2).--Echipa de dezvoltare Clover, rEFInd, Grub4dos și Syslinux.--Autorii al 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot și WinSetupFromUSB.--Traducător de limbi: Denis Cojocaru (rusă și română), Stoian Bahchevanski (Bulgarian).
+Cu sinceritate, datorită:--oamenilor care folosesc acest instrument.--Google.--GNU (echipa de dezvoltare Grub2).--Echipa de dezvoltare Clover, rEFInd, Grub4dos și Syslinux.--Autorii al 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot și WinSetupFromUSB.--Traducător de limbi: Denis Cojocaru (rusă și română), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French).
 Managementul partițiilor
 Mărime în MB
 Fișier de intrare
@@ -204,7 +204,7 @@ Alegeți versiunea
 Vă rugăm să extrageți toate fișierele "sources\*.Wim" și să le integrați in "WinPE 7/8.1/10".
 Integrați acest pachet ca WinPE?
 Vă rugăm să extrageți toate fișierele în directorul rădăcină al USB sau hard diskului dvs.!%sConsultați pagina de pornire pentru mai multe informații.
-Custom
-Creating
-Can not create file larger than 4GB on FAT32 partition.
+Personalizat
+Crearea
+Nu se poate crea un fișier mai mare de 4 GB pe partiția FAT32.
 ##### END #####
