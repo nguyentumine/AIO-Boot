@@ -5,8 +5,7 @@ timeout 10
 ls /AIO/Tools/grub4dos/windefault > nul && default /AIO/Tools/grub4dos/windefault
 ### End NOCHANGE
 ### Start NOCHANGE
-title ...Back to Grub2
-fallback +1
+title Load Grub2
 kernel /AIO/grub/i386-pc/core.img
 ### End NOCHANGE
 ### Start NOCHANGE

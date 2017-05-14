@@ -206,5 +206,6 @@ ImDisk не был установлен.
 Сначала распакуйте все файлы в корневую директорию вашего USB или жесткого диска!%sСм. Домашнюю страницу для получения дополнительной информации.
 Пользовательский
 Создание
-Невозможно создать файл размером более 4 ГБ на разделе FAT32
+Невозможно создать файл размером более 4 ГБ на разделе FAT32.
+Install Grub4Dos as Default Boot Loader?%sYou should only install Grub4Dos if Grub2 is not compatible on your machine or just for testing.%sUse Grub2 to fully support the feature.
 ##### END #####

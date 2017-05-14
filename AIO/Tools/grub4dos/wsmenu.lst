@@ -6,9 +6,8 @@ ls /AIO/Tools/grub4dos/windefault > nul && default /AIO/Tools/grub4dos/windefaul
 #Thank to WinSetupFromUSB
 ### End NOCHANGE
 ### Start NOCHANGE
-title ...Back to Grub2
-ls /AIO/Tools/grub4dos/usbdrive.tag > nul || find --set-root --devices=hf /AIO/Tools/grub4dos/usbdrive.tag > nul
-chainloader /AIO/grub/g2ldr
+title Load Grub2
+kernel /AIO/grub/i386-pc/core.img
 ### End NOCHANGE
 ### Start NOCHANGE
 title \n

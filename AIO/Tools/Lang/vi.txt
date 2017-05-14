@@ -207,4 +207,5 @@ Vui lòng chép tất cả tập tin vào thư mục gốc của USB hoặc ổ 
 Tùy chỉnh
 Đang tạo
 Không thể tạo tệp tin có kích thước lớn hơn 4GB trên phân vùng FAT32.
+Cài đặt Grub4Dos làm bộ nạp khởi động mặc định?%sBạn chỉ nên cài đặt Grub4Dos nếu Grub2 không tương thích trên máy của bạn hoặc chỉ để thử nghiệm.%sSử dụng Grub2 để hỗ trợ đầy đủ tính năng.
 ##### END #####

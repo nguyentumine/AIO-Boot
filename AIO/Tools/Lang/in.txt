@@ -207,4 +207,5 @@ Please extract all files to the root directory of your USB or Hard drive first!%
 Custom
 Creating
 Can not create file larger than 4GB on FAT32 partition.
+Install Grub4Dos as Default Boot Loader?%sYou should only install Grub4Dos if Grub2 is not compatible on your machine or just for testing.%sUse Grub2 to fully support the feature.
 ##### END #####

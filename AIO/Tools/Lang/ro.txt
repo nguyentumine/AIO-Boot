@@ -207,4 +207,5 @@ Vă rugăm să extrageți toate fișierele în directorul rădăcină al USB sau
 Personalizat
 Crearea
 Nu se poate crea un fișier mai mare de 4 GB pe partiția FAT32.
+Install Grub4Dos as Default Boot Loader?%sYou should only install Grub4Dos if Grub2 is not compatible on your machine or just for testing.%sUse Grub2 to fully support the feature.
 ##### END #####
