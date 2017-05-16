@@ -1,7 +1,7 @@
 ﻿################################################################
 Language	:	Romanian
 Credits		:	Denis Cojocaru (dene.09@mail.ru)
-Date		:	08.05.2017
+Date		:	14.05.2017
 Info		:	Vă rugăm să nu adăugați, ștergeti sau muta linia "%s". Dacă aveți întrebări, nu uitați să trimiteți un e-mail info@sitecuatui.com. Multumim!
 ################################################################
 
@@ -31,7 +31,7 @@ Mass-Media amovibil
 Suporturi fixe
 Disc RAM
 Necunoscut
-AIO Boot este un instrument care vă poate ajuta să creați un boot USB/HDD cu Grub2, Grub4dos, Syslinux, Clover și rEFInd. AIO Boot este construit dintr-o varietate de surse.%sAcesta este software liber, vă rugăm să nu plătiti taxe pentru a utiliza acest software.Orice act de cumpărare sau de vânzare este interzisă.%sAcest instrument este de 100 %% curat, nu este dăunător pentru computer.%sVă rugăm să ajutati această comunitate contribuind ideile dumneavoastră și să raportati erorile. Simțiți-vă liber pentru a partaja sau de a contribui la articole, materiale video, link-uri, legate de numărul mare de persoane care pot învăța și de a folosi acest instrument.
+AIO Boot este un instrument care vă poate ajuta să creați un boot USB/HDD cu Grub2, Grub4dos, Syslinux, Clover și rEFInd. AIO Boot este construit dintr-o varietate de surse.%sAcest instrument este de 100%% curat, nu este dăunător pentru computer.%sVă rugăm să ajutati această comunitate contribuind ideile dumneavoastră și să raportati erorile. Simțiți-vă liber pentru a partaja sau de a contribui la articole, materiale video, link-uri, legate de numărul mare de persoane care pot învăța și de a folosi acest instrument.
 Mi-ar plăcea să aud de la tine, cum as putea îmbunătăți acest instrument mai bine. Multumesc!
 Nume
 Versiune
@@ -164,7 +164,7 @@ Nu s-a putut detecta acest fișier, vă rugăm să selectați un pachet enumerat
 Acest sistem de operare acceptă modul persistent.%sAcest lucru înseamnă că datele vor fi salvate după fiecare sesiune.%sViteza sistemului de operare depinde de viteza de citire și scriere a hard discului.%sDoriți să creați un fișier 4Gb pentru modul persistent?
 Acest sistem de operare acceptă modul persistent.%sAcest lucru înseamnă că datele vor fi salvate după fiecare sesiune.%sViteza sistemului de operare depinde de viteza de citire și scriere a hard discului.%sVom crea un fișier de dimensiune corespunzătoare pentru datele care doriți să salvați.
 Imagini de fundal pentru Grub2
-Cu sinceritate, datorită:--oamenilor care folosesc acest instrument.--Google.--GNU (echipa de dezvoltare Grub2).--Echipa de dezvoltare Clover, rEFInd, Grub4dos și Syslinux.--Autorii al 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot și WinSetupFromUSB.--Traducător de limbi: Denis Cojocaru (rusă și română), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French).
+Cu sinceritate, datorită:--oamenilor care folosesc acest instrument.--Google.--GNU (echipa de dezvoltare Grub2).--Echipa de dezvoltare Clover, rEFInd, Grub4dos și Syslinux.--Autorii al 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot și WinSetupFromUSB.--Traducător de limbi: Denis Cojocaru (rusă și română), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur (Turkish).
 Managementul partițiilor
 Mărime în MB
 Fișier de intrare
@@ -207,5 +207,5 @@ Vă rugăm să extrageți toate fișierele în directorul rădăcină al USB sau
 Personalizat
 Crearea
 Nu se poate crea un fișier mai mare de 4 GB pe partiția FAT32.
-Install Grub4Dos as Default Boot Loader?%sYou should only install Grub4Dos if Grub2 is not compatible on your machine or just for testing.%sUse Grub2 to fully support the feature.
+Instalați Grub4Dos ca încărcător de încărcare implicit?%sAr trebui să instalați Grub4Dos numai dacă Grub2 nu este compatibil pe aparat sau doar pentru testare.%sUtilizați Grub2 pentru a sprijini pe deplin funcțiile.
 ##### END #####

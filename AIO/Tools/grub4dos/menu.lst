@@ -6,19 +6,17 @@
 # It must be UTF-8 encoding for multi-lingual support. Font lines can be
 # appended to the file. The font lines should be in the unifont.hex format.
 
-color almond/green yellow/red white/magenta white/magenta
 timeout 30
-## menu border color
-color border=0xEEFFEE
-## set vbe mode
-graphicsmode -1 768:1024 640:800 480:600 24
-## loading splashimage
-splashimage /AIO/Tools/grub4dos/splash.bmp.gz
-## unifont-9.0.02.hex.gz
-font /AIO/Tools/grub4dos/unifont.hex.gz
-default /default
-## Menu AutoNumber
-write 0x8274 0x2001
+if NOT exist fromg4d color almond/green yellow/red white/magenta white/magenta
+if NOT exist fromg4d color border=0xEFDECD
+if NOT exist fromg4d graphicsmode -1 768:1024 640:800 480:600 24
+if NOT exist fromg4d splashimage /AIO/Tools/grub4dos/splash.bmp.gz
+if NOT exist fromg4d font /AIO/Tools/grub4dos/unifont.hex.gz
+if NOT exist fromg4d write 0x8274 0x2001
+if NOT exist fromg4d set fromg4d=1
+
+iftitle [if exist /AIO/Menu/Custom.lst] My Custom Menu\n Run My Custom Menu
+configfile /AIO/Menu/Custom.lst
 
 iftitle [if exist /AIO/Tools/MS/bootmgr && if exist /AIO/Menu/WinLegacy] WinPE & Setup\n Run WinPE & Setup
 chainloader /AIO/Tools/MS/bootmgr
@@ -49,6 +47,9 @@ configfile /AIO/Menu/BackupRecovery.lst
 
 iftitle [if exist /AIO/Menu/Special.lst] Special Pack\n Run Special Pack
 configfile /AIO/Menu/Special.lst
+
+iftitle [if exist /EFI/CLOVER/CloverLegacy] Clover\n Run Clover
+chainloader /AIO/Tools/Clover/boot0ss
 
 iftitle [if exist /AIO/Tools/syslinux/syslinux/syslinux.bin] Syslinux\n Run Syslinux
 chainloader /AIO/Tools/syslinux/syslinux/syslinux.bin
@@ -94,15 +95,3 @@ fallback +1
 find --set-root --ignore-floppies --ignore-cd /io.sys
 chainloader /io.sys
 savedefault --wait=2
-
-# In the end, font lines for unicode chars in unifont.hex format.
-# It should include all unicode chars used in the above menu code.
-# Surely normal ASCII chars are not necessary to be included here.
-
-5173:10100810082000003FF8010001000100FFFE010002800280044008203018C006
-542F:010000801FFC1004100410041FFC10001000100017FC24042404440487FC0404
-673A:100011F011101110FD10111031103910551055109110111211121212120E1400
-91CD:001000F83F000100FFFE01001FF011101FF011101FF001003FF80100FFFE0000
-
-
-

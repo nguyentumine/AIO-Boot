@@ -2,7 +2,7 @@ Get the source code of this build in this way:
 
 	git clone git://github.com/chenall/grub4dos.git
 	cd grub4dos
-	git checkout 46c03ce -b build
+	git checkout 515e8f7 -b build
 
 and now you may do a "make" to compile.
 

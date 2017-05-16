@@ -1,211 +1,211 @@
+﻿################################################################
+Dil	        :	Turkish
+Kredi		:	Erhan Kültür (ekultur@gmail.com)
+Tarih		:	14.05.2017
+Info		:	Lütfen satır ekleme, silme veya taşıma yapmayın, "%s" yi kaldırmayın.Kendi bildiriminizi göndermek veya herhangi bir sorunuz olmasını istiyorsanız, info@sitecuatui.com adresine bir e-posta göndermeyi unutmayın. Yardım için teşekkürler!
 ################################################################
-Language	:	Turkish
-Credits		:	Nguyễn Tứ (www.sitecuatui.com)
-Date		:	06.12.2016
-Info		:	Please do not add, delete or move the line, do not remove "%s". If you want to submit your own or have any questions, do not forget to send an email to info@sitecuatui.com. Thank for help!
-################################################################
 
 
 
-##### BEGIN #####
-Turkish
-Main
-Integration
-About
-Bootloaders
-Run PXE
-Settings
-Tools
-MENU Editor
-Help
-Current Disk:
+##### BAŞLA #####
+Türkçe
+Ana
+Entegrasyon
+Hakkında
+Bootloader'lar
+PXE'yi çalıştır
+Ayarlar
+Araçlar
+MENÜ Editörü
+Yardım et
+Geçerli Disk:
 Disk
-Name
-Type
-Size
-Current Drive:
-Drive
-Label
-FileSystem
-Removable media
-Fixed media
-RAM disk
-Unknow
-AIO Boot is a tool that can help you create a bootable USB/HDD with Grub2, Grub4dos, Syslinux, Clover and rEFInd. AIO Boot own unique features, advanced and friendly.%sThis is free software, please do not pay any fees to use this software. Any act of buying or selling is prohibited.%sThis tool is 100%% clean, it is not harmful to your computer.%sPlease help this community by contributing your ideas and report bugs. Feel free to share or contribute your articles, videos, and links related to more people can know and use this tool.
-Don't forget to contact the author if you have any questions, email info@sitecuatui.com. I would love to hear from you so that I can improve this tool better.
-Name
-Version
-Homepage
-Copyright
-1. Select Pack
-2. Select File
-Download
-OK
-Please select the file on your drive...
-Select ISO file or WIM file on your drive...
-Select ISO file on your drive...
-Mount ISO file, then select "I386/TXTSETUP.SIF" or "AMD64/TXTSETUP.SIF"...
-Please select a valid file!
-Filename can only contain alphanumeric characters (letters , numbers ) and . Please rename the file and try again!
-Files larger than 4GB can NOT be stored on a FAT32 volume.%sFormatting the partition as exFAT or NTFS will resolve this issue.
-Processing, please wait...
-Do not close this window until this is done!
-Could not detect this file!
-Error, please contact to author for support!
-Error: Please close the application you are using to read BCD/WinLegacy file and try again!
-Error: Please close the application you are using to read %s file and try again!
-Invalid file!
-Error: The remaining space is insufficient!
-Done. Happy booting!
-Error
-Warning
-Information
-Confirm
-Copying
-Copying the required files...
-Extracting
-Checking file, please wait...
-Please enter the name of the menu
-Adding menu...
-Preparing files...
-Please close Regedit.exe to continue!
-Cancel
-Continue
-Cleaning up, please wait...
-Because the size of the file does not allow stored on a FAT32 partition.%sWe will split this file, do you agree?
-Splitting
-Yes
-No
-The selected disk is of the GPT partition style. You need to copy the folder "EFI" to a partition is formatted in "FAT32" or "FAT16".
-The selected disk is of the GPT partition style. Only Grub2, rEFInd and Clover are supported.
-Currently we do not support this device!
-has been installed...
-is already installed...
-%s has not been installed. %s requires that %s must be installed.%sDo you want to install Grub2 right away?
-Please select the drive where you installed the latest Windows version.
-If possible, try this feature on Windows 7 or newer version to get the best support.
-Did not find the System partition.
-has been restored.
-Have not found any drive that Windows is installed in %s mode.
-You need to reformat the drive to be able to install Syslinux.
-Please format the drive to FAT32 or NTFS.
-Please select the partition that you have installed Windows in Legacy BIOS mode.
-Please select the partition that you have installed Windows in UEFI mode.
-Please boot in UEFI mode and try again.
-You are using the latest version!
-We have a new version that you can update right now.%sVersion %s, released on %s.%sDo you want to close this application and update now?
-Currently, there is no MENU to be able to edit.
-Remove?
-Name of MENU
-Save
-after you've edited.
-Deleting files...
-Saved
-Update
-Default
-File Only
-Clover will also be installed for Legacy mode
-Please select the partition to install Grub2, Clover and rEFInd for UEFI mode.
-You need to download the latest version of AIO Boot and repartition this disk to continue.
-GPT-style hard disk only support UEFI mode.%sIf you only use UEFI mode, you do not need to do anything right now.
-To support Grub2, Clover, rEFInd and UEFI Shell in UEFI mode, you need to create a partition in FAT32 or FAT16 format on this hard disk.
-You can use DiskPart or GParted to create new partition.%sPlease try again after you have created a new partition.
-The selected disk is of the GPT partition style. We need to copy the folder "EFI" into "EFI System Partition (ESP)". Do you want to do it right now?
-%s: You will boot directly into Grub2 every time you turn on the computer.%s: You need to select the files "/EFI/Grub2/bootx64.efi" to boot into Grub2.
-To support Legacy BIOS mode on a hard drive in GPT style. We need to dedicate a new partition.
-1. This partition size as small as possible. Approximately 1MB or larger but not larger than 10MB.%s2. All data in this partition will be lost. Therefore, you need to create a new partition.
-Please continue after you have created this partition as required.
-My computer has 32-bit UEFI firmware.
-Don't ask me enter Name of MENU.
-No need to verify the file.
-Configure PXE Boot for UEFI mode.
-Set
-Here is the list of languages that Grub2 is supported. What is your language?
-Please select an item in the drop-down list
-Your settings have been saved!
-Please format this Drive to FAT32.%sOr install Grub2 and select the option to install Clover.
-Install Bootloader
-Restore Windows Bootloader
-Tiny PXE Server is running, please close it if you want to rerun!
-UEFI or Legacy mode?
-Please select 32-bit or 64-bit version
-Windows only
-All others
-WinPE Required
-Please follow the steps below first:%s1. Download "boot%s.wim".%s2. Copy it to "%s\AIO\WinPXE\sources\".%sYou can download it from here:
-Secure Boot is on. This may prevent booting to non-Windows operating systems. Please disable this option in BIOS.
-Grub2 Language
-Font Size
-Small
-Large
-Create a new password for Grub2.
-Create New
-Change or remove Grub2 password.
-Remove
-Will you create a new password or remove it?
-New Username
-New Password
-Value must not contain spaces at the beginning or the end.
-The Username must contain only [A-Z] characters, digits [0-9] and space ['' ''].
-New username and password have been created.
-Uninstall
-Make sure your computer is booted without using the AIO Boot's Grub2. If your computer can only boot through the AIO Boot's Grub2, uninstalling will cause your computer to fail to boot.%sTo restore the Windows boot loader, please use the Bootloaders button or use the DVD.%sClick Continue when you are able to boot into the operating system without using Grub2 of AIO Boot.
-Splitting the file
-Extracting the file
-Updating files
-Adding additional files
-Canceling
-Cancelled
-Deleted
-Auto Detect
-Others
-Special Pack
-Could not detect this file, please select a package listed in the list!
-This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sThe speed of the operating system depends on the read and write speed of the hard drive.%sWould you like to create a 4Gb file for persistent mode?
-This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sThe speed of the operating system depends on the read and write speed of the hard drive.%sWe will create a file of size corresponding to the data you want to save.
-Grub2 Background
-Sincerely thanks to:--All these users are using this tool.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot and WinSetupFromUSB.--Translators of languages: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French).
-Partitions Manage
-Size in MB
-Input file
-Output file
-Click here to select the ISO file on your drive...
-Click here to choose where you will save the ".PartIMG" file on your drive...
-Create
-This file is empty.
-Unable to obtain information of this file.
-Maybe this file will not be supported for boot. Do you want to continue?
-Please enter a size for the file you want to create.
-Please enter a label for the file you want to create.
-The output file already exists, would you like to replace this file?
-Please enter a size that is at least %s.
-The free space on the %s drive is not enough.
-The %s drive is formatted as FAT32, it can only store files up to 4GB in size.
-ImDisk is not installed, do you want to install ImDisk right now?
-ImDisk was not installed.
-Creating and mounting file...
-Extracting ISO file...
-Updating configuration files...
-The size of the PartIMG file is not enough, please increase it to about %s and try again.
-Could not set Label for PartIMG file.
-Unable to unmount %s, please do this manually.%sThen delete the PartIMG file where you chose.
-Mount ISO, then select the sources\install.wim file on that drive...
-Click here to select the sources\install.wim file in your drive...
-Click here to choose where you will save the ".VHD" file on your drive...
-Only support Windows 7 and later.
-Creating and mounting VHD file...
-Applying image...
-Unmounting VHD file...
-Could not create and mount VHD file.
-Can not apply image to VHD partition.
-The size of the VHD file is not enough, please increase it and try again.
-Could not unmount %s drive, please do this manually.%sThen delete the VHD file where you chose.
-Choose version
-Please extract all "sources\*.wim" files and integrate them in "WinPE 7/8.1/10".
-Integrate this package as a WinPE?
-Please extract all files to the root directory of your USB or Hard drive first!%sSee the home page for more information.
-Custom
-Creating
-Can not create file larger than 4GB on FAT32 partition.
-Install Grub4Dos as Default Boot Loader?%sYou should only install Grub4Dos if Grub2 is not compatible on your machine or just for testing.%sUse Grub2 to fully support the feature.
-##### END #####
+İsim
+Tip
+Boyut
+Şu Sürüş:
+Sürücü
+Etiket
+FS.
+Çıkarılabilir medya
+Sabit medya
+RAM diski
+Bilinmemek
+AIO Boot, Grub2, Grub4dos, Syslinux, Clover ve rEFInd ile önyüklenebilir bir USB/HDD oluşturmanıza yardımcı olabilecek bir araçtır. AIO Boot'un kendine has özellikleri, gelişmiş ve dostça.%sBu araç 100%% temiz, bilgisayarınıza zararlı değildir.%sLütfen fikirlerinize katkıda bulunarak ve hataları bildirerek bu topluluğa yardımcı olunuz. Bu araç hakkında daha fazla kullanıcı bilgisini ve kullanabileceğinize ilişkin makaleler, videolar ve bağlantılar paylaşmak veya katkıda bulunmaktan çekinmeyin.
+Herhangi bir sorunuz varsa yazarla iletişim kurmayı unutma, info@sitecuatui.com adresine e-posta atın. Sizden duymak isterim ki, bu aracı daha iyi geliştirebilirim. Her şey için teşekkürler!
+İsim
+Sürüm
+Anasayfa
+Telif Hakkı
+1. Paket Seçin
+2. Dosya'yı seçin
+İndir
+tamam
+Lütfen sürücünüzdeki dosyayı seçin ...
+Sürücünüzde ISO dosyası veya WIM dosyası seçin ...
+Sürücünüzdeki ISO dosyasını seçin ...
+ISO dosyasını yükleyin, ardından "I386/TXTSETUP.SIF" veya "AMD64/TXTSETUP.SIF" öğesini seçin ...
+Lütfen geçerli bir dosya seçin!
+Dosya adı yalnızca alfasayısal karakterler (harfler, rakamlar) içerebilir ve. Lütfen dosyayı yeniden adlandırın ve tekrar deneyin!
+4GB'dan daha büyük dosyalar FAT32 birime depolanamaz.%sBölümü exFAT veya NTFS olarak biçimlendirmek bu sorunu çözer.
+İşleniyor .. Lütfen bekleyin...
+Bu tamamlanana kadar bu pencereyi kapatmayın!
+Bu dosyalar algılanamadı!
+Hata, lütfen yardım için yazarla iletişime geçin!
+Hata: Lütfen BCD/WinLegacy dosyasını okumak için kullandığınız uygulamayı kapatın ve tekrar deneyin!
+Hata: Lütfen okumak için kullandığınız uygulamayı kapatın %s Dosyayı tekrar deneyin!
+Geçersiz dosya!
+Hata: Kalan alan yetersiz!
+Bitti. Mutlu çizme!
+Hata
+Uyarı
+Bilgi
+Onaylamak
+Kopyalama
+Gerekli dosyaları kopyaluyor ...
+Ayıklanıyor
+Dosya kontrol ediliyor, lütfen bekleyin ...
+Lütfen menünün adını girin
+Menü ekleniyor ...
+Dosyalar hazırlanıyor ...
+Devam etmek için lütfen Regedit.exe'yi kapatın!
+İptal etmek
+Devam et
+Temizleniyor, lütfen bekleyin ...
+Çünkü dosya boyutu bir FAT32 bölümünde saklanmasına izin vermiyor.%sBu dosyayı parçalayacağız, anlıyor musun?
+Bölme
+Evet
+Hayır
+Seçilen disk GPT bölüm stilindedir. "EFI" klasörünü "FAT32" veya "FAT16" formatında bir bölümü kopyalamanız gerekir.
+Seçilen disk GPT bölüm stilindedir. Yalnızca Grub2, rEFInd ve Clover desteklenmektedir.
+Şu anda bu cihazı desteklemiyoruz!
+yüklendi...
+zaten kurulu...
+%s Yüklenmedi. %s Bunu gerektirir %s Kurulmuş olmalı.%sGrub2'yi hemen yüklemek ister misiniz?
+Lütfen en son Windows sürümünü yüklediğiniz sürücüyü seçin.
+Mümkünse, en iyi desteği almak için bu özelliği Windows 7 veya daha yeni bir sürümde deneyin.
+Sistem bölümünü bulamadık.
+Restore edildi.
+Windows'un yüklü olduğu herhangi bir sürücü bulamadıysanız %s Modu.
+Syslinux'u kurabilmek için sürücüyü yeniden biçimlendirmeniz gerekiyor.
+Lütfen sürücüyü FAT32 veya NTFS olarak biçimlendirin.
+Lütfen Windows'u Eski BIOS modunda yüklediğiniz bölümü seçin.
+Lütfen UEFI modunda Windows'u yüklediğiniz bölümü seçin.
+Lütfen UEFI modunda önyükleme yapın ve tekrar deneyin.
+En son sürümü kullanıyorsunuz!
+Şu an güncelleyebileceğiniz yeni bir sürüme sahibiz.%sVersiyon %s, Üzerinde yayımlanan %s.%sBu uygulamayı kapatıp şimdi güncellemek istiyor musunuz?
+Şu anda, düzenleyebilmek için bir MENÜ yok.
+Kaldır?
+MENU adı
+Kayıt etmek
+Düzenledikten sonra.
+Dosyalar siliniyor ...
+Kaydedildi
+Güncelleştirme
+Varsayılan
+Yalnızca Dosya
+Clover, Eski Mod için de yüklenecektir
+Lütfen UEFI modu için Grub2, Clover ve rEFInd'i kurmak için bölümü seçin.
+Devam etmek için AIO Ön Yükleme'nin en son sürümünü indirmeniz ve bu disk bölümünü yeniden bölümlendirmeniz gerekir.
+GPT stili sabit disk yalnızca UEFI modunu destekler.%sYalnızca UEFI modunu kullanırsanız, şu anda bir şey yapmanıza gerek yoktur.%sEski modunu desteklemek istiyorsanız, sabit diski MBR stiline göre biçimlendirin.
+Grub2, Clover, rEFInd ve UEFI Shell'i UEFI modunda desteklemek için bu sabit diskte FAT32 veya FAT16 formatında bir bölüm oluşturmanız gerekir.
+Yeni bölüm oluşturmak için DiskPart veya GParted kullanabilirsiniz.%sLütfen yeni bir bölüm oluşturduktan sonra tekrar deneyin.
+Seçilen disk GPT bölüm stilindedir. "EFI" klasörünü "EFI Sistem Bölümüne (ESP)" kopyalamamız gerekiyor. Bunu şimdi yapmak istiyor musun?
+%s: Bilgisayarı her açtığınızda doğrudan Grub2'ye önyükleme yaparsınız.%s: Grub2'ye önyükleme yapmak için "/EFI/Grub2/bootx64.efi" dosyalarını seçmeniz gerekiyor.
+Bir sabit sürücüye GPT stilinde Eski BIOS modunu desteklemek için. Yeni bir bölüm ayırmalıyız.
+1. Bu bölüm boyutu mümkün olduğunca küçük. Yaklaşık 1MB veya daha büyük ancak 10MB'dan büyük olmayacak.%s2. Bu bölümdeki tüm veriler kaybolacak. Bu nedenle, yeni bir bölüm oluşturmanız gerekir.
+Lütfen bu bölümü istediğiniz gibi oluşturduktan sonra devam edin.
+Bilgisayarımda 32 bit UEFI sabit yazılımı var.
+MENU ismini girmemi isteme.
+Dosyayı doğrulamanıza gerek yok.
+UEFI modu için PXE Önyüklemesini yapılandırın.
+Ayarla
+İşte Grub2'nin desteklendiği dillerin listesi. Dilin nedir?
+Lütfen açılır listeden bir öğe seçin
+Ayarlarınız kaydedildi!
+Lütfen bu Sürücüyü FAT32'ye göre biçimlendirin.%sYa da Grub2'yi kurun ve Clover'ı kurma seçeneğini seçin.
+Önyükleyici Yükleme
+Windows Önyükleme Yükleyicisini Geri Yükleme
+Minik PXE Sunucusu çalışıyor, lütfen yeniden çalıştırmak isterseniz kapatın!
+UEFI veya Eski mod mu?
+Lütfen 32 bit veya 64 bit sürümünü seçin
+Yalnızca Windows
+Diğerleri
+WinPE Gerekli
+Lütfen aşağıdaki adımları takip edin:%s1. İndir "boot%s.wim".%s2. Şuraya kopyala: "%s\AIO\WinPXE\sources\".%sBuradan indirebilirsiniz:
+Güvenli Önyükleme açık. Bu, Windows dışındaki işletim sistemlerine önyüklemeyi engelleyebilir. Lütfen bu seçeneği BIOS'da devre dışı bırakın.
+Grub2 Dili
+Yazı Boyutu
+Küçük
+Geniş
+Grub2 için yeni bir şifre oluşturun.
+Yeni oluşturmak
+Grub2 şifresini değiştirin veya kaldırın.
+Kaldır
+Yeni bir şifre yaratır mı yoksa kaldırır mısınız?
+Yeni kullanıcı adı
+Yeni Şifre
+Değer başında veya sonunda boşluk içermemelidir.
+Kullanıcı adı yalnızca [A-Z] karakter, basamak [0-9] ve boşluk ['' ''] içermelidir.
+Yeni kullanıcı adı ve şifre oluşturuldu.
+Kaldır
+AIO Boot'un Grub2'sini kullanmadan bilgisayarınızın önyükleme yaptığından emin olun. Bilgisayarınız yalnızca AIO Önyükleme Grub2 aracılığıyla önyüklenebilirse, kaldırma işlemi bilgisayarınızın önyükleme işleminin başarısız olmasına neden olur.%sWindows önyükleme yükleyicisini geri yüklemek için lütfen Önyükleyiciler düğmesini kullanın veya DVD'yi kullanın.%sAIO Önyükleme Grub2'yi kullanmadan işletim sisteminde önyükleme yapabildiğinizde Devam'ı tıklayın.
+Dosyayı bölme
+Dosyanın ayıklanması
+Dosyalar güncelleniyor
+Ek dosyalar ekleme
+İptal
+iptal edildi
+Silindi
+Otomatik algılama
+Diğerleri
+Özel Paket
+Bu dosyayı algılayamadı, lütfen listede listelenen bir paketi seçin!
+Bu işletim sistemi kalıcı modu destekliyor.%sBu, verilerinizin her oturumdan sonra kaydedileceği anlamına gelir.%sİşletim sisteminin hızı, sabit sürücünün okuma ve yazma hızına bağlıdır.%sKalıcı mod için 4Gb'lik bir dosya oluşturmak ister misiniz?
+Bu işletim sistemi kalıcı modu destekliyor.%sBu, verilerinizin her oturumdan sonra kaydedileceği anlamına gelir.%sİşletim sisteminin hızı, sabit sürücünün okuma ve yazma hızına bağlıdır.%sKaydetmek istediğiniz veriye karşılık gelen bir dosya yaratacağız.
+Grub2 Arka Planı
+Saygılarımızla,--Bu kullanıcıların tümü bu aracı kullanmaktadır:--Google.--GNU (Grub2 Geliştirme Ekibi).--Clover'ın Geliştirme Ekibi, rEFInd, Grub4dos ve Syslinux.--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot ve WinSetupFromUSB'nin Yazarları Sunucu.--Dil çevirmenleri: Denis Cojocaru (Rusça ve Rumence), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kültür (Türkçe).
+Bölümler Yönet
+MB cinsinden boyut
+Giriş dosyası
+Çıktı dosyası
+Sürücünüzdeki ISO dosyasını seçmek için burayı tıklayın ...
+".PartIMG" dosyasını nereye kaydedeceğinizi seçmek için burayı tıklayın ...
+Yarat
+Bu dosya boş.
+Bu dosyanın bilgileri alınamadı.
+Belki bu dosya önyükleme için desteklenmeyecektir. Devam etmek istiyor musun?
+Lütfen oluşturmak istediğiniz dosya için bir boyut girin.
+Lütfen oluşturmak istediğiniz dosya için bir etiket girin.
+Çıktı dosyası zaten var, bu dosyayı değiştirmek ister misiniz?
+Lütfen en az bir boyut girin %s.
+Üzerindeki boş alan %s Sürücü yeterli değil.
+Sonra %s Sürücü FAT32 olarak biçimlendirildiğinde, yalnızca 4GB'a kadar dosyaları saklayabilir.
+ImDisk kurulu değil, şimdi ImDisk'i kurmak istiyor musunuz?
+ImDisk kurulu değil.
+Dosya oluşturma ve yükleme ...
+ISO dosyası ayıklanıyor ...
+Yapılandırma dosyaları güncelleniyor ...
+PartIMG dosyasının boyutu yetmiyor, lütfen yaklaşık olarak arttırın. %s  ve yeniden dene.
+PartIMG dosyası için Etiket ayarlanamadı.
+Bağlantı kurulamıyor %s, Lütfen bunu manuel yapın.%sArdından, seçtiğiniz yerde Partition dosyasını silin.
+ISO'yi yükleyin, ardından bu sürücüdeki sources\install.wim dosyasını seçin ...
+Sürücünüzdeki sources\install.wim dosyasını seçmek için burayı tıklayın ...
+".VHD" dosyasını nereye kaydedeceğinizi seçmek için burayı tıklayın ...
+Yalnızca Windows 7 ve sonrası desteği.
+VHD dosyası oluşturma ve yükleme ...
+Resim uyguluyor ...
+VHD dosyasını kaldırıyorum ...
+VHD dosyası oluşturulamadı ve bağlanamadı.
+VHD bölümüne resim uygulanamıyor.
+VHD dosyasının boyutu yetmiyor, lütfen onu yükseltip tekrar deneyin.
+Bağlantı kesilemedi %s Sürüş, lütfen bunu manuel yapın.%sSonra seçtiğiniz VHD dosyasını silin.
+Sürümü seçin
+Lütfen tüm "sources\*.Wim" dosyalarını çıkarın ve bunları "WinPE 7/8.1/10" da bütünleştirin.
+Bu paketi bir WinPE olarak bütünleştirmek mi istiyorsunuz?
+Lütfen tüm dosyaları USB veya Sabit diskinizin kök dizinine ayıklayın!%sDaha fazla bilgi için ana sayfaya bakın.
+Görenek
+Oluşturma
+FAT32 bölümünde 4GB'dan büyük dosya oluşturulamıyor.
+Grub4Dos'u Standart Önyükleme Yükleyicisi olarak yükle?%sGrub2, makinenizde uyumlu değilse veya yalnızca test etmek için yalnızca Grub4Dos'u yüklemeniz gerekir.%sÖzelliği tam olarak desteklemek için Grub2 kullanın.
+##### SON #####

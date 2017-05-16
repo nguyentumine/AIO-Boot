@@ -31,7 +31,7 @@ Média amovible
 Média réparé
 Disque RAM
 Inconnu
-AIO Boot est un outil qui peut vous aider à créer un une clé ou un disque dur USB avec Grub2, Grub4dos, Syslinux, Clover et rEFInd. AIO Boot offre des caratéristiques uniques, perfectionnées et sympathiques.%sC'est un logiciel gratuit, ne payer surtout pas de frais pour utiliser ce logiciel. Tout acte d'achat ou de revente est interdit.%sCet outil est 100%% propre, il n'est pas préjudiciable pour votre ordinateur.%sMerci d'aider cette communauté en contribuant avec vos idées et en  signalant des bugs. Sentez vous libre de contriber ou partager vos articles, vidéos et liens relatifs à AIO BOOT avec le plus de monde possible que vous connaissez et utilisez cet outil.
+AIO Boot est un outil qui peut vous aider à créer un une clé ou un disque dur USB avec Grub2, Grub4dos, Syslinux, Clover et rEFInd. AIO Boot offre des caratéristiques uniques, perfectionnées et sympathiques.%sCet outil est 100%% propre, il n'est pas préjudiciable pour votre ordinateur.%sMerci d'aider cette communauté en contribuant avec vos idées et en  signalant des bugs. Sentez vous libre de contriber ou partager vos articles, vidéos et liens relatifs à AIO BOOT avec le plus de monde possible que vous connaissez et utilisez cet outil.
 N'oubliez pas de contacter l'auteur si vous avez des questions, email info@sitecuatui.com. J'apprécierais que vous me disiez comment je pourrais encore améliorer ce outil.
 Nom
 Version
@@ -164,7 +164,7 @@ Ce fichier ne peut être détecté, veuillez sélectionner un paquet dans la lis
 Ce sytème d'exploitation supporte le mode persistant.%sCela signifie que vos données seront conservées après chaque  session.%sLa vitesse du système d'exploitation dépend de la vitesse de lecture et d'écriture du disque dur.%sDésirez-vous créer un fichier 4 Gb pour le mode persistant?
 Ce sytème d'exploitation supporte le mode persistant.%sCela signifie que vos données seront conservées après chaque  session.%sLa vitesse du système d'exploitation dépend de la vitesse de lecture et d'écriture du disque dur.%sNous allons créer un fichier de la taille correspondant aux données que vous voulez sauvegarder.
 Fond d'écran Grub2
-Sincères remerciements à/aux:--Tous les gens qui utilisent cet outil.--Google.--GNU (Equipe de Développement de Grub2).-- Equipes de Développement de Clover, rEFInd, Grub4dos et Syslinux.--Auteurs def 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot et WinSetupFromUSB.--Traducteurs des langues: Denis Cojocaru (Russe et Roumain), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French).
+Sincères remerciements à/aux:--Tous les gens qui utilisent cet outil.--Google.--GNU (Equipe de Développement de Grub2).-- Equipes de Développement de Clover, rEFInd, Grub4dos et Syslinux.--Auteurs def 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot et WinSetupFromUSB.--Traducteurs des langues: Denis Cojocaru (Russe et Roumain), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur (Turkish).
 Partitions Manage
 Taille en MB
 Input file
