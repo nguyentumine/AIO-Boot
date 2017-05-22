@@ -23,9 +23,9 @@ timeout 20
 # security:
 #  banner      - the rEFInd title banner (built-in or loaded via "banner")
 #  label       - boot option text label in the menu
-#  singleuser  - remove the submenu options to boot Mac OS X in single-user
-#                or verbose modes; affects ONLY MacOS X
-#  safemode    - remove the submenu option to boot Mac OS X in "safe mode"
+#  singleuser  - remove the submenu options to boot macOS in single-user
+#                or verbose modes; affects ONLY macOS
+#  safemode    - remove the submenu option to boot macOS in "safe mode"
 #  hwtest      - the submenu option to run Apple's hardware test
 #  arrows      - scroll arrows on the OS selection tag line
 #  hints       - brief command summary in the menu
@@ -151,14 +151,14 @@ timeout 20
 
 # Launch specified OSes in graphics mode. By default, rEFInd switches
 # to text mode and displays basic pre-launch information when launching
-# all OSes except OS X. Using graphics mode can produce a more seamless
+# all OSes except macOS. Using graphics mode can produce a more seamless
 # transition, but displays no information, which can make matters
 # difficult if you must debug a problem. Also, on at least one known
 # computer, using graphics mode prevents a crash when using the Linux
 # kernel's EFI stub loader. You can specify an empty list to boot all
 # OSes in text mode.
 # Valid options:
-#   osx     - Mac OS X
+#   osx     - macOS
 #   linux   - A Linux kernel with EFI stub loader
 #   elilo   - The ELILO boot loader
 #   grub    - The GRUB (Legacy or 2) boot loader
@@ -252,7 +252,7 @@ timeout 20
 #scan_delay 5
 
 # When scanning volumes for EFI boot loaders, rEFInd always looks for
-# Mac OS X's and Microsoft Windows' boot loaders in their normal locations,
+# macOS's and Microsoft Windows' boot loaders in their normal locations,
 # and scans the root directory and every subdirectory of the /EFI directory
 # for additional boot loaders, but it doesn't recurse into these directories.
 # The also_scan_dirs token adds more directories to the scan list.
@@ -267,10 +267,13 @@ timeout 20
 #also_scan_dirs boot,ESP2:EFI/linux/kernels
 
 # Partitions (or whole disks, for legacy-mode boots) to omit from scans.
-# For EFI-mode scans, you must specify a volume by its label, which you
+# For EFI-mode scans, you normally specify a volume by its label, which you
 # can obtain in an EFI shell by typing "vol", from Linux by typing
 # "blkid /dev/{devicename}", or by examining the disk's label in various
-# OSes' file browsers.
+# OSes' file browsers. It's also possible to identify a partition by its
+# unique GUID (aka its "PARTUUID" in Linux parlance). (Note that this is
+# NOT the partition TYPE CODE GUID.) This identifier can be obtained via
+# "blkid" in Linux or "diskutil info {partition-id}" in macOS.
 # For legacy-mode scans, you can specify any subset of the boot loader
 # description shown when you highlight the option in rEFInd.
 # The default is "LRS_ESP".
@@ -309,7 +312,8 @@ timeout 20
 # complete filename with volume (e.g., "SOMEDISK:/EFI/somedir/notme.efi").
 # The default is shim.efi,shim-fedora.efi,shimx64.efi,PreLoader.efi,
 # TextMode.efi,ebounce.efi,GraphicsConsole.efi,MokManager.efi,HashTool.efi,
-# HashTool-signed.efi,bootmgr.efi
+# HashTool-signed.efi,bootmgr.efi,fb{arch}.efi
+# (where "{arch}" is the architecture code, like "x64").
 #
 #dont_scan_files shim.efi,MokManager.efi
 
@@ -334,6 +338,25 @@ timeout 20
 # Default is "true" -- kernels are "folded" into a single menu entry.
 #
 #fold_linux_kernels false
+
+# Comma-delimited list of strings to treat as if they were numbers for the
+# purpose of kernel version number detection. These strings are matched on a
+# first-found basis; that is, if you want to treat both "linux-lts" and
+# "linux" as version strings, they MUST be specified as "linux-lts,linux",
+# since if you specify it the other way, both vmlinuz-linux and
+# vmlinuz-linux-lts will return with "linux" as the "version string," which
+# is not what you'd want. Also, if the kernel or initrd file includes both a
+# specified string and digits, the "version string" includes both. For
+# instance, "vmlinuz-linux-4.8" would yield a version string of "linux-4.8".
+# This option is intended for Arch and other distributions that don't include
+# version numbers in their kernel filenames, but may provide other uniquely
+# identifying strings for multiple kernels. If this feature causes problems
+# (say, if your kernel filename includes "linux" but the initrd filename
+# doesn't), be sure this is set to an empty string
+# (extra_kernel_version_strings "") or comment out the option to disable it.
+# Default is no extra version strings
+#
+#extra_kernel_version_strings linux-lts,linux
 
 # Set the maximum number of tags that can be displayed on the screen at
 # any time. If more loaders are discovered than this value, rEFInd shows
@@ -372,7 +395,7 @@ timeout 20
 #default_selection Microsoft
 #default_selection "+,bzImage,vmlinuz"
 #default_selection Maintenance 23:30 2:00
-#default_selection "Maintenance,OS X" 1:00 2:30
+#default_selection "Maintenance,macOS" 1:00 2:30
 
 # Enable VMX bit and lock the CPU MSR if unlocked.
 # On some Intel Apple computers, the firmware does not lock the MSR 0x3A.
@@ -385,7 +408,7 @@ timeout 20
 #
 #enable_and_lock_vmx false
 
-# Tell a Mac's EFI that OS X is about to be launched, even when it's not.
+# Tell a Mac's EFI that macOS is about to be launched, even when it's not.
 # This option causes some Macs to initialize their hardware differently than
 # when a third-party OS is launched normally. In some cases (particularly on
 # Macs with multiple video cards), using this option can cause hardware to
@@ -396,7 +419,7 @@ timeout 20
 # some hardware devices. When needed, a value of "10.9" usually works, but
 # you can experiment with other values. This feature has no effect on
 # non-Apple computers.
-# The default is inactive (no OS X spoofing is done).
+# The default is inactive (no macOS spoofing is done).
 #
 #spoof_osx_version 10.9
 
@@ -542,9 +565,9 @@ menuentry "Windows via shell script" {
 # it may serve as a starting point. Note that you'll almost
 # certainly need to change the "volume" line for this example
 # to work.
-menuentry "My Mac OS X" {
+menuentry "My macOS" {
     icon \EFI\refind\icons\os_mac.png
-    volume "OS X boot"
+    volume "macOS boot"
     loader \System\Library\CoreServices\boot.efi
     disabled
 }
