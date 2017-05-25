@@ -59,10 +59,10 @@ AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as 
 AIO boot Boot is a lightweight, less than 37 Mb.
 
 **File name:** AIO_Boot_Extractor.exe<br />
-**Size:** 35,5 MB<br />
-**Version:** 0.9.5.3<br />
-**Last updated:** 23.05.2017<br />
-**MD5 checksum:** 822398c6e8a5f76a9087e05fda0ccbf9<br />
+**Size:** 37,8 MB<br />
+**Version:** 0.9.5.4<br />
+**Last updated:** 25.05.2017<br />
+**MD5 checksum:** 830a3983be9b8124f3d56755cb331fb7<br />
 
 **Download:** [Google Drive](http://www.sitecuatui.com/out/aiogd) | [Softpedia](http://www.softpedia.com/get/System/Boot-Manager-Disk/AIO-Boot.shtml) | [SourceForge](https://sourceforge.net/projects/aioboot/) | [MajorGeeks](http://www.majorgeeks.com/files/details/aio_boot.html) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf)
 
