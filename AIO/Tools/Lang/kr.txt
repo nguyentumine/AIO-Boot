@@ -2,7 +2,7 @@
 Language	:	Korean (Untranslated)
 Credits		:	Nguyễn Tứ (www.sitecuatui.com)
 Date		:	06.12.2016
-Info		:	Please do not add, delete or move the line, do not remove "%s". If you want to submit your own or have any questions, do not forget to send an email to info@sitecuatui.com. Thank for help!
+Info		:	Please do not add, delete or move the line, do not remove "%s". If you want to submit your own or have any questions, do not forget to send an email to admin@aioboot.com. Thank for help!
 ################################################################
 
 
@@ -32,7 +32,7 @@ Fixed media
 RAM disk
 Unknow
 AIO Boot is a tool that can help you create a bootable USB/HDD with Grub2, Grub4dos, Syslinux, Clover and rEFInd. AIO Boot own unique features, advanced and friendly.%sThis tool is 100%% clean, it is not harmful to your computer.%sPlease help this community by contributing your ideas and report bugs. Feel free to share or contribute your articles, videos, and links related to more people can know and use this tool.
-Don't forget to contact the author if you have any questions, email info@sitecuatui.com. I would love to hear from you so that I can improve this tool better.
+Don't forget to contact the author if you have any questions, email admin@aioboot.com. I would love to hear from you so that I can improve this tool better.
 Name
 Version
 Homepage
@@ -208,4 +208,5 @@ Custom
 Creating
 Can not create file larger than 4GB on FAT32 partition.
 Install Grub4Dos as Default Boot Loader?%sYou should only install Grub4Dos if Grub2 is not compatible on your machine or just for testing.%sUse Grub2 to fully support the feature.
+Default bootloader in UEFI mode
 ##### END #####

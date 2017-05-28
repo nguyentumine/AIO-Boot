@@ -1,69 +1,64 @@
-# AIO Boot
-AIO Boot is a tool that can help you create a bootable USB with Grub2, Grub4dos, Syslinux, Clover and rEFInd. AIO Boot can boot Windows and most Linux distributions and boot via LAN using Tiny PXE Server.
+AIO Boot possesses unique, advanced and user-friendly features. Here is one of the many great features of AIO Boot.
 
-Currently, there are many USB boot tool with many different features, so you will hardly be able to select a tool to use (unless you have a lot of USB). Also for that reason that I released AIO Boot tool.
+- [AIO Boot](https://www.aioboot.com) Homepage
+- [Download AIO Boot](https://www.aioboot.com/en/download/)
+- [How to use AIO Boot?](https://www.aioboot.com/en/how-to-use/)
 
-Homepage: [AIO Boot](https://www.sitecuatui.com/aio-boot-v0-9/)<br />
-Please check the [Releases](https://github.com/nguyentumine/AIO-Boot/releases) page for latest information.
+# Screenshots
 
-My English is not good, I used Google to translate. Please sympathize with me.
+![AIO Boot](https://www.aioboot.com/wp-content/uploads/2017/05/AIO-Boot-Grub2-Menu-English.jpg)
 
-# Features
-AIO Boot was released with a lot of great features that other tools do not yet support.
-#### The bootloader is supported:
-- For Legacy-MBR: Grub2, Grub4dos, Syslinux and Clover [Legacy].<br />
-- For UEFI-GPT: Grub2, Clover [UEFI] and rEFInd.
-- Boot from LAN: Tiny PXE Server, iPXE and FreeNFS.
+![AIO Boot](https://www.aioboot.com/wp-content/uploads/2017/05/AIOCreator.exe_-1.jpg)
 
-#### Some features are supported:
-- UEFI-GPT and MBR-Legacy.
-- USB and HDD with FAT32 or NTFS format ...
-- Supports boot into Legacy mode for the hard disk in GPT style.
-- [Boot directly to UEFI mode from Legacy mode using Clover](https://www.sitecuatui.com/uefi-legacy-clover/). Your computer does not need UEFI support.
-- Boot via LAN with Tiny PXE Server.
-- Integration of package through **AIOCreator.exe** tool.
-- Bypass the Secure Boot on the UEFI mode via **Shimx64.efi** (need tester). If your computer has a Secure Boot section, turn it on, then boot **/EFI/Boot/shimx64.efi**.
-- Support boot via LAN using UEFI mode.
-- Automatically identifying and boot into the operating system installed on HDD: FreeBSD, Mac OS X/Darwin, Windows 7/8.1/10/Vista, Windows NT/2000/XP, Windows 98/ME, MS-DOS, FreeDOS, Linux distributions, Android-x86 and Remix OS 32bit/64bit... You will not need to worry about problems boot error, error loss boot ...
-- One or more partitions, AIO Boot also supports hidden partition.
-- Support hotkeys for Grub2. At the main menu, if you want to boot into a certain menu, simply press their hot key. For example, to restart your computer, you simply press the "F7" or "F6" to shutdown.
-- Support password protection for Grub2.
-  - Anyone who does not have a password can not boot, edit menus, and use the Grub2 command line.
-  - The password uses the **PBKDF2** method to encrypt so no one can know the password you have set.
-  - Anyone can change or remove passwords if they have access to Grub2 files.
-- Supports multiple languages, including Vietnamese, English, Russian and French...
-- Multiple sets of Windows setup files- XP, 2000, 2003, Vista, WIndows 7, Server 2008, Windows 8, Server 2012, both 32 and 64 bit versions are supported. Both BIOS and (U)EFI mode are supported.
-- Support to restore the Windows bootloader for both Legacy and UEFI mode.
-- Supports installing Windows 7 on a USB 3.0 port. This will help you resolve the error: `A required CD/DVD drive device driver is missing. If you have a driver floppy disk, CD, DVD, or USB flash drive, please insert it now`.
-- Support to edit and delete the MENU ~~(except for Windows packages)~~.
-- Automatically identifies the DOS program to integrate.
+# General
 
-#### Some issues to be resolved:
-- Partition in FAT32 format can not save files larger than 4GB in size. If you want to save the file size is greater than 4GB, please format your USB or HDD to NTFS format.
-- To be able to boot UEFI, you need a FAT32 partition. If you want to use NTFS, but still supports UEFI, please create a FAT32 partition and copy that folder into the EFI.
+- Support boots in both UEFI and Legacy BIOS modes.
+	- UEFI mode: Grub2, Clover and rEFInd.
+	- Legacy mode: Grub2, Grub4Dos, Clover and Syslinux.
+	- You can choose between Grub2 and Grub4Dos as the default boot loader. Only use Grub4Dos if your computer is not compatible with Grub2.
+- Supports hard drive, external hard drive and USB, including SDcard.
+- Boot into Legacy mode on the GPT hard disk.
+- Secure Boot support via Shim and MokManager.
+- Support booting into UEFI mode from Legacy mode via Clover regardless of your computer does not support UEFI mode.
+- Boot via LAN via iPXE and Tiny PXE Server.
+- Depending on the case, AIO Boot can be installed on multiple partitions:
+	- **FAT32**:
+		- You need to use FAT32 partitions to support booting in UEFI mode.
+		- Some operating systems like Bitdefender, Fedora and Gentoo… do not support booting on NTFS partitions.
+		- Ubuntu and Debian’s persistent mode is also not supported on NTFS partitions.
+		- So we need to use the FAT32 format.
+	- **NTFS**:
+		- NTFS partitions can store files larger than 4GB. You can save large files such as backups, VHD files…
+		- You can use resident mode larger than 4GB for Android-x86, Remix OS, Phoenix OS and WifiSlax 4.12.
+		- So we need to use the NTFS format.
+- Supports to integrate multiple Windows XP/7/8.1/10 installers into USB and HDD.
+	- Support USB 3.0 driver for Windows 7 installer. This helps you to install Windows 7 using USB 3.0. If you use other software, you may get the error “`A required CD/DVD drive device driver is missing. If you have a driver floppy disk, CD, DVD, or USB flash drive, please insert it now.`“.
+	- Support split ISO file into several if ISO file is larger than 4GB but you are using FAT32 format.
+- Supports booting multiple operating systems in just one USB. Includes Linux, Android, Antivirus software, Disk utilities, Backup and recovery programs.
+- Support booting WinPE and VHD.
+- Supports persistent mode for many Linux, Android and anti-virus programs. This means that your data will be saved after each session.
+- Supports identification and boot into the operating system already installed on your hard drive. Includes Windows, Linux, MacOS, FreeBSD and Android.
+- Supports creating a partition image (**.PARTIMG**) from ISO file. Use this feature if AIO Boot does not support booting it.
+- You can switch between the partitions where you have installed the AIO Boot. The menus and packages will be displayed correspondingly on that partition. From Grub2, press **y** to do this.
+- Supports recovery of Windows bootloader in both UEFI and Legacy BIOS modes.
+- You can change the language, background and font size in **Settings**.
+- Password protection for the Grub2 menu.
+	- Users can not boot, edit menus, or use the Grub2 command line before they enter the correct password.
+	- The password is encrypted by PBKDF2 so no one will know the password you have set.
+	- Anyone can change or remove the password if they have access to the Grub2 configuration files.
 
-# How to create a bootable USB
-AIO Boot has many features but it's very simple and compact. The creation of the AIO Boot is even simpler with just a few clicks.
-- Once you have downloaded the application, you need to select the drive where the necessary files should be extracted. This should be the bootable USB or HDD you wish to create.
-- After unpacking, the application will be launched automatically, and you can install either Grub2 or Clover with only a single mouse click. Additionally, you can run PXE and choose either Legacy or UEFI mode.
+# AIO Boot Extractor
 
-After you've created a bootable USB or HDD is complete, you can boot USB on VirtualBox virtual machines for testing.
+- Help you reformat USB to FAT32 before installing.
+- Helps you create two FAT32 and NTFS partitions.
+	- **FAT32**: support boots in UEFI mode.
+	- **NTFS**: support for saving files larger than 4GB.
 
-# Boot via LAN
-Boot via LAN particularly useful for rescue work, ghost and install Win for net shop, or schools, or businesses with a large number of computers. AIO Boot supports booting via LAN with Tiny PXE Server.
+# Partition Image Mapper
 
-Support most of WinPE, the above software and Linux distributions such as Ubuntu, CentOS and Linux Mint. Because time is limited, so I will try to support this tool much more.
+- Support to create USB installed FreeBSD, TrueOS, Ubuntu Server, Debian, Kali Linux and even macOS without loss of data.
+- Support boot multiple operating systems that AIO Boot can not support in the usual way.
 
-AIO Boot using iPXE as bootloader, Tiny PXE Server as PXE Server and FreeNFS as NFS Server. Run **AIOCreator.exe**, then click **Run PXE** to activate PXE Server and NFS Server.
 # Download
-AIO boot Boot is a lightweight, less than 37 Mb.
 
-**File name:** AIO_Boot_Extractor.exe<br />
-**Size:** 37,8 MB<br />
-**Version:** 0.9.5.4<br />
-**Last updated:** 25.05.2017<br />
-**MD5 checksum:** 830a3983be9b8124f3d56755cb331fb7<br />
-
-**Download:** [Google Drive](http://www.sitecuatui.com/out/aiogd) | [Softpedia](http://www.softpedia.com/get/System/Boot-Manager-Disk/AIO-Boot.shtml) | [SourceForge](https://sourceforge.net/projects/aioboot/) | [MajorGeeks](http://www.majorgeeks.com/files/details/aio_boot.html) | [MediaFire](http://www.sitecuatui.com/out/aiobootmf)
-
-AIO Boot is constructed from a variety of sources, certainly still a lot of flaws, eager for sympathy. I would love to hear from you so that I can improve this tool better.
+You can [download AIO Boot](https://www.aioboot.com/en/download/) and experience now.

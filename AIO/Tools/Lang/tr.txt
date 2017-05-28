@@ -2,7 +2,7 @@
 Dil	        :	Turkish
 Kredi		:	Erhan Kültür (ekultur@gmail.com)
 Tarih		:	14.05.2017
-Info		:	Lütfen satır ekleme, silme veya taşıma yapmayın, "%s" yi kaldırmayın.Kendi bildiriminizi göndermek veya herhangi bir sorunuz olmasını istiyorsanız, info@sitecuatui.com adresine bir e-posta göndermeyi unutmayın. Yardım için teşekkürler!
+Info		:	Lütfen satır ekleme, silme veya taşıma yapmayın, "%s" yi kaldırmayın.Kendi bildiriminizi göndermek veya herhangi bir sorunuz olmasını istiyorsanız, admin@aioboot.com adresine bir e-posta göndermeyi unutmayın. Yardım için teşekkürler!
 ################################################################
 
 
@@ -32,7 +32,7 @@ Sabit medya
 RAM diski
 Bilinmemek
 AIO Boot, Grub2, Grub4dos, Syslinux, Clover ve rEFInd ile önyüklenebilir bir USB/HDD oluşturmanıza yardımcı olabilecek bir araçtır. AIO Boot'un kendine has özellikleri, gelişmiş ve dostça.%sBu araç 100%% temiz, bilgisayarınıza zararlı değildir.%sLütfen fikirlerinize katkıda bulunarak ve hataları bildirerek bu topluluğa yardımcı olunuz. Bu araç hakkında daha fazla kullanıcı bilgisini ve kullanabileceğinize ilişkin makaleler, videolar ve bağlantılar paylaşmak veya katkıda bulunmaktan çekinmeyin.
-Herhangi bir sorunuz varsa yazarla iletişim kurmayı unutma, info@sitecuatui.com adresine e-posta atın. Sizden duymak isterim ki, bu aracı daha iyi geliştirebilirim. Her şey için teşekkürler!
+Herhangi bir sorunuz varsa yazarla iletişim kurmayı unutma, admin@aioboot.com adresine e-posta atın. Sizden duymak isterim ki, bu aracı daha iyi geliştirebilirim. Her şey için teşekkürler!
 İsim
 Sürüm
 Anasayfa
@@ -208,4 +208,5 @@ Görenek
 Oluşturma
 FAT32 bölümünde 4GB'dan büyük dosya oluşturulamıyor.
 Grub4Dos'u Standart Önyükleme Yükleyicisi olarak yükle?%sGrub2, makinenizde uyumlu değilse veya yalnızca test etmek için yalnızca Grub4Dos'u yüklemeniz gerekir.%sÖzelliği tam olarak desteklemek için Grub2 kullanın.
+Default bootloader in UEFI mode
 ##### SON #####

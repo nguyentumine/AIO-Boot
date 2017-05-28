@@ -2,7 +2,7 @@
 Language	:	Romanian
 Credits		:	Denis Cojocaru (dene.09@mail.ru)
 Date		:	14.05.2017
-Info		:	Vă rugăm să nu adăugați, ștergeti sau muta linia "%s". Dacă aveți întrebări, nu uitați să trimiteți un e-mail info@sitecuatui.com. Multumim!
+Info		:	Vă rugăm să nu adăugați, ștergeti sau muta linia "%s". Dacă aveți întrebări, nu uitați să trimiteți un e-mail admin@aioboot.com. Multumim!
 ################################################################
 
 
@@ -208,4 +208,5 @@ Personalizat
 Crearea
 Nu se poate crea un fișier mai mare de 4 GB pe partiția FAT32.
 Instalați Grub4Dos ca încărcător de încărcare implicit?%sAr trebui să instalați Grub4Dos numai dacă Grub2 nu este compatibil pe aparat sau doar pentru testare.%sUtilizați Grub2 pentru a sprijini pe deplin funcțiile.
+Default bootloader in UEFI mode
 ##### END #####

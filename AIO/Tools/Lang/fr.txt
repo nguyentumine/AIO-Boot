@@ -2,7 +2,7 @@
 Language	:	Français (traduit pas Pascal BIMAS)
 Credits		:	Pascal BIMAS Perso (f1ult@free.fr)
 Date		:	11.05.2017
-Info		:	Please do not add, delete or move the line, do not remove "%s". If you want to submit your own or have any questions, do not forget to send an email to info@sitecuatui.com. Thank for help!
+Info		:	Please do not add, delete or move the line, do not remove "%s". If you want to submit your own or have any questions, do not forget to send an email to admin@aioboot.com. Thank for help!
 ################################################################
 
 
@@ -32,7 +32,7 @@ Média réparé
 Disque RAM
 Inconnu
 AIO Boot est un outil qui peut vous aider à créer un une clé ou un disque dur USB avec Grub2, Grub4dos, Syslinux, Clover et rEFInd. AIO Boot offre des caratéristiques uniques, perfectionnées et sympathiques.%sCet outil est 100%% propre, il n'est pas préjudiciable pour votre ordinateur.%sMerci d'aider cette communauté en contribuant avec vos idées et en  signalant des bugs. Sentez vous libre de contriber ou partager vos articles, vidéos et liens relatifs à AIO BOOT avec le plus de monde possible que vous connaissez et utilisez cet outil.
-N'oubliez pas de contacter l'auteur si vous avez des questions, email info@sitecuatui.com. J'apprécierais que vous me disiez comment je pourrais encore améliorer ce outil.
+N'oubliez pas de contacter l'auteur si vous avez des questions, email admin@aioboot.com. J'apprécierais que vous me disiez comment je pourrais encore améliorer ce outil.
 Nom
 Version
 Page d'accueil
@@ -208,4 +208,5 @@ Personnaliser
 Création
 Impossible de créer un fichier plus important que 4 GB sur une partition FAT32.
 Install Grub4Dos as Default Boot Loader?%sYou should only install Grub4Dos if Grub2 is not compatible on your machine or just for testing.%sUse Grub2 to fully support the feature.
+Default bootloader in UEFI mode
 ##### END #####

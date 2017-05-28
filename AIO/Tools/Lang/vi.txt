@@ -2,7 +2,7 @@
 Language	:	Tiếng Việt
 Credits		:	Nguyễn Tứ (www.sitecuatui.com)
 Date		:	06.12.2016
-Info		:	Vui lòng không thêm, xóa hoặc di chuyển các dòng, không xóa "%s". Nếu bạn muốn gửi bản dịch của chính bạn, hoặc có bất kỳ câu hỏi, đừng quên gửi email đến info@sitecuatui.com. Cám ơn đã trợ giúp!
+Info		:	Vui lòng không thêm, xóa hoặc di chuyển các dòng, không xóa "%s". Nếu bạn muốn gửi bản dịch của chính bạn, hoặc có bất kỳ câu hỏi, đừng quên gửi email đến admin@aioboot.com. Cám ơn đã trợ giúp!
 ################################################################
 
 
@@ -32,7 +32,7 @@ Thiết bị tháo rời (USB, SD Cards...)
 RAM disk
 Chưa biết
 AIO Boot là một tiện ích để tạo một ổ khởi động cho USB và HDD sử dụng Grub2, Grub4dos, Syslinux, Clover và rEFInd. AIO Boot sở hữu các tính năng độc nhất, nâng cao và thân thiện.%sCông cụ này là 100%% sạch, nó là không có hại cho máy tính của bạn.%sXin hãy giúp đỡ cộng đồng này bằng cách đóng góp ý tưởng của bạn và báo cáo các lỗi. Hãy chia sẻ hoặc đóng góp các bài viết của bạn, video và các liên kết liên quan để nhiều người có thể biết và sử dụng công cụ này.
-Đừng quên liên hệ với tác giả khi bạn có bất kỳ câu hỏi, email info@sitecuatui.com. Tôi rất muốn nghe ý kiến từ bạn để tôi có thể cải thiện công cụ này tốt hơn.
+Đừng quên liên hệ với tác giả khi bạn có bất kỳ câu hỏi, email admin@aioboot.com. Tôi rất muốn nghe ý kiến từ bạn để tôi có thể cải thiện công cụ này tốt hơn.
 Tên ứng dụng
 Phiên bản
 Trang chủ
@@ -208,4 +208,5 @@ Tùy chỉnh
 Đang tạo
 Không thể tạo tệp tin có kích thước lớn hơn 4GB trên phân vùng FAT32.
 Cài đặt Grub4Dos làm bộ nạp khởi động mặc định?%sBạn chỉ nên cài đặt Grub4Dos nếu Grub2 không tương thích trên máy của bạn hoặc chỉ để thử nghiệm.%sSử dụng Grub2 để hỗ trợ đầy đủ tính năng.
+Bộ nạp khởi động mặc định trên UEFI
 ##### END #####
