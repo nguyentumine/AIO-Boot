@@ -209,4 +209,5 @@ Crearea
 Nu se poate crea un fișier mai mare de 4 GB pe partiția FAT32.
 Instalați Grub4Dos ca încărcător de încărcare implicit?%sAr trebui să instalați Grub4Dos numai dacă Grub2 nu este compatibil pe aparat sau doar pentru testare.%sUtilizați Grub2 pentru a sprijini pe deplin funcțiile.
 Default bootloader in UEFI mode
+Only support ReactOS LiveCD. Check out the home page for how to integrate ReactOS Setup.
 ##### END #####

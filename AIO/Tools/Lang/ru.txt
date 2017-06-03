@@ -209,4 +209,5 @@ ImDisk не был установлен.
 Невозможно создать файл размером более 4 ГБ на разделе FAT32.
 Установить Grub4Dos в качестве загрузчика по умолчанию?%sВам следует установить Grub4Dos, если Grub2 несовместим на вашем компьютере или просто для тестирования.%sИспользуйте Grub2 для полной поддержки функции.
 Default bootloader in UEFI mode
+Only support ReactOS LiveCD. Check out the home page for how to integrate ReactOS Setup.
 ##### END #####

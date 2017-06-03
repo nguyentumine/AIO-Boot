@@ -209,4 +209,5 @@ ImDisk не е установен.
 Не може да се създаде файл, по-голям от 4ГБ в FAT32 дял.
 Install Grub4Dos as Default Boot Loader?%sYou should only install Grub4Dos if Grub2 is not compatible on your machine or just for testing.%sUse Grub2 to fully support the feature.
 Default bootloader in UEFI mode
+Only support ReactOS LiveCD. Check out the home page for how to integrate ReactOS Setup.
 ##### END #####

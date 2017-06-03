@@ -209,4 +209,5 @@ Oluşturma
 FAT32 bölümünde 4GB'dan büyük dosya oluşturulamıyor.
 Grub4Dos'u Standart Önyükleme Yükleyicisi olarak yükle?%sGrub2, makinenizde uyumlu değilse veya yalnızca test etmek için yalnızca Grub4Dos'u yüklemeniz gerekir.%sÖzelliği tam olarak desteklemek için Grub2 kullanın.
 Default bootloader in UEFI mode
+Only support ReactOS LiveCD. Check out the home page for how to integrate ReactOS Setup.
 ##### SON #####
