@@ -164,7 +164,7 @@ Ce fichier ne peut être détecté, veuillez sélectionner un paquet dans la lis
 Ce sytème d'exploitation supporte le mode persistant.%sCela signifie que vos données seront conservées après chaque  session.%sLa vitesse du système d'exploitation dépend de la vitesse de lecture et d'écriture du disque dur.%sDésirez-vous créer un fichier 4 Gb pour le mode persistant?
 Ce sytème d'exploitation supporte le mode persistant.%sCela signifie que vos données seront conservées après chaque  session.%sLa vitesse du système d'exploitation dépend de la vitesse de lecture et d'écriture du disque dur.%sNous allons créer un fichier de la taille correspondant aux données que vous voulez sauvegarder.
 Fond d'écran Grub2
-Sincères remerciements à/aux:--Tous les gens qui utilisent cet outil.--Google.--GNU (Equipe de Développement de Grub2).-- Equipes de Développement de Clover, rEFInd, Grub4dos et Syslinux.--Auteurs def 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot et WinSetupFromUSB.--Traducteurs des langues: Denis Cojocaru (Russe et Roumain), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur (Turkish).
+Sincères remerciements à/aux:--Tous les gens qui utilisent cet outil.--Google.--GNU (Equipe de Développement de Grub2).-- Equipes de Développement de Clover, rEFInd, Grub4dos et Syslinux.--Auteurs def 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot et WinSetupFromUSB.--Traducteurs des langues: Denis Cojocaru (Russe et Roumain), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur (Turkish), Michał Smajdor (Polish).
 Partitions Manage
 Taille en MB
 Input file
@@ -210,4 +210,6 @@ Impossible de créer un fichier plus important que 4 GB sur une partition FAT32.
 Install Grub4Dos as Default Boot Loader?%sYou should only install Grub4Dos if Grub2 is not compatible on your machine or just for testing.%sUse Grub2 to fully support the feature.
 Default bootloader in UEFI mode
 Only support ReactOS LiveCD. Check out the home page for how to integrate ReactOS Setup.
+Create ISO
+Please select where to save the ISO file.
 ##### END #####

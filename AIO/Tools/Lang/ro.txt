@@ -164,7 +164,7 @@ Nu s-a putut detecta acest fișier, vă rugăm să selectați un pachet enumerat
 Acest sistem de operare acceptă modul persistent.%sAcest lucru înseamnă că datele vor fi salvate după fiecare sesiune.%sViteza sistemului de operare depinde de viteza de citire și scriere a hard discului.%sDoriți să creați un fișier 4Gb pentru modul persistent?
 Acest sistem de operare acceptă modul persistent.%sAcest lucru înseamnă că datele vor fi salvate după fiecare sesiune.%sViteza sistemului de operare depinde de viteza de citire și scriere a hard discului.%sVom crea un fișier de dimensiune corespunzătoare pentru datele care doriți să salvați.
 Imagini de fundal pentru Grub2
-Cu sinceritate, datorită:--oamenilor care folosesc acest instrument.--Google.--GNU (echipa de dezvoltare Grub2).--Echipa de dezvoltare Clover, rEFInd, Grub4dos și Syslinux.--Autorii al 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot și WinSetupFromUSB.--Traducător de limbi: Denis Cojocaru (rusă și română), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur (Turkish).
+Cu sinceritate, datorită:--oamenilor care folosesc acest instrument.--Google.--GNU (echipa de dezvoltare Grub2).--Echipa de dezvoltare Clover, rEFInd, Grub4dos și Syslinux.--Autorii al 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot și WinSetupFromUSB.--Traducător de limbi: Denis Cojocaru (rusă și română), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur (Turkish), Michał Smajdor (Polish).
 Managementul partițiilor
 Mărime în MB
 Fișier de intrare
@@ -210,4 +210,6 @@ Nu se poate crea un fișier mai mare de 4 GB pe partiția FAT32.
 Instalați Grub4Dos ca încărcător de încărcare implicit?%sAr trebui să instalați Grub4Dos numai dacă Grub2 nu este compatibil pe aparat sau doar pentru testare.%sUtilizați Grub2 pentru a sprijini pe deplin funcțiile.
 Default bootloader in UEFI mode
 Only support ReactOS LiveCD. Check out the home page for how to integrate ReactOS Setup.
+Create ISO
+Please select where to save the ISO file.
 ##### END #####
