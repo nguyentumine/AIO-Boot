@@ -1,7 +1,7 @@
 ################################################################
 Language	:	Polish
 Credits		:	Michał Smajdor
-Date		:	12.06.2017
+Date		:	18.06.2017
 Info		:	Proszę nie dodawaj, nie usuwaj lub nie przenoś lini,a także nie usuwaj "%s". Jeśli chcesz podsumować albo masz pytania, nie zapomnij napisać maila na adres: admin@aioboot.com. Dzięki za pomoc!
 ################################################################
 
@@ -27,7 +27,7 @@ Obecny Dysk:
 Dysk
 Etykieta
 System Plików
-Nośnik Wymienny
+Nośnik wymienny
 Fixed media
 Dysk RAM
 Nieznany
@@ -35,13 +35,13 @@ AIO Boot jest narzędzie które pomaga w tworzeniu bootowalnych nośników USB/H
 Nie zapomnij skontaktować się z autorem jeślli masz jakieś pytania. Adres email: admin@aioboot.com. Chciałbym usłyszeć Twoje propozycje co mógłbym poprawić aby te narzedzię stało się jeszcze lepsze.
 Nazwa
 Wersja
-Strona Główna
+WWW
 Copyright
 1. Wybierz Dystrybucje
 2. Wybierz Plik
 Pobierz
 OK
-Wyebirz plik z dysku...
+Wybierz plik z dysku...
 Wybierz plik ISO lub plik WIM z dysku...
 Wybierz plik ISO z dysku...
 Zamontuj plik ISO, a potem wybierz z niego "I386/TXTSETUP.SIF" lub "AMD64/TXTSETUP.SIF"...
