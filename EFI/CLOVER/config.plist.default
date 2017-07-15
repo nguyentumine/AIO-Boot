@@ -511,6 +511,8 @@
 		<false/>
 		<key>#NvidiaGeneric</key>
 		<true/>
+		<key>#NvidiaNoEFI</key>
+		<false/>
 		<key>#NvidiaSingle</key>
 		<false/>
 		<key>#PatchVBiosBytes</key>
@@ -734,7 +736,7 @@
 		<key>#Version</key>
 		<string>1.0</string>
 		<key>#PlatformFeature</key>
-		<integer>3</integer>
+		<string>0x03</string>
 		<key>#Slots</key>
 		<array>
 			<dict>
