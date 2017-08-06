@@ -30,6 +30,11 @@ Icon Sources (Overview)
   - Copyright (c) 2008 Dan Rabbit
   - License: GPLv2+
 
+- Ubuntu "animal" icons
+  - Source: https://wiki.ubuntu.com/Artwork/Official
+  - Copyright (c) 2014-2017 Canonical Ltd.
+  - License: CC-BY-SA 3.0
+
 Some icons have been altered from their original forms -- normally
 conversion from SVG to PNG format, resizing, changes in coloration, or
 addition of "drop shadow" effects. Details follow....
@@ -95,6 +100,13 @@ os_elementary.png (GPLv2+)
 Modified Debian OS icon:
 
 os_debian.png (LGPLv3+ or CC-BY-SA 3.0)
+
+
+Modified Ubuntu "animal" icons:
+
+os_trusty.png
+os_xenial.png
+os_zesty.png
 
 
 Icons created by me (Roderick W. Smith):
