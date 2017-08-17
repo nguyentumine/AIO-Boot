@@ -12,7 +12,7 @@ Icon Sources (Overview)
 
 - Original work for rEFInd
   - Source: https://sourceforge.net/p/refind (this archive)
-  - Copyright (c) 2015 by Roderick W. Smith
+  - Copyright (c) 2015-2017 by Roderick W. Smith
   - License: LGPLv3+ or CC-SA 3.0
 
 - Debian OS icon
@@ -113,6 +113,7 @@ Icons created by me (Roderick W. Smith):
 
 boot_win.png
 func_csr_rotate.png
+mouse.png
 os_clover.png
 os_freebsd.png
 os_gummiboot.png

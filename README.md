@@ -14,7 +14,7 @@ AIO Boot possesses unique, advanced and user-friendly features. Here is one of t
 
 - Support boots in both UEFI and Legacy BIOS modes.
 	- UEFI mode: Grub2, Clover and rEFInd.
-	- Legacy mode: Grub2, Grub4Dos, Clover and Syslinux.
+	- Legacy mode: Grub2, Grub4Dos, Clover, Enoch Chameleon and Syslinux.
 	- You can choose between Grub2 and Grub4Dos as the default boot loader. Only use Grub4Dos if your computer is not compatible with Grub2.
 - Supports hard drive, external hard drive and USB, including SDcard.
 - Boot into Legacy mode on the GPT hard disk.

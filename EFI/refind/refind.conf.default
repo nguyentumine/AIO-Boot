@@ -145,9 +145,33 @@ timeout 20
 # feature may not work for you. If it does work, you should be able
 # to launch an OS or tool by touching it. In a submenu, touching
 # anywhere launches the currently-selection item; there is, at present,
-# no way to select a specific submenu item.
+# no way to select a specific submenu item. This feature is mutually
+# exclusive with the enable_mouse feature. If both are uncommented,
+# the one read most recently takes precedence.
 #
 #enable_touch
+
+# Enable mouse support. If active, this feature enables use of the
+# computer's mouse. Note, however, that not all computers' EFIs
+# provide the necessary underlying support, so this feature may not
+# work for you. If it does work, you should be able to launch an
+# OS or tool by clicking it with the mouse pointer. This feature
+# is mutually exclusive with the enable_touch feature. If both
+# are uncommented, the one read most recently takes precedence.
+#
+#enable_mouse
+
+# Size of the mouse pointer, in pixels, per side.
+# Default is 16
+#
+#mouse_size
+
+# Speed of mouse tracking. Higher numbers equate to faster
+# mouse movement. This option requires that enable_mouse be
+# uncommented.
+# Legal values are between 1 and 32. Default is 4.
+#
+#mouse_speed 4
 
 # Launch specified OSes in graphics mode. By default, rEFInd switches
 # to text mode and displays basic pre-launch information when launching
@@ -184,6 +208,7 @@ timeout 20
 #  csr_rotate       - adjusts Apple System Integrity Protection (SIP)
 #                     policy. Requires "csr_values" to be set.
 #  about            - an "about this program" option
+#  hidden_tags      - manage hidden tags
 #  exit             - a tag to exit from rEFInd
 #  shutdown         - shuts down the computer (a bug causes this to reboot
 #                     many UEFI systems)
@@ -193,9 +218,20 @@ timeout 20
 #  fwupdate         - a tag to update the firmware; launches the fwupx64.efi
 #                     (or similar) program
 #  netboot          - launch the ipxe.efi tool for network (PXE) booting
-# Default is shell,memtest,gdisk,apple_recovery,windows_recovery,mok_tool,about,shutdown,reboot,firmware,fwupdate
+# Default is shell,memtest,gdisk,apple_recovery,windows_recovery,mok_tool,about,hidden_tags,shutdown,reboot,firmware,fwupdate
 #
-#showtools shell, gdisk, memtest, mok_tool, apple_recovery, windows_recovery, about, reboot, exit, firmware, fwupdate
+#showtools shell, gdisk, memtest, mok_tool, apple_recovery, windows_recovery, about, hidden_tags, reboot, exit, firmware, fwupdate
+
+# Tool binaries to be excluded from the tools line, even if the
+# general class is specified in showtools. This enables trimming an
+# overabundance of tools, as when you see multiple mok_tool entries
+# after installing multiple Linux distributions.
+# Just as with dont_scan_files, you can specify a filename alone, a
+# full pathname, or a volume identifier (filesystem label, partition
+# name, or partition GUID) and a full pathname.
+# Default is an empty list (nothing is excluded)
+#
+#dont_scan_tools ESP2:/EFI/ubuntu/mmx64.efi,gptsync_x64.efi
 
 # Boot loaders that can launch a Windows restore or emergency system.
 # These tend to be OEM-specific.
@@ -292,9 +328,9 @@ timeout 20
 # a hardware manufacturer. If a directory is listed both here and in
 # also_scan_dirs, dont_scan_dirs takes precedence. Note that this
 # blacklist applies to ALL the filesystems that rEFInd scans, not just
-# the ESP, unless you precede the directory name by a filesystem name,
-# as in "myvol:EFI/somedir" to exclude EFI/somedir from the scan on the
-# myvol volume but not on other volumes.
+# the ESP, unless you precede the directory name by a filesystem name or
+# partition unique GUID, as in "myvol:EFI/somedir" to exclude EFI/somedir
+# from the scan on the myvol volume but not on other volumes.
 #
 #dont_scan_dirs ESP:/EFI/boot,EFI/Dell,EFI/memtest86
 
@@ -308,8 +344,11 @@ timeout 20
 # tools are present in this list, but may appear as second-row
 # items.
 # The file may be specified as a bare name (e.g., "notme.efi"), as
-# a complete filename (e.g., "/EFI/somedir/notme.efi"), or as a
-# complete filename with volume (e.g., "SOMEDISK:/EFI/somedir/notme.efi").
+# a complete pathname (e.g., "/EFI/somedir/notme.efi"), or as a
+# complete pathname with volume (e.g., "SOMEDISK:/EFI/somedir/notme.efi"
+# or 2C17D5ED-850D-4F76-BA31-47A561740082:/EFI/somedir/notme.efi").
+# OS tags hidden via the Delete or 'd' key in the rEFInd menu are
+# added to this list, but stored in NVRAM.
 # The default is shim.efi,shim-fedora.efi,shimx64.efi,PreLoader.efi,
 # TextMode.efi,ebounce.efi,GraphicsConsole.efi,MokManager.efi,HashTool.efi,
 # HashTool-signed.efi,bootmgr.efi,fb{arch}.efi
