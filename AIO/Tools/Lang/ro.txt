@@ -211,5 +211,6 @@ Instalați Grub4Dos ca încărcător de încărcare implicit?%sAr trebui să ins
 Încărcătorul de sistem implicit în modul UEFI
 Activați numai LiveCD ReactOS. Consultați pagina de pornire pentru a integra modul de instalare ReactOS.
 Creați ISO
-Vă rugăm să selectați unde să salvați fișierul ISO
+Vă rugăm să selectați unde să salvați fișierul ISO.
+Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
 ##### END #####

@@ -212,4 +212,5 @@ ImDisk не был установлен.
 Только поддержка ReactOS LiveCD. Проверьте домашнюю страницу, как интегрировать программу ReactOS.
 Создать ISO
 Пожалуйста, выберите, где сохранить файл ISO.
+Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
 ##### END #####

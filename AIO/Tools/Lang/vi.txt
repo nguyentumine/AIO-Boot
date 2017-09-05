@@ -212,4 +212,5 @@ Bộ nạp khởi động mặc định trên UEFI
 Chỉ hỗ trợ ReactOS LiveCD. Kiểm tra trang chủ để biết cách tích hợp ReactOS Setup.
 Tạo ISO
 Vui lòng chọn nơi để lưu tệp tin ISO.
+Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
 ##### END #####

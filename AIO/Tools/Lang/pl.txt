@@ -212,4 +212,5 @@ Domyślny bootloader w trybie UEFI
 Tylko wspierany ReactOS LiveCD. Sprawdź na naszej stronie jak zintergrować ReactOS Setup.
 Stwórz ISO
 Wybierz gdzie chcesz zapisać plik ISO.
+Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
 ##### END #####
