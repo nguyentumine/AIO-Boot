@@ -213,4 +213,5 @@ Only support ReactOS LiveCD. Check out the home page for how to integrate ReactO
 Create ISO
 Please select where to save the ISO file.
 Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
+Please select mode
 ##### END #####

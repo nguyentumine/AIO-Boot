@@ -213,4 +213,5 @@ ImDisk не был установлен.
 Создать ISO
 Пожалуйста, выберите, где сохранить файл ISO.
 Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
+Please select mode
 ##### END #####
