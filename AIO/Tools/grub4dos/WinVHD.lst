@@ -1,0 +1,22 @@
+### Start NOCHANGE
+timeout 30
+if NOT exist fromg4d color almond/green yellow/red white/magenta white/magenta
+if NOT exist fromg4d color border=0xEFDECD
+if NOT exist fromg4d graphicsmode -1 768:1024 640:800 480:600 24
+if NOT exist fromg4d splashimage /AIO/Tools/grub4dos/splash.bmp.gz
+if NOT exist fromg4d font /AIO/Tools/grub4dos/unifont.hex.gz
+if NOT exist fromg4d write 0x8274 0x2001
+if NOT exist fromg4d set fromg4d=1
+### End NOCHANGE
+### Start NOCHANGE
+title Load Grub2
+kernel /AIO/grub/i386-pc/core.img
+### End NOCHANGE
+### Start NOCHANGE
+title Load Grub4Dos
+configfile /AIO/Tools/grub4dos/menu.lst
+### End NOCHANGE
+### Start NOCHANGE
+title \n
+root
+### End NOCHANGE

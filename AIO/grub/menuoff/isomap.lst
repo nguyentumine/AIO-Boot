@@ -1,0 +1,7 @@
+### Start
+title %title%
+set iso_path=""
+map %iso_path% (0xff) || map --mem %iso_path% (0xff)
+map --hook
+chainloader (0xff)
+### End

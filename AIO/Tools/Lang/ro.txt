@@ -1,0 +1,217 @@
+﻿################################################################
+Language	:	Romanian
+Credits		:	Denis Cojocaru (dene.09@mail.ru)
+Date		:	22.09.2017
+Info		:	Vă rugăm să nu adăugați, ștergeti sau muta linia "%s". Dacă aveți întrebări, nu uitați să trimiteți un e-mail admin@aioboot.com. Multumim!
+################################################################
+
+
+
+##### BEGIN #####
+Română
+Principal
+Integrare
+Despre Noi!
+Bootloaders
+Pornire PXE
+Setări
+Instrumente
+Modificare MENIU
+Ajutor
+Unitatea principală:
+Disc
+Nume
+Tip
+Mărimea
+Partiția Currentă:
+Litera
+Marcaj
+FileSystem
+Mass-Media amovibil
+Suporturi fixe
+Disc RAM
+Necunoscut
+AIO Boot este un instrument care vă poate ajuta să creați un boot USB/HDD cu Grub2, Grub4dos, Syslinux, Clover și rEFInd. AIO Boot este construit dintr-o varietate de surse.%sAcest instrument este de 100%% curat, nu este dăunător pentru computer.%sVă rugăm să ajutati această comunitate contribuind ideile dumneavoastră și să raportati erorile. Simțiți-vă liber pentru a partaja sau de a contribui la articole, materiale video, link-uri, legate de numărul mare de persoane care pot învăța și de a folosi acest instrument.
+Mi-ar plăcea să aud de la tine, cum as putea îmbunătăți acest instrument mai bine. Multumesc!
+Nume
+Versiune
+Pagina principala
+Drepturi de autor
+1. Selectaţi pachetul
+2. Selectați Fișierul
+Descarca
+OK
+Vă rugăm să selectați fișierul pe unitatea ...
+Selectați fișierul ISO sau fișier WIM pe unitatea ...
+Selectați fișierul ISO pe unitatea ...
+Monteaza fișier ISO, apoi selectați "I386/TXTSETUP.SIF" sau "AMD64/TXTSETUP.SIF"...
+Vă rugăm să selectați un fișier valid!
+Nume de fișier poate conține numai caractere alfanumerice (litere, cifre ) și . Vă rugăm să redenumiți fișierul și încercați din nou!
+Fișierele mai mari de 4GB nu pot fi stocate pe un volum FAT32.%sFormatarea partiției ca exFAT sau NTFS va rezolva această problemă.
+Procesare, vă rugăm să așteptați ...
+Nu închideți această fereastră până când acest lucru se face!
+Nu a putut detecta acest fișier!
+Eroare, vă rugăm să contactați autorului pentru sprijin!
+Eroare: Vă rugăm să închideți aplicația pe care o utilizați pentru a citi BCD / fișierul WinLegacy și încercați din nou!
+Eroare: Vă rugăm să închideți aplicația pe care o utilizați pentru a citi fișierul %s și încercați din nou!
+Fișier invalid!
+Eroare: spațiul rămas este insuficient!
+Terminat. boot-are fericita!
+Eroare
+Avertizare
+Informație
+Confirm
+Copiere
+Se copiază fișierele necesare ...
+Extragere
+Verificare fișier, vă rugăm să așteptați ...
+Vă rugăm să introduceți numele meniului
+Adăugarea meniu ...
+Se pregătesc fișierele ...
+Vă rugăm să închideți Regedit.exe pentru a continua!
+Anulare
+Continua
+Curățenie, vă rugăm să așteptați ...
+Deoarece dimensiunea fișierului nu permite stocate pe o partiție FAT32.%sVom împărți acest fișier, sunteți de acord?
+Despicare
+Da
+Nu
+Discul selectat este GPT. Trebuie să copiați folderul "EFI" la o partiție care este formatat în "FAT32" sau "FAT16".
+Discul selectat este GPT. Numai Grub2, rEFInd și Clover le suporta.
+În prezent, nu acceptăm acest aparat!
+A fost instalat ...
+este deja instalat ...
+%s nu a fost instalat. %s impune ca %s trebuie instalat.%sDoriți să instalați Grub2 imediat?
+Vă rugăm să selectați unitatea în care ați instalat cea mai recentă versiune pentru Windows.
+Dacă este posibil, încercați această caracteristică pe Windows 7 sau o versiune mai nouă pentru a obține cel mai bun suport.
+Nu a fost găsită partiția de sistem.
+A fost restaurată.
+Nu s-au găsit nici o unitate care este instalat Windows în modul %s .
+Trebuie să modificați unitatea pentru a putea instala Syslinux.
+Vă rugăm să formatați unitatea in FAT32 sau NTFS.
+Vă rugăm să selectați partiția in care ați instalat Windows în modul BIOS Legacy.
+Vă rugăm să selectați partiția in care ați instalat Windows în modul UEFI.
+Vă rugăm să porniți în modul UEFI și încercați din nou.
+Utilizați cea mai recentă versiune!
+Avem o nouă versiune pe care o puteți actualiza chiar acum.%sVersiune %s, lansat %s.%sDoriți să închideți această aplicație și actualizați acum?
+În prezent, nu există nici un MENIU pentru a putea modifica.
+Sterge?
+Numele meniului
+Salvați
+după ce ați editat.
+Se șterg fișierele ...
+Salvate
+Actualizați
+Mod implicit
+Numai fișier
+Clover va fi, de asemenea, instalat in modul Legacy
+Vă rugăm să selectați partiția pentru a instala Grub2, Clover și rEFInd pentru UEFI.
+Ai nevoie să descărci cea mai recentă versiune de AIO Boot și repartiția discului pentru a continua.
+GPT-hard disc suporta NUMAI modul UEFI.%sNumai dacă utilizați modul UEFI, nu trebuie să faceți nimic acum.
+Suport Grub2, Clover, rEFInd si UEFI Shell in modul UEFI, aveți nevoie sa creati o partiție în format FAT32 sau FAT16 pe acest hard disc.
+Aveți posibilitatea să utilizați DiskPart sau GParted pentru a crea o nouă partiție.%sVă rugăm să încercați din nou după ce ați creat o nouă partiție.
+Discul selectat este in formatul GPT. Avem nevoie să copiați folderul "EFI" in "EFI System Partition (ESP)". Vrei să o faci chiar acum?
+%s: Veti porni direct in Grub2 de fiecare dată când porniți calculatorul.%s: Trebuie să selectezi fișierele "/EFI/Grub2/bootx64.efi" pentru a porni în Grub2.
+Suporta modul BIOS Legacy pe un hard disc in format GPT. Avem nevoie să dedice o nouă partiție.
+1. Această dimensiune a partiție cât mai mică posibil. Aproximativ 1MB sau mai mare, dar nu mai mare de 10MB.%s2. Toate datele din această partiție vor fi pierdute. Prin urmare, trebuie să creați o nouă partiție.
+Vă rugăm să continuați după ce ați creat această partiție în funcție de necesități.
+Calculatorul are UEFI firmware-ul pe 32-bit.
+Nu-mi cere să introduc numele meniului.
+Nu este nevoie pentru a verifica fișierul.
+Configurați PXE pentru modul UEFI.
+Aplica
+Aici este lista de limbi Grub2 care se suporta.%sCare este limba ta?
+Vă rugăm să selectați un element din lista drop-down
+Setarile tale au fost salvate!
+Vă rugăm să formatați această unitate in FAT32.%sSau instalați Grub2 și selectați opțiunea de a instala Clover.
+Instalare Bootloader
+Restabilire Windows Bootloader
+Tiny PXE Server se execută, vă rugăm să-l închideți, dacă doriți să rulați din nou!
+UEFI sau mod Legacy?
+Vă rugăm să selectați versiunea pe 32-bit sau pe 64-bit
+Numai windows
+Toate
+WinPE Obligatoriu
+Vă rugăm să urmați pașii de mai jos, mai întâi:%s1. Descarca "boot%s.wim".%s2. Copiați-l in "%s\AIO\WinPXE\sources\".%sil puteți descărca de aici:
+Boot Secure este pornit. Acest lucru poate împiedica încărcarea de pe sistemele de operare nu-Windows. Vă rugăm să dezactivați această opțiune din BIOS.
+Limba Grub2
+Marimea fontului
+Mic
+Mare
+Creați o parolă nouă pentru Grub2.
+Creaza nou
+Modificarea sau stergerea parolei Grub2.
+Sterge
+Vei crea o parolă nouă sau o stergeți?
+Nume de utilizator nou
+Parolă Nouă
+Valoarea nu trebuie să conțină spații la început sau la sfârșit.
+Numele de utilizator trebuie să conțină numai caractere [A-Z], cifre [0-9] și spațiul ['' ''].
+Noul nume de utilizator și parola au fost create.
+Dezinstalați
+Asigurați-vă că computerul este pornit, fără a utiliza AIO Boot Grub2. În cazul în care computerul poate porni numai prin AIO Boot Grub2, dezinstalarea va determina computerul să nu pornească.%sPentru a restaura Windows boot loader, vă rugăm să folosiți butonul Bootloaders sau folositi DVD-ul.%sFaceți clic pe „Continuați“, atunci când sunti în măsură să incarcati sistemul de operare fără a utiliza Grub2 AIO Boot.
+Divizarea fișierului
+Extragerea fișierului
+Actualizarea fișierelor
+Adăugarea de fișiere suplimentare
+Anularea
+Anulat
+Sters
+Auto detectare
+Alte
+pachet Special
+Nu s-a putut detecta acest fișier, vă rugăm să selectați un pachet enumerat în listă!
+Acest sistem de operare acceptă modul persistent.%sAcest lucru înseamnă că datele vor fi salvate după fiecare sesiune.%sViteza sistemului de operare depinde de viteza de citire și scriere a hard discului.%sDoriți să creați un fișier 4Gb pentru modul persistent?
+Acest sistem de operare acceptă modul persistent.%sAcest lucru înseamnă că datele vor fi salvate după fiecare sesiune.%sViteza sistemului de operare depinde de viteza de citire și scriere a hard discului.%sVom crea un fișier de dimensiune corespunzătoare pentru datele care doriți să salvați.
+Imagini de fundal pentru Grub2
+Cu sinceritate, datorită:--oamenilor care folosesc acest instrument.--Google.--GNU (echipa de dezvoltare Grub2).--Echipa de dezvoltare Clover, rEFInd, Grub4dos și Syslinux.--Autorii al 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot și WinSetupFromUSB.--Traducător de limbi: Denis Cojocaru (rusă și română), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur (Turkish), Michał Smajdor (Polish).
+Managementul partițiilor
+Mărime în MB
+Fișier de intrare
+Fisier de iesire
+Faceți clic aici pentru a selecta fișierul ISO de pe unitatea dvs. ...
+Faceți clic aici pentru a alege unde veți salva fișierul ".PartIMG" pe unitatea dvs. ...
+Crează
+Acest fișier este gol.
+Imposibil de obținut informații despre acest fișier.
+Poate că acest fișier nu va fi acceptat pentru încărcare. Vrei sa continui?
+Introduceți o dimensiune pentru fișierul pe care doriți să-l creați.
+Introduceți un marcaj pentru fișierul pe care doriți să-l creați.
+Fișierul de ieșire există deja, doriți să înlocuiți acest fișier?
+Introduceți o dimensiune care să fie cel puțin %s.
+Spațiul liber pe %s unitatea nu este suficientă.
+Unitatea %s este formatată ca FAT32, poate stoca numai fișiere de până la 4GB.
+ImDisk nu este instalat, vrei să instalezi ImDisk chiar acum?
+ImDiskul nu a fost instalat.
+Crearea și montarea fișierului ...
+Dezarhivarea fișierului ISO ...
+Actualizarea fișierelor de configurare ...
+Dimensiunea fișierului PartIMG nu este suficientă, creșteți-l la aproximativ %s și încercați din nou.
+Nu s-a putut seta marca pentru fișierul PartIMG.
+Nu se poate demonta %s, faceți acest lucru manual.%sApoi ștergeți fișierul PartIMG.
+Montați ISO, apoi selectați fișierul sources\install.wim pe această unitate ...
+Faceți clic aici pentru a selecta fișierul sources\install.wim în unitatea dvs. ...
+Faceți clic aici pentru a alege unde veți salva fișierul ".VHD" pe unitatea dvs. ...
+Se suporta numai Windows 7 și versiuni ulterioare.
+Crearea și montarea fișierului VHD ...
+Aplicarea imaginii ...
+Demontarea fișierului VHD ...
+Nu am putut crea și monta un fișier VHD.
+Nu se poate aplica imaginea în partiția VHD.
+Mărimea fișierului VHD nu este suficientă, creșteți-l și încercați din nou.
+Nu am putut dezactiva unitatea %s, faceți acest lucru manual.%sApoi ștergeți fișierul VHD pe care il alegeti.
+Alegeți versiunea
+Vă rugăm să extrageți toate fișierele "sources\*.Wim" și să le integrați in "WinPE 7/8.1/10".
+Integrați acest pachet ca WinPE?
+Vă rugăm să extrageți toate fișierele în directorul rădăcină al USB sau hard diskului dvs.!%sConsultați pagina de pornire pentru mai multe informații.
+Personalizat
+Crearea
+Nu se poate crea un fișier mai mare de 4 GB pe partiția FAT32.
+Instalați Grub4Dos ca încărcător de încărcare implicit?%sAr trebui să instalați Grub4Dos numai dacă Grub2 nu este compatibil pe aparat sau doar pentru testare.%sUtilizați Grub2 pentru a sprijini pe deplin funcțiile.
+Încărcătorul de sistem implicit în modul UEFI
+Activați numai LiveCD ReactOS. Consultați pagina de pornire pentru a integra modul de instalare ReactOS.
+Creați ISO
+Vă rugăm să selectați unde să salvați fișierul ISO.
+Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
+Vă rugăm să selectaţi modul
+##### END #####

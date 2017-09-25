@@ -1,0 +1,67 @@
+### Start NOCHANGE
+timeout 30
+if NOT exist fromg4d color almond/green yellow/red white/magenta white/magenta
+if NOT exist fromg4d color border=0xEFDECD
+if NOT exist fromg4d graphicsmode -1 768:1024 640:800 480:600 24
+if NOT exist fromg4d splashimage /AIO/Tools/grub4dos/splash.bmp.gz
+if NOT exist fromg4d font /AIO/Tools/grub4dos/unifont.hex.gz
+if NOT exist fromg4d write 0x8274 0x2001
+if NOT exist fromg4d set fromg4d=1
+ls /AIO/Tools/grub4dos/windefault > nul && default /AIO/Tools/grub4dos/windefault
+#Thank to WinSetupFromUSB
+### End NOCHANGE
+### Start NOCHANGE
+title Load Grub2
+kernel /AIO/grub/i386-pc/core.img
+### End NOCHANGE
+### Start NOCHANGE
+title Load Grub4Dos
+configfile /AIO/Tools/grub4dos/menu.lst
+### End NOCHANGE
+### Start NOCHANGE
+title \n
+root
+### End NOCHANGE
+### Start NOCHANGE
+title Auto-detect and use F6 SATA/RAID/SCSI Driver\nUse if your internal disk is not detected or getting BSOD 0x0000007B\nSelect once before Text mode of Setup or starting PE1\nCurrently 32 bit versions are supported.\nCreated by Chenall (www.chenall.net/) & Modified by Steve Si (www.rmprepusb.com)
+#http://bbs.wuyou.com/viewthread.php?tid=197550
+#http://chenall.net/
+#http://www.rmprepusb.com
+map --unmap=0:0xFF
+map --unhook && map --rehook
+if NOT exist /AIO/Tools/DPMS/DPMS.ISO  find --set-root --devices=hf /AIO/Tools/DPMS/DPMS.ISO ;; if NOT exist /AIO/Tools/DPMS/DPMS.ISO pause --wait=20 Please download "DPMS.ISO" from "https://goo.gl/AhnqTb" and copy it to "/AIO/Tools/DPMS". && configfile /AIO/Menu/XPSetup.lst
+map /AIO/Tools/DPMS/DPMS.ISO (0xfa)|| map --mem /AIO/Tools/DPMS/DPMS.ISO (0xfa)
+map --hook
+root (0xfa)
+set FIRA=0
+/dpms2.g4b 0
+ls (0)/txtsetup.oem && map (0) (1) && set DPMS=1
+map --unmap=0xfa
+map --rehook
+ls /AIO/Tools/grub4dos/usbdrive.tag > nul || find --set-root --devices=hf /AIO/Tools/grub4dos/usbdrive.tag
+configfile /AIO/Menu/XPSetup.lst
+### End NOCHANGE
+### Start NOCHANGE
+title Auto-detect and use F6 SATA/RAID/SCSI Driver + Firadisk\nTry this entry if the one above does not work on particular machine\nUse once, before Text mode of Setup
+#http://bbs.wuyou.com/viewthread.php?tid=197550
+#http://chenall.net/
+#http://www.rmprepusb.com
+map --unmap=0:0xFF
+map --unhook && map --rehook
+if NOT exist /AIO/Tools/DPMS/DPMS.ISO  find --set-root --devices=hf /AIO/Tools/DPMS/DPMS.ISO ;; if NOT exist /AIO/Tools/DPMS/DPMS.ISO pause --wait=20 Please download "DPMS.ISO" from "https://goo.gl/AhnqTb" and copy it to "/AIO/Tools/DPMS". && configfile /AIO/Menu/XPSetup.lst
+map /AIO/Tools/DPMS/DPMS.ISO (0xfa)|| map --mem /AIO/Tools/DPMS/DPMS.ISO (0xfa)
+map --hook
+root (0xfa)
+set FIRA=0
+/dpms2.g4b 0
+ls (0)/txtsetup.oem && map (0) (1)
+map --unmap=0xfa
+map --rehook
+ls (0)/txtsetup.oem && set LOADFIRA=1 && set DPMS=1
+ls /AIO/Tools/grub4dos/usbdrive.tag > nul || find --set-root --devices=hf /AIO/Tools/grub4dos/usbdrive.tag
+configfile /AIO/Menu/XPSetup.lst
+### End NOCHANGE
+### Start NOCHANGE
+title \n
+root
+### End NOCHANGE

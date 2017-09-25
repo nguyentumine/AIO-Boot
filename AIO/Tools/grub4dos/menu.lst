@@ -1,0 +1,97 @@
+# This is a sample menu.lst file. You should make some changes to it.
+# The old install method of booting via the stage-files has been removed.
+# Please install GRLDR boot strap code to MBR with the bootlace.com
+# utility under DOS/Win9x or Linux.
+#
+# It must be UTF-8 encoding for multi-lingual support. Font lines can be
+# appended to the file. The font lines should be in the unifont.hex format.
+
+timeout 30
+if NOT exist fromg4d color almond/green yellow/red white/magenta white/magenta
+if NOT exist fromg4d color border=0xEFDECD
+if NOT exist fromg4d graphicsmode -1 768:1024 640:800 480:600 24
+if NOT exist fromg4d splashimage /AIO/Tools/grub4dos/splash.bmp.gz
+if NOT exist fromg4d font /AIO/Tools/grub4dos/unifont.hex.gz
+if NOT exist fromg4d write 0x8274 0x2001
+if NOT exist fromg4d set fromg4d=1
+
+iftitle [if exist /AIO/Menu/Custom.lst] My Custom Menu\n Run My Custom Menu
+configfile /AIO/Menu/Custom.lst
+
+iftitle [if exist /AIO/Tools/MS/bootmgr && if exist /AIO/Menu/WinLegacy] WinPE & Setup\n Run WinPE & Setup
+chainloader /AIO/Tools/MS/bootmgr
+
+iftitle [if exist /AIO/Menu/XPSetup.lst] Windows XP/2003 Setup\n Run Windows XP/2003 Setup
+configfile /AIO/Menu/XPSetup.lst
+
+iftitle [if exist /AIO/Menu/WinVHD.lst] Windows VHD\n Run Windows VHD
+configfile /AIO/Menu/WinVHD.lst
+
+iftitle [if exist /AIO/Menu/Linux.lst] Linux OS\n Run Linux OS
+configfile /AIO/Menu/Linux.lst
+
+iftitle [if exist /AIO/Menu/Antivirus.lst] Antivirus\n Run Antivirus
+configfile /AIO/Menu/Antivirus.lst
+
+iftitle [if exist /AIO/Menu/Dos.lst] DOS Program\n Run DOS Program
+configfile /AIO/Menu/Dos.lst
+
+iftitle [if exist /AIO/Menu/Android.lst] Android\n Run Android
+configfile /AIO/Menu/Android.lst
+
+iftitle [if exist /AIO/Menu/Disk.lst] Disk Utilities\n Run Disk Utilities
+configfile /AIO/Menu/Disk.lst
+
+iftitle [if exist /AIO/Menu/BackupRecovery.lst] Backup & Recovery\n Run Backup & Recovery
+configfile /AIO/Menu/BackupRecovery.lst
+
+iftitle [if exist /AIO/Menu/Special.lst] Special Pack\n Run Special Pack
+configfile /AIO/Menu/Special.lst
+
+iftitle [if exist /EFI/CLOVER/CloverLegacy] Clover\n Run Clover
+chainloader /AIO/Tools/Clover/boot0ss
+
+iftitle [if exist /AIO/Tools/syslinux/syslinux/syslinux.bin] Syslinux\n Run Syslinux
+chainloader /AIO/Tools/syslinux/syslinux/syslinux.bin
+
+title Load Grub2
+kernel /AIO/grub/i386-pc/core.img
+
+title Reboot
+reboot
+
+title Poweroff
+halt
+
+title Commandline
+commandline
+
+title find and load BOOTMGR of Windows VISTA/WIN7/8.1/10
+find --set-root --ignore-floppies --ignore-cd /bootmgr
+chainloader /bootmgr
+savedefault --wait=2
+
+title find and load NTLDR of Windows NT/2K/XP\n find and load NTLDR of Windows NT/2K/XP
+fallback +1
+find --set-root --ignore-floppies --ignore-cd /ntldr
+map () (hd0)
+map (hd0) ()
+map --rehook
+find --set-root --ignore-floppies --ignore-cd /ntldr
+chainloader /ntldr
+savedefault --wait=2
+
+title find and load CMLDR, the Recovery Console of Windows NT/2K/XP
+fallback +1
+find --set-root --ignore-floppies --ignore-cd /cmldr
+map () (hd0)
+map (hd0) ()
+map --rehook
+find --set-root --ignore-floppies --ignore-cd /cmldr
+chainloader /cmldr
+
+title Chainload IO.SYS for booting MS-DOS/Windows 9x/Me
+fallback +1
+find --set-root --ignore-floppies --ignore-cd /io.sys
+chainloader /io.sys
+savedefault --wait=2
