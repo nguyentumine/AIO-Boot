@@ -1,0 +1,9 @@
+v1.1.5 (05.10.2017):
+	English:
+		- Bug fix does not show Command Prompt.
+		- Fixes memory checks on WinPE 64-bit.
+		- Some minor changes.
+	Tiếng Việt:
+		- Sửa lỗi không hiển thị Command Prompt.
+		- Sửa kiểm tra bộ nhớ trên WinPE 64-bit.
+		- Một vài thay đổi nhỏ.

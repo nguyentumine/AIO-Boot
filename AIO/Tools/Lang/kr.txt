@@ -214,4 +214,12 @@ Create ISO
 Please select where to save the ISO file.
 Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
 Please select mode
+Test BOOT [QEMU]
+Want to test this Drive or ISO file?
+This Drive
+ISO file
+Memory (MB)
+Please enter a valid positive number.
+Please enter a memory larger than 0 and less than %sMB.
+We will copy the QEMU files to the %s\QEMU directory. Do you agree?
 ##### END #####

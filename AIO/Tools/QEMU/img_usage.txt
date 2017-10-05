@@ -1,0 +1,40 @@
+qemu-img version 0.11.1, Copyright (c) 2004-2008 Fabrice Bellard
+usage: qemu-img command [command options]
+QEMU disk image utility
+
+Command syntax:
+  check [-f fmt] filename
+  create [-F fmt] [-b base_image] [-f fmt] [-o options] filename [size]
+  commit [-f fmt] filename
+  convert [-c] [-f fmt] [-O output_fmt] [-o options] [-B output_base_image] filename [filename2 [...]] output_filename
+  info [-f fmt] filename
+  snapshot [-l | -a snapshot | -c snapshot | -d snapshot] filename
+
+Command parameters:
+  'filename' is a disk image filename
+  'base_image' is the read-only disk image which is used as base for a copy on
+    write image; the copy on write image only stores the modified data
+  'output_base_image' forces the output image to be created as a copy on write
+    image of the specified base image; 'output_base_image' should have the same
+    content as the input's base image, however the path, image format, etc may
+    differ
+  'fmt' is the disk image format. It is guessed automatically in most cases
+  'size' is the disk image size in kilobytes. Optional suffixes
+    'M' (megabyte, 1024 * 1024) and 'G' (gigabyte, 1024 * 1024 * 1024) are
+    supported any 'k' or 'K' is ignored
+  'output_filename' is the destination disk image filename
+  'output_fmt' is the destination format
+  'options' is a comma separated list of format specific options in a
+    name=value format. Use -o ? for an overview of the options supported by the
+    used format
+  '-c' indicates that target image must be compressed (qcow format only)
+  '-h' with or without a command shows this help and lists the supported formats
+
+Parameters to snapshot subcommand:
+  'snapshot' is the name of the snapshot to create, apply or delete
+  '-a' applies a snapshot (revert disk to saved state)
+  '-c' creates a snapshot
+  '-d' deletes a snapshot
+  '-l' lists all snapshots in the given image
+
+Supported formats: qcow vmdk cloop dmg bochs vpc vvfat qcow2 parallels nbd host_device raw

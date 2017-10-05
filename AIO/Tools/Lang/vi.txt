@@ -214,4 +214,12 @@ Tạo ISO
 Vui lòng chọn nơi để lưu tệp tin ISO.
 Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
 Vui lòng chọn chế độ
+Thử nghiệm BOOT [QEMU]
+Bạn muốn thử nghiệm Ổ đĩa này hay tệp tin ISO?
+Ổ đĩa này
+ISO
+Bộ nhớ (MB)
+Vui lòng nhập một số dương hợp lệ.
+Vui lòng nhập bộ nhớ lớn hơn 0 và nhỏ hơn %sMB.
+Chúng ta sẽ sao chép các tệp tin của QEMU vào thư mục %s\QEMU. Bạn đồng ý chứ?
 ##### END #####
