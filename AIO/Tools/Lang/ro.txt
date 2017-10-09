@@ -1,7 +1,7 @@
-﻿################################################################
+################################################################
 Language	:	Romanian
 Credits		:	Denis Cojocaru (dene.09@mail.ru)
-Date		:	22.09.2017
+Date		:	06.10.2017
 Info		:	Vă rugăm să nu adăugați, ștergeti sau muta linia "%s". Dacă aveți întrebări, nu uitați să trimiteți un e-mail admin@aioboot.com. Multumim!
 ################################################################
 
@@ -214,12 +214,14 @@ Creați ISO
 Vă rugăm să selectați unde să salvați fișierul ISO.
 Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
 Vă rugăm să selectaţi modul
-Test BOOT [QEMU]
-Want to test this Drive or ISO file?
-This Drive
-ISO file
-Memory (MB)
-Please enter a valid positive number.
-Please enter a memory larger than 0 and less than %sMB.
-We will copy the QEMU files to the %s\QEMU directory. Do you agree?
+Test de BOOT [QEMU]
+Doriți să testați acest Disc sau fișier ISO?
+Această unitate
+Fișier ISO
+Memorie (MB)
+Vă rugăm să introduceţi un număr pozitiv valid.
+Introduceți o memorie mai mare decât 0 și mai puțin decât %sMB.
+Vom copia fișierele QEMU în directorul %s\QEMU. Sunteţi de acord
+Doriți să testați acest fișier ISO?
+Extrageți WIM pentru instalare Windows.
 ##### END #####

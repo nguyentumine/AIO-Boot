@@ -7,7 +7,7 @@ Info		:	Lütfen satır ekleme, silme veya taşıma yapmayın, "%s" yi kaldırmay
 
 
 
-##### BAŞLA #####
+##### BEGIN #####
 Türkçe
 Ana
 Entegrasyon
@@ -222,4 +222,6 @@ Memory (MB)
 Please enter a valid positive number.
 Please enter a memory larger than 0 and less than %sMB.
 We will copy the QEMU files to the %s\QEMU directory. Do you agree?
-##### SON #####
+Would you like to test this ISO file?
+Extract WIM for Windows Setup.
+##### END #####

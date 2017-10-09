@@ -1,8 +1,36 @@
+v1.1.6 (08.10.2017):
+	English:
+		-	Automatically install the driver included in the "\Drivers, \Drivers_x64, \Drivers_x86 and \Drivers_XP" folder in the root of your USB. You need to extract the files to this folder.
+			-	\Drivers: for ALL.
+			-	\Drivers_x64: for WinPE 64-bit.
+			-	\Drivers_x86: for WinPE 32-bit.
+			-	\Drivers_XP: for WinPE XP.
+			Double Driver is a good program for backing up your drivers.
+
+		-	If the driver package is packaged in ISO format, the program will mount the ISO file instead of extracting the file.
+			This will save time and disk space (for extraction).
+			
+		-	Some minor changes.
+		
+	Tiếng Việt:
+		-	Tự động cài đặt trình điều khiển có trong thư mục "\Drivers, \Drivers_x64, \Drivers_x86 and \Drivers_XP" trong thư mục gốc của USB của bạn. Bạn cần phải trích xuất các tệp tin vào thư mục này.
+			-	\Drivers: cho tất cả.
+			-	\Drivers_x64: cho WinPE 64-bit.
+			-	\Drivers_x86: cho WinPE 32-bit.
+			-	\Drivers_XP: cho WinPE XP.
+			Double Driver là một chương trình tốt để sao lưu trình điều khiển của bạn.
+		
+		-	Nếu gói trình điều khiển được gói ở dạng ISO, chương trình sẽ gắn tệp tin ISO thay vì trích xuất tệp.
+			Điều này sẽ tiết kiệm thời gian và dung lượng ổ đĩa (dùng cho việc trích xuất).
+			
+		-	Một vài thay đổi nhỏ.
+
 v1.1.5 (05.10.2017):
 	English:
 		- Bug fix does not show Command Prompt.
 		- Fixes memory checks on WinPE 64-bit.
 		- Some minor changes.
+		
 	Tiếng Việt:
 		- Sửa lỗi không hiển thị Command Prompt.
 		- Sửa kiểm tra bộ nhớ trên WinPE 64-bit.

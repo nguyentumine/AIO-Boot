@@ -63,7 +63,7 @@ Thông tin
 Xác nhận
 Đang chép
 Đang chép các tập tin cần thiết...
-Đang giải nén
+Đang trích xuất
 Đang kiểm tra tập tin, vui lòng chờ
 Vui lòng nhập tên menu mà bạn muốn hiển thị
 Đang thêm menu...
@@ -222,4 +222,6 @@ Bộ nhớ (MB)
 Vui lòng nhập một số dương hợp lệ.
 Vui lòng nhập bộ nhớ lớn hơn 0 và nhỏ hơn %sMB.
 Chúng ta sẽ sao chép các tệp tin của QEMU vào thư mục %s\QEMU. Bạn đồng ý chứ?
+Bạn có muốn thử nghiệm tệp ISO này không?
+Trích xuất WIM cho Windows Setup.
 ##### END #####
