@@ -224,4 +224,7 @@ Introduceți o memorie mai mare decât 0 și mai puțin decât %sMB.
 Vom copia fișierele QEMU în directorul %s\QEMU. Sunteţi de acord
 Doriți să testați acest fișier ISO?
 Extrageți WIM pentru instalare Windows.
+Repackage Windows ISO file.
+Repacking ISO file
+Downloading update
 ##### END #####

@@ -224,4 +224,7 @@ ISO-файл
 Мы будем копировать файлы QEMU в каталог %s\QEMU. Вы согласны?
 Вы хотите протестировать этот файл ISO?
 Извлеките WIM-файл для установки Windows.
+Repackage Windows ISO file.
+Repacking ISO file
+Downloading update
 ##### END #####

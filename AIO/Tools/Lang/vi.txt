@@ -224,4 +224,7 @@ Vui lòng nhập bộ nhớ lớn hơn 0 và nhỏ hơn %sMB.
 Chúng ta sẽ sao chép các tệp tin của QEMU vào thư mục %s\QEMU. Bạn đồng ý chứ?
 Bạn có muốn thử nghiệm tệp ISO này không?
 Trích xuất WIM cho Windows Setup.
+Đóng gói lại tệp ISO của Windows.
+Đang đóng gói lại tệp tin ISO
+Đang tải về bản cập nhật
 ##### END #####

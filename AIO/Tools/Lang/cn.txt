@@ -224,4 +224,7 @@ Please enter a memory larger than 0 and less than %sMB.
 We will copy the QEMU files to the %s\QEMU directory. Do you agree?
 Would you like to test this ISO file?
 Extract WIM for Windows Setup.
+Repackage Windows ISO file.
+Repacking ISO file
+Downloading update
 ##### END #####
