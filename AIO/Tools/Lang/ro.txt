@@ -1,7 +1,7 @@
 ################################################################
 Language	:	Romanian
 Credits		:	Denis Cojocaru (dene.09@mail.ru)
-Date		:	06.10.2017
+Date		:	14.10.2017
 Info		:	Vă rugăm să nu adăugați, ștergeti sau muta linia "%s". Dacă aveți întrebări, nu uitați să trimiteți un e-mail admin@aioboot.com. Multumim!
 ################################################################
 
@@ -224,7 +224,7 @@ Introduceți o memorie mai mare decât 0 și mai puțin decât %sMB.
 Vom copia fișierele QEMU în directorul %s\QEMU. Sunteţi de acord
 Doriți să testați acest fișier ISO?
 Extrageți WIM pentru instalare Windows.
-Repackage Windows ISO file.
-Repacking ISO file
-Downloading update
+Reambalați fișierul ISO Windows.
+Reambalarea fișierului ISO
+Descărcarea actualizării
 ##### END #####
