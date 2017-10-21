@@ -1,3 +1,13 @@
+v1.1.7 (18.10.2017):
+	English:
+		- AutoRun will support opening all the formats that the system supports. Include: .exe, .bat, .cmd, .txt, .zip ...
+		- Bug fixes do not show up when running .bat and .cmd.
+		- If you want to hide the window, enter "--hide" (without the quotation marks) in the Parameter section.
+		
+	Tiếng Việt:
+		- AutoRun sẽ hỗ trợ mở tất cả các định dạng mà hệ thống hỗ trợ. Bao gồm: .exe, .bat, .cmd, .txt, .zip...
+		- Sửa lỗi không hiện lên cửa sổ khi chạy .bat và .cmd.
+		- Nếu bạn muốn ẩn cửa sổ, hãy nhập "--hide" (không có dấu ngoặc kép) vào mục Parameter.
 v1.1.6 (08.10.2017):
 	English:
 		-	Automatically install the driver included in the "\Drivers, \Drivers_x64, \Drivers_x86 and \Drivers_XP" folder in the root of your USB. You need to extract the files to this folder.

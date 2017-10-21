@@ -1,4 +1,4 @@
-################################################################
+﻿################################################################
 Language	:	Polish
 Credits		:	Michał Smajdor
 Date		:	18.06.2017
@@ -212,19 +212,18 @@ Domyślny bootloader w trybie UEFI
 Tylko wspierany ReactOS LiveCD. Sprawdź na naszej stronie jak zintergrować ReactOS Setup.
 Stwórz ISO
 Wybierz gdzie chcesz zapisać plik ISO.
-Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
-Please select mode
+Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGrupa: https://www.facebook.com/groups/aioboot/.
+Wybierz tryb.
 Test BOOT [QEMU]
-Want to test this Drive or ISO file?
-This Drive
-ISO file
-Memory (MB)
-Please enter a valid positive number.
-Please enter a memory larger than 0 and less than %sMB.
-We will copy the QEMU files to the %s\QEMU directory. Do you agree?
-Would you like to test this ISO file?
-Extract WIM for Windows Setup.
-Repackage Windows ISO file.
-Repacking ISO file
-Downloading update
+Chcesz przetestować Ten dysk czy plik ISO?
+Ten dysk	
+Plik ISO
+Pamięć (MB)
+Wprowadź prawidłoy numer dodatni.
+Wprowadź wartość pamięci wiekszą niż 0 i mniejszą niż %sMB.
+Będziemy kopiować pliki QUMU do katalogu %s\QEMU. Zgadasz się?
+Chcesz przetestować ten plik ISO?
+Wyodrębnij WIM dla Instalatora Windows.
+It looks like this ISO file uses the ISOLINUX bootloader. It does not support NTFS format in this case.%sTo support booting in Legacy mode, please use the FAT32 format.%sDo you want to continue?
+Maybe this operating system supports persistent mode.%sThis means that your data will be saved after each session.%sDo you want to enable this mode?
 ##### END #####

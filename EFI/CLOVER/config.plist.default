@@ -500,6 +500,8 @@
 			<string>0x0887</string>
 			<key>ResetHDA</key>
 			<true/>
+			<key>AFGLowPowerState</key>
+			<true/>
 		</dict>
 		<key>NoDefaultProperties</key>
 		<false/>
@@ -516,15 +518,57 @@
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>
+		<key>#DisableFunctions</key>
+		<string>0x18F6</string>		
+		<key>#AirportBridgeDeviceName</key>
+		<string>RP02</string>
 	</dict>
 	<key>GUI</key>
 	<dict>
 		<key>#ConsoleMode</key>
 		<string>0</string>
-		<key>#Custom</key>
+		<key>Custom</key>
 		<dict>
 			<key>Entries</key>
 			<array>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>Hidden</key>
+					<false/>
+					<key>Hotkey</key>
+					<string>G</string>
+					<key>InjectKexts</key>
+					<false/>
+					<key>NoCaches</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\BOOT\grubx64.efi</string>
+					<key>Title</key>
+					<string>Grub2 UEFI</string>
+					<key>Type</key>
+					<string>Linux</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>Hidden</key>
+					<false/>
+					<key>Hotkey</key>
+					<string>R</string>
+					<key>InjectKexts</key>
+					<false/>
+					<key>NoCaches</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\refind\refind_x64.efi</string>
+					<key>Title</key>
+					<string>rEFInd</string>
+					<key>Type</key>
+					<string>Linux</string>
+					<key>Image</key>
+					<string>\EFI\refind\icons\os_refind.png</string>
+				</dict>
 				<dict>
 					<key>AddArguments</key>
 					<string>-v</string>
@@ -612,10 +656,12 @@
 		</dict>
 		<key>#CustomIcons</key>
 		<false/>
-		<key>#Hide</key>
+		<key>Hide</key>
 		<array>
 			<string>Windows</string>
 			<string>BOOTX64.EFI</string>
+			<string>cdboot.efi</string>
+			<string>bootmgr.efi</string>
 		</array>
 		<key>#Language</key>
 		<string>ru:0</string>
@@ -628,7 +674,7 @@
 			<key>Speed</key>
 			<integer>2</integer>
 		</dict>
-		<key>#Scan</key>
+		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
 			<true/>
@@ -729,6 +775,11 @@
 		</array>
 		<key>#FakeCPUID</key>
 		<string>0x010676</string>
+		<key>#ForceKextsToLoad</key>		
+		<array>
+			<string>\System\Library\Extensions\AMD6000Controller.kext</string>
+			<string>\System\Library\Extensions\AMDFramebuffer.kext</string>
+		</array>
 		<key>#KextsToPatch</key>
 		<array>
 			<dict>
@@ -792,8 +843,6 @@
 		<false/>
 		<key>AppleRTC</key>
 		<true/>
-		<key>AsusAICPUPM</key>
-		<false/>
 		<key>Debug</key>
 		<false/>
 		<key>DellSMBIOSPatch</key>

@@ -227,4 +227,6 @@ Trích xuất WIM cho Windows Setup.
 Đóng gói lại tệp ISO của Windows.
 Đang đóng gói lại tệp tin ISO
 Đang tải về bản cập nhật
+Có vẻ như tệp tin ISO này sử dụng bộ nạp khởi động ISOLINUX. Nó không hỗ trợ định dạng NTFS trong trường hợp này.%sĐể hỗ trợ khởi động ở chế độ Legacy, vui lòng sử dụng định dạng FAT32.%sBạn có muốn tiếp tục không?
+Có thể hệ điều hành này hỗ trợ chế độ thường trú.%sCó nghĩa rằng dữ liệu của bạn sẽ được lưu lại sau mỗi phiên.%sBạn có muốn bật chế độ này không?
 ##### END #####

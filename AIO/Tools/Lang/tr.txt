@@ -227,4 +227,6 @@ Extract WIM for Windows Setup.
 Repackage Windows ISO file.
 Repacking ISO file
 Downloading update
+It looks like this ISO file uses the ISOLINUX bootloader. It does not support NTFS format in this case.%sTo support booting in Legacy mode, please use the FAT32 format.%sDo you want to continue?
+Maybe this operating system supports persistent mode.%sThis means that your data will be saved after each session.%sDo you want to enable this mode?
 ##### END #####

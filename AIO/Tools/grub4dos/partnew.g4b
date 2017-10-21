@@ -1,0 +1,8 @@
+!BAT
+
+:: AIO Boot - www.aioboot.com
+
+set newpart=
+partnew (hd0,%1) %2 %3 > nul && set newpart="ok"
+if not %newpart%=="ok" echo Maybe this file has been fragmented, use Defraggler (Action -> Defrag File...) to defrag and try again. && pause Press any key to continue.
+find --set-root /AIO/grub/i386-pc/core.img > nul && kernel /AIO/grub/i386-pc/core.img
