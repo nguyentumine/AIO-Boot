@@ -1,0 +1,19 @@
+!BAT
+
+#http://bbs.wuyou.com/viewthread.php?tid=197550
+#http://chenall.net/
+#http://www.rmprepusb.com
+set saveroot=%@root%
+map --unmap=0:0xFF
+map --unhook && map --rehook
+if NOT exist /AIO/Tools/DPMS/DPMS.ISO find --set-root --devices=hf /AIO/Tools/DPMS/DPMS.ISO
+if NOT exist /AIO/Tools/DPMS/DPMS.ISO pause --wait=20 Please download "DPMS.ISO" from "https://goo.gl/AhnqTb" and copy it to "/AIO/Tools/DPMS". && kernel /AIO/grub/i386-pc/core.img
+map /AIO/Tools/DPMS/DPMS.ISO (0xfa)|| map --mem /AIO/Tools/DPMS/DPMS.ISO (0xfa)
+map --hook
+root (0xfa)
+set FIRA=0
+/dpms2.g4b 0
+ls (0)/txtsetup.oem && map (0) (1) && set DPMS=1
+map --unmap=0xfa
+map --rehook
+root %saveroot%

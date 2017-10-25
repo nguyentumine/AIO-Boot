@@ -347,7 +347,7 @@ timeout 20
 # a complete pathname (e.g., "/EFI/somedir/notme.efi"), or as a
 # complete pathname with volume (e.g., "SOMEDISK:/EFI/somedir/notme.efi"
 # or 2C17D5ED-850D-4F76-BA31-47A561740082:/EFI/somedir/notme.efi").
-# OS tags hidden via the Delete or 'd' key in the rEFInd menu are
+# OS tags hidden via the Delete or '-' key in the rEFInd menu are
 # added to this list, but stored in NVRAM.
 # The default is shim.efi,shim-fedora.efi,shimx64.efi,PreLoader.efi,
 # TextMode.efi,ebounce.efi,GraphicsConsole.efi,MokManager.efi,HashTool.efi,

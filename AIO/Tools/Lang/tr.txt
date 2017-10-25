@@ -23,7 +23,7 @@ Disk
 İsim
 Tip
 Boyut
-Şu Sürüş:
+Mevcut Sürücü:
 Sürücü
 Etiket
 FS.
@@ -37,10 +37,10 @@ Herhangi bir sorunuz varsa yazarla iletişim kurmayı unutma, admin@aioboot.com 
 Sürüm
 Anasayfa
 Telif Hakkı
-1. Paket Seçin
-2. Dosya'yı seçin
+1. Sistem Adı Seçin
+2. Sistem ISO Seçin
 İndir
-tamam
+Tamam
 Lütfen sürücünüzdeki dosyayı seçin ...
 Sürücünüzde ISO dosyası veya WIM dosyası seçin ...
 Sürücünüzdeki ISO dosyasını seçin ...
@@ -116,10 +116,10 @@ Bir sabit sürücüye GPT stilinde Eski BIOS modunu desteklemek için. Yeni bir 
 1. Bu bölüm boyutu mümkün olduğunca küçük. Yaklaşık 1MB veya daha büyük ancak 10MB'dan büyük olmayacak.%s2. Bu bölümdeki tüm veriler kaybolacak. Bu nedenle, yeni bir bölüm oluşturmanız gerekir.
 Lütfen bu bölümü istediğiniz gibi oluşturduktan sonra devam edin.
 Bilgisayarımda 32 bit UEFI sabit yazılımı var.
-MENU ismini girmemi isteme.
-Dosyayı doğrulamanıza gerek yok.
+MENU adlandırması isteme
+Doğrulama onayını isteme
 UEFI modu için PXE Önyüklemesini yapılandırın.
-Ayarla
+Kaydet
 İşte Grub2'nin desteklendiği dillerin listesi. Dilin nedir?
 Lütfen açılır listeden bir öğe seçin
 Ayarlarınız kaydedildi!
@@ -208,25 +208,24 @@ Görenek
 Oluşturma
 FAT32 bölümünde 4GB'dan büyük dosya oluşturulamıyor.
 Grub4Dos'u Standart Önyükleme Yükleyicisi olarak yükle?%sGrub2, makinenizde uyumlu değilse veya yalnızca test etmek için yalnızca Grub4Dos'u yüklemeniz gerekir.%sÖzelliği tam olarak desteklemek için Grub2 kullanın.
-Default bootloader in UEFI mode
-Only support ReactOS LiveCD. Check out the home page for how to integrate ReactOS Setup.
-Create ISO
-Please select where to save the ISO file.
+UEFI varsayılan önyükleyici
+ReactOS LiveCD'yi destekler.Kurulum entegresi için ana sayfaya bakınız.
+ISO Oluştur
+ISO dosyasının nereye kaydedileceğini seçin.
 Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
-Please select mode
+Lütfen  modu seçin
 Test BOOT [QEMU]
-Want to test this Drive or ISO file?
-This Drive
-ISO file
-Memory (MB)
-Please enter a valid positive number.
-Please enter a memory larger than 0 and less than %sMB.
-We will copy the QEMU files to the %s\QEMU directory. Do you agree?
-Would you like to test this ISO file?
-Extract WIM for Windows Setup.
-Repackage Windows ISO file.
-Repacking ISO file
-Downloading update
-It looks like this ISO file uses the ISOLINUX bootloader. It does not support NTFS format in this case.%sTo support booting in Legacy mode, please use the FAT32 format.%sDo you want to continue?
-Maybe this operating system supports persistent mode.%sThis means that your data will be saved after each session.%sDo you want to enable this mode?
+ISO veya sürücünüzü test etmek istermisiniz?
+Mevcut Disk
+ISO dosyası
+Bellek (MB)
+Bellek için yeterli bir oran belirleyiniz.
+0'dan büyük,%sMB. küçük olacak bellek boyutu girin. 
+QEMU dosyalarını %s\QEMU dizinine kopyalayacağız.Onaylıyormusunuz?
+Bu ISO dosyasını test etmek istermisiniz?
+Windows kurulumu için WIM dosyasını ayıkla
+Windows ISO dosyasını yeniden paketle
+ISO dosyasını yeniden paketleme
+Güncelleme indiriliyor
+Bu ISO dosyası ISOLINUX önyükleyici kullanıyor gibi görünüyor. Bu durumda NTFS biçimini desteklemez.%sGeçiş modunda önyüklemeyi desteklemek için lütfen FAT32 biçimini kullanın.%sDevam etmek ister misiniz?Belki bu işletim sistemi kalıcı modu desteklemektedir.%sBu her oturumdan sonra verilerinizin kaydedileceği anlamına gelmektedir.%sBu modu etkinleştirmek ister misiniz?
 ##### END #####

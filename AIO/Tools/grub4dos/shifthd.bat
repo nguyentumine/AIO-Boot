@@ -16,7 +16,7 @@ goto :start
 
 :start
 ::echo Locating usbdrive.tag
-ls /AIO/Tools/grub4dos/usbdrive.tag > nul || find --set-root --devices=hf /AIO/Tools/grub4dos/usbdrive.tag > nul
+::ls /AIO/Tools/grub4dos/usbdrive.tag > nul || find --set-root --devices=hf /AIO/Tools/grub4dos/usbdrive.tag > nul
 checkrange 0x80 read 0x82A0 > nul && goto :usb_is_hd0
 checkrange 0x00,0x01 read 0x82A0 > nul && goto :usb_is_fd
 checkrange 0x00,0x01,0x80 read 0x82A0 > nul || goto :usb_is_not_hd0

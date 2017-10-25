@@ -1,5 +1,0 @@
-set backup=
-dd if=(hd0)+1 of=()/AIO/Tools/grub4dos/mbr.bin > nul && set backup="ok"
-if %backup%=="ok" echo Backup OK! || echo Backup Failed!
-pause Press any key to continue.
-find --set-root /AIO/grub/i386-pc/core.img > nul && kernel /AIO/grub/i386-pc/core.img

@@ -13,7 +13,7 @@ set menu-timeout 5000
 set submenu-timeout ${menu-timeout}
 
 # Ensure we have menu-default set to something
-isset ${menu-default} || set menu-default exit
+isset ${menu-default} || set menu-default winpe
 
 ######## MAIN MENU ###################
 :start

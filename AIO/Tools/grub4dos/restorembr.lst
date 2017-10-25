@@ -1,8 +1,0 @@
-set valid=
-set restore=
-cat --locate="GRUB" ()/AIO/Tools/grub4dos/mbr.bin > nul && set valid="ok"
-if not %valid%=="ok" echo Invalid MBR file. It looks like you have not backed up the MBR before.
-if %valid%=="ok" dd if=()/AIO/Tools/grub4dos/mbr.bin of=(hd0)+1 > nul && set restore="ok"
-if %restore%=="ok" echo Restore OK! || echo Restore Failed!
-pause Press any key to continue.
-find --set-root /AIO/grub/i386-pc/core.img > nul && kernel /AIO/grub/i386-pc/core.img
