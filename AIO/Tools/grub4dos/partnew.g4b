@@ -10,4 +10,4 @@ if not "%4"=="vi" set strings=Maybe this file has been fragmented, use Defraggle
 
 partnew (hd%1) %2 /AIO/Files/PartIMG/%3 > nul && set newpart=ok
 if not exist newpart echo %strings% && pause %pausestr%
-kernel /AIO/grub/i386-pc/fromg4b.img
+kernel /AIO/grub/i386-pc/core.img

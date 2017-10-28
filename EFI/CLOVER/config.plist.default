@@ -849,7 +849,7 @@
 		<false/>
 		<key>KernelCpu</key>
 		<false/>
-		<key>KernelIvyXCPM</key>
+		<key>KernelXCPM</key>
 		<false/>
 		<key>KernelLapic</key>
 		<false/>

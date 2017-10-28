@@ -55,8 +55,7 @@ iftitle [if exist /AIO/Tools/syslinux/syslinux/syslinux.bin] Syslinux\n Run Sysl
 chainloader /AIO/Tools/syslinux/syslinux/syslinux.bin
 
 title Load Grub2
-if NOT exist fromg2 set strings=fallback.img || set strings=core.img
-kernel /AIO/grub/i386-pc/%strings%
+kernel /AIO/grub/i386-pc/core.img
 
 title Reboot
 reboot

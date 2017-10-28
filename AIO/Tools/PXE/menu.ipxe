@@ -15,24 +15,27 @@ set submenu-timeout ${menu-timeout}
 # Ensure we have menu-default set to something
 isset ${menu-default} || set menu-default winpe
 
+console --x 1024 --y 768
+console --picture ${boot-url}/grub/themes/splash.png
+
 ######## MAIN MENU ###################
 :start
 menu Welcome to iPXE's Boot Menu
 item
-item --gap -- ------------------------- Utilities ------------------------------
-item winpe WinPE
-item diskutilities		Disk Utilities
-item backuprecovery		Backup & Recovery
-item dosprogs			DOS Programs
-item livelinux			Linux ISO Live
-item antivirus			Antivirus
-item specialpack		Special Pack
+item --gap -- ------------------------------ Utilities --------------------------------
+item --key 1 winpe				[1] WinPE
+item --key 2 diskutilities		[2] Disk Utilities
+item --key 3 backuprecovery		[3] Backup & Recovery
+item --key 4 dosprogs			[4] DOS Programs
+item --key 5 livelinux			[5] Linux ISO Live
+item --key 6 antivirus			[6] Antivirus
+item --key 7 specialpack		[7] Special Pack
 item --gap -- ------------------------------ Advanced ---------------------------------
-item config       Configure settings
-item shell      Enter iPXE shell
-item reboot     Reboot
-item exit       Exit (boot local disk)
-choose --default exit --timeout 30000 target && goto ${target}
+item --key c config		[c] Configure settings
+item --key s shell		[s] Enter iPXE shell
+item --key r reboot		[r] Reboot
+item --key e exit		[e] Exit (boot local disk)
+choose --default winpe --timeout 30000 target && goto ${target}
 
 ########## UTILITY ITEMS ####################
 :shell

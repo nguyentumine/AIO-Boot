@@ -11,4 +11,4 @@ if not "%2"=="vi" set strings1=Backup successful! && set strings2=Backup failed!
 dd if=(hd%1)+1 of=()/AIO/Tools/grub4dos/mbr.bin > nul && set backup=ok
 if exist backup echo %strings1% || echo %strings2%
 pause %pausestr%
-kernel /AIO/grub/i386-pc/fromg4b.img
+kernel /AIO/grub/i386-pc/core.img
