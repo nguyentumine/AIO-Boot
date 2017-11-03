@@ -127,7 +127,7 @@ Vui lòng định dạng lại phân vùng này ở FAT32.%sHoặc cài đặt G
 Cài đặt Bootloader
 Khôi phục khởi động Windows
 Tiny PXE Server đang chạy, vui lòng đóng nó lại nếu bạn muốn chạy lại!
-UEFI hay Legacy mode?
+Chế độ UEFI hay Legacy?
 Vui lòng chọn phiên bản 32-bit hay 64-bit
 Chỉ Windows
 Những thứ khác
@@ -164,7 +164,7 @@ Không nhận dạng được tập tin này, vui lòng chọn một gói đư�
 Hệ điều hành này có hỗ trợ chế độ lưu trú.%sCó nghĩa rằng dữ liệu của bạn sẽ được lưu lại sau mỗi phiên.%sTốc độ của hệ điều hành phụ thuộc vào tốc độ đọc và ghi của ổ cứng.%sBạn có muốn tạo một tệp tin 4GB cho chế độ lưu trú không?
 Hệ điều hành này có hỗ trợ chế độ lưu trú.%sCó nghĩa rằng dữ liệu của bạn sẽ được lưu lại sau mỗi phiên.%sTốc độ của hệ điều hành phụ thuộc vào tốc độ đọc và ghi của ổ cứng.%sChúng ta sẽ tạo một tệp có kích thước tương ứng với dữ liệu bạn muốn lưu.
 Hình nền Grub2
-Xin chân thành cám ơn đến:--Tất cả những người đang sử dụng công cụ này.--Google.--GNU (Đội ngũ phát triển Grub2).--Đội ngũ phát triển Clover, rEFInd, Grub4dos và Syslinux.--Tác giả của 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot và WinSetupFromUSB.--Những người phiên dịch các ngôn ngữ: Denis Cojocaru (tiếng Nga và Romania), Stoian Bahchevanski (Bungary), Pascal BIMAS Perso (French), Erhan Kultur (Thổ Nhĩ Kỳ), Michał Smajdor (Ba Lan).
+Xin chân thành cám ơn đến:--Tất cả những người đang sử dụng công cụ này.--Google.--GNU (Đội ngũ phát triển Grub2).--Đội ngũ phát triển Clover, rEFInd, Grub4dos và Syslinux.--Tác giả của 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot và WinSetupFromUSB.--Những người phiên dịch các ngôn ngữ: Denis Cojocaru (tiếng Nga và Romania), Stoian Bahchevanski (Bungary), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI (Thổ Nhĩ Kỳ), Michał Smajdor (Ba Lan), Alessandro Santini (Ý), Txema (Tây Ban Nha).
 Quản lý phân vùng
 Kích thước (MB)
 Tệp tin đầu vào
@@ -229,4 +229,6 @@ Trích xuất WIM cho Windows Setup.
 Đang tải về bản cập nhật
 Có vẻ như tệp tin ISO này sử dụng bộ nạp khởi động ISOLINUX. Nó không hỗ trợ định dạng NTFS trong trường hợp này.%sĐể hỗ trợ khởi động ở chế độ Legacy, vui lòng sử dụng định dạng FAT32.%sBạn có muốn tiếp tục không?
 Có thể hệ điều hành này hỗ trợ chế độ thường trú.%sCó nghĩa rằng dữ liệu của bạn sẽ được lưu lại sau mỗi phiên.%sBạn có muốn bật chế độ này không?
+Tệp VHD này được cài đặt với hệ điều hành 64-bit hay 32-bit?
+Đừng tích hợp Driver USB 3.0 cho Windows 7.
 ##### END #####

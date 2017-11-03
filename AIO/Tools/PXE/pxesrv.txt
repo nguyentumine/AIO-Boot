@@ -77,7 +77,7 @@ added : smb checkbox
 fixed : httpd uses fmShareDenyWrite to allow multiple i/o to one file
 added : sent bootp packet will be word aligned
 added : will replace \0 by null char for opt60,66,67 (some pxe clients require a null terminated string there)
-added : attempt to support rfc951 => boot request will be handled as dhcp request (rfc951=1 in config.ini)
+added : attempt to support rfc951 = boot request will be handled as dhcp request (rfc951=1 in config.ini)
 added : no_hostname=1 in config.ini to skip the server hostname field
 changed : if opt54='0.0.0.0' then skip in makebootp_vend (useless?)
 added : no_opt13=1 in config.ini to skip option 13
@@ -100,3 +100,22 @@ fixed : pool start correct when opt54 set in ini file
 todo : send arch in dhcp offer
 added : @opt54 variable next to @mac,@ip,@arch -> similar to ${next-server} in ipxe
 fixed : next server passed to send_dhcpoffer and send_dhcpack
+added : will add a scrollbar when active monitor height <=600
+added : vscroll=1 in config.ini will force a vertical scrollbar
+fixed : option 6 dns server was wrong when choosing a different NIC
+added : arch will be taken into account in the dhcp offer as well
+fixed : tftpd can be disabled again in config.ini
+added : will select the active nic in the opt54 combo box
+modified : 2 more fields hidden and moved to the advanced part of the form
+fixed : log to file is disabled
+added : a syslog server is included in the zip file (syslog=127.0.0.1 in the config.ini)
+1.0.0.21
+modified : dns proxy will read entries from config.ini (section=hostname,ident=ip), no more from hosts file
+added : right click open config.ini
+added : right click open root_path
+fixed : share folder will now add everyone read-only on share permissions
+added : share is created with STYPE_TEMPORARY flag, i.e will not survive a reboot
+added : TPS will answer to specific 'discovery' messages (see discover.zip)
+fixed : wsMinimized=1 wa preventing form_show and load_config
+added : each daemon will report on which ip it is listening (useful to troubleshoot)
+added : syslogd will read ip under [syslog] in config.ini if one wants to bind to a specific interface (instead of 0.0.0.0 by default)

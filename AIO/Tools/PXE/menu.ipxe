@@ -23,7 +23,7 @@ console --picture ${boot-url}/grub/themes/splash.png
 menu Welcome to iPXE's Boot Menu
 item
 item --gap -- ------------------------------ Utilities --------------------------------
-item --key 1 winpe				[1] WinPE
+item --key 1 winpe				[1] WinPE & Setup
 item --key 2 diskutilities		[2] Disk Utilities
 item --key 3 backuprecovery		[3] Backup & Recovery
 item --key 4 dosprogs			[4] DOS Programs
@@ -133,7 +133,7 @@ choose --timeout ${submenu-timeout} --default ${submenu-default} selected && got
 
 ################################# Start winpe
 :winpe
-menu WinPE
+menu WinPE & Setup
 ### add new menu for WinPE, dont edit this line
 item back Back to top menu...
 iseq ${menu-default} menu-recovery && isset ${submenu-default} && goto menu-recovery-timed ||
