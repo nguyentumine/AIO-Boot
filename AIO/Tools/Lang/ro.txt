@@ -231,4 +231,6 @@ Se pare că acest fișier ISO folosește bootloader-ul ISOLINUX. În acest caz, 
 Poate acest sistem de operare suportă modul persistent.%sAceasta înseamnă că datele dvs. vor fi salvate după fiecare sesiune.%sDoriți să activați acest mod?
 Acest fişier cu VHD este instalat cu 64-bit sau 32-bit sistem de operare?
 Nu integrați driverul USB 3.0 pentru Windows 7.
+Nu întrebați din nou
+A se vedea instrucțiunile
 ##### END #####

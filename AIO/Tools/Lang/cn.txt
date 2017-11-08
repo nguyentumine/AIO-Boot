@@ -231,4 +231,6 @@ It looks like this ISO file uses the ISOLINUX bootloader. It does not support NT
 Maybe this operating system supports persistent mode.%sThis means that your data will be saved after each session.%sDo you want to enable this mode?
 This VHD file is installed with 64-bit or 32-bit operating system?
 Don't integrate USB 3.0 Driver for Windows 7.
+Don't ask again
+See instructions
 ##### END #####

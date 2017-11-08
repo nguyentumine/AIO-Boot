@@ -230,4 +230,6 @@ Scarico l'aggiornamento
 Sembra che questo file ISO usi il bootloader ISOLINUX. In questo caso non è supportato nel formato NTFS.%sPer supportare l'avvio in modalità Legacy, usa il formato FAT32.%sVuoi continuare?
 Forse questo sistema operativo supporta la modalità persistente.%sQuesto significa che i tuoi files verranno salvati a ogni sessione.%sVuoi abilitare questa modalità?
 Questo file VHD installato ha un un sistema operativo 64-bit o 32-bit?
-Non integrare il driver USB 3.0 per Windows 7.##### END #####
+Non integrare il driver USB 3.0 per Windows 7.Non chiedere più
+Vedi le istruzioni
+##### END #####

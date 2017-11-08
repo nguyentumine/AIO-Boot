@@ -230,4 +230,6 @@ Güncelleme indiriliyor
 Bu ISO dosyası ISOLINUX önyükleyici kullanıyor gibi görünüyor. Bu durumda NTFS biçimini desteklemez.%sGeçiş modunda önyüklemeyi desteklemek için lütfen FAT32 biçimini kullanın.%sDevam etmek ister misiniz?Belki bu işletim sistemi kalıcı modu desteklemektedir.%sBu her oturumdan sonra verilerinizin kaydedileceği anlamına gelmektedir.%sBu modu etkinleştirmek ister misiniz?
 This VHD file is installed with 64-bit or 32-bit operating system?
 Don't integrate USB 3.0 Driver for Windows 7.
+Don't ask again
+See instructions
 ##### END #####

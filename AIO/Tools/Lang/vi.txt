@@ -231,4 +231,6 @@ Có vẻ như tệp tin ISO này sử dụng bộ nạp khởi động ISOLINUX.
 Có thể hệ điều hành này hỗ trợ chế độ thường trú.%sCó nghĩa rằng dữ liệu của bạn sẽ được lưu lại sau mỗi phiên.%sBạn có muốn bật chế độ này không?
 Tệp VHD này được cài đặt với hệ điều hành 64-bit hay 32-bit?
 Đừng tích hợp Driver USB 3.0 cho Windows 7.
+Đừng nhắc lại
+Hướng dẫn
 ##### END #####
