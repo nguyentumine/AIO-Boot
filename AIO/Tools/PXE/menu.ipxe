@@ -1,12 +1,6 @@
 #!ipxe
 console --x 1024 --y 768
-#set boot-url http://${proxydhcp}/next-server
-set boot-url http://${next-server}
-set iscsi-server 192.168.1.100
-set iqn iqn.2008-08.com.starwindsoftware:test
-set nfs-server ${next-server}
-set cifs-server //${next-server}
-#set boot-url http://192.168.1.100
+console --picture ${boot-url}/grub/themes/splash.png
 
 # Setup some basic convenience variables
 set menu-timeout 5000
@@ -14,9 +8,6 @@ set submenu-timeout ${menu-timeout}
 
 # Ensure we have menu-default set to something
 isset ${menu-default} || set menu-default winpe
-
-console --x 1024 --y 768
-console --picture ${boot-url}/grub/themes/splash.png
 
 ######## MAIN MENU ###################
 :start

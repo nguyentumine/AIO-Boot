@@ -1,0 +1,66 @@
+#!ipxe
+console --x 1024 --y 768
+console --picture ${boot-url}/AIO/grub/themes/splash.png
+
+# Setup some basic convenience variables
+set menu-timeout 5000
+set submenu-timeout ${menu-timeout}
+
+# Ensure we have menu-default set to something
+isset ${menu-default} || set menu-default wimboot
+
+######## MAIN MENU ###################
+:start
+menu Welcome to iPXE's Boot Menu
+item
+item --gap -- ------------------------------ Utilities --------------------------------
+item --key 1 wimboot	[1] WinPE & Setup
+item --gap -- ------------------------------ Advanced ---------------------------------
+item --key c config		[c] Configure settings
+item --key s shell		[s] Enter iPXE shell
+item --key r reboot		[r] Reboot
+item --key e exit		[e] Exit (boot local disk)
+choose --default wimboot --timeout 30000 target && goto ${target}
+
+########## UTILITY ITEMS ####################
+:shell
+echo Type exit to get the back to the menu
+shell
+set menu-timeout 0
+goto start
+
+:failed
+echo Booting failed, dropping to shell
+goto shell
+
+:reboot
+reboot
+
+:exit
+exit
+
+:cancel
+echo You cancelled the menu, dropping you to a shell
+ 
+:config
+config
+goto start
+ 
+:back
+set submenu-timeout 0
+clear submenu-default
+goto start
+
+:wimboot
+kernel ${boot-url}/AIO/Tools/MS/PXE/wimboot.${arch2}					rawbcd
+initrd ${boot-url}/AIO/Tools/MS/PXE/boot/fonts/segmono_boot.ttf			segmono_boot.ttf
+initrd ${boot-url}/AIO/Tools/MS/PXE/boot/fonts/segoe_slboot.ttf			segoe_slboot.ttf
+initrd ${boot-url}/AIO/Tools/MS/PXE/boot/fonts/segoen_slboot.ttf		segoen_slboot.ttf
+initrd ${boot-url}/AIO/Tools/MS/PXE/boot/fonts/wgl4_boot.ttf			wgl4_boot.ttf
+isset ${legacy} && initrd ${boot-url}/AIO/Tools/MS/PXE/bootmgr			bootmgr || ###
+isset ${legacy} && initrd ${boot-url}/AIO/Tools/MS/PXE/bootmgr.exe		bootmgr.exe || initrd ${boot-url}/AIO/Tools/MS/PXE/${arch2}/bootmgr.efi
+isset ${legacy} && initrd ${boot-url}/AIO/Tools/MS/PXE/boot/bcd			BCD || initrd ${boot-url}/AIO/Tools/MS/PXE/efi/microsoft/boot/bcd			BCD
+initrd ${boot-url}/AIO/Tools/MS/boot.sdi								boot.sdi
+initrd ${boot-url}${wimfile}											boot.wim
+boot || goto failed
+goto start
