@@ -1,236 +1,236 @@
 ﻿################################################################
 Language	:	German
-Credits		:	Nguyễn Tứ (www.sitecuatui.com)
-Date		:	06.12.2016
-Info		:	Please do not add, delete or move the line, do not remove "%s". If you want to submit your own or have any questions, do not forget to send an email to admin@aioboot.com. Thank for help!
+Credits		:	Frettt (www.frettts-freeware.com)
+Date		:	29.11.2017
+Info		:	Bitte keine Zeile oder "%s" hinzufügen, entfernen oder verschieben. Wenn ihr eine eigene Übersetzung schicken wollt oder Fragen habt, schickt eine eMail an admin@aioboot.com. Danke für die Hilfe!
 ################################################################
 
 
 
 ##### BEGIN #####
-German
-Main
+Deutsch
+Start
 Integration
-About
+Info
 Bootloaders
-Run PXE
-Settings
-Tools
-MENU Editor
-Help
-Current Disk:
+PXE starten
+Optionen
+Werkzeuge
+MENÜ-Editor
+Hilfe
+Aktuelle Disk:
 Disk
 Name
-Type
-Size
-Current Drive:
-Drive
+Typ
+Größe
+Aktuelle Disk:
+Disk
 Label
-FileSystem
-Removable media
-Fixed media
-RAM disk
-Unknow
-AIO Boot is a tool that can help you create a bootable USB/HDD with Grub2, Grub4dos, Syslinux, Clover and rEFInd. AIO Boot own unique features, advanced and friendly.%sThis tool is 100%% clean, it is not harmful to your computer.%sPlease help this community by contributing your ideas and report bugs. Feel free to share or contribute your articles, videos, and links related to more people can know and use this tool.
-Don't forget to contact the author if you have any questions, email admin@aioboot.com. I would love to hear from you so that I can improve this tool better.
+Dateisystem
+Wechselmedium
+Festplatten
+RAM-Disk
+Unbekannt
+Mit AIO Boot könnt ihr startfähige USB-/HDD-Disks mit Grub2, Grub4dos, Syslinux, Clover und rEFInd erstellen. AIO Boot besitzt einzigartige fortschrittliche und benutzerfreundliche Funktionen.%sDieses Werkzeug ist 100%% virenfrei und nicht schädlich für eure Computer.%sBitte helft dieser Gemeinschaft durch Einbringung eurer Ideen und meldet Fehler. Teilt und steuert eure Artikel, Videos und Links bei, damit mehr Leute AIO Boot nutzen können.
+Vergesst nicht mich zu kontaktieren falls ihr Hilfe braucht, eMail an admin@aioboot.com schicken. Ich würde mich freuen von euch zu hören damit ich AIO Boot weiter verbessern kann.
 Name
 Version
 Homepage
 Copyright
-1. Select Pack
-2. Select File
+1. Rubrik auswählen
+2. Datei auswählen
 Download
 OK
-Please select the file on your drive...
-Select ISO file or WIM file on your drive...
-Select ISO file on your drive...
-Mount ISO file, then select "I386/TXTSETUP.SIF" or "AMD64/TXTSETUP.SIF"...
-Please select a valid file!
-Filename can only contain alphanumeric characters (letters , numbers ) and . Please rename the file and try again!
-Files larger than 4GB can NOT be stored on a FAT32 volume.%sFormatting the partition as exFAT or NTFS will resolve this issue.
-Processing, please wait...
-Do not close this window until this is done!
-Could not detect this file!
-Error, please contact to author for support!
-Error: Please close the application you are using to read BCD/WinLegacy file and try again!
-Error: Please close the application you are using to read %s file and try again!
-Invalid file!
-Error: The remaining space is insufficient!
-Done. Happy booting!
-Error
-Warning
-Information
-Confirm
-Copying
-Copying the required files...
-Extracting
-Checking file, please wait...
-Please enter the name of the menu
-Adding menu...
-Preparing files...
-Please close Regedit.exe to continue!
-Cancel
-Continue
-Cleaning up, please wait...
-Because the size of the file does not allow stored on a FAT32 partition.%sWe will split this file, do you agree?
-Splitting
-Yes
-No
-The selected disk is of the GPT partition style. You need to copy the folder "EFI" to a partition is formatted in "FAT32" or "FAT16".
-The selected disk is of the GPT partition style. Only Grub2, rEFInd and Clover are supported.
-Currently we do not support this device!
-has been installed...
-is already installed...
-%s has not been installed. %s requires that %s must be installed.%sDo you want to install Grub2 right away?
-Please select the drive where you installed the latest Windows version.
-If possible, try this feature on Windows 7 or newer version to get the best support.
-Did not find the System partition.
-has been restored.
-Have not found any drive that Windows is installed in %s mode.
-You need to reformat the drive to be able to install Syslinux.
-Please format the drive to FAT32 or NTFS.
-Please select the partition that you have installed Windows in Legacy BIOS mode.
-Please select the partition that you have installed Windows in UEFI mode.
-Please boot in UEFI mode and try again.
-You are using the latest version!
-We have a new version that you can update right now.%sVersion %s, released on %s.%sDo you want to close this application and update now?
-Currently, there is no MENU to be able to edit.
-Remove?
-Name of MENU
-Save
-after you've edited.
-Deleting files...
-Saved
+Bitte Datei von Disk auswählen...
+ISO-Datei oder WIM-Datei auswählen...
+ISO-Datei auswählen...
+ISO-Datei einhängen, dann "I386/TXTSETUP.SIF" oder "AMD64/TXTSETUP.SIF" auswählen...
+Bitte gültige Datei wählen!
+Dateiname darf nur alphanumerische Zeichen beinhalten (Buchstaben, Zahlen ) und . Datei bitte umbenennen und nochmal versuchen!
+Dateien die größer als 4GB groß sind, können nicht auf einer FAT32-Partition gespeichert werden.%sFormatierung der Partition als exFAT oder NTFS behebt dieses Problem.
+Arbeite, bitte warten...
+Dieses Fenster bitte nicht schließen bis der Vorgang abgeschlossen ist!
+Kann die Datei nicht finden!
+Fehler, für Hilfe bitte den Autor kontaktieren!
+Fehler: Bitte das Programm schließen mit dem du die BCD-/WinLegacy-Datei geöffnet hast und versuche es noch einmal!
+Fehler: Bitte das Programm schließen mit dem du Datei %s geöffnet hast und versuche es noch einmal!
+Ungültige Datei!
+Fehler: Der verfügbare Speicherplatz is unzureichend!
+Fertig. Happy booting!
+Fehler
+Warnung
+Informationen
+Bestätigen
+Kopieren
+Kopieren der benötigten Dateien...
+Entpacke
+Überprüfe Datei, bitte warten...
+Bitte den Name des Menüs eingeben
+Menü wird hinzufgefügt...
+Dateien vorbereiten...
+Zum Fortfahren bitte Regedit.exe schließen!
+Abbrechen
+Fortfahren
+Aufräumen, bitte warten...
+Die Datei ist zu groß um sie auf einer FAT32-Partition zu speichern.%sDatei aufteilen?
+Aufteilung
+Ja
+Nein
+Die ausgewählte Disk ist im GPT-Schema formatiert. Du musst den Ordner "EFI" auf einer Partition speichern die mit "FAT32" oder "FAT16" formatiert ist.
+Die ausgewählte Disk ist im GPT-Schema formatiert. Nur Grub2, rEFInd und Clover werden unterstützt.
+Momentan wird dieses Laufwerk nicht unterstützt!
+wurde installiert...
+ist bereits installiert...
+%s wurde nicht installiert.%s erfordert das %s installiert ist.%sWillst du Grub2 jetzt installieren?
+Bitte wähle die Disk mit der neuesten Windows Version.
+Wenn möglich, erst unter Windows 7 oder neuer testen um die beste Unterstützung zu erhalten.
+System-Partition nicht gefunden.
+wurde widerhergestellt.
+Keine Disk mit Windows im %s Modus gefunden.
+Die Disk muss neu formatiert werden um Syslinux installieren zu können.
+Bitte formatiere die Disk mit FAT32 oder NTFS.
+Bitte wähle die Partition auf der du Windows im Legacy BIOS-Modus installiert hast.
+Bitte wähle die Partition auf der du Windows im UEFI-Modus installiert hast.
+Starte im UEFI-Modus und versuche es erneut.
+Du verwendest schon die neueste Version!
+Eine neuere Version ist verfügbar.%sVersion %s, veröffentlicht am %s.%sWillst du das Programm schließen und aktualisieren?
+Momentan gibt es kein MENÜ zum Editieren.
+Entfernen?
+Name des MENÜS
+Speichern
+nachdem du mit editieren fertig bist.
+Dateien löschen...
+Gespeichert
 Update
-Default
-File Only
-Clover will also be installed for Legacy mode
-Please select the partition to install Grub2, Clover and rEFInd for UEFI mode.
-You need to download the latest version of AIO Boot and repartition this disk to continue.
-GPT-style hard disk only support UEFI mode.%sIf you only use UEFI mode, you do not need to do anything right now.
-To support Grub2, Clover, rEFInd and UEFI Shell in UEFI mode, you need to create a partition in FAT32 or FAT16 format on this hard disk.
-You can use DiskPart or GParted to create new partition.%sPlease try again after you have created a new partition.
-The selected disk is of the GPT partition style. We need to copy the folder "EFI" into "EFI System Partition (ESP)". Do you want to do it right now?
-%s: You will boot directly into Grub2 every time you turn on the computer.%s: You need to select the files "/EFI/Grub2/bootx64.efi" to boot into Grub2.
-To support Legacy BIOS mode on a hard drive in GPT style. We need to dedicate a new partition.
-1. This partition size as small as possible. Approximately 1MB or larger but not larger than 10MB.%s2. All data in this partition will be lost. Therefore, you need to create a new partition.
-Please continue after you have created this partition as required.
-My computer has 32-bit UEFI firmware.
-Don't ask me enter Name of MENU.
-No need to verify the file.
-Configure PXE Boot for UEFI mode.
-Set
-Here is the list of languages that Grub2 is supported. What is your language?
-Please select an item in the drop-down list
-Your settings have been saved!
-Please format this Drive to FAT32.%sOr install Grub2 and select the option to install Clover.
-Install Bootloader
-Restore Windows Bootloader
-Tiny PXE Server is running, please close it if you want to rerun!
-UEFI or Legacy mode?
-Please select 32-bit or 64-bit version
-Windows only
-All others
-WinPE Required
-Please follow the steps below first:%s1. Download "boot%s.wim".%s2. Copy it to "%s\AIO\WinPXE\sources\".%sYou can download it from here:
-Secure Boot is on. This may prevent booting to non-Windows operating systems. Please disable this option in BIOS.
-Grub2 Language
-Font Size
-Small
-Large
-Create a new password for Grub2.
-Create New
-Change or remove Grub2 password.
-Remove
-Will you create a new password or remove it?
-New Username
-New Password
-Value must not contain spaces at the beginning or the end.
-The Username must contain only [A-Z] characters, digits [0-9] and space ['' ''].
-New username and password have been created.
-Uninstall
-Make sure your computer is booted without using the AIO Boot's Grub2. If your computer can only boot through the AIO Boot's Grub2, uninstalling will cause your computer to fail to boot.%sTo restore the Windows boot loader, please use the Bootloaders button or use the DVD.%sClick Continue when you are able to boot into the operating system without using Grub2 of AIO Boot.
-Splitting the file
-Extracting the file
-Updating files
-Adding additional files
-Canceling
-Cancelled
-Deleted
-Auto Detect
-Others
-Special Pack
-Could not detect this file, please select a package listed in the list!
-This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sThe speed of the operating system depends on the read and write speed of the hard drive.%sWould you like to create a 4Gb file for persistent mode?
-This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sThe speed of the operating system depends on the read and write speed of the hard drive.%sWe will create a file of size corresponding to the data you want to save.
-Grub2 Background
-Sincerely thanks to:--All the people are using this tool.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot and WinSetupFromUSB.--Translators of languages: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI (Turkish), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema (Spanish).
+Standard
+Nur Datei
+Clover wird auch für den Legacy-Modus installiert.
+Bitte Partition auswählen um Grub2, Clover und rEFInd für den UEFI-Modus zu installieren.
+Du musst die neueste Version von AIO Boot runterladen und diese Disk  neu partitionieren um fortfahren zu können.
+Das GPT-Schema erlaubt nur den UEFI-Modus.%sWenn du nur UEFI nutzt, brauchst du jetzt nichts weiter tun.
+Um Grub2, Clover, rEFInd und die UEFI-Shell im UEFI-Modus nutzen zu können, benötigst du eine Partition in FAT32 oder FAT16 auf dieser Disk.
+Du kannst DiskPart oder GParted nutzen um eine neue Partition zu erstellen.%sBitte nochmal versuchen nachdem du eine neue Partition erstellt hast.
+Die ausgewählte Disk hat ein GPT-Schema. Wir müssen den Ordner "EFI" auf die "EFI System Partition (ESP)" kopieren. Willst du das jetzt erledigen?
+%s: Bei jedem Computerstart wird direkt Grub2 aufgerufen.%s: Du musst die Datei "/EFI/Grub2/bootx64.efi" auswählen um Grub2 aufzurufen.
+Zur Unterstützung des Legacy BIOS-Modus auf einer Disk mit GPT-Schema ist eine separate Partition erforderlich.
+1. Diese Partition sollte so klein wie möglich sein. Ungefähr 1MB oder größer aber nicht größer als 10MB.%s2. Alle Daten auf dieser Partition werden gelöscht. Deshalb ist es notwendig eine neue Partition zu erstellen.
+Bitte fahre fort wenn du die neue Partition wie benötigt erstellt hast.
+Mein Computer hat 32-bit UEFI-Firmware.
+Nicht nach Namen für das MENÜ fragen.
+Überprüfung der Datei ist nicht notwendig.
+PXE Boot für UEFI-Modus konfigurieren.
+Festlegen
+Hier ist eine Liste von Sprachen die von Grub2 unterstützt werden. Welche Sprache sprichst du?
+Bitte wähle eine Sprache von der Liste
+Deine Auswahl wurde gespeichert!
+Bitte diese Disk mit FAT32 formatieren%soder Grub2 installieren und die Option zum Installieren von Clover auswählen.
+Bootloader Installation
+Windows Bootloader Wiederherstellung
+Der Tiny PXE Server läuft, bitte erst beenden wenn du fortfahren willst!
+UEFI oder Legacy-Modus?
+Bitte 32-bit oder 64-bit Version wählen
+Nur Windows
+Alle anderen
+WinPE erforderlich
+Bitte folge den Schritten:%s1. "boot%s.wim" runterladen.%s2. In Ordner "%s\AIO\WinPXE\sources\" kopieren.%sDu kannst die Datei hier runterladen:
+Secure Boot ist an. Dies verhindert evtl. das Starten von anderen Systemen als Windows. Bitte deaktiviere Secure Boot im BIOS.
+Grub2-Sprache
+Schriftgröße
+Klein
+Groß
+Neues Passwort für Grub2 eingeben.
+Neues eingeben
+Grub2-Passwort ändern oder entfernen.
+Entfernen
+Willst du das Passwort entfernen oder ein neues eingeben?
+Neuer Benutzername
+Neues Passwort
+An Anfang und Ende dürfen keine Leerzeichen stehen.
+Der Benutzername darf nur Buchstaben [A-Z], Zahlen [0-9] und Leerzeichen ['' ''] enthalten.
+Neuer Benutzername und Passwort wurden erstellt.
+Deinstallieren
+Stelle sicher das dein Computer mit AIO Boot's Grub2 gestartet wurde. Falls dein Computer nur mit AIO Boot's Grub2 starten kann, wird die Deinstallation verhindern das du den Computer starten kannst.%sUm den Windows Bootloader wiederherzustellen, klicke auf den Button Bootloaders oder verwende die DVD.%sKlicke auf Fortfahren wenn du das Betriebssystem ohne Grub2 von AIO Boot starten kannst.
+Datei wird aufgeteilt
+Datei entpacken
+Dateien aktualisieren
+Zusätzliche Dateien hinzufügen
+Abbrechen
+Abgebrochen
+Gelöscht
+Automatische Erkennung
+Andere
+Spezial-Pakete
+Kann die Datei nicht finden, bitte Paket von der Liste wählen!
+Dieses Betriebssystem unterstützt Persistenz.%sDas bedeutet: ALLE Änderungen werden nach jeder Sitzung gespeichert.%sDie Geschwindigkeit des Systems hängt von der Lese- und Schreibgeschwindigkeit des Laufwerks ab.%sWillst du eine 4Gb große Datei für Persistenz?
+Dieses Betriebssystem unterstützt Persistenz.%sDas bedeutet: ALLE Änderungen werden nach jeder Sitzung gespeichert.%sDie Geschwindigkeit des Systems hängt von der Lese- und Schreibgeschwindigkeit des Laufwerks ab.%sWir werden eine Datei in einer Größe entsprechend der Daten erstellen die du speichern willst.
+Grub2 Hintergrundbild
+Herzlichen Dank an:--Alle die dieses Werkzeug benutzen.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot und WinSetupFromUSB.--Übersetzer der Sprachdateien: Denis Cojocaru (Russian und Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI (Turkish), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema (Spanish), Frettt (German).
 Partitions Manage
-Size in MB
-Input file
-Output file
-Click here to select the ISO file on your drive...
-Click here to choose where you will save the ".PartIMG" file on your drive...
-Create
-This file is empty.
-Unable to obtain information of this file.
-Maybe this file will not be supported for boot. Do you want to continue?
-Please enter a size for the file you want to create.
-Please enter a label for the file you want to create.
-The output file already exists, would you like to replace this file?
-Please enter a size that is at least %s.
-The free space on the %s drive is not enough.
-The %s drive is formatted as FAT32, it can only store files up to 4GB in size.
-ImDisk is not installed, do you want to install ImDisk right now?
-ImDisk was not installed.
-Creating and mounting file...
-Extracting ISO file...
-Updating configuration files...
-The size of the PartIMG file is not enough, please increase it to about %s and try again.
-Could not set Label for PartIMG file.
-Unable to unmount %s, please do this manually.%sThen delete the PartIMG file where you chose.
-Mount ISO, then select the sources\install.wim file on that drive...
-Click here to select the sources\install.wim file in your drive...
-Click here to choose where you will save the ".VHD" file on your drive...
-Only support Windows 7 and later.
-Creating and mounting VHD file...
-Applying image...
-Unmounting VHD file...
-Could not create and mount VHD file.
-Can not apply image to VHD partition.
-The size of the VHD file is not enough, please increase it and try again.
-Could not unmount %s drive, please do this manually.%sThen delete the VHD file where you chose.
-Choose version
-Please extract all "sources\*.wim" files and integrate them in "WinPE 7/8.1/10".
-Integrate this package as a WinPE?
-Please extract all files to the root directory of your USB or Hard drive first!%sSee the home page for more information.
-Custom
-Creating
-Can not create file larger than 4GB on FAT32 partition.
-Install Grub4Dos as Default Boot Loader?%sYou should only install Grub4Dos if Grub2 is not compatible on your machine or just for testing.%sUse Grub2 to fully support the feature.
-Default bootloader in UEFI mode
-Only support ReactOS LiveCD. Check out the home page for how to integrate ReactOS Setup.
-Create ISO
-Please select where to save the ISO file.
-Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
-Please select mode
+Größe in MB
+Eingabedatei
+Ausgabedatei
+Hier klicken um die ISO-Datei von der Disk auszuwählen...
+Hier klicken um die ".PartIMG" Datei auf der Disk zu speichern...
+Erstellen
+Diese Datei ist leer.
+Kann keine Informationen zu dieser Datei einholen.
+Diese Datei kann evtl. nicht gestartet werden. Willst du fortfahren?
+Bitte eine Größe für die Datei eingeben.
+Bitte ein Label für die Datei eingeben.
+Die Ausgabedatei existiert bereits, willst du die Datei ersetzen?
+Bitte eine Größe von mindestens %s eingeben.
+Auf Disk %s ist nicht ausreichend freier Speicherplatz vorhanden.
+Disk %s ist mit FAT32 formatiert und kann deshalb nur Dateien bis 4GB speichern.
+ImDisk ist nicht installiert, willst du ImDisk jetzt installieren?
+ImDisk wurde nicht installiert.
+Datei erstellen und einhängen...
+Entpacke ISO-Datei...
+Konfigurationsdateien aktualisieren...
+Die Größe der PartIMG-Datei isi nnicht groß genug, bitte um %s vergrößern und erneut versuchen.
+Kann kein Label für die PartIMG-Datei erstellen.
+%s kann nicht eigehangen werden, bitte erledige das manuell.%sDanach kannst du die PartIMG-Datei löschen.
+ISO einhängen und sources\install.wim von dieser Disk wählen...
+Hier klicken um die sources\install.wim von der Disk auszuwählen...
+Hier klicken um den Speicherort für die ".VHD" Datei zu wählen...
+Unterstützt nur Windows 7 und neuer.
+VHD-Datei erstellen und einhängen...
+Image anlegen...
+VHD-Datei aushängen...
+VHD-Datei kann nicht erstellt und eingehangen werden.
+Kann Image nicht der VHD-Partition zuordnen.
+Die VHD-Datei ist nicht groß genug, bitte vergrößern und nochmals versuchen.
+Kann Disk %s nicht aushängen, bitte erledige das manuell.%sDanach kannst du die VHD-Datei löschen.
+Version wählen
+Bitte alle "sources\*.wim" entpacken und in "WinPE 7/8.1/10" integrieren.
+Dieses Paket als WinPE integrieren?
+Bitte zuerst alle Dateien ins Wurzelverzeichnis der Disk kopieren!%sAuf der Homepage findest du mehr Informationen.
+Angepasst
+Erstellen
+FAT32 kann max. 4GB in einer Datei speichern.
+Grub4Dos als Standard-Bootloader installieren?%sDu solltest Grub4Dos nur installieren wenn Grub2 mit deinem Computer nicht kompatibel ist oder du nur testen willst.%sGrub2 verwenden um die Funktion im vollen Umfang nutzen zu können.
+Standard-Bootloader im UEFI-Modus
+Unterstützt nur ReactOS LiveCD. Wie du ReactOS-Setup integrieren kannst, efährst du auf der Homepage.
+ISO-Datei erstellen
+Bitte auswählen wo die ISO-Datei gespeichert werden soll.
+Blog: https://www.aioboot.com.%sSeite: https://www.facebook.com/allinoneboot/.%sGruppe: https://www.facebook.com/groups/aioboot/.
+Bitte Modus wählen
 Test BOOT [QEMU]
-Want to test this Drive or ISO file?
-This Drive
-ISO file
-Memory (MB)
-Please enter a valid positive number.
-Please enter a memory larger than 0 and less than %sMB.
-We will copy the QEMU files to the %s\QEMU directory. Do you agree?
-Would you like to test this ISO file?
-Extract WIM for Windows Setup.
-Repackage Windows ISO file.
-Repacking ISO file
-Downloading update
-It looks like this ISO file uses the ISOLINUX bootloader. It does not support NTFS format in this case.%sTo support booting in Legacy mode, please use the FAT32 format.%sDo you want to continue?
-Maybe this operating system supports persistent mode.%sThis means that your data will be saved after each session.%sDo you want to enable this mode?
-This VHD file is installed with 64-bit or 32-bit operating system?
-Don't integrate USB 3.0 Driver for Windows 7.
-Don't ask again
-See instructions
+Willst du diese Disk oder ISO-Datei testen?
+Diese Disk
+ISO-Datei
+Arbeitsspeicher (MB)
+Bitte eine gültige positive Zahl eingeben.
+Speichergröße zwischen 0 und weniger als %sMB festlegen.
+Wir werden die QEMU-Dateien ins Verzeinis %s\QEMU kopieren. Stimmst du zu?
+Willst du diese ISO-Datei testen?
+WIM für Windows-Installation entpacken.
+Windows ISO-Datei neu packen.
+ISO-Datei neu packen
+Update runterladen
+Vermutlich nutzt diese ISO-Datei den ISOLINUX Bootloader. Dieser unterstützt in diesem Fall kein NTFS.%s Für das Startem im Legacy-Modus, bitte FAT32 verwenden.%sWillst du fortfahren?
+Dieses Betriebssystem unterstützt evtl. Persistenz.%sDas bedeutet: ALLE Änderungen werden nach jeder Sitzung gespeichert.%sWillst du Persistenz nutzen?
+Wurde diese VHD-Datei mit einem 64-bit oder 32-bit Betriebssystem installiert?
+USB 3.0 Treiber für Windows 7 nicht integrieren.
+Nicht nochmal fragen
+Siehe Anleitung
 ##### END #####
