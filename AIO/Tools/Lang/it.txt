@@ -164,7 +164,7 @@ Non posso individuare il file, seleziona un pacchetto nella lista!
 Questo sistema operativo supporta la modalità persistente.%sQuesto significa che i tuoi files possono essere salvati a ogni sessione.%sLa velocità del sistema operativo dipende dalla velocità di lettura e scrittura del disco.%sVuoi creare un file di 4Gb per la modilità di persistenza?
 Questo sistema operativo supporta la modalità persistente.%sQuesto significa che i tuoi files possono essere salvati a ogni sessione.%sLa velocità del sistema operativo dipende dalla velocità di lettura e scrittura del disco.%sCreeremo un file dalle dimensioni da te specificate.
 Sfondo del Grub2
-Grazie a:--Tutte le persone che utilizzano questo strumento.--Google.--GNU (Team di sviluppo Grub2).--Team di sviluppo di Clover, rEFInd, Grub4dos e Syslinux.--Autori di 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot e WinSetupFromUSB.--Traduttori di lingue: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI (Turkish), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema (Spanish).
+Grazie a:--Tutte le persone che utilizzano questo strumento.--Google.--GNU (Team di sviluppo Grub2).--Team di sviluppo di Clover, rEFInd, Grub4dos e Syslinux.--Autori di 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot e WinSetupFromUSB.--Traduttori di lingue: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI (Turkish), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema (Spanish), Frettt (German).
 Gestisci partizioni
 Dimensione in MB
 File in ingresso

@@ -164,7 +164,7 @@ Could not detect this file, please select a package listed in the list!
 This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sThe speed of the operating system depends on the read and write speed of the hard drive.%sWould you like to create a 4Gb file for persistent mode?
 This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sThe speed of the operating system depends on the read and write speed of the hard drive.%sWe will create a file of size corresponding to the data you want to save.
 Grub2 Background
-Sincerely thanks to:--All the people are using this tool.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot and WinSetupFromUSB.--Translators of languages: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI (Turkish), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema (Spanish).
+Sincerely thanks to:--All the people are using this tool.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot and WinSetupFromUSB.--Translators of languages: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI (Turkish), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema (Spanish), Frettt (German).
 Partitions Manage
 Size in MB
 Input file
