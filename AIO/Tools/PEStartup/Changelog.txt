@@ -1,3 +1,12 @@
+v1.1.8 (23.12.2017):
+	English:
+		- No longer displays tray notifications when the driver pack is missing.
+		- Add some information to the Help section.
+
+	Tiếng Việt:
+		- Không còn hiển thị thông báo dưới khay khi thiếu gói Trình điều khiển.
+		- Bổ sung một vài thông tin vào mục Trợ giúp.
+
 v1.1.7 (18.10.2017):
 	English:
 		- AutoRun will support opening all the formats that the system supports. Include: .exe, .bat, .cmd, .txt, .zip ...
