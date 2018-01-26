@@ -1,0 +1,236 @@
+﻿################################################################
+Language	:	Traditional Chinese (Translated)
+Credits		:	Tenhon
+Date		:	18.01.2018
+Info		:	Please do not add, delete or move the line, do not remove "%s". If you want to submit your own or have any questions, do not forget to send an email to admin@aioboot.com. Thank for help!
+################################################################
+
+
+
+##### BEGIN #####
+中文
+主頁
+整合
+關於
+啟動器
+執行 PXE
+設定
+工具
+選單編輯器
+說明
+目前磁碟:
+磁碟
+名稱
+格式
+大小
+目前磁碟:
+磁碟
+標籤
+檔案系統
+卸除式媒體
+固定式媒體
+記憶體磁碟
+未知
+AIO Boot 是一個使用 Grub2, Grub4dos, Syslinux, Clover 與 rEFInd 來建立可開機 USB/HDD 的工具。AIO Boot 擁有獨特的功能，先進且友善的介面。%s這是一個完全乾淨，不會對您的電腦造成傷害的工具。%s請提供您的想法和錯誤報告來幫助這個社群。請隨意分享或貢獻您的文章、視頻與連結讓更多人可以知道並使用這個工具。
+如果有任何問題請不吝聯繫作者，E-mail：admin@aioboot.com。希望可以從您這裡得到寶貴訊息以改善此工具。
+名稱
+版本
+首頁
+版權
+1. 選擇工具包
+2. 選擇檔案
+下載
+確定
+請從磁碟選擇檔案...
+從磁碟選擇 ISO 或 WIM 檔...
+在磁碟中選擇 ISO 檔...
+掛載 ISO 檔，然後選擇 "I386/TXTSETUP.SIF" 或 "AMD64/TXTSETUP.SIF"...
+請選擇有效的檔案！
+檔案名稱只能包含字母與數字，請重新命名檔案再試一次！
+檔案大於 4GB 無法儲存在 FAT32 的磁碟中。%s採用 exFAT 或 NTFS 檔案格式就能解決此問題。
+正在處理中，請稍候...
+完成之前請勿關閉此視窗！
+無法偵測到此檔案！
+錯誤, 請聯繫作者尋求支援！
+錯誤: 請關閉正在用來讀取 BCD/WinLegacy 檔案的應用程式然後再試一次！
+錯誤: 請關閉正在用來讀取 %s 的應用程式然後再試一次！
+無效的檔案！
+錯誤: 剩下的空間不足！
+完成。請享用！
+錯誤
+警告
+資訊
+確認
+複製中
+正在複製需要的檔案...
+提取中
+檢查檔案，請稍候...
+請輸入選單名稱
+新增選單...
+準備檔案...
+請關閉 Regedit.exe 再繼續！
+取消
+繼續
+清理中，請稍候...
+因為檔案太大無法儲存到 FAT32 分區中，%s程式將分割此檔案，同意嗎？
+分割中
+是
+否
+選擇的磁碟是 GPT 格式，您必須複製 "EFI" 資料夾到採用 "FAT32" 或 "FAT16" 的分割區中。
+選擇的磁碟是 GPT 格式，只有 Grub2, rEFInd 與 Clover 能支援。
+目前還無法支援此裝置！
+已經安裝...
+已經安裝...
+%s 尚未安裝。 %s 需要 %s 已經安裝。%s還是要安裝 Grub2 嗎？
+請選擇最近安裝 Windows 的磁碟。
+如果可能，請在 Windows 7 或更新版本上使用此功能以獲得最佳支持。
+找不到系統分區。
+已經還原。
+在 %s 模式中找不到已經安裝 Windows 的任何磁碟。
+您需要重新格式化磁碟才能安裝 Syslinux。
+請格式化磁碟為 FAT32 或 NTFS.
+請選擇在傳統 BIOS 模式下安裝 Windows 的分區。
+請選擇在 UEFI 模式下安裝 Windows 的分區。
+請從 UEFI 模式啟動再試一次。
+已經是最新版本！
+有新版本，您可以馬上更新。%s版本 %s，發佈於 %s.%s要關閉程式並且立即更新嗎？
+目前沒有選單可以編輯。
+移除？
+選單名稱
+儲存
+在編輯後。
+刪除檔案...
+已儲存
+更新
+預設值
+只限檔案
+在傳統模式下也會安裝 Clover
+請選擇在 UEFI 模式下安裝 Grub2, Clover 與 rEFInd 的磁區。
+您必須下載最新版的 AIO Boot 並重新分割磁碟以繼續。
+GPT 硬碟只在 UEFI 模式中支援。%s如果僅使用 UEFI 模式，現在無需做任何變更。
+要在 UEFI 模式下支援 Grub2, Clover, rEFInd 與 UEFI 介面，必須在此磁碟建立一個 FAT32 或 FAT16 格式的磁區。
+您可以使用 DiskPart 或 GParted 來建立新的分區。%s請在建立新分區之後再試一次。
+所選的磁碟是 GPT 格式，必複製 "EFI" 資料夾到 "EFI System Partition (ESP)" 中，現在要執行嗎？
+%s: 每次開機必須直接進入 Grub2，%s: 您必須選擇此檔案 "/EFI/Grub2/bootx64.efi" 來開機進入 Grub2。
+要在 GPT 格式的硬盤上支持傳統 BIOS 模式，必須提供一個新的分區。
+1. 此分區盡可能小一些，大約 1MB 或稍大，但勿超過 10MB。%s2. 所有在此分區的資料都會遺失，因此需要建立一個新分區。
+如果需要，請在建立此分區之後繼續。
+我的電腦具有 32-bit UEFI 韌體。
+不要詢問輸入選單名稱。
+不需要驗證此檔案。
+為 UEFI 模式設置 PXE Boot。
+設置
+以下是 Grub2 支援的語言清單，您使用的是哪種語言？
+請從下拉式清單中選擇一個項目
+設定已經儲存！
+請格式化此磁碟為 FAT32 格式。%s或安裝 Grub2 並選擇安裝 Clover。
+安裝 Bootloader
+還原 Windows Bootloader
+Tiny PXE 伺服器正在執行，如果要重新執行請先關閉它！
+UEFI 或 Legacy 模式？
+請選擇 32-bit 或 64-bit 版本
+只限 Windows
+其他所有的
+需要 WinPE
+請先按以下步驟操作：%s1. 下載 "boot%s.wim".%s2. 複製到 "%s\AIO\WinPXE\sources\" 內。%s可以從此處下載：
+已開啟 Secure Boot。這可以避免開機到非 Windows 作業系統。在 BIOS 請停用此選項。
+Grub2 語言
+字型大小
+小
+大
+建立 Grub2 的新密碼。
+建立新的
+變更或移除 Grub2 密碼。
+移除
+要建立或移除新密碼嗎？
+新使用者名稱
+新密碼
+開頭或結束不能包含空白。
+使用者名稱只能使用字母 [A-Z]，數字 [0-9] 和空白 ['' '']。
+已經建立新使用者與密碼。
+解除安裝
+請確定電腦沒有使用 AIO Boot 的 Grub2 來開機。如果電腦只能使用 AIO Boot 的 Grub2 開機，移除它會造成電腦無法開機。%s要還原  Windows boot loader，請使用 Bootloaders 按鍵或使用 DVD。%s當可以不使用 AIO Boot 的 Grub2 就能開機，請按繼續。
+正在分割檔案
+正在提取檔案
+正在更新檔案
+正在加入其他檔案
+取消中
+已取消
+已刪除
+自動偵測
+其他
+Special Pack
+無法偵測此檔案，請從清單中選取！
+此作業系統支援持續模式，%s這意味著資料可以在每個工作階段之後被儲存。%s作業的速度端賴於硬碟的讀寫速度，%s要為持續模式建立一個 4Gb 的檔案嗎？
+此作業系統支援持續模式，%s這意味著資料可以在每個工作階段之後被儲存。%s作業的速度端賴於硬碟的讀寫速度，%s將建立一個與要儲存的資料大小相對應的檔案。
+Grub2 背景
+真誠感謝:--所有使用此工具的人。--Google.--GNU (Grub2 研發團隊).--Clover, rEFInd, Grub4dos 與 Syslinux 的研發團隊。--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot 與 WinSetupFromUSB 的作者們。--各語種的翻譯者: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI (Turkish), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema (Spanish), Frettt (German), Tenhon (Traditional Chinese).
+分割區管理
+MB 大小
+輸入檔案
+輸出檔案
+點這裡選擇在磁碟中的 ISO 檔...
+點這裡選擇要儲存 ".PartIMG" 檔到磁碟...
+建立
+此檔案是空的。
+無法取得此檔案的資訊。
+或許此檔案不支援啟動，要繼續嗎？
+請輸入要建立的檔案大小。
+請輸入要建立的檔案標籤。
+已存在要輸出的檔案，要置換嗎？
+請輸入大小至少要 %s.
+在 %s 磁碟的空間不足。
+此 %s 磁碟是 FAT32 格式，能儲存的檔案最大只能到 4GB.
+ImDisk 未安裝，要立即安裝 ImDisk 嗎？
+ImDisk 已經安裝。
+正在建立與掛載檔案...
+正在提取 ISO 檔案...
+正在更新設置擋...
+此 PartIMG 檔大小不足，請增大到約 %s 後再試一次。
+無法為 PartIMG 檔設置標籤。
+無法掛載 %s 請手動設置。%s然後刪除所選的 PartIMG 檔。
+掛載 ISO 檔，然後選擇磁碟中的來源 \install.wim 檔...
+點此選擇磁碟中的來源 \install.wim 檔...
+點此選擇要儲存的的 ".VHD" 檔位置...
+只支援 Windows 7 或更新版本。
+正在建立並掛載 VHD 檔...
+正在套用映像...
+正在卸載 VHD 檔...
+無法建立並掛載 VHD 檔。
+無法套用映像到 VHD 分區。
+此 VHD 檔大小不足，請增大後再試一次。
+無法掛載 %s 磁碟，請手動操作。%s然後刪除所選的 VHD 檔。
+選擇版本
+請解壓縮所有“sources\*.wim”檔案，並將其集成到“WinPE 7/8.1/10”中。
+將此工具包到集成為 WinPE？
+請先將所有檔案解壓到磁碟的根目錄！%s更多資訊請查看首頁。
+自訂
+正在建立
+在 FAT32 分區無法建立大於 4G 的檔案。
+要安裝 Grub4Dos 作為預設的啟動器？%s只有在您的機器與 Grub2 不相容或測試之用才安裝 Grub4Dos。%s使用 Grub2 可以支援所有功能。
+在 UEFI 模式的預設啟動器
+只支援 ReactOS LiveCD，請到首頁查詢如何集成 ReactOS 設置。
+建立 ISO 檔
+請選擇要儲存 ISO 檔的位置。
+Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
+請選擇模式
+啟動測試 [QEMU]
+要測試此磁碟或 ISO 檔？
+此磁碟
+ISO 檔
+記憶體 (MB)
+請輸入有效的正數。
+請輸入大於 0 而小於 %sMB 的記憶體用量。
+將要複製 QEMU 檔案到 %s\QEMU 目錄，確定嗎？
+要測試此 ISO 檔案嗎？
+解壓縮 Windows 安裝用的 WIM。
+重新打包 Windows ISO 檔。
+重新打包 ISO 檔。
+正在下載更新
+看起來像這個 ISO 檔使用 ISOLINUX 啟動器。在此情況下不支援 NTFS 格式。%s要支援在傳統模式啟動，請使用 FAT32 格式。%s要繼續嗎？
+或許此作業系統支援持續模式，%s這意味著資料可以在每個工作階段之後被儲存。%s要啟用此模式嗎？
+此 VHD 檔是安裝成 64-bit 或是 32-bit 的作業系統？
+不要集成 Windows 7 的 USB 3.0 驅動。
+不再詢問
+請參閱說明
+##### END #####

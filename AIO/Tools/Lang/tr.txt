@@ -164,7 +164,7 @@ Bu dosyayı algılayamadı, lütfen listede listelenen bir paketi seçin!
 Bu işletim sistemi kalıcı modu destekliyor.%sBu, verilerinizin her oturumdan sonra kaydedileceği anlamına gelir.%sİşletim sisteminin hızı, sabit sürücünün okuma ve yazma hızına bağlıdır.%sKalıcı mod için 4Gb'lik bir dosya oluşturmak ister misiniz?
 Bu işletim sistemi kalıcı modu destekliyor.%sBu, verilerinizin her oturumdan sonra kaydedileceği anlamına gelir.%sİşletim sisteminin hızı, sabit sürücünün okuma ve yazma hızına bağlıdır.%sKaydetmek istediğiniz veriye karşılık gelen bir dosya yaratacağız.
 Grub2 Arka Planı
-Saygılarımızla,--Bu kullanıcıların tümü bu aracı kullanmaktadır:--Google.--GNU (Grub2 Geliştirme Ekibi).--Clover'ın Geliştirme Ekibi, rEFInd, Grub4dos ve Syslinux.--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot ve WinSetupFromUSB'nin Yazarları Sunucu.--Dil çevirmenleri: Denis Cojocaru (Rusça ve Rumence), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kültür, Murat ATICI (Türkçe), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema (Spanish), Frettt (German).
+Saygılarımızla,--Bu kullanıcıların tümü bu aracı kullanmaktadır:--Google.--GNU (Grub2 Geliştirme Ekibi).--Clover'ın Geliştirme Ekibi, rEFInd, Grub4dos ve Syslinux.--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot ve WinSetupFromUSB'nin Yazarları Sunucu.--Dil çevirmenleri: Denis Cojocaru (Rusça ve Rumence), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kültür, Murat ATICI (Türkçe), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema (Spanish), Frettt (German), Tenhon (Traditional Chinese).
 Bölümler Yönet
 MB cinsinden boyut
 Giriş dosyası

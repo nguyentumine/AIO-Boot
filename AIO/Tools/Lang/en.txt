@@ -51,7 +51,7 @@ Files larger than 4GB can NOT be stored on a FAT32 volume.%sFormatting the parti
 Processing, please wait...
 Do not close this window until this is done!
 Could not detect this file!
-Error, please contact to author for support!
+Error, please contact the author for support!
 Error: Please close the application you are using to read BCD/WinLegacy file and try again!
 Error: Please close the application you are using to read %s file and try again!
 Invalid file!
@@ -164,7 +164,7 @@ Could not detect this file, please select a package listed in the list!
 This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sThe speed of the operating system depends on the read and write speed of the hard drive.%sWould you like to create a 4Gb file for persistent mode?
 This operating system supports persistent mode.%sThis means that your data will be saved after each session.%sThe speed of the operating system depends on the read and write speed of the hard drive.%sWe will create a file of size corresponding to the data you want to save.
 Grub2 Background
-Sincerely thanks to:--All these users are using this tool.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot and WinSetupFromUSB.--Translators of languages: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI (Turkish), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema (Spanish), Frettt (German).
+Sincerely thanks to:--All these users are using this tool.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot and WinSetupFromUSB.--Translators of languages: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI (Turkish), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema (Spanish), Frettt (German), Tenhon (Traditional Chinese).
 Partitions Manage
 Size in MB
 Input file
