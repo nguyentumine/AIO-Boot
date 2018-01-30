@@ -233,4 +233,5 @@ Tệp VHD này được cài đặt với hệ điều hành 64-bit hay 32-bit?
 Đừng tích hợp Driver USB 3.0 cho Windows 7.
 Đừng nhắc lại
 Hướng dẫn
+Hãy đóng tất cả các ứng dụng đang chạy trên ổ đĩa %s trước khi cập nhật.
 ##### END #####

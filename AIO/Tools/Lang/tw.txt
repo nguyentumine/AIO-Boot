@@ -233,4 +233,5 @@ ISO 檔
 不要集成 Windows 7 的 USB 3.0 驅動。
 不再詢問
 請參閱說明
+Please close all applications running on drive %s before updating.
 ##### END #####

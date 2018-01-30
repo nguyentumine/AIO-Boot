@@ -232,4 +232,5 @@ Forse questo sistema operativo supporta la modalità persistente.%sQuesto signif
 Questo file VHD installato ha un un sistema operativo 64-bit o 32-bit?
 Non integrare il driver USB 3.0 per Windows 7.Non chiedere più
 Vedi le istruzioni
+Please close all applications running on drive %s before updating.
 ##### END #####

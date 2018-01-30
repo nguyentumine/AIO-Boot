@@ -22,10 +22,11 @@ item --key 5 livelinux			[5] Linux ISO Live
 item --key 6 antivirus			[6] Antivirus
 item --key 7 specialpack		[7] Special Pack
 item --gap -- ------------------------------ Advanced ---------------------------------
-item --key c config		[c] Configure settings
-item --key s shell		[s] Enter iPXE shell
-item --key r reboot		[r] Reboot
-item --key e exit		[e] Exit (boot local disk)
+item --key c config				[c] Configure settings
+item --key s shell				[s] Enter iPXE shell
+item --key r reboot				[r] Restart
+item --key p poweroff			[p] Power Off
+item --key e exit				[e] Exit (boot local disk)
 choose --default winpe --timeout 30000 target && goto ${target}
 
 ########## UTILITY ITEMS ####################
@@ -41,6 +42,9 @@ goto shell
 
 :reboot
 reboot
+
+:poweroff
+poweroff
 
 :exit
 exit

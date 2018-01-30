@@ -233,4 +233,5 @@ Acest fişier cu VHD este instalat cu 64-bit sau 32-bit sistem de operare?
 Nu integrați driverul USB 3.0 pentru Windows 7.
 Nu întrebați din nou
 A se vedea instrucțiunile
+Please close all applications running on drive %s before updating.
 ##### END #####

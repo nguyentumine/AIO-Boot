@@ -233,4 +233,5 @@ ISO-файл
 Не интегрировать драйвер USB 3.0 для Windows 7.
 Больше не спрашивать
 См. инструкции
+Please close all applications running on drive %s before updating.
 ##### END #####

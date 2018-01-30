@@ -19,6 +19,7 @@ item --gap -- ------------------------------ Advanced --------------------------
 item --key c config		[c] Configure settings
 item --key s shell		[s] Enter iPXE shell
 item --key r reboot		[r] Reboot
+item --key p poweroff	[p] Power Off
 item --key e exit		[e] Exit (boot local disk)
 choose --default wimboot --timeout 30000 target && goto ${target}
 
@@ -35,6 +36,9 @@ goto shell
 
 :reboot
 reboot
+
+:poweroff
+poweroff
 
 :exit
 exit
