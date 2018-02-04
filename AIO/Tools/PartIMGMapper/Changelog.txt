@@ -1,0 +1,8 @@
+v1.0.7 (03.02.2018):
+	English:
+		- Automatically detects the Linux Ext2/3/4 filesystem.
+		- Added MBR of Syslinux.
+
+	Tiếng Việt:
+		- Tự động nhận diện kiểu tệp tin hệ thống Linux Ext2/3/4.
+		- Thêm MBR của Syslinux.

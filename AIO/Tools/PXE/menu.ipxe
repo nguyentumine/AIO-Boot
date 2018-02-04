@@ -152,6 +152,22 @@ choose --timeout ${submenu-timeout} --default ${submenu-default} selected && got
 ### add new menu content for Linux OS, dont edit this line
 ################################# End livelinux
 
+################################# Begin My Functions
+:wimboot
+kernel ${boot-url}/AIO/Tools/MS/PXE/wimboot.${arch2}					rawbcd
+initrd ${boot-url}/AIO/Tools/MS/PXE/boot/fonts/segmono_boot.ttf			segmono_boot.ttf
+initrd ${boot-url}/AIO/Tools/MS/PXE/boot/fonts/segoe_slboot.ttf			segoe_slboot.ttf
+initrd ${boot-url}/AIO/Tools/MS/PXE/boot/fonts/segoen_slboot.ttf		segoen_slboot.ttf
+initrd ${boot-url}/AIO/Tools/MS/PXE/boot/fonts/wgl4_boot.ttf			wgl4_boot.ttf
+isset ${legacy} && initrd ${boot-url}/AIO/Tools/MS/PXE/bootmgr			bootmgr || ###
+isset ${legacy} && initrd ${boot-url}/AIO/Tools/MS/PXE/bootmgr.exe		bootmgr.exe || initrd ${boot-url}/AIO/Tools/MS/PXE/${arch2}/bootmgr.efi
+isset ${legacy} && initrd ${boot-url}/AIO/Tools/MS/PXE/boot/bcd			BCD || initrd ${boot-url}/AIO/Tools/MS/PXE/efi/microsoft/boot/bcd			BCD
+initrd ${boot-url}/AIO/Tools/MS/boot.sdi								boot.sdi
+initrd ${boot-url}${wimfile}											boot.wim
+boot || goto failed
+goto start
+################################# End My Functions
+
 #######################################################
   
 #Memdisk via iPXE vs. ISO Boot HTTP via iPXE:

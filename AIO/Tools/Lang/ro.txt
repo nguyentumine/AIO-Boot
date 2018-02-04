@@ -1,7 +1,7 @@
 ################################################################
 Language	:	Romanian
 Credits		:	Denis Cojocaru (dene.09@mail.ru)
-Date		:	24.10.2017
+Date		:	30.01.2018
 Info		:	Vă rugăm să nu adăugați, ștergeti sau muta linia "%s". Dacă aveți întrebări, nu uitați să trimiteți un e-mail admin@aioboot.com. Multumim!
 ################################################################
 
@@ -233,5 +233,5 @@ Acest fişier cu VHD este instalat cu 64-bit sau 32-bit sistem de operare?
 Nu integrați driverul USB 3.0 pentru Windows 7.
 Nu întrebați din nou
 A se vedea instrucțiunile
-Please close all applications running on drive %s before updating.
+Închideți toate aplicațiile care se execută pe unitatea %s înainte de actualizare.
 ##### END #####

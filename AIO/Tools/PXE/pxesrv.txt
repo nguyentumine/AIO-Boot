@@ -116,6 +116,16 @@ added : right click open root_path
 fixed : share folder will now add everyone read-only on share permissions
 added : share is created with STYPE_TEMPORARY flag, i.e will not survive a reboot
 added : TPS will answer to specific 'discovery' messages (see discover.zip)
-fixed : wsMinimized=1 wa preventing form_show and load_config
+fixed : wsMinimized=1 was preventing form_show and load_config
 added : each daemon will report on which ip it is listening (useful to troubleshoot)
 added : syslogd will read ip under [syslog] in config.ini if one wants to bind to a specific interface (instead of 0.0.0.0 by default)
+fixed : error handling in log_memo to avoid a possible date bug
+fixed : httpd could not list files/folder in a non indexed folder
+modified : ucimp.pas uses winsock, not wsck
+modified : iphlpapi_helper.pas uses winsock, not wsck
+modified : usnoop uses winsock, not wsck
+modified : iptypes uses winsock, not wsck
+modified : removed ipheader unit in main form
+modified : TPS does not use wsck unit anymore
+added : CTRL+R to refresh interfaces
+added : [map] section, before=after
