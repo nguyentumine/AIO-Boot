@@ -14,7 +14,7 @@ isset ${menu-default} || set menu-default wimboot
 menu Welcome to iPXE's Boot Menu
 item
 item --gap -- ------------------------------ Utilities --------------------------------
-item --key 1 wimboot	[1] WinPE & Setup
+item --key 1 wimboot	[1] WinPE & Setup (${wimfile})
 item --gap -- ------------------------------ Advanced ---------------------------------
 item --key c config		[c] Configure settings
 item --key s shell		[s] Enter iPXE shell
@@ -55,7 +55,14 @@ set submenu-timeout 0
 clear submenu-default
 goto start
 
+:missingfile
+echo 
+echo Missing the file, please copy the boot.wim file to ${wimfile}. Dropping to shell.
+echo 
+goto shell
+
 :wimboot
+initrd ${boot-url}${wimfile}											boot.wim || goto missingfile
 kernel ${boot-url}/AIO/Tools/MS/PXE/wimboot.${arch2}					rawbcd
 initrd ${boot-url}/AIO/Tools/MS/PXE/boot/fonts/segmono_boot.ttf			segmono_boot.ttf
 initrd ${boot-url}/AIO/Tools/MS/PXE/boot/fonts/segoe_slboot.ttf			segoe_slboot.ttf
@@ -65,6 +72,5 @@ isset ${legacy} && initrd ${boot-url}/AIO/Tools/MS/PXE/bootmgr			bootmgr || ###
 isset ${legacy} && initrd ${boot-url}/AIO/Tools/MS/PXE/bootmgr.exe		bootmgr.exe || initrd ${boot-url}/AIO/Tools/MS/PXE/${arch2}/bootmgr.efi
 isset ${legacy} && initrd ${boot-url}/AIO/Tools/MS/PXE/boot/bcd			BCD || initrd ${boot-url}/AIO/Tools/MS/PXE/efi/microsoft/boot/bcd			BCD
 initrd ${boot-url}/AIO/Tools/MS/boot.sdi								boot.sdi
-initrd ${boot-url}${wimfile}											boot.wim
 boot || goto failed
 goto start
