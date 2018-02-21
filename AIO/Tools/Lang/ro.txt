@@ -1,7 +1,7 @@
 ################################################################
 Language	:	Romanian
 Credits		:	Denis Cojocaru (dene.09@mail.ru)
-Date		:	30.01.2018
+Date		:	21.02.2018
 Info		:	Vă rugăm să nu adăugați, ștergeti sau muta linia "%s". Dacă aveți întrebări, nu uitați să trimiteți un e-mail admin@aioboot.com. Multumim!
 ################################################################
 
@@ -234,5 +234,5 @@ Nu integrați driverul USB 3.0 pentru Windows 7.
 Nu întrebați din nou
 A se vedea instrucțiunile
 Închideți toate aplicațiile care se execută pe unitatea %s înainte de actualizare.
-To save disk space, we will move this file instead of copying it. Do you agree?
+Pentru a economisi spațiul, vom muta acest fișier în loc să îl copiem. Eşti de acord cu asta?
 ##### END #####
