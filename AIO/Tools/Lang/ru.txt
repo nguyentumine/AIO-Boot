@@ -234,4 +234,5 @@ ISO-файл
 Больше не спрашивать
 См. инструкции
 Перед обновлением закройте все приложения, запущенные на диске %s.
+To save disk space, we will move this file instead of copying it. Do you agree?
 ##### END #####

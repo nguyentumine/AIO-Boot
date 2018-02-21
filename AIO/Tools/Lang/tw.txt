@@ -234,4 +234,5 @@ ISO 檔
 不再詢問
 請參閱說明
 Please close all applications running on drive %s before updating.
+To save disk space, we will move this file instead of copying it. Do you agree?
 ##### END #####

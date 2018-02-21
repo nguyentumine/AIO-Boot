@@ -234,4 +234,5 @@ Don't integrate USB 3.0 Driver for Windows 7.
 Don't ask again
 See instructions
 Please close all applications running on drive %s before updating.
+To save disk space, we will move this file instead of copying it. Do you agree?
 ##### END #####

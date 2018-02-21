@@ -234,4 +234,5 @@ ISO文件
 不再询问
 请参考说明
 升级前，请关闭所有运行在%s盘上的程序。
+To save disk space, we will move this file instead of copying it. Do you agree?
 ##### END #####

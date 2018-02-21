@@ -234,4 +234,5 @@ Nu integrați driverul USB 3.0 pentru Windows 7.
 Nu întrebați din nou
 A se vedea instrucțiunile
 Închideți toate aplicațiile care se execută pe unitatea %s înainte de actualizare.
+To save disk space, we will move this file instead of copying it. Do you agree?
 ##### END #####
