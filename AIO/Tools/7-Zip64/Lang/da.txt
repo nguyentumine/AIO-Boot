@@ -1,7 +1,7 @@
 ;!@Lang2@!UTF-8!
 ;       : Jakob Schmidt
 ;  9.07 : Kian Andersen, Jørgen Rasmussen
-; 15.00 : 2016-08-19 : scootergrisen
+; 15.00 : 2016-11-25 : scootergrisen
 ;
 ;
 ;
@@ -34,7 +34,7 @@ Genstart
 &Baggrund
 &Forgrund
 &Pause
-Pauset
+Sat på pause
 Er du sikker på, at du vil annullere?
 500
 &Filer
@@ -156,7 +156,7 @@ Tilstand
 Symbolsk henvisning
 Fejl
 Samlet størrelse
-Fri plads
+Ledig plads
 Klyngestørrelse
 Etiket
 Lokalt navn
@@ -371,10 +371,10 @@ Hukommelsesforbrug ved komprimering:
 Hukommelsesforbrug ved udpakning:
 Slet filer efter komprimering
 4040
-Gem symbolske henvisninger
-Gem hårde henvisninger
-Gem alternative datastrømme
-Gem filsikkerhed
+Opbevar symbolske henvisninger
+Opbevar hårde henvisninger
+Opbevar alternative datastrømme
+Opbevar filsikkerhed
 4050
 Gem
 Hurtigst
@@ -455,7 +455,7 @@ Opd&el i bind, byte:
 Opdeler...
 Bekræft opdeling
 Er du sikker på, at du vil opdele filen i {0} bind?
-Størrelsen på bind skal være mindre end størrelsen på den oprindelige fil
+Størrelsen på bind skal være mindre end størrelsen på den originale fil
 Forkert størrelse på bind
 Angivet størrelse på bind: {0} byte.\nEr du sikker på, at du vil opdele arkivet i disse bind?
 7400

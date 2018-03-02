@@ -4,7 +4,7 @@
 ;       : 2007-09-05 : Guillermo Gabrielli
 ;  9.07 : 2010-06-10 : Purgossu
 ;         2010-10-23 : Sergi Medina (corrected) 
-;
+; 18.00 : 2018-01-10 : Agustín Bou (updated)
 ;
 ;
 ;
@@ -62,6 +62,8 @@ Diff
 Crear carpeta
 Crear archivo
 &Salir
+Vincular
+Flujos &alternativos
 600
 Seleccionar &todo
 Deseleccionar todo
@@ -84,6 +86,7 @@ Abrir directorio raíz
 Subir un directorio
 Historia de carpetas...
 &Actualizar
+Actualizar automáticamente
 750
 Barra de herramientas Archivo
 Barras de herramientas estándar
@@ -115,7 +118,7 @@ Encriptado
 expandido antes
 expandido después
 Diccionario
-CRC
+
 Tipo
 Anti
 Método
@@ -158,6 +161,38 @@ Tamaño de clúster
 Etiqueta
 Nombre local
 Proveedor
+Seguridad NT
+Flujo alternativo
+Auxiliar
+Borrado
+Es el árbol
+
+
+Tipo de error
+Errores
+Errores
+Advertencias
+Advertencia
+Flujos
+Flujos alternativos
+Tamaño de flujos alternativos
+Tamaño virtual
+Tamaño descomprimido
+Tamaño físico total
+Índice de volumen
+Subtipo
+Comentario breve
+Página de códigos
+
+
+
+Tamaño final
+Tamaño de esbozo incrustado
+Vínculo
+Vínculo duro
+Nodo inteligente
+
+Solo lectura
 2100
 Opciones
 Lengua
@@ -168,10 +203,12 @@ Editor
 2200
 Sistema
 Asociar 7-Zip con:
+Todos los usuarios
 2301
 Integrar 7-Zip en el menú contextual de Windows
 Menú contextual en cascada
 Elementos en el menú contextual:
+Iconos en el menú contextual
 2320
 <Carpeta>
 <Archivo>
@@ -223,12 +260,25 @@ No puede realizarse la operación desde una carpeta que tenga una ruta larga.
 Debes seleccionar un fichero
 Debes seleccionar uno o más ficheros
 Demasiados elementos
+No se puede abrir el archivo como un archivo {0}
+El archivo se abrió como archivo {0}
+El archivo está abierto con la posición
 3300
 extrayendo
 comprimiendo
 probando
 abriendo...
 Buscando...
+Removiendo
+3320
+Agregando
+Actualizando
+Analizando
+Replicando
+Recomprimiendo
+Salteando
+Borrando
+Creando cabecera
 3400
 Extraer
 E&xtraer a:
@@ -237,6 +287,8 @@ Selecciona destino para los archivos extraídos.
 Modo de directorio
 Directorio completo
 Sin directorio
+Rutas absolutas
+Rutas relativas
 3420
 Sobreescribir
 Con confirmación
@@ -244,6 +296,9 @@ Sin confirmación
 Conservar archivos existentes
 Renombrar automáticamente
 Autorrenombrar archivos existentes
+3430
+Eliminar duplicado de carpeta raíz
+Restaurar seguridad del archivo
 3500
 Confirmar sustitución de archivos
 El directorio ya contiene un archivo con el mismo nombre.
@@ -257,6 +312,25 @@ Error de datos en '{0}'. El archivo está corrupto.
 CRC ha fallado en '{0}'. El archivo está corrupto.
 Error de datos en el archivo encriptado '{0}'. Verifica la contraseña.
 Fallo de CRC en el archivo encriptado '{0}'. Verifica la contraseña.
+3710
+¿Contraseña incorrecta?
+3721
+Método de compresión no soportado
+Error de datos
+CRC fallado
+Unavailable data
+Final de datos inesperado
+Hay datos después del final de los datos precargados
+No es un archivo
+Error en los encabezados
+Contraseña incorrecta
+3763
+Inicio de archivo no disponible
+Inicio de archivo sin confirmar
+
+
+
+Característica no soportada
 3800
 Introduce la contraseña
 E&scribe la contraseña:
@@ -295,6 +369,12 @@ Método de &encriptación:
 Encriptar &nombres de fichero
 Memoria usada para comprimir:
 Memoria usada para descomprimir:
+Borrar archivos después de la compresión
+4040
+Almacenar vínculos simbólicos
+Almacenar vínculos duros
+Almacenar flujos de datos alternativos
+Almacenar seguridad del archivo
 4050
 Sin compresión
 La más rápida
@@ -402,3 +482,14 @@ Resultante
 Uso de CPU
 Resultante/uso
 Pasos:
+7700
+Vincular
+Vincular
+Vincular desde:
+Vincular hacia:
+7710
+Tipo de vínculo
+Vínculo duro
+Vínculo simbólico de archivo
+Vínculo simbólico de directorio
+Unión de directorio

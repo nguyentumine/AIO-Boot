@@ -1,5 +1,5 @@
 ;!@Lang2@!UTF-8!
-; 15.14 : 2016-04-23 : Stefán Örvar Sigmundsson
+; 16.04 : 2017-03-15 : Stefán Örvar Sigmundsson
 ;
 ;
 ;
@@ -16,7 +16,7 @@ Icelandic
 Íslenska
 401
 Í lagi
-Viðhætta
+Hætta við
 
 
 
@@ -35,7 +35,7 @@ Endurræsa
 &Forgrunnur
 &Gera hlé
 Í hléi
-Ert þú viss um að þú viljir viðhætta?
+Ert þú viss um að þú viljir hætta við?
 500
 &Skrá
 &Breyta
@@ -93,7 +93,7 @@ Stöðluð verkfærastika
 Stórir takkar
 Sýna takkatexta
 800
-&Viðbæta möppu í uppáhald sem
+&Bæta við möppu í uppáhald sem
 Bókamerki
 900
 &Valmöguleikar
@@ -214,11 +214,11 @@ Samhengisvalmyndaratriði:
 <Safn>
 Opna safn
 Afþjappa skrár
-Viðbæta í safn
+Bæta í safn
 Prófa safn
 Afþjappa hér
 Afþjappa í „{0}“
-Viðbæta í „{0}“
+Bæta við í „{0}“
 Þjappa og senda í rafpósti
 Þjappa í „{0}“ og senda í rafpósti
 2400
@@ -350,7 +350,7 @@ Meðhöndlað:
 Villur:
 Söfn:
 4000
-Viðbæta safni
+Bæta við safni
 Safn:
 Uppfærsluhamur:
 Safnsnið:
@@ -383,8 +383,8 @@ Venjulegt
 Hámarks
 Öfga-
 4060
-Viðbæta og yfirrita skrár
-Uppfæra og viðbæta skrám
+Bæta við og yfirrita skrár
+Uppfæra og bæta við skrám
 Hressa við gildandi skrám
 Samstilla skrár
 4070
@@ -441,7 +441,7 @@ Net
 Skjöl
 Kerfi
 7200
-Viðbæta
+Bæta við
 Afþjappa
 Prófa
 Afrita

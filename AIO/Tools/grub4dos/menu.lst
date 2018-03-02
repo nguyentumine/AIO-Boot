@@ -15,9 +15,6 @@ if NOT exist fromg4d font /AIO/Tools/grub4dos/unifont.hex.gz
 if NOT exist fromg4d write 0x8274 0x2001
 if NOT exist fromg4d set fromg4d=1
 
-iftitle [if exist /AIO/Menu/Custom.lst] My Custom Menu\n Run My Custom Menu
-configfile /AIO/Menu/Custom.lst
-
 iftitle [if exist /AIO/Tools/MS/bootmgr && if exist /AIO/Menu/WinLegacy] WinPE & Setup\n Run WinPE & Setup
 chainloader /AIO/Tools/MS/bootmgr
 
