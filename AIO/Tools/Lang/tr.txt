@@ -1,6 +1,6 @@
 ﻿################################################################
 Dil	        :	Turkish
-Kredi		:	Erhan Kültür (ekultur@gmail.com)
+Kredi		:	Erhan Kültür (ekultur@gmail.com), Murat ATICI, Tayfun Akkoyun.
 Tarih		:	14.05.2017
 Info		:	Lütfen satır ekleme, silme veya taşıma yapmayın, "%s" yi kaldırmayın.Kendi bildiriminizi göndermek veya herhangi bir sorunuz olmasını istiyorsanız, admin@aioboot.com adresine bir e-posta göndermeyi unutmayın. Yardım için teşekkürler!
 ################################################################
@@ -37,11 +37,11 @@ Herhangi bir sorunuz varsa yazarla iletişim kurmayı unutma, admin@aioboot.com 
 Sürüm
 Anasayfa
 Telif Hakkı
-1. Sistem Adı Seçin
-2. Sistem ISO Seçin
+1. Aşağıdan bir Paket Seçin
+2. Entegre edeceğiniz ISO dosyasını seçin
 İndir
 Tamam
-Lütfen sürücünüzdeki dosyayı seçin ...
+Entegre edeceğiniz dosyayı seçin ...
 Sürücünüzde ISO dosyası veya WIM dosyası seçin ...
 Sürücünüzdeki ISO dosyasını seçin ...
 ISO dosyasını yükleyin, ardından "I386/TXTSETUP.SIF" veya "AMD64/TXTSETUP.SIF" öğesini seçin ...
@@ -69,7 +69,7 @@ Lütfen menünün adını girin
 Menü ekleniyor ...
 Dosyalar hazırlanıyor ...
 Devam etmek için lütfen Regedit.exe'yi kapatın!
-İptal etmek
+İptal et
 Devam et
 Temizleniyor, lütfen bekleyin ...
 Çünkü dosya boyutu bir FAT32 bölümünde saklanmasına izin vermiyor.%sBu dosyayı parçalayacağız, anlıyor musun?
@@ -95,13 +95,13 @@ Lütfen UEFI modunda önyükleme yapın ve tekrar deneyin.
 En son sürümü kullanıyorsunuz!
 Şu an güncelleyebileceğiniz yeni bir sürüme sahibiz.%sVersiyon %s, Üzerinde yayımlanan %s.%sBu uygulamayı kapatıp şimdi güncellemek istiyor musunuz?
 Şu anda, düzenleyebilmek için bir MENÜ yok.
-Kaldır?
+Kaldır!
 MENU adı
-Kayıt etmek
+KAYDET
 Düzenledikten sonra.
 Dosyalar siliniyor ...
 Kaydedildi
-Güncelleştirme
+Multiboot'u Güncelleştir
 Varsayılan
 Yalnızca Dosya
 Clover, Eski Mod için de yüklenecektir
@@ -124,8 +124,8 @@ Kaydet
 Lütfen açılır listeden bir öğe seçin
 Ayarlarınız kaydedildi!
 Lütfen bu Sürücüyü FAT32'ye göre biçimlendirin.%sYa da Grub2'yi kurun ve Clover'ı kurma seçeneğini seçin.
-Önyükleyici Yükleme
-Windows Önyükleme Yükleyicisini Geri Yükleme
+Bootloader Yükleme Kısımı
+Windows Bootloader Geri Yükleme Kısımı
 Minik PXE Sunucusu çalışıyor, lütfen yeniden çalıştırmak isterseniz kapatın!
 UEFI veya Eski mod mu?
 Lütfen 32 bit veya 64 bit sürümünü seçin
@@ -164,14 +164,14 @@ Bu dosyayı algılayamadı, lütfen listede listelenen bir paketi seçin!
 Bu işletim sistemi kalıcı modu destekliyor.%sBu, verilerinizin her oturumdan sonra kaydedileceği anlamına gelir.%sİşletim sisteminin hızı, sabit sürücünün okuma ve yazma hızına bağlıdır.%sKalıcı mod için 4Gb'lik bir dosya oluşturmak ister misiniz?
 Bu işletim sistemi kalıcı modu destekliyor.%sBu, verilerinizin her oturumdan sonra kaydedileceği anlamına gelir.%sİşletim sisteminin hızı, sabit sürücünün okuma ve yazma hızına bağlıdır.%sKaydetmek istediğiniz veriye karşılık gelen bir dosya yaratacağız.
 Grub2 Arka Planı
-Saygılarımızla,--Bu kullanıcıların tümü bu aracı kullanmaktadır:--Google.--GNU (Grub2 Geliştirme Ekibi).--Clover'ın Geliştirme Ekibi, rEFInd, Grub4dos ve Syslinux.--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot ve WinSetupFromUSB'nin Yazarları Sunucu.--Dil çevirmenleri: Denis Cojocaru (Rusça ve Rumence), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kültür, Murat ATICI (Türkçe), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema (Spanish), Frettt (German), Tenhon (Traditional Chinese), Sun Wei (Simplified Chinese).
-Bölümler Yönet
+Saygılarımızla,--Bu kullanıcıların tümü bu aracı kullanmaktadır:--Google.--GNU (Grub2 Geliştirme Ekibi).--Clover'ın Geliştirme Ekibi, rEFInd, Grub4dos ve Syslinux.--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot ve WinSetupFromUSB'nin Yazarları Sunucu.--Dil çevirmenleri: Denis Cojocaru (Rusça ve Rumence), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kültür, Murat ATICI, Tayfun Akkoyun (Türkçe), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema (Spanish), Frettt (German), Tenhon (Traditional Chinese), Sun Wei (Simplified Chinese).
+Partisyonları Yönet
 MB cinsinden boyut
 Giriş dosyası
 Çıktı dosyası
 Sürücünüzdeki ISO dosyasını seçmek için burayı tıklayın ...
 ".PartIMG" dosyasını nereye kaydedeceğinizi seçmek için burayı tıklayın ...
-Yarat
+Oluştur
 Bu dosya boş.
 Bu dosyanın bilgileri alınamadı.
 Belki bu dosya önyükleme için desteklenmeyecektir. Devam etmek istiyor musun?
@@ -214,7 +214,7 @@ ISO Oluştur
 ISO dosyasının nereye kaydedileceğini seçin.
 Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
 Lütfen  modu seçin
-Test BOOT [QEMU]
+Multiboot'u [QEMU] ile Test Et
 ISO veya sürücünüzü test etmek istermisiniz?
 Mevcut Disk
 ISO dosyası
@@ -227,11 +227,12 @@ Windows kurulumu için WIM dosyasını ayıkla
 Windows ISO dosyasını yeniden paketle
 ISO dosyasını yeniden paketleme
 Güncelleme indiriliyor
-Bu ISO dosyası ISOLINUX önyükleyici kullanıyor gibi görünüyor. Bu durumda NTFS biçimini desteklemez.%sGeçiş modunda önyüklemeyi desteklemek için lütfen FAT32 biçimini kullanın.%sDevam etmek ister misiniz?Belki bu işletim sistemi kalıcı modu desteklemektedir.%sBu her oturumdan sonra verilerinizin kaydedileceği anlamına gelmektedir.%sBu modu etkinleştirmek ister misiniz?
-This VHD file is installed with 64-bit or 32-bit operating system?
-Don't integrate USB 3.0 Driver for Windows 7.
-Don't ask again
-See instructions
-Please close all applications running on drive %s before updating.
-To save disk space, we will move this file instead of copying it. Do you agree?
+Bu ISO dosyası ISOLINUX önyükleyici kullanıyor gibi görünüyor. Bu durumda NTFS biçimini desteklemez.%sGeçiş modunda önyüklemeyi desteklemek için lütfen FAT32 biçimini kullanın.%sDevam etmek ister misiniz?
+Belki bu işletim sistemi kalıcı modu desteklemektedir.%sBu her oturumdan sonra verilerinizin kaydedileceği anlamına gelmektedir.%sBu modu etkinleştirmek ister misiniz?
+Bu VHD dosyası 64bitlemi veya 32 bit işletim sistemiyle mi kuruldu?
+Windows7 için USb3.0 sürücülerini sisteme entegre etme.
+Tekrar sorma
+Açıklamalara bakın
+Güncellemeden önce %s sürücüsü üzerindeki tüm uygulamaları kapatın
+Disk alanından kazanmak için,bu dosya kopyalanmak yerine taşınacaktır.Emin misiniz?
 ##### END #####

@@ -139,6 +139,7 @@ mdraid09: diskfilter
 chain: boot video relocator
 mpi: crypto
 memrw: extcmd
+lua: pci setjmp normal
 cs5536: pci
 password_pbkdf2: gcry_sha512 pbkdf2 crypto normal
 mdraid1x: diskfilter
@@ -188,6 +189,7 @@ nilfs2: fshelp
 lsmmap:
 gcry_sha1: crypto
 cmosdump:
+915resolution:
 mmap: boot
 tar: archelp
 png: bufio bitmap

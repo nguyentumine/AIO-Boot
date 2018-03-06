@@ -136,6 +136,7 @@ mdraid09: diskfilter
 chain: boot net efinet
 mpi: crypto
 memrw: extcmd
+lua: setjmp normal
 cs5536:
 password_pbkdf2: gcry_sha512 pbkdf2 crypto normal
 mdraid1x: diskfilter

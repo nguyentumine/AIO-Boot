@@ -61,6 +61,7 @@
 *xnu_splash: xnu
 *zfskey: zfscrypt
 .: configfile
+915resolution: 915resolution
 [: test
 authenticate: normal
 background_color: gfxterm_background
@@ -128,6 +129,7 @@ lscoreboot: cbls
 lsfonts: font
 lsmmap: lsmmap
 lsmod: minicmd
+lua: lua
 macppcbless: macbless
 mactelbless: macbless
 module2: multiboot2

@@ -122,6 +122,7 @@ lsfonts: font
 lsmmap: lsmmap
 lsmod: minicmd
 lssal: lssal
+lua: lua
 macppcbless: macbless
 mactelbless: macbless
 module2: multiboot2
