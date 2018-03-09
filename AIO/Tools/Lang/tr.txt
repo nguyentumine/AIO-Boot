@@ -56,7 +56,7 @@ Hata: Lütfen BCD/WinLegacy dosyasını okumak için kullandığınız uygulamay
 Hata: Lütfen okumak için kullandığınız uygulamayı kapatın %s Dosyayı tekrar deneyin!
 Geçersiz dosya!
 Hata: Kalan alan yetersiz!
-Bitti. Mutlu çizme!
+Paket Başarılı bir şekilde Entegre edildi!
 Hata
 Uyarı
 Bilgi
@@ -235,4 +235,6 @@ Tekrar sorma
 Açıklamalara bakın
 Güncellemeden önce %s sürücüsü üzerindeki tüm uygulamaları kapatın
 Disk alanından kazanmak için,bu dosya kopyalanmak yerine taşınacaktır.Emin misiniz?
+Install Grub2 [Legacy]
+Please note that you should reinstall Grub2 every time you defragment on this drive.
 ##### END #####

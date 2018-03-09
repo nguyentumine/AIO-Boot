@@ -235,4 +235,6 @@ Nu întrebați din nou
 A se vedea instrucțiunile
 Închideți toate aplicațiile care se execută pe unitatea %s înainte de actualizare.
 Pentru a economisi spațiul, vom muta acest fișier în loc să îl copiem. Eşti de acord cu asta?
+Install Grub2 [Legacy]
+Please note that you should reinstall Grub2 every time you defragment on this drive.
 ##### END #####

@@ -235,4 +235,6 @@ ISO-файл
 См. инструкции
 Перед обновлением закройте все приложения, запущенные на диске %s.
 Чтобы сэкономить место на диске, мы будем перемещать этот файл вместо того чтобы копировать его. Вы согласны?
+Install Grub2 [Legacy]
+Please note that you should reinstall Grub2 every time you defragment on this drive.
 ##### END #####

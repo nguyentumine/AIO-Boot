@@ -17,11 +17,12 @@ AIO Boot possesses unique, advanced and user-friendly features. Here is one of t
 	- Legacy mode: Grub2, Grub4Dos, Clover, Enoch Chameleon and Syslinux.
 	- You can choose between Grub2 and Grub4Dos as the default boot loader. Only use Grub4Dos if your computer is not compatible with Grub2.
 - Supports hard drive, external hard drive and USB, including SDcard.
-- Boot into Legacy mode on the GPT hard disk.
-- Secure Boot support via Shim and MokManager.
+- [Boot into Legacy mode on the GPT hard disk](https://www.aioboot.com/en/gpt-legacy/).
+- [Secure Boot](https://www.aioboot.com/en/secure-boot/) support via Shim and MokManager.
 - Support booting into UEFI mode from Legacy mode via Clover regardless of your computer does not support UEFI mode.
-- Boot via LAN via iPXE and Tiny PXE Server.
-- Depending on the case, AIO Boot can be installed on multiple partitions:
+- Support [boot and install OS through Network boot](https://www.aioboot.com/en/network-boot/).
+- Support to [create ISO for burning to CD/DVD](https://www.aioboot.com/en/aio-boot-dvd/).
+- Depending on the case, [AIO Boot can be installed on multiple partitions](https://www.aioboot.com/en/fat32-and-ntfs/):
 	- **FAT32**:
 		- You need to use FAT32 partitions to support booting in UEFI mode.
 		- Some operating systems like Bitdefender, Fedora and Gentoo… do not support booting on NTFS partitions.
@@ -41,11 +42,16 @@ AIO Boot possesses unique, advanced and user-friendly features. Here is one of t
 - Supports creating a partition image (**.PARTIMG**) from ISO file. Use this feature if AIO Boot does not support booting it.
 - You can switch between the partitions where you have installed the AIO Boot. The menus and packages will be displayed correspondingly on that partition. From Grub2, press **y** to do this.
 - Supports recovery of Windows bootloader in both UEFI and Legacy BIOS modes.
-- You can change the language, background and font size in **Settings**.
+- You can [change the language, background and font size](https://www.aioboot.com/en/grub2-background-language-font-size/) in **Settings**.
 - Password protection for the Grub2 menu.
 	- Users can not boot, edit menus, or use the Grub2 command line before they enter the correct password.
 	- The password is encrypted by PBKDF2 so no one will know the password you have set.
 	- Anyone can change or remove the password if they have access to the Grub2 configuration files.
+- [Boot from ISO, WIM, IMG, VHD and IMA files](https://www.aioboot.com/en/boot-linux-iso/): AIO Boot supports booting Linux as well as other utilities from ISO, WIM, VHD, IMG and IMA files.
+- [Grub2 File Manager](https://www.aioboot.com/en/grub2-file-manager/): By using Grub2 File Manager, you can browse files and folders on all partitions on your computer. In addition to reading text files, it also supports [booting from the files](https://www.aioboot.com/en/boot-linux-iso/) it supports.
+- Multiple language support for AIO Boot Extractor, AIOCreator and Grub2 menu.
+- Supports creating Windows VHD.
+- Support for removing and renaming menus for integrated packages.
 
 # AIO Boot Extractor
 

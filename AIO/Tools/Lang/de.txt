@@ -235,4 +235,6 @@ Nicht nochmal fragen
 Siehe Anleitung
 Please close all applications running on drive %s before updating.
 To save disk space, we will move this file instead of copying it. Do you agree?
+Install Grub2 [Legacy]
+Please note that you should reinstall Grub2 every time you defragment on this drive.
 ##### END #####

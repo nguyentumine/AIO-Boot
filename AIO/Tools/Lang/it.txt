@@ -234,4 +234,6 @@ Non integrare il driver USB 3.0 per Windows 7.Non chiedere più
 Vedi le istruzioni
 Please close all applications running on drive %s before updating.
 To save disk space, we will move this file instead of copying it. Do you agree?
+Install Grub2 [Legacy]
+Please note that you should reinstall Grub2 every time you defragment on this drive.
 ##### END #####

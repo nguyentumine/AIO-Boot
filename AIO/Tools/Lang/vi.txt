@@ -235,4 +235,6 @@ Tệp VHD này được cài đặt với hệ điều hành 64-bit hay 32-bit?
 Hướng dẫn
 Hãy đóng tất cả các ứng dụng đang chạy trên ổ đĩa %s trước khi cập nhật.
 Để tiết kiệm dung lượng ổ đĩa, chúng ta sẽ di chuyển tệp tin này thay vì sao chép nó. Bạn đồng ý chứ?
+Cài đặt Grub2
+Xin lưu ý rằng bạn nên cài đặt lại Grub2 mỗi khi giải phân mảnh trên ổ đĩa này.
 ##### END #####
