@@ -237,4 +237,5 @@ A se vedea instrucțiunile
 Pentru a economisi spațiul, vom muta acest fișier în loc să îl copiem. Eşti de acord cu asta?
 Instalați Grub2 [Legacy]
 Vă rugăm să rețineți că trebuie să reinstalați Grub2 de fiecare dată când faci o defragmentare pe această unitate.
+You can only integrate one version for this package. Click the Menu Editor button to delete the current version and re-integrate it. Or use the Partition Image Mapper.
 ##### END #####

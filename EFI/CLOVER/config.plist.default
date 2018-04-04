@@ -748,7 +748,7 @@
 		<key>ShowOptimus</key>
 		<false/>
 		<key>Theme</key>
-		<string>BGM</string>
+		<string>Material</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -993,140 +993,23 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x3E7</string>
-		<key>MLB</key>
-		<string>C02032109R5DC771H</string>
-		<key>ROM</key>
-		<string>UseMacAddr0</string>
+		<string>0x3</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>#BiosReleaseDate</key>
-		<string>05/03/10</string>
-		<key>#BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>#BiosVersion</key>
-		<string>MB11.88Z.0061.B03.0809221748</string>
-		<key>#Board-ID</key>
-		<string>Mac-F4208CC8</string>
-		<key>#BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>#BoardSerialNumber</key>
-		<string>C02032101R5DC771H</string>
-		<key>#BoardType</key>
-		<integer>10</integer>
-		<key>#BoardVersion</key>
-		<string>Proto1</string>
-		<key>#ChassisAssetTag</key>
-		<string>LatitudeD420</string>
-		<key>#ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>#ChassisType</key>
-		<integer>16</integer>
-		<key>#Family</key>
-		<string>MacBook</string>
-		<key>#FirmwareFeatures</key>
-		<string>0xC0001403</string>
-		<key>#FirmwareFeaturesMask</key>
-		<string>0xFFFFFFFF</string>
-		<key>#LocationInChassis</key>
-		<string>MLB</string>
-		<key>#Memory</key>
-		<dict>
-			<key>Channels</key>
-			<integer>2</integer>
-			<key>Modules</key>
-			<array>
-				<dict>
-					<key>Frequency</key>
-					<integer>1333</integer>
-					<key>Part</key>
-					<string>C0001403</string>
-					<key>Serial</key>
-					<string>00001001</string>
-					<key>Size</key>
-					<integer>4096</integer>
-					<key>Slot</key>
-					<integer>0</integer>
-					<key>Type</key>
-					<string>DDR3</string>
-					<key>Vendor</key>
-					<string>Kingston</string>
-				</dict>
-				<dict>
-					<key>Frequency</key>
-					<integer>1333</integer>
-					<key>Part</key>
-					<string>C0001404</string>
-					<key>Serial</key>
-					<string>00001002</string>
-					<key>Size</key>
-					<integer>4096</integer>
-					<key>Slot</key>
-					<integer>2</integer>
-					<key>Type</key>
-					<string>DDR3</string>
-					<key>Vendor</key>
-					<string>Kingston</string>
-				</dict>
-			</array>
-			<key>SlotCount</key>
-			<integer>4</integer>
-		</dict>
-		<key>#Mobile</key>
-		<true/>
-		<key>#PlatformFeature</key>
-		<string>0x03</string>
-		<key>#ProductName</key>
-		<string>MacBook1,1</string>
-		<key>#SerialNumber</key>
-		<string>4H629LYAU9C</string>
-		<key>#Slots</key>
-		<array>
-			<dict>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>ID</key>
-				<integer>1</integer>
-				<key>Name</key>
-				<string>PCIe Slot 0</string>
-				<key>Type</key>
-				<integer>16</integer>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>WIFI</string>
-				<key>ID</key>
-				<integer>0</integer>
-				<key>Name</key>
-				<string>Airport</string>
-				<key>Type</key>
-				<integer>1</integer>
-			</dict>
-		</array>
-		<key>#SmUUID</key>
-		<string>00000000-0000-1000-8000-010203040506</string>
-		<key>#Trust</key>
-		<true/>
-		<key>#Version</key>
-		<string>1.0</string>
-		<key>Manufacturer</key>
-		<string>Apple Inc.</string>
+		<key>ProductName</key>
+		<string>iMac14,2</string>
+		<key>Trust</key>
+		<false/>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>#BacklightLevel</key>
-		<string>0x0501</string>
-		<key>#CustomUUID</key>
-		<string>511CE201-1000-4000-9999-010203040506</string>
-		<key>#NoCaches</key>
-		<false/>
-		<key>#NvidiaWeb</key>
-		<false/>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
 		<true/>
+		<key>NvidiaWeb</key>
+		<false/>
 	</dict>
 </dict>
 </plist>

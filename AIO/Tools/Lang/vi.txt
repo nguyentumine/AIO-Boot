@@ -237,4 +237,5 @@ Hãy đóng tất cả các ứng dụng đang chạy trên ổ đĩa %s trướ
 Để tiết kiệm dung lượng ổ đĩa, chúng ta sẽ di chuyển tệp tin này thay vì sao chép nó. Bạn đồng ý chứ?
 Cài đặt Grub2 [Legacy]
 Xin lưu ý rằng bạn nên cài đặt lại Grub2 mỗi khi giải phân mảnh trên ổ đĩa này.
+Bạn chỉ có thể tích hợp duy nhất một phiên bản cho gói này. Bấm vào nút Sửa Menu để xóa phiên bản hiện tại và tích hợp lại. Hoặc sử dụng Partition Image Mapper.
 ##### END #####
