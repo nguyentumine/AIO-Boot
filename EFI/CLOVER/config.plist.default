@@ -228,6 +228,8 @@
 				<string>Cpu0Ist</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<true/>
 		<key>HaltEnabler</key>
 		<true/>
 		<key>SSDT</key>

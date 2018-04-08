@@ -45,7 +45,7 @@ configfile /AIO/Menu/BackupRecovery.lst
 iftitle [if exist /AIO/Menu/Special.lst] Special Pack\n Run Special Pack
 configfile /AIO/Menu/Special.lst
 
-iftitle [if exist /EFI/CLOVER/CloverLegacy] Clover\n Run Clover
+iftitle [if exist /boot7] Clover\n Run Clover
 chainloader /AIO/Tools/Clover/boot0ss
 
 iftitle [if exist /AIO/Tools/syslinux/syslinux/syslinux.bin] Syslinux\n Run Syslinux
