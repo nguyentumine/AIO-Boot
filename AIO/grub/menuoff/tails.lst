@@ -1,0 +1,18 @@
+set iso_path=
+map %iso_path% (0xff) || map --mem %iso_path% (0xff)
+map --hook
+
+checkrange 0,1 is64bit && goto :x32
+
+set _kernel=%_path%/live/vmlinuz
+set _initrd=%_path%/live/initrd.img
+goto :boot
+
+:x32
+set _kernel=%_path%/live/vmlinuz2
+set _initrd=%_path%/live/initrd2.img
+goto :boot
+
+:boot
+kernel	(0xff)%_kernel% boot=live config nopersistence noprompt timezone=Etc/UTC block.events_dfl_poll_msecs=1000 splash noautologin module=Tails slab_nomerge slub_debug=FZP mce=0 vsyscall=none page_poison=1 union=aufs  quiet findiso=%iso_path%
+initrd	(0xff)%_initrd%

@@ -1,0 +1,8 @@
+set _path=
+set lang=en
+# en=English; ru=Russian
+set _kernel=k-x86_64
+checkrange 0,1 is64bit && set _kernel=k-x86
+find --set-root %_path%/boot/grub/%_kernel%
+kernel    %_path%/boot/grub/%_kernel% net.ifnames=0 lang=%lang% dostartx trace subdir=%_path%/data
+initrd    %_path%/boot/grub/initrd.xz

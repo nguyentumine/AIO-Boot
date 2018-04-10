@@ -1,0 +1,21 @@
+set _path=
+if exist %_path%/dat5.dat goto :new
+checkrange 0,1 is64bit && goto :x32
+
+set _kernel=%_path%/dat6.dat
+set _initrd=%_path%/dat7.dat %_path%/dat8.dat
+goto :boot
+
+:x32
+set _kernel=%_path%/dat2.dat
+set _initrd=%_path%/dat3.dat %_path%/dat4.dat
+goto :boot
+
+:new
+set _kernel=%_path%/dat5.dat
+set _initrd=%_path%/dat4.dat
+goto :boot
+
+:boot
+kernel	%_kernel% quiet force_modules=usbhid vga=791
+initrd	%_initrd%

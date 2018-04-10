@@ -1,0 +1,5 @@
+set iso_path=
+map %iso_path% (fd0) || map --mem %iso_path% (fd0)
+map --hook
+root (fd0)
+chainloader (fd0)+1

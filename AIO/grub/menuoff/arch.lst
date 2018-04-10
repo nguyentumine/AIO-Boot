@@ -1,0 +1,16 @@
+set _path=
+uuid () && call set rootuuid=%^?%
+checkrange 0,1 is64bit && goto :x32
+
+set _kernel=%_path%/arch/boot/x86_64/vmlinuz
+set _initrd=%_path%/arch/boot/intel_ucode.img %_path%/arch/boot/x86_64/archiso.img
+goto :boot
+
+:x32
+set _kernel=%_path%/arch/boot/i686/vmlinuz
+set _initrd=%_path%/arch/boot/intel_ucode.img %_path%/arch/boot/i686/archiso.img
+goto :boot
+
+:boot
+kernel	%_kernel% archisobasedir=%_path%/arch archisodevice=/dev/disk/by-uuid/%rootuuid%
+initrd	%_initrd%

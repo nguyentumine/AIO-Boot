@@ -1,0 +1,15 @@
+set _path=
+if exist %_path%/boot/linux3 goto :new
+
+set _kernel=%_path%/boot/linux17 boot=live apm=power-off nomce lang=en_US.UTF-8 quiet live-media-path=%_path%/live
+set _initrd=%_path%/boot/initrd17.xz
+goto :boot
+
+:new
+set _kernel=%_path%/boot/linux3 boot=live union=aufs apm=power-off nomce systemd.setenv=LANG=en_US.UTF-8 quiet live-media-path=%_path%/live
+set _initrd=%_path%/boot/initrd3.xz
+goto :boot
+
+:boot
+kernel	%_kernel%
+initrd	%_initrd%

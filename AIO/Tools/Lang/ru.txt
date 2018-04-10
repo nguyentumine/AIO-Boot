@@ -238,4 +238,6 @@ ISO-файл
 Установить Grub2 [Legacy]
 Обратите внимание, что вы должны переустанавливать Grub2 каждый раз, когда вы дефрагментируете этот диск.
 You can only integrate one version for this package. Click the Menu Editor button to delete the current version and re-integrate it. Or use the Partition Image Mapper.
+The free space left on this drive is not enough.
+Access is denied. Try disabling the antivirus software and try again.
 ##### END #####

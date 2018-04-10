@@ -238,4 +238,6 @@ Hãy đóng tất cả các ứng dụng đang chạy trên ổ đĩa %s trướ
 Cài đặt Grub2 [Legacy]
 Xin lưu ý rằng bạn nên cài đặt lại Grub2 mỗi khi giải phân mảnh trên ổ đĩa này.
 Bạn chỉ có thể tích hợp duy nhất một phiên bản cho gói này. Bấm vào nút Sửa Menu để xóa phiên bản hiện tại và tích hợp lại. Hoặc sử dụng Partition Image Mapper.
+Dung lượng trống còn lại trên ổ đĩa này không đủ.
+Quyền truy cập bị từ chối. Hãy thử vô hiệu hóa phần mềm diệt Virus và thử lại.
 ##### END #####

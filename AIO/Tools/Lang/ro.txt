@@ -238,4 +238,6 @@ Pentru a economisi spațiul, vom muta acest fișier în loc să îl copiem. Eşt
 Instalați Grub2 [Legacy]
 Vă rugăm să rețineți că trebuie să reinstalați Grub2 de fiecare dată când faci o defragmentare pe această unitate.
 You can only integrate one version for this package. Click the Menu Editor button to delete the current version and re-integrate it. Or use the Partition Image Mapper.
+The free space left on this drive is not enough.
+Access is denied. Try disabling the antivirus software and try again.
 ##### END #####
