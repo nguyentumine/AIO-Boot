@@ -1,6 +1,6 @@
 #!ipxe
-console --x 1024 --y 768
-console --picture ${boot-url}/grub/themes/splash.png
+isset ${legacy} || console --x 1024 --y 768
+isset ${legacy} || console --picture ${boot-url}/grub/themes/splash.png
 
 # Setup some basic convenience variables
 set menu-timeout 5000

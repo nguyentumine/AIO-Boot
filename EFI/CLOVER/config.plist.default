@@ -281,8 +281,8 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>#Arguments</key>
-		<string>slide=0 darkwake=0</string>
+		<key>Arguments</key>
+		<string>-v darkwake=0</string>
 		<key>#DefaultLoader</key>
 		<string>boot.efi</string>
 		<key>#LegacyBiosDefaultEntry</key>

@@ -1,0 +1,243 @@
+﻿################################################################
+Language	:	Español
+Credits		:	alacran
+Date		:	30.04.2018
+Info		:	No agregue, elimine ni mueva la línea, no quite "%s". Si desea enviar la suya o tiene alguna pregunta, no se olvide de enviar un correo electrónico a admin@aioboot.com. ¡Gracias por la ayuda!
+################################################################
+
+
+
+##### BEGIN #####
+Español
+Principal
+Integración
+Acerca de
+Bootloaders
+Ejecutar PXE
+Configuracion
+Herramientas
+Editar MENU
+Ayuda
+Disco actual:
+Disco
+Nombre
+Tipo
+Tamaño
+Unidad actual:
+Unidad
+Label
+FileSystem
+Medio removible
+Medio fijo
+RAM disk
+Desconocido
+AIO Boot es una herramienta que puede ayudarlo a crear un USB / HDD de arranque con Grub2, Grub4dos, Syslinux, Clover y rEFInd. AIO Boot posee características únicas, avanzadas y amigables.%sEsta herramienta es 100%% limpia, no es dañino para su computadora.%sAyuda a esta comunidad contribuyendo con tus ideas e informando sobre errores. Siéntase libre de compartir o contribuir con sus artículos, videos y enlaces relacionados para que más personas puedan conocer y usar esta herramienta.
+No olvide ponerse en contacto con el autor si tiene alguna pregunta, envíe un correo electrónico a admin@aioboot.com. Me encantaría saber de ti para que pueda mejorar esta herramienta mejor.
+Nombre
+Version
+Homepage
+Copyright
+1. Seleccionar paquete
+2. Seleccione Archivo
+Descargar
+OK
+Seleccione el archivo en su unidad...
+Seleccione el archivo ISO o WIM en su unidad...
+Seleccione el archivo ISO en su unidad...
+Monte el archivo ISO, luego seleccione "I386/TXTSETUP.SIF" o "AMD64/TXTSETUP.SIF"...
+¡Por favor seleccione un archivo válido!
+El nombre de archivo solo puede contener caracteres alfanuméricos (letras, números) y. ¡Cambie el nombre del archivo y vuelva a intentarlo!
+Los archivos de más de 4 GB NO se pueden almacenar en un volumen FAT32.%sFormatear la partición como exFAT o NTFS resolverá este problema.
+Procesando, por favor espere...
+¡No cierre esta ventana hasta que esto esté hecho!
+¡No se pudo detectar este archivo!
+Error, ¡póngase en contacto con el autor para obtener asistencia!.
+Error: ¡Cierre la aplicación que está utilizando para leer el archivo BCD/WinLegacy y vuelva a intentarlo!
+Error: ¡Cierre la aplicación que está utilizando para leer %s archivo e intente de nuevo!
+¡Archivo inválido!
+Error: ¡El espacio restante es insuficiente!
+Hecho. ¡Feliz arranque!
+Error
+Advertencia
+Información
+Confirmar
+Copiando
+Copiando los archivos requeridos...
+Extrayendo
+Comprobando archivo, por favor espere...
+Por favor ingrese el nombre del menú
+Agregando menú...
+Preparando archivos...
+¡Cierre Regedit.exe para continuar!
+Cancelar
+Continuar
+Limpiando, por favor espere...
+Debido al tamaño del archivo no se permite almacenarlo en una partición FAT32.%sDividiremos este archivo, ¿estás de acuerdo?
+Dividiendo
+Si
+No
+El disco seleccionado es del estilo de partición GPT. Necesita copiar la carpeta "EFI" a una partición formateada en "FAT32" o "FAT16".
+El disco seleccionado es del estilo de partición GPT. Solo se admiten Grub2, rEFInd y Clover.
+¡Actualmente no admitimos este dispositivo!
+ha sido instalado...
+ya está instalado...
+%s no ha sido instalado. %s requires that %s debe ser instalado.%s¿Desea instalar Grub2 de inmediato?
+Seleccione la unidad donde instaló la última versión de Windows.
+De ser posible, pruebe esta característica en Windows 7 o una versión más nueva para obtener el mejor soporte.
+No encontré la partición del sistema.
+ha sido restaurado.
+No he encontrado ninguna unidad en la que esté instalado Windows %s modo.
+Necesita volver a formatear la unidad para poder instalar Syslinux.
+Formatee la unidad en FAT32 o NTFS.
+Seleccione la partición en la que instaló Windows en el modo Legacy BIOS.
+Seleccione la partición que tiene instalado Windows en modo UEFI.
+Inicie en modo UEFI e intente de nuevo.
+¡Estás usando la última versión!
+Tenemos una nueva versión que puedes actualizar ahora.%sVersion %s, publicado el %s.%s¿Desea cerrar esta aplicación y actualizar ahora?
+Actualmente, no hay un MENU para poder editar.
+Remover?
+Nombre de MENU
+Guardar
+después que haya editado.
+Eliminando archivos...
+Guardado
+Actualizar
+Por defecto
+Solo archivo
+Clover también se instalará para el modo Legacy
+Seleccione la partición para instalar Grub2, Clover y rEFInd para el modo UEFI.
+Debe descargar la última versión de AIO Boot y volver a particionar este disco para continuar.
+El disco duro estilo GPT solo admite el modo UEFI.%sSi solo usa el modo UEFI, no necesita hacer nada ahora.
+Para admitir Grub2, Clover, rEFInd y UEFI Shell en modo UEFI, debe crear una partición en formato FAT32 o FAT16 en este disco duro.
+Puede usar DiskPart o GParted para crear una nueva partición.%sPor favor, inténtelo de nuevo después de haber creado una nueva partición.
+El disco seleccionado es del estilo de partición GPT. Necesitamos copiar la carpeta "EFI" en "Partición del sistema EFI (ESP)". ¿Quieres hacerlo ahora mismo?
+%s: Usted arrancará directamente en Grub2 cada vez que encienda la computadora.%s: Debe seleccionar los archivos "/EFI/Grub2/bootx64.efi" para iniciar en Grub2.
+Para admitir el modo Legacy BIOS en un disco duro en estilo GPT. Necesitamos dedicar una nueva partición.
+1. Este tamaño de partición es lo más pequeño posible. Aproximadamente 1 MB o más, pero no más de 10 MB.%s2. Todos los datos en esta partición se perderán. Por lo tanto, necesitas crear una nueva partición.
+Continúa después de haber creado esta partición según sea necesario.
+Mi computadora tiene firmware UEFI de 32 bits.
+No pedir ingresar Nombre de MENU.
+No es necesario verificar el archivo.
+Configurar PXE Boot para el modo UEFI.
+Fijar
+Esta es la lista de idiomas que Grub2 admite. ¿Cuál es su idioma?
+Seleccione un elemento en la lista desplegable
+¡Su configuración ha sido guardada!
+Por favor, formatee esta unidad en FAT32.%sO instale Grub2 y seleccione la opción instalar Clover.
+Installar gestor de arranque
+Restaurar el gestor de arranque de Windows
+Tiny PXE Server se está ejecutando, ¡por favor cierrelo si quiere volver a ejecutarlo!
+¿UEFI o modo Legacy?
+Seleccione la versión de 32 bits o de 64 bits
+Solo Windows
+Todos los otros
+Se requiere WinPE
+Por favor, siga los siguientes pasos primero:%s1. Descargar "boot%s.wim".%s2. Copiarlo en "%s\AIO\WinPXE\sources\".%sPuedes descargarlo desde aquí:
+Arranque seguro está activado. Esto puede evitar el arranque a sistemas operativos que no sean de Windows. Deshabilita esta opción en BIOS.
+Idioma Grub2
+Tamaño de fuente
+Pequeña
+Grande
+Crea una nueva contraseña para Grub2.
+Crear nueva
+Cambiar o eliminar la contraseña de Grub2.
+Eliminar
+¿Creará una nueva contraseña o la eliminará?
+Nuevo nombre de usuario
+Nueva contraseña
+El valor no debe contener espacios al principio o al final.
+El nombre de usuario debe contener solo caracteres [A-Z], dígitos [0-9] y espacio ['' ''].
+Nuevo nombre de usuario y contraseña han sido creados.
+Desinstalar
+Asegúrese de que su computadora esté iniciada sin utilizar Grub2 de AIO Boot. Si su computadora solo puede arrancar a través de Grub2 de AIO Boot, la desinstalación hará que su computadora no arranque.%sPara restaurar el gestor de arranque de Windows, utilice el botón Bootloaders o use el DVD.%sHaga clic en Continuar cuando pueda iniciar en el sistema operativo sin usar Grub2 de AIO Boot.
+Dividiendo el archivo
+Extrayendo el archivo
+Actualizando archivos
+Agregando archivos adicionales
+Cancelando
+Cancelado
+Borrado
+Detección automática
+Otros
+Paquete especial
+¡No se pudo detectar este archivo, por favor seleccione un paquete listado en la lista!
+Este sistema operativo es compatible con el modo persistente.%sEsto significa que sus datos serán guardados después de cada sesión.%sLa velocidad del sistema operativo depende de la velocidad de lectura y escritura del disco duro.%s¿Te gustaría crear un archivo de 4 Gb para el modo persistente?
+Este sistema operativo es compatible con el modo persistente.%sEsto significa que sus datos serán guardados después de cada sesión.%sLa velocidad del sistema operativo depende de la velocidad de lectura y escritura del disco duro.%sCrearemos un archivo de tamaño correspondiente a los datos que desee guardar.
+Fondo Grub2
+Sincerely thanks to:--All these users are using this tool.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot and WinSetupFromUSB.--Translators of languages: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), Sun Wei (Simplified Chinese).
+Administrar particiones
+Tamaño en MB
+Archivo de entrada
+Archivo de salida
+Haga clic aquí para seleccionar el archivo ISO en su unidad...
+Haga clic aquí para elegir dónde guardará el archivo ".PartIMG" en su disco...
+Crear
+Este archivo está vacío.
+No se puede obtener información de este archivo.
+Tal vez este archivo no sea compatible para el arranque. ¿Quieres continuar?
+Ingrese un tamaño para el archivo que desea crear.
+Ingrese una etiqueta para el archivo que desea crear.
+El archivo de salida ya existe. ¿Desea reemplazar este archivo?
+Por favor ingrese un tamaño que sea al menos %s.
+El espacio libre en la %s unidad no es suficiente.
+La %s unidad está formateada como FAT32, solo puede almacenar archivos de hasta 4 GB de tamaño.
+ImDisk no está instalado, ¿desea instalar ImDisk ahora mismo?
+ImDisk no fue instalado.
+Creando y montando archivo...
+Extrayendo archivo ISO...
+Actualizando archivos de configuración...
+El tamaño del archivo PartIMG no es suficiente, por favor increméntelo a aproximadamente %s e intentar de nuevo.
+No se pudo establecer la etiqueta para el archivo PartIMG.
+Incapaz de desmontar %s, por favor haz esto manualmente.%sA continuación, elimine el archivo PartING donde elija.
+Monte ISO, luego seleccione el archivo sources\install.wim en esa unidad...
+Haga clic aquí para seleccionar el archivo sources\install.wim en su disco...
+Haga clic aquí para elegir dónde guardará el archivo ".VHD" en su disco...
+Sólo compatible con Windows 7 y versiones posteriores.
+Creando y montando archivo VHD...
+Aplicando imagen...
+Desmontando el archivo VHD...
+No se pudo crear y montar el archivo VHD.
+No se puede aplicar la imagen a la partición VHD.
+El tamaño del archivo VHD no es suficiente, por favor aumente y vuelva a intentarlo.
+No se pudo desmontar %s unidad, por favor hazlo manualmente.%sA continuación, elimine el archivo VHD donde elija.
+Elija la versión
+Extraiga todos los archivos "sources\*. Wim" e integrelos en "WinPE 7 / 8.1 / 10".
+¿Integrar este paquete como un WinPE?
+¡Primero extraiga todos los archivos al directorio raíz de su USB o disco duro!%sVea la página de inicio para más información.
+Personalizado
+Creando
+No se puede crear un archivo de más de 4 GB en la partición FAT32.
+¿Instalar Grub4Dos como cargador de arranque predeterminado?%sSolo debe instalar Grub4Dos si Grub2 no es compatible en su máquina o solo para probarlo.%sUse Grub2 para soportar completamente la función.
+Gestor de arranque predeterminado en modo UEFI
+Solo es compatible con ReactOS LiveCD. Consulte la página de inicio para saber cómo integrar la configuración de ReactOS.
+Crear ISO
+Seleccione dónde guardar el archivo ISO.
+Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
+Por favor, seleccione el modo de
+Probar Arranque [QEMU]
+¿Quieres probar este archivo Drive o ISO?
+Esta unidad
+Archivo ISO
+Memoria (MB)
+Por favor ingrese un número positivo válido.
+Ingrese un tamaño de memoria mayor que 0 y menor que %sMB.
+Copiaremos los archivos QEMU al %s\QEMU directorio. ¿Está de acuerdo?
+¿Le gustaría probar este archivo ISO?
+Extraer WIM para la instalación de Windows.
+Reempacar el archivo ISO de Windows.
+Reempacando archivo ISO
+Descargando actualización
+Parece que este archivo ISO usa el gestor de arranque ISOLINUX. No es compatible con el formato NTFS en este caso.%sPara admitir el arranque en modo Legacy, utilice el formato FAT32.%s¿Quiere continuar?
+Tal vez este sistema operativo sea compatible con el modo persistente.%sEsto significa que sus datos serán guardados después de cada sesión.%s¿Quiere habilitar este modo?
+¿Este archivo VHD está instalado con un sistema operativo de 64 o 32 bits?
+No integrar el controlador USB 3.0 para Windows 7.
+No volver a preguntar
+Ver instrucciones
+Cierre todas las aplicaciones que se ejecutan en la unidad %s antes de actualizar.
+Para ahorrar espacio en disco, moveremos este archivo en lugar de copiarlo. ¿Está de acuerdo?
+Instalar Grub2 [Legacy]
+Tenga en cuenta que debe reinstalar Grub2 cada vez que desfragmente en este disco.
+Solo puede integrar una versión para este paquete. Haga clic en el botón Editor de menú para eliminar la versión actual y volver a integrarla. O use el mapeador de imágenes de partición.
+El espacio libre que queda en este disco no es suficiente.
+Acceso denegado. Intente desactivar el software antivirus e intente de nuevo.
+##### END #####
