@@ -1,6 +1,6 @@
 #!ipxe
-#console --x 1024 --y 768
-#console --picture ${boot-url}/AIO/grub/themes/splash.png
+console --x 1024 --y 768
+console --picture ${boot-url}/AIO/grub/themes/splash.png
 
 # Setup some basic convenience variables
 set menu-timeout 5000

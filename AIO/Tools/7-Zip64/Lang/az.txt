@@ -1,7 +1,7 @@
 ﻿;!@Lang2@!UTF-8!
 ; 9.07 : F@rhad
-; 15.02 : 22/05/2015 : Г. Гасымов
-;
+; 15.02 : 2015-03-29 : Г. Гасымов
+; 
 ;
 ;
 ;
@@ -22,7 +22,7 @@ OLDU
 
 &Bəli
 &Xeyr
-&Bağla
+&Bağlamaq
 Kömək
 
 &Davam
@@ -30,7 +30,7 @@ Kömək
 &Hamısına Bəli
 Ha&mısına Xeyr
 Dayan
-Yenidən başla
+Yenidən başlamaq
 &Arxa planda
 Ö&ndə
 F&asilə
@@ -44,34 +44,34 @@ S&eçilmişlər
 &Vasitələr
 &Arayış
 540
-&Aç
-&Daxildə Aç
-B&ayırda aç
+&Açmaq
+&Daxildə Açmaq
+B&ayırda açmaq
 &Baxış
 &Düzəliş
-Ye&nidən Adlandır
-&Nüsxələ...
-&Köçür...
-&Sil
-Faylı &Böl...
-Faylları B&irləşdir...
+Ye&nidən Adlandırmaq
+&Nüsxələmək...
+&Köçürmək...
+&Silmək
+Faylı &Bölmək...
+Faylları B&irləşdirmək...
 X&üsusiyyətlər
 Şər&h...
 Yoxlama Cəmi
 Müqayisə
-Qovluq Yarat
-Fayl Yarat
+Qovluq Yaratmaq
+Fayl Yaratmaq
 Ç&ıxış
 İstinad
 &Əvəzedici Axınlar
 600
-&Hamısını Seç
-Seçimi Ləğv Et
-&Seçimi Çevir
-Seç...
-Seçimi Ləğv Et...
-Növünə Görə Seç
-Növünə Görə Seçimi Ləğv Et
+&Hamısını Seçmək
+Seçimin Ləğvi
+&Seçimi Çevirmək
+Seçmək...
+Seçimin Ləğvi...
+Növünə Görə Seçmək
+Növünə Görə Seçimin Ləğvi
 700
 &Böyük İşarələr
 K&içik İşarələr
@@ -82,18 +82,18 @@ K&içik İşarələr
 Müstəvi Görünüş
 &2 Lövhə
 &Alətlər Lövhələri
-Kök Qovluğu Aç
+Kök Qovluğu Açmaq
 Bir Səviyyə Yuxarı
 Qovluqlar Tarixçəsi...
-&Yenilə
-Bilavasitə Yeniləmə
+&Yeniləmək
+Bilavasitə Yeniləmək
 750
 Arxivləyicinin Düymələr Lövhəsi
 Sadə Düymələr Lövhəsi
 Böyük Düymələr
 Düymələr Üzərində Mətnlər
 800
-&Qovluğu Seçilmişlərə Fərqli Əlavə Et
+&Qovluğu Seçilmişlərə Fərqli Əlavə Etmək
 Əlfəcin
 900
 Tənzimləmələr...
@@ -212,31 +212,31 @@ Zəncirvari əhatə təklifi
 2320
 <Qovluq>
 <Аrxiv>
-Arxivi Aç
-Çeşidlə
-Arxivə Əlavə Et...
+Arxivi Açmaq
+Çeşidləmək
+Arxivə Əlavə Etmək...
 Sınaq
-Burda Çeşidlə
-{0} Çeşidlə
-{0} Əlavə Et
-Sıx Və E-Poçtla Göndər...
-{0} Sıx Və E-Poçtla Göndər
+Burda Çeşidləmək
+{0} Çeşidləmək
+{0} Əlavə Etmək
+Sıxmaq Və E-Poçtla Göndərmək...
+{0} Sıxmaq Və E-Poçtla Göndərmək
 2400
 Qovluqlar
 &İş Qovluğu
 &Müvəqqəti Quruluş Qovluğu
 &Cari
-&Təyin Et:
+&Təyin Etmək:
 Yalnız dəyişkən daşıyıcılar üçün istifadə
-Müvəqqəti arxivlər üçün yer göstər.
+Müvəqqəti arxivlər üçün yer göstərmək.
 2500
 Tənzimləmələr
-".." ünsürünü göstər
-Həqiqi fayl işarələri göstər
-Quruluş təklifini göstər
+".." ünsürünü göstərmək
+Həqiqi fayl işarələri göstərmək
+Quruluş təklifini göstərmək
 Ox bütün sətir üzrə
-Ayrıcıları Göstər 
-Bir Toxunuşla Aç
+Ayrıcıları Göstərmək 
+Bir Toxunuşla Açmaq
 Əvəzedici vəziyyət işarələnməsi
 Böyük yaddaş səhifələri istifadəsi
 2900
@@ -267,8 +267,8 @@ Arxiv əvəzlənərək açıldı
 Çeşidlənmə
 Sıxılma
 Sınaq
-Açılma...
-Yoxlama...
+Açılır...
+Yoxlanır...
 Silinmə
 3320
 Əlavə Etmək
@@ -280,7 +280,7 @@ Keçmə İcazəsi
 Silinmə
 Başlıqlar Yaradılması
 3400
-Ayır
+Ayırmaq
 Ç&eçidlə:
 Ayrılan faylların yerini göstərin.
 3410
@@ -294,18 +294,18 @@ Yenidən yazılma:
 Təsdiqli
 Təsdiqsiz
 Ötürmək
-Birbaşa yenidən adlandır
-Mövcud olanları yenidən adlandır
+Birbaşa yenidən adlandırmaq
+Mövcud olanları yenidən adlandırmaq
 3430
-Kök qovluqla bənzərliyi aradan qaldır
+Kök qovluqla bənzərliyi aradan qaldırmaq
 Faylın təhlükəsizlik bərpası 
 3500
 Faylın əvəzlənmə təsdiqi
 Qovluq artıq emal olunan fayl təşkil edir.
-Mövcud faylı əvəzlə
+Mövcud faylı əvəzləmək
 növbəti faylla?
 {0} bayt
-Birbaşa yenidən adlandır
+Birbaşa yenidən adlandırmaq
 3700
 '{0}' faylının dəstəklənməyən sıxılma üsulu.
 '{0}' məlumatlarında xəta. Fayl korlanıb.
@@ -332,10 +332,10 @@ Təsdiqsiz arxiv əvvəli
 
 Dəstəklənməyən xüsusiyyət
 3800
-Şifrə daxil etmə
+Şifrə daxil etmək
 &Şifrə daxil edin:
 Şifrəni təkrarlayın:
-&Şifrəni göstər
+&Şifrəni göstərmək
 Şifrələr uyğun deyil
 Şifrə üçün yalnız latın hərfləri, rəqəmlər və xüsusi rəmzlər istifadə edin (!, #, $, ...)
 Şifrə şox uzundur
@@ -362,19 +362,19 @@ Bölmə ölçüsü:
 Axın sayı:
 &Nizamlar:
 &Seçimlər
-SF&X arxiv yarat
-Yazılış üçün açıq faylları sıx
+SF&X arxiv yaratmaq
+Yazılış üçün açıq faylları sıxmaq
 Şifrələmə
 Şifrələmə üsulu:
-Fayl adlarını &şifrələ
+Fayl adlarını &şifrələmək
 Qablaşdırma üçün yaddaş həcmi:
 Çeşidləmə üçün yaddaş həcmi:
-Sıxılmadan sonra faylları sil
+Sıxılmadan sonra faylları silmək
 4040
-Rəmzli keçidləri saxla
-Sərt keçidləri saxla
-Əvəzedici axınları saxla
-Giriş hüququnu saxla
+Rəmzli keçidləri saxlamaq
+Sərt keçidləri saxlamaq
+Əvəzedici axınları saxlamaq
+Giriş hüququnu saxlamaq
 4050
 Sıxılmasız
 Sürətli
@@ -383,23 +383,23 @@ Məqbul
 Yüksək
 Daha Yüksək (Ultra)
 4060
-Əlavə et və əvəzlə
-Yenilə və əlavə et
-Yenilə
+Əlavə etmək və əvəzləmək
+Yeniləmək və əlavə etmək
+Yeniləmək
 Eyniləşdir (Sinxron)
 4070
-Vərəqlə
+Vərəqləmək
 Bütün Fayllar
 Fayl ölçüsünə görə
 Aramsız
 6000
-Nüsxələ
-Köçür
-Nüsxələ:
-Köçür:
-Nüsxələlənmə...
-Köçürülmə...
-Yenidən adlandırılma...
+Nüsxələmək
+Köçürmək
+Nüsxələmək:
+Köçürmək:
+Nüsxələlənir...
+Köçürülür...
+Yenidən adlandırılır...
 Qovluğu göstərin.
 Əməliyyat bu qovluq üçün dəstəklənmir.
 Fayl və ya Qovluğun Yenidən Adlandırılması Zamanı Xəta 
@@ -412,12 +412,12 @@ Fayllar dəstəsinin silinmə təsdiqi
 Siz həqiqətən "{0}" silmək istəyirsiz?
 Siz həqiqətən "{0}" qovluğunu və onun bütün məzmununu silmək istəyirsiz?
 Siz həqiqətən {0} hədəfi silmək istəyirsiz?
-Silinmə...
+Silinir...
 Fayl və ya Qovluq Silinməsi Zamanı Xəta
 Quruluş uzun yollu faylların səbətə silinməsi əməliyyatını dəstəkləmir
 6300
-Qovluq Yarat
-Fayl Yarat
+Qovluq Yaratmaq
+Fayl Yaratmaq
 Qovluq Adı:
 Fayl Adı:
 Yeni Qovluq
@@ -428,7 +428,7 @@ Fayl Yaradılması Zamanı Zəta
 Şərh
 &Şərh:
 Seçin
-Seçimi Ləğv Edin
+Seçimin Ləğvi
 Üzlük (Maska):
 6600
 Xassələr
@@ -441,18 +441,18 @@ Kompüter
 Sənədlər
 Quruluş
 7200
-Əlavə Et
-Ayır
+Əlavə Etmək
+Ayırmaq
 Sınaq
-Nüsxələ
-Köçür
-Sil
+Nüsxələmək
+Köçürmək
+Silmək
 Məlumat
 7300
 Fayl Bölmək
 &Bölmək:
 Cildlərə &bölmək, (bayt) ölçüdə:
-Bölünmə...
+Bölünür...
 Bölünmə Təsdiqi
 Siz həqiqətən faylı {0} hissəyə bölmək istəyirsiz?
 Cild ölçüsü ilkin fayl ölçüsündən kiçik olmalıdır
@@ -461,7 +461,7 @@ Təyin edilmiş cild ölçüsü: {0} bayt.\nSiz həqiqətən arxivi belə cildl�
 7400
 Faylları Birləşdir
 &Birləşdirmək:
-Birləşmə...
+Birləşir...
 Bölünmüş faylın yalnız birinci hissəsini seçmək lazımdır
 Bölünmüş faylın tanınması mümkün olmadı
 Bölünmüş faylın birdən çox hissəsini tapmaq mümkün olmadı

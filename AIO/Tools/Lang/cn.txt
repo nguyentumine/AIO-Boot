@@ -164,7 +164,7 @@ Special Pack
 当前操作系统支持persistent mode.%s这代表每个工作阶段之后数据会被保存。%s操作系统的运行速度取决于所用磁盘的读写速度。%s需要创建一个4Gb文件用于支持persistent mode吗?
 当前操作系统支持persistent mode.%s这代表每个工作阶段之后数据会被保存。%s操作系统的运行速度取决于所用磁盘的读写速度。%s根据实际使用大小创建文件。
 Grub2 背景墙纸
-衷心感谢:--所有使用此工具的朋友.--Google.--GNU (Grub2 研发团队).--Clover, rEFInd, Grub4dos 及 Syslinux 研发团队.-- 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot 以及 WinSetupFromUSB的作者们.--各语种翻译者: Denis Cojocaru (俄语 和 罗马尼亚语), Stoian Bahchevanski (保加利亚语), Pascal BIMAS Perso (法语), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (土耳其语), Michał Smajdor (波兰语), Alessandro Santini (意大利语), Txema, Alacran (西班牙语), Frettt (德语), Tenhon (繁体中文)，Sun Wei(简体中文).
+衷心感谢:--所有使用此工具的朋友.--Google.--GNU (Grub2 研发团队).--Clover, rEFInd, Grub4dos 及 Syslinux 研发团队.-- 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot 以及 WinSetupFromUSB的作者们.--各语种翻译者: Denis Cojocaru (俄语 和 罗马尼亚语), Stoian Bahchevanski (保加利亚语), Pascal BIMAS Perso (法语), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (土耳其语), Michał Smajdor (波兰语), Alessandro Santini (意大利语), Txema, Alacran (西班牙语), Frettt (德语), Tenhon (繁体中文)，Sun Wei(简体中文), Hanuware (Korean).
 分区管理
 大小 MB
 输入文件

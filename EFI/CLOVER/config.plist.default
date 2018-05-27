@@ -230,6 +230,8 @@
 		</array>
 		<key>FixHeaders</key>
 		<true/>
+		<key>FixMCFG</key>
+		<true/>
 		<key>HaltEnabler</key>
 		<true/>
 		<key>SSDT</key>
@@ -302,6 +304,8 @@
 		<key>NeverDoRecovery</key>
 		<true/>
 		<key>NeverHibernate</key>
+		<false/>
+		<key>RtcHibernateAware</key>
 		<false/>
 		<key>SignatureFixup</key>
 		<false/>
