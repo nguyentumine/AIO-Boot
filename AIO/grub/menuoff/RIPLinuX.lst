@@ -1,0 +1,5 @@
+set _path=
+set _kernel=kernel64
+checkrange 0,1 is64bit && set _kernel=kernel32
+kernel	%_path%/boot/%_kernel% xlogin nokeymap root=/dev/ram0 rw
+initrd	%_path%/boot/rootfs.cgz

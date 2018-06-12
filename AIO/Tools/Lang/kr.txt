@@ -1,7 +1,7 @@
 ﻿#######################################
 언어 : 한국어
 크레딧 : Hanuware
-날짜 : 06.05.2018
+날짜 : 27.05.2018
 정보 : 줄을 추가, 삭제 또는 이동하지 마십시오. "%s" 제거하지 마십시오. 직접 제출하거나 질문이 있으시면 admin@aioboot.com으로 이메일을 보내주십시오. 도와주셔서 감사합니다!
 #######################################
 
@@ -20,7 +20,7 @@ PXE 실행
 도움
 현재 디스크 :
 디스크
-이름
+장치
 유형
 크기
 현재 드라이브 :
@@ -30,9 +30,9 @@ PXE 실행
 USB 미디어
 미디어 수정
 램 디스크
-Unknow
-AIO Boot는 Grub2, Grub4dos, Syslinux, Clover 및 rEFInd 사용하여 부팅 가능한 USB/HDD를 만드는 도구입니다. AIO Boot는 독창적 인 고급 기능을 제공합니다. %s이 도구는 100%% 깨끗하며 컴퓨터에 해를 끼치지 않습니다. %s 아이디어 혹은 버그 신고는 커뮤니티에 적어주시고. 더 많은 사람들이 도구를 알고 사용할 수 있는 기사, 비디오 및 링크를 공유해 주기를 바랍니다.
-궁금한 점이 있으면 저자에게 연락하는 것을 잊지 마십시오. admin@aioboot.com으로 이메일 하십시오. 나는 도구를 더 향상시킬 수 있도록 여러분의 의견을 듣고 싶습니다.
+알 수 없음
+AIO Boot는 Grub2, Grub4dos, Syslinux, Clover 및 rEFInd 사용하여 부팅 가능한 USB/HDD를 만드는 도구입니다. AIO Boot는 독창적인 고급 기능을 제공합니다. %s이 도구는 100%% 깨끗하며 컴퓨터에 해를 끼치지 않습니다. %s 아이디어 혹은 버그 신고는 커뮤니티에 적어주시고. 더 많은 사람들이 도구를 알고 사용할 수 있는 게시글, 비디오 및 링크를 공유해 주기를 바랍니다.
+궁금한 점이 있으면 개발자에게 문의하는 것을 잊지 마십시오. admin@aioboot.com으로 이메일 하십시오. 나는 도구를 더 향상시킬 수 있도록 여러분의 의견을 듣고 싶습니다.
 이름
 번역
 웹사이트 방문
@@ -40,11 +40,11 @@ AIO Boot는 Grub2, Grub4dos, Syslinux, Clover 및 rEFInd 사용하여 부팅 가
 1. 이미지 유형
 2. 파일 선택
 다운로드
-승인
+OK
 파일을 선택하십시오...
 ISO 또는 WIM 파일 선택하십시오...
 ISO 파일 선택하십시오...
-ISO 마운트한 다음 "I386/TXTSETUP.SIF"또는 "AMD64/TXTSETUP.SIF" 선택하십시오.
+ISO 마운트한 다음 "I386/TXTSETUP.SIF" 또는 "AMD64/TXTSETUP.SIF" 선택하십시오
 유효한 파일을 선택하십시오!
 파일 이름에는 한글 띄어쓰기 공백 사용할 수 없습니다. 파일 이름을 변경하고 다시 시도하십시오!
 4GB보다 큰 파일은 FAT32 볼륨에 저장할 수 없습니다. %s 파티션을 exFAT 또는 NTFS로 포맷하면이 문제가 해결됩니다.
@@ -62,12 +62,12 @@ ISO 마운트한 다음 "I386/TXTSETUP.SIF"또는 "AMD64/TXTSETUP.SIF" 선택하
 정보
 확인
 복사
-필수 파일 복사 중 ...
-적출
-파일을 확인하고 있습니다. 잠시 기다려주십시오 ...
+필수 파일 복사 중...
+추출
+파일을 확인하고 있습니다. 잠시 기다려주십시오...
 메뉴 이름을 입력하십시오.
-메뉴 추가 중 ...
-파일 준비 중 ...
+메뉴 추가 중...
+파일 준비 중...
 계속하려면 Regedit.exe를 닫으십시오!
 취소
 계속
@@ -79,18 +79,18 @@ ISO 마운트한 다음 "I386/TXTSETUP.SIF"또는 "AMD64/TXTSETUP.SIF" 선택하
 선택한 디스크는 GPT 파티션 스타일입니다. "EFI"폴더를 "FAT32"또는 "FAT16"으로 포맷 된 파티션에 복사해야합니다.
 선택한 디스크는 GPT 파티션 스타일입니다. Grub2, rEFInd 및 Clover 만 지원됩니다.
 현재이 기기를 지원하지 않습니다!
-설치되었습니다 ...
+설치되었습니다...
 이미 설치되었습니다 ...
 %s 설치되지 않았습니다. %s 에는 %s 설치해야합니다. %sGrub2를 설치 하시겠습니까?
-최신 Windows 버전을 설치 한 드라이브를 선택하십시오.
-가능하면 Windows 7 또는 최신 버전에서이 기능을 사용해보십시오.
+최신 Windows 설치한 드라이브를 선택하십시오.
+가능하면 Windows 7 또는 최신 버전에서 이 기능을 사용해보십시오.
 시스템 파티션을 찾지 못했습니다.
 복원되었습니다.
 %s 모드에서 Windows가 설치된 드라이브를 찾지 못했습니다.
-Syslinux를 설치하려면 드라이브를 다시 포맷해야합니다.
+Syslinux 설치하려면 드라이브를 다시 포맷해야합니다.
 드라이브를 FAT32 또는 NTFS로 포맷하십시오.
-레거시 BIOS 모드에서 Windows를 설치 한 파티션을 선택하십시오.
-Windows를 UEFI 모드로 설치 한 파티션을 선택하십시오.
+레거시 BIOS 모드에서 Windows를 설치한 파티션을 선택하십시오.
+Windows UEFI 모드로 설치 한 파티션을 선택하십시오.
 UEFI 모드로 부팅하고 다시 시도하십시오.
 최신 버전을 사용 중입니다!
 현재 업데이트 할 수있는 새 버전이 있습니다. %s 버전 %s, %s에 릴리스되었습니다. %s이 응용 프로그램을 닫고 지금 업데이트 하시겠습니까?
@@ -99,25 +99,25 @@ UEFI 모드로 부팅하고 다시 시도하십시오.
 메뉴 이름
 저장
 편집이 끝난 후에 저장.
-파일을 삭제하는 중...
-저장 됨
+파일 삭제하는 중...
+저장됨
 업데이트
 디폴트
-파일 만
+파일만
 클로버도 레거시 모드로 설치됩니다.
 UEFI 모드에서 Grub2, Clover 및 rEFInd를 설치할 파티션을 선택하십시오.
-계속하려면 AIO Boot의 최신 버전을 다운로드하고이 디스크를 다시 파티션해야합니다.
-GPT 스타일의 하드 디스크는 UEFI 모드 만 지원합니다. %s UEFI 모드 만 사용하는 경우 지금 당장 아무 것도 할 필요가 없습니다.
-UEFI 모드에서 Grub2, Clover, rEFInd 및 UEFI Shell을 지원하려면이 하드 디스크에 FAT32 또는 FAT16 형식의 파티션을 만들어야합니다.
-DiskPart 또는 GParted를 사용하여 새 파티션을 만들 수 있습니다. %s 새 파티션을 만든 후에 다시 시도하십시오.
-선택한 디스크는 GPT 파티션 스타일입니다. "EFI"폴더를 "EFI 시스템 파티션 (ESP)"에 복사해야합니다. 지금하고 싶니?
+계속하려면 AIO Boot 최신버전을 다운로드하고 디스크를 다시 파티션 해야합니다.
+GPT 스타일의 하드 디스크는 UEFI 모드만 지원합니다. %s UEFI 모드만 사용하는 경우 지금 당장 아무것도 할 필요가 없습니다.
+UEFI 모드에서 Grub2, Clover, rEFInd 및 UEFI Shell 지원하려면 하드 디스크에 FAT32 또는 FAT16 형식의 파티션을 만들어야합니다.
+DiskPart 또는 GParted 사용하여 새 파티션을 만들 수 있습니다. %s 새 파티션을 만든 후에 다시 시도하십시오.
+선택한 디스크는 GPT 파티션 스타일입니다. "EFI"폴더를 "EFI 시스템 파티션 (ESP)"에 복사해야합니다. 지금하고 시작?
 %s : 컴퓨터를 켤 때마다 Grub2로 바로 부팅됩니다. %s : Grub2로 부팅하려면 "/EFI/Grub2/bootx64.efi"파일을 선택해야합니다.
 GPT 스타일의 하드 드라이브에서 레거시 BIOS 모드를 지원하려면. 우리는 새로운 파티션을 할애해야합니다.
 1. 이 파티션 크기는 가능한 한 작습니다. 약 1MB 이상 10MB 이하. %s2. 이 파티션의 모든 데이터가 손실됩니다. 따라서 새 파티션을 만들어야합니다.
 필요에 따라이 파티션을 만든 후에는 계속하십시오.
 내 컴퓨터에는 32 비트 UEFI 펌웨어가 있습니다.
-메뉴 이름을 입력하지 마십시오.
-파일을 확인할 필요가 없습니다.
+메뉴 이름 메시지를 표시하지 않음.
+파일 확인하지 않음.
 UEFI 모드에 대해 PXE 부팅을 구성하십시오.
 설정 저장
 다음은 Grub2가 지원되는 언어 목록입니다. 언어는 무엇인가?
@@ -135,9 +135,9 @@ Windows 전용
 아래 단계를 먼저 수행하십시오:%s1. 다운로드 "boot%s.wim".%s2. 복사할 위치 "%s\AIO\WinPXE\sources\".%s 여기에서 다운로드 할 수 있습니다:
 보안 부팅이 켜져 있습니다. 이로 인해 비 Windows 운영 체제로 부팅하지 못할 수 있습니다. BIOS에서이 옵션을 비활성화하십시오.
 Grub2 언어
-글자 크기
-작은
-큰
+글꼴 크기
+작게
+크게
 Grub2에 대한 새 암호를 만듭니다.
 새로 만들기
 Grub2 암호를 변경하거나 제거하십시오.
@@ -157,18 +157,18 @@ AIO Boot의 Grub2를 사용하지 않고 컴퓨터가 부팅되었는지 확인�
 취소 중
 취소 된
 삭제됨
-자동 감지
+자동감지
 기타
 통합팩
 이 파일을 찾을 수 없습니다. 목록에있는 패키지를 선택하십시오!
 이 운영 체제는 영구 모드를 지원합니다. %s 이것은 각 세션 후에 데이터가 저장된다는 것을 의미합니다. %s 운영 체제의 속도는 하드 드라이브의 읽기 및 쓰기 속도에 따라 다릅니다. %s 영구적으로 4Gb 파일을 만드시겠습니까 방법?
 이 운영 체제는 영구 모드를 지원합니다. %s 이것은 각 세션 후에 데이터가 저장된다는 것을 의미합니다. %s 운영 체제의 속도는 하드 드라이브의 읽기 및 쓰기 속도에 따라 다릅니다. %s 저장하려는 데이터
 Grub2 배경
-감사합니다:--모든 사람들이이 도구를 사용하고 있습니다.--Google.--GNU (Grub2 개발 팀).--Clover, rEFInd, Grub4dos 및 Syslinux.--개발 팀: 7-Zip, Tiny PXE 서버, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot 및 WinSetupFromUSB.--언어 번역가: Denis Cojocaru (러시아어 및 루마니아어), Stoian Bahchevanski (불가리아어), Pascal BIMAS Perso (프랑스어), Erhan Kultur, Murat ATICI , Tayfun Akkoyun (터키), Michał Smajdor (폴란드어), Alessandro Santini (이탈리아어), Txema (스페인어), Frettt (독일어), Tenhon (중국어 번체), Sun Wei (중국어 간체), Hanuware (한국어).
+진심으로 감사합니다:--All these users are using this tool.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot and WinSetupFromUSB.--Translators of languages: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil).
 파티션 관리
 크기(MB)
 입력 파일
-결과물 파일
+출력 파일
 ISO 파일을 선택하려면 여기를 클릭하십시오...
 PartIMG 저장 위치를 ​​선택하십시오...
 만들기
@@ -181,21 +181,21 @@ PartIMG 저장 위치를 ​​선택하십시오...
 최소 %s 크기를 입력하십시오.
 %s 드라이브의 여유 공간이 충분하지 않습니다.
 %s 드라이브는 FAT32로 포맷되어 있으며 최대 4GB 크기의 파일 만 저장할 수 있습니다.
-ImDisk가 설치되어 있지 않습니다. ImDisk를 지금 설치 하시겠습니까?
+ImDisk가 설치되어 있지 않습니다. ImDisk 설치 하시겠습니까?
 ImDisk가 설치되지 않았습니다.
-파일 생성 및 마운트 중 ...
-ISO 파일 추출 중 ...
-구성 파일 업데이트 중 ...
+파일 생성 및 마운트 중...
+ISO 파일 추출 중...
+구성 파일 업데이트 중...
 PartIMG 파일의 크기가 충분하지 않습니다. 약 %s 정도로 늘리고 다시 시도하십시오.
 PartIMG 파일에 Label을 설정할 수 없습니다.
 %s 마운트 해제 할 수 없습니다, 수동으로 %s 선택한 PartIMG 파일을 삭제하십시오.
 ISO를 마운트 한 다음 해당 드라이브의 sources\install.wim 파일을 선택하십시오.
 드라이브 sources\install.wim 파일을 선택하려면 여기를 클릭하십시오.
 VHD 저장 위치를 ​​선택하십시오
-Windows 7 이상 만 지원합니다.
-VHD 파일 만들기 및 마운트 ...
-이미지 적용 중 ...
-VHD 파일 마운트 해제 중 ...
+Windows 7 이상만 지원합니다.
+VHD 파일 만들기 및 마운트...
+이미지 적용 중...
+VHD 파일 마운트 해제 중...
 VHD 파일을 만들고 탑재 할 수 없습니다.
 VHD 파티션에 이미지를 적용 할 수 없습니다.
 VHD 파일의 크기가 충분하지 않습니다. VHD 파일을 늘려 다시 시도하십시오.
@@ -204,15 +204,15 @@ VHD 파일의 크기가 충분하지 않습니다. VHD 파일을 늘려 다시 �
 모든 "sources\*.wim" 파일을 추출하여 "WinPE 7/8.1/10"에 통합하십시오.
 이 패키지를 WinPE로 통합 하시겠습니까?
 모든 파일을 USB 또는 하드 드라이브의 루트 디렉토리에 먼저 추출하십시오!%s 자세한 정보는 홈페이지를 참조하십시오.
-관습
+커스텀
 생성
 FAT32 파티션에 4GB보다 큰 파일을 생성 할 수 없습니다.
 Grub4Dos를 기본 부트 로더로 설치 하시겠습니까? %s Grub2가 귀하의 컴퓨터에서 호환되지 않거나 테스트 용으로 만 사용되는 경우 Grub4Dos를 설치해야합니다. %s Grub2를 사용하여이 기능을 완벽하게 지원하십시오.
 UEFI 모드의 기본 부트 로더
-ReactOS LiveCD 만 지원합니다. ReactOS Setup 통합하는 방법에 대한 홈페이지를 확인하십시오.
+ReactOS LiveCD 만 지원합니다. ReactOS Setup 통합하는 방법은 홈페이지를 확인하십시오.
 ISO 생성
 ISO 파일을 저장할 위치를 선택하십시오.
-블로그 : https : //www.aioboot.com.%sPage : https://www.facebook.com/allinoneboot/.%sGroup : https://www.facebook.com/groups/aioboot/.
+홈페이지 : https://www.aioboot.com.%sPage : https://www.facebook.com/allinoneboot/.%sGroup : https://www.facebook.com/groups/aioboot/.
 모드를 선택하십시오.
 테스트 부팅 [QEMU]
 이 드라이브 또는 ISO 파일을 테스트하고 싶습니까?
@@ -222,22 +222,22 @@ ISO 파일
 올바른 양수를 입력하십시오.
 0보다 크고 %sMB보다 작은 메모리를 입력하십시오.
 QEMU 파일을 %s\QEMU 디렉토리에 복사합니다. 동의하니?
-이 ISO 파일을 테스트 하시겠습니까?
-Windows 설치를 위해 WIM을 추출하십시오.
-Windows ISO 파일을 다시 패키지하십시오.
-ISO 파일 재 포장
+ISO 파일을 테스트 하시겠습니까?
+Windows 설치를 위해 WIM을 추출.
+Windows ISO 파일을 다시 패키징
+ISO 파일 리패킹
 업데이트 다운로드 중
 이 ISO 파일은 ISOLINUX 부트 로더를 사용합니다. 이 경우 NTFS 포맷을 지원하지 않습니다. %s 레거시 모드에서의 부팅을 지원하려면 FAT32 포맷을 사용하십시오. %s 계속 하시겠습니까?
 이 운영 체제는 영구 모드를 지원할 수도 있습니다. %s 이것은 각 세션 후에 데이터가 저장된다는 것을 의미합니다. %s이 모드를 사용 하시겠습니까?
 이 VHD 파일은 64 비트 또는 32 비트 운영 체제와 함께 설치됩니까?
-Windows 7 용 USB 3.0 드라이버를 통합하지 마십시오.
-다시 묻지 마라.
-지침보기
+Windows7용 USB3.0 드라이버 통합 안 함
+다시 묻지 않음
+설명서 참고
 업데이트하기 전에 %s 드라이브에있는 모든 응용 프로그램을 닫으십시오.
 디스크 공간을 절약하기 위해이 파일을 복사하는 대신 이동합니다. 동의하니?
 Grub2 설치 [Legacy]
 이 드라이브에서 조각 모음을 수행 할 때마다 Grub2를 다시 설치해야합니다.
 이 패키지에는 하나의 버전 만 통합 할 수 있습니다. 메뉴 편집기 단추를 클릭하여 현재 버전을 삭제하고 다시 통합하십시오. 또는 Partition Image Mapper를 사용하십시오.
-이 드라이브에 남아있는 여유 공간이 충분하지 않습니다.
-접근이 금지되어있다. 바이러스 백신 소프트웨어를 비활성화하고 다시 시도하십시오.
-##### END... #####
+이 드라이브에 여유 공간이 충분하지 않습니다.
+액세스가 거부되었습니다. 바이러스 백신 사용하지 않도록 설정하고 다시 시도하십시오.
+##### END #####
