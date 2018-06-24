@@ -1,0 +1,3 @@
+vol () ;; set rootvol=%?%
+kernel	/trk3/kernel.trk ramdisk_size=65536 root=/dev/ram0 vga=788 splash=verbose pci=conf1 trkmenu vollabel=%rootvol%
+initrd	/trk3/initrd.trk
