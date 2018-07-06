@@ -606,6 +606,8 @@
 					<string>Grub2 UEFI</string>
 					<key>Type</key>
 					<string>Linux</string>
+					<key>Image</key>
+					<string>\EFI\CLOVER\themes\Material\icons\os_grub.icns</string>
 				</dict>
 				<dict>
 					<key>Disabled</key>
@@ -626,6 +628,26 @@
 					<string>Linux</string>
 					<key>Image</key>
 					<string>\EFI\refind\icons\os_refind.png</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>Hidden</key>
+					<false/>
+					<key>Hotkey</key>
+					<string>G</string>
+					<key>InjectKexts</key>
+					<false/>
+					<key>NoCaches</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\BOOT\WinPE_x64.efi</string>
+					<key>Title</key>
+					<string>WinPE</string>
+					<key>Type</key>
+					<string>Windows</string>
+					<key>Image</key>
+					<string>\EFI\CLOVER\themes\Material\icons\os_win.icns</string>
 				</dict>
 				<dict>
 					<key>AddArguments</key>

@@ -31,7 +31,7 @@ Info		:	Please do not add, delete or move the line, do not remove "%s". If you w
 固定式媒體
 記憶體磁碟
 未知
-AIO Boot 是一個使用 Grub2, Grub4dos, Syslinux, Clover 與 rEFInd 來建立可開機 USB/HDD 的工具。AIO Boot 擁有獨特的功能，先進且友善的介面。%s這是一個完全乾淨，不會對您的電腦造成傷害的工具。%s請提供您的想法和錯誤報告來幫助這個社群。請隨意分享或貢獻您的文章、視頻與連結讓更多人可以知道並使用這個工具。
+AIO Boot is an All-in-One bootable software for USB and HDD. Is one of the best Multiboot USB Creator for Windows.
 如果有任何問題請不吝聯繫作者，E-mail：admin@aioboot.com。希望可以從您這裡得到寶貴訊息以改善此工具。
 名稱
 版本
@@ -212,7 +212,7 @@ ImDisk 已經安裝。
 只支援 ReactOS LiveCD，請到首頁查詢如何集成 ReactOS 設置。
 建立 ISO 檔
 請選擇要儲存 ISO 檔的位置。
-Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
+Blog: https://www.aioboot.com.
 請選擇模式
 啟動測試 [QEMU]
 要測試此磁碟或 ISO 檔？

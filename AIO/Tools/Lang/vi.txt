@@ -31,7 +31,7 @@ Thiết bị tháo rời (USB, SD Cards...)
 Ổ cứng cố định
 RAM disk
 Chưa biết
-AIO Boot là một tiện ích để tạo một ổ khởi động cho USB và HDD sử dụng Grub2, Grub4dos, Syslinux, Clover và rEFInd. AIO Boot sở hữu các tính năng độc nhất, nâng cao và thân thiện.%sCông cụ này là 100%% sạch, nó là không có hại cho máy tính của bạn.%sXin hãy giúp đỡ cộng đồng này bằng cách đóng góp ý tưởng của bạn và báo cáo các lỗi. Hãy chia sẻ hoặc đóng góp các bài viết của bạn, video và các liên kết liên quan để nhiều người có thể biết và sử dụng công cụ này.
+AIO Boot là phần mềm khởi động tất cả trong một cho USB và HDD. Là một trong những chương trình Multiboot tốt nhất cho Windows.
 Đừng quên liên hệ với tác giả khi bạn có bất kỳ câu hỏi, email admin@aioboot.com. Tôi rất muốn nghe ý kiến từ bạn để tôi có thể cải thiện công cụ này tốt hơn.
 Tên ứng dụng
 Phiên bản
@@ -212,7 +212,7 @@ Bộ nạp khởi động mặc định trên UEFI
 Chỉ hỗ trợ ReactOS LiveCD. Kiểm tra trang chủ để biết cách tích hợp ReactOS Setup.
 Tạo ISO
 Vui lòng chọn nơi để lưu tệp tin ISO.
-Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
+Blog: https://www.aioboot.com.
 Vui lòng chọn chế độ
 Thử nghiệm BOOT [QEMU]
 Bạn muốn thử nghiệm Ổ đĩa này hay tệp tin ISO?

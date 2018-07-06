@@ -31,7 +31,7 @@ Info		:	Please do not add, delete or move the line, do not remove "%s". If you w
 固定式存储器
 RAM disk
 未知
-AIO Boot 是一个集成 Grub2, Grub4dos, Syslinux, Clover 及 rEFInd 来方便您制作可引导USB/HDD的工具。 AIO Boot 拥有独特的功能, 先进的设计和友好的界面。%s这是一个100%%纯净, 对电脑无害的工具。%s请提供您的想法和错误报告来帮助这个社群. 请您随意分享或发布文章、视频与网络链接让更多人知道并使用这个工具。
+AIO Boot is an All-in-One bootable software for USB and HDD. Is one of the best Multiboot USB Creator for Windows.
 如有疑问请联系作者, 电子邮箱 admin@aioboot.com.  为完善该工具，鄙人愿随时倾听您的意见。
 名称
 版本
@@ -212,7 +212,7 @@ UEFI模式默认引导程序
 只支持ReactOS LiveCD，请到首页查询如何集成ReactOS设置。
 创建 ISO
 请选择ISO文件存储路径。
-Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
+Blog: https://www.aioboot.com.
 请选择模式
 启动测试 [QEMU]
 要测试此磁盘或ISO文件吗?

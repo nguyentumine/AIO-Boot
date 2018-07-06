@@ -31,7 +31,7 @@ Dosya Sistemi
 Sabit Sürücü
 RAM disk
 Bilinmiyen
-AIO Boot; Grub2, Grub4dos, Syslinux, Clover ve rEFInd ile önyüklenebilir bir USB/HDD oluşturmanıza yardımcı olabilecek bir araçtır. AIO Boot'un kendine has özellikleri, gelişmiş ve dostça.%sBu araç 100%% temiz, bilgisayarınıza zararlı değildir.%sLütfen fikirlerinize katkıda bulunarak ve hataları bildirerek bu topluluğa yardımcı olunuz. Bu araç hakkında daha fazla kullanıcı bilgisini ve kullanabileceğinize ilişkin makaleler, videolar ve bağlantılar paylaşmak veya katkıda bulunmaktan çekinmeyin.
+AIO Boot is an All-in-One bootable software for USB and HDD. Is one of the best Multiboot USB Creator for Windows.
 Herhangi bir sorunuz varsa yazarla iletişim kurmayı unutmayın, admin@aioboot.com adresine e-posta atın. Sizden gelen istekler ve yardımlar ile bu aracı daha iyi geliştirebiliriz. Her şey için teşekkürler!
 Isim
 Sürüm
@@ -212,7 +212,7 @@ UEFI modunda varsayılan Ön Yükleyici
 Yalnız ReactOS LiveCD'yi destekler.Kurulum işlemleri için Reactos'un ana sayfasını inceleyiniz.
 ISO Oluştur
 ISO dosyasının nereye kaydedileceğini seçin.
-Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
+Blog: https://www.aioboot.com.
 Lütfen  modu seçin
 Multiboot'u [QEMU] ile Test Et
 ISO dosyasını mı yada bu sürücüyümü test etmek istersiniz?

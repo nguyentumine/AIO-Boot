@@ -31,7 +31,7 @@ USB 미디어
 미디어 수정
 램 디스크
 알 수 없음
-AIO Boot는 Grub2, Grub4dos, Syslinux, Clover 및 rEFInd 사용하여 부팅 가능한 USB/HDD를 만드는 도구입니다. AIO Boot는 독창적인 고급 기능을 제공합니다. %s이 도구는 100%% 깨끗하며 컴퓨터에 해를 끼치지 않습니다. %s 아이디어 혹은 버그 신고는 커뮤니티에 적어주시고. 더 많은 사람들이 도구를 알고 사용할 수 있는 게시글, 비디오 및 링크를 공유해 주기를 바랍니다.
+AIO Boot is an All-in-One bootable software for USB and HDD. Is one of the best Multiboot USB Creator for Windows.
 궁금한 점이 있으면 개발자에게 문의하는 것을 잊지 마십시오. admin@aioboot.com으로 이메일 하십시오. 나는 도구를 더 향상시킬 수 있도록 여러분의 의견을 듣고 싶습니다.
 이름
 번역
@@ -212,7 +212,7 @@ UEFI 모드의 기본 부트 로더
 ReactOS LiveCD 만 지원합니다. ReactOS Setup 통합하는 방법은 홈페이지를 확인하십시오.
 ISO 생성
 ISO 파일을 저장할 위치를 선택하십시오.
-홈페이지 : https://www.aioboot.com.%sPage : https://www.facebook.com/allinoneboot/.%sGroup : https://www.facebook.com/groups/aioboot/.
+홈페이지 : https://www.aioboot.com.
 모드를 선택하십시오.
 테스트 부팅 [QEMU]
 이 드라이브 또는 ISO 파일을 테스트하고 싶습니까?

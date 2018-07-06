@@ -31,7 +31,7 @@ Medio removible
 Medio fijo
 RAM disk
 Desconocido
-AIO Boot es una herramienta que puede ayudarlo a crear un USB / HDD de arranque con Grub2, Grub4dos, Syslinux, Clover y rEFInd. AIO Boot posee características únicas, avanzadas y amigables.%sEsta herramienta es 100%% limpia, no es dañino para su computadora.%sAyuda a esta comunidad contribuyendo con tus ideas e informando sobre errores. Siéntase libre de compartir o contribuir con sus artículos, videos y enlaces relacionados para que más personas puedan conocer y usar esta herramienta.
+AIO Boot is an All-in-One bootable software for USB and HDD. Is one of the best Multiboot USB Creator for Windows.
 No olvide ponerse en contacto con el autor si tiene alguna pregunta, envíe un correo electrónico a admin@aioboot.com. Me encantaría saber de ti para que pueda mejorar esta herramienta mejor.
 Nombre
 Version
@@ -212,7 +212,7 @@ Gestor de arranque predeterminado en modo UEFI
 Solo es compatible con ReactOS LiveCD. Consulte la página de inicio para saber cómo integrar la configuración de ReactOS.
 Crear ISO
 Seleccione dónde guardar el archivo ISO.
-Blog: https://www.aioboot.com.%sPage: https://www.facebook.com/allinoneboot/.%sGroup: https://www.facebook.com/groups/aioboot/.
+Blog: https://www.aioboot.com.
 Por favor, seleccione el modo de
 Probar Arranque [QEMU]
 ¿Quieres probar este archivo Drive o ISO?

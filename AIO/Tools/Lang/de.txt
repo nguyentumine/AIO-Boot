@@ -31,7 +31,7 @@ Wechselmedium
 Festplatten
 RAM-Disk
 Unbekannt
-Mit AIO Boot könnt ihr startfähige USB-/HDD-Disks mit Grub2, Grub4dos, Syslinux, Clover und rEFInd erstellen. AIO Boot besitzt einzigartige fortschrittliche und benutzerfreundliche Funktionen.%sDieses Werkzeug ist 100%% virenfrei und nicht schädlich für eure Computer.%sBitte helft dieser Gemeinschaft durch Einbringung eurer Ideen und meldet Fehler. Teilt und steuert eure Artikel, Videos und Links bei, damit mehr Leute AIO Boot nutzen können.
+AIO Boot is an All-in-One bootable software for USB and HDD. Is one of the best Multiboot USB Creator for Windows.
 Vergesst nicht mich zu kontaktieren falls ihr Hilfe braucht, eMail an admin@aioboot.com schicken. Ich würde mich freuen von euch zu hören damit ich AIO Boot weiter verbessern kann.
 Name
 Version
@@ -212,7 +212,7 @@ Standard-Bootloader im UEFI-Modus
 Unterstützt nur ReactOS LiveCD. Wie du ReactOS-Setup integrieren kannst, efährst du auf der Homepage.
 ISO-Datei erstellen
 Bitte auswählen wo die ISO-Datei gespeichert werden soll.
-Blog: https://www.aioboot.com.%sSeite: https://www.facebook.com/allinoneboot/.%sGruppe: https://www.facebook.com/groups/aioboot/.
+Blog: https://www.aioboot.com.
 Bitte Modus wählen
 Test BOOT [QEMU]
 Willst du diese Disk oder ISO-Datei testen?
