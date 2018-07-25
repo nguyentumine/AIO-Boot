@@ -1,4 +1,4 @@
-AIO Boot is an All-in-One bootable software for USB and HDD. Is the best [Multiboot USB Creator](https://www.aioboot.com) for Windows and Linux. AIO Boot own unique features, advanced and friendly.
+AIO Boot is an All-in-One bootable software for USB and HDD. Is one of the best [Multiboot USB Creator](https://www.aioboot.com) for Windows. AIO Boot own unique features, advanced and friendly.
 
 - [AIO Boot](https://www.aioboot.com) Homepage
 - [Download AIO Boot](https://www.aioboot.com/en/download/)
