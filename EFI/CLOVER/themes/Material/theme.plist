@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Badruzeus</string>
 	<key>Description</key>
-	<string>A colorful Clover theme with flat material icons and long shadow effect. Version: 3.0</string>
+	<string>A colorful Clover theme with flat material icons and long shadow effect. Version: 3.2</string>
 	<key>Theme</key>
 	<dict>
 		<key>Background</key>
@@ -87,7 +87,7 @@
 		<key>Selection</key>
 		<dict>
 			<key>Big</key>
-			<string>selection_big.png</string>
+			<string>Selection_big.png</string>
 			<key>ChangeNonSelectedGrey</key>
 			<false/>
 			<key>Color</key>
@@ -95,11 +95,11 @@
 			<key>OnTop</key>
 			<false/>
 			<key>Small</key>
-			<string>selection_small.png</string>
+			<string>Selection_small.png</string>
 		</dict>
 	</dict>
 	<key>Version</key>
-	<string>3.0</string>
+	<string>3.2</string>
 	<key>Year</key>
 	<string>2018</string>
 </dict>

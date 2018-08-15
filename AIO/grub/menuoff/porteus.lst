@@ -1,0 +1,5 @@
+set _path=
+set opt=
+if exist %_path%/data.img set opt=changes=%_path%/data.img
+kernel	%_path%/boot/syslinux/vmlinuz %opt% from=%_path%
+initrd	%_path%/boot/syslinux/initrd.xz

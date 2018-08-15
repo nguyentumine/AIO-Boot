@@ -12,11 +12,38 @@
 #
 timeout 20
 
+# Normally, when the timeout period has passed, rEFInd boots the
+# default_selection. If the following option is uncommented, though,
+# rEFInd will instead attempt to shut down the computer.
+# CAUTION: MANY COMPUTERS WILL INSTEAD HANG OR REBOOT! Macs and more
+# recent UEFI-based PCs are most likely to work with this feature.
+# Default value is true
+#
+#shutdown_after_timeout
+
+# Whether to store rEFInd's rEFInd-specific variables in NVRAM (1, true,
+# or on) or in files in the "vars" subdirectory of rEFInd's directory on
+# disk (0, false, or off). Using NVRAM works well with most computers;
+# however, it increases wear on the motherboard's NVRAM, and if the EFI
+# is buggy or the NVRAM is old and worn out, it may not work at all.
+# Storing variables on disk is a viable alternative in such cases, or
+# if you want to minimize wear and tear on the NVRAM; however, it won't
+# work if rEFInd is stored on a filesystem that's read-only to the EFI
+# (such as an HFS+ volume), and it increases the risk of filesystem
+# damage. Note that this option affects ONLY rEFInd's own variables,
+# such as the PreviousBoot, HiddenTags, HiddenTools, and HiddenLegacy
+# variables. It does NOT affect Secure Boot or other non-rEFInd
+# variables.
+# Default is true
+#
+#use_nvram false
+
 # Screen saver timeout; the screen blanks after the specified number of
 # seconds with no keyboard input. The screen returns after most keypresses
 # (unfortunately, not including modifier keys such as Shift, Control, Alt,
 # or Option). Setting a value of "-1" causes rEFInd to start up with its
 # screen saver active. The default is 0, which disables the screen saver.
+#
 #screensaver 300
 
 # Hide user interface elements for personal preference or to increase
@@ -43,6 +70,10 @@ timeout 20
 # an icon can't be found in the specified directory, an attempt is made
 # to load it from the default directory; thus, you can replace just some
 # icons in your own directory and rely on the default for others.
+# Icon files may be in any supported format -- ICNS (*.icns), BMP (*.bmp),
+# PNG (*.png), or JPEG (*.jpg or *.jpeg); however, rEFInd's BMP and JPEG
+# implementations do not support transparency, which is highly desirable
+# in icons.
 # Default is "icons".
 #
 #icons_dir myicons
@@ -52,10 +83,14 @@ timeout 20
 # path is relative to the directory where refind.efi is located. The color
 # in the top left corner of the image is used as the background color
 # for the menu screens. Currently uncompressed BMP images with color
-# depths of 24, 8, 4 or 1 bits are supported, as well as PNG images.
+# depths of 24, 8, 4 or 1 bits are supported, as well as PNG and JPEG
+# images. (ICNS images can also be used, but ICNS has limitations that
+# make it a poor choice for this purpose.) PNG and JPEG support is
+# limited by the underlying libraries; some files, like progressive JPEGs,
+# will not work.
 #
 #banner hostname.bmp
-#banner mybanner.png
+#banner mybanner.jpg
 #banner icons/snowy/banner-snowy.png
 
 # Specify how to handle banners that aren't exactly the same as the screen
@@ -81,23 +116,25 @@ timeout 20
 # for the OS icons, and a small one (64 x 64) for the function icons in the
 # second row. If only a small image is given, that one is also used for
 # the big icons by stretching it in the middle. If only a big one is given,
-# the built-in default will be used for the small icons.
+# the built-in default will be used for the small icons. If an image other
+# than the optimal size is specified, it will be scaled in a way that may
+# be ugly.
 #
 # Like the banner option above, these options take a filename of an
-# uncompressed BMP image file with a color depth of 24, 8, 4, or 1 bits,
-# or a PNG image. The PNG format is required if you need transparency
-# support (to let you "see through" to a full-screen banner).
+# uncompressed BMP, PNG, JPEG, or ICNS image file with a color depth of
+# 24, 8, 4, or 1 bits. The PNG or ICNS format is required if you need
+# transparency support (to let you "see through" to a full-screen banner).
 #
 #selection_big   selection-big.bmp
 #selection_small selection-small.bmp
 
 # Set the font to be used for all textual displays in graphics mode.
-# The font must be a PNG file with alpha channel transparency. It must
-# contain ASCII characters 32-126 (space through tilde), inclusive, plus
-# a glyph to be displayed in place of characters outside of this range,
-# for a total of 96 glyphs. Only monospaced fonts are supported. Fonts
-# may be of any size, although large fonts can produce display
-# irregularities.
+# For best results, the font must be a PNG file with alpha channel
+# transparency. It must contain ASCII characters 32-126 (space through
+# tilde), inclusive, plus a glyph to be displayed in place of characters
+# outside of this range, for a total of 96 glyphs. Only monospaced fonts
+# are supported. Fonts may be of any size, although large fonts can
+# produce display irregularities.
 # The default is rEFInd's built-in font, Luxi Mono Regular 12 point.
 #
 #font myfont.png

@@ -1,0 +1,5 @@
+set _path=
+set _kernel=vmlinuz
+checkrange 2,3 is64bit && set _kernel=vmlinuz1
+kernel	%_path%/boot/%_kernel% splash=silent,theme:lps load_ramdisk=1 ramdisk_start=1952 ramdisk_blocksize=4096 root=/dev/ram0 ramdisk_size=786432 console=tty1 vt.global_cursor_default=0 loglevel=3 LM=2
+initrd	%_path%/boot/ucode %_path%/boot/initrd

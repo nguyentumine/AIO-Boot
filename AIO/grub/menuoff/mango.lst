@@ -1,0 +1,3 @@
+vol () ;; set rootvol=%?%
+kernel	/trk3/isolinux/kernel.trk ramdisk_size=65536 root=/dev/ram0 vga=788 splash=verbose pci=conf1 trkinmem trkmenu vollabel=%rootvol%
+initrd	/trk3/isolinux/initrd.trk
