@@ -787,6 +787,8 @@
 		</dict>
 		<key>#CustomIcons</key>
 		<false/>
+		<key>#EmbeddedThemeType</key>
+		<string>Dark</string>
 		<key>Hide</key>
 		<array>
 			<string>Windows</string>

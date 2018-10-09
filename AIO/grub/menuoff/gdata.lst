@@ -1,11 +1,17 @@
 set _path=
-if exist %_path%/boot/linux3 goto :new
+if exist %_path%/boot/vmlinuz goto :new
+if exist %_path%/boot/linux3 goto :new1
 
 set _kernel=%_path%/boot/linux17 boot=live apm=power-off nomce lang=en_US.UTF-8 quiet live-media-path=%_path%/live
 set _initrd=%_path%/boot/initrd17.xz
 goto :boot
 
 :new
+set _kernel=%_path%/boot/vmlinuz live-media-path=%_path%/live boot=live union=aufs vga=791 quiet ignore_uuid ---
+set _initrd=%_path%/boot/initrd.img
+goto :boot
+
+:new1
 set _kernel=%_path%/boot/linux3 boot=live union=aufs apm=power-off nomce systemd.setenv=LANG=en_US.UTF-8 quiet live-media-path=%_path%/live
 set _initrd=%_path%/boot/initrd3.xz
 goto :boot

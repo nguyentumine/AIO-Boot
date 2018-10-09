@@ -24,6 +24,7 @@ item --key 7 specialpack		[7] Special Pack
 item --gap -- ------------------------------ Advanced ---------------------------------
 item --key c config				[c] Configure settings
 item --key s shell				[s] Enter iPXE shell
+isset ${legacy} && item --key l local				[l] Boot from local disk || ###
 item --key r reboot				[r] Restart
 item --key p poweroff			[p] Power Off
 item --key e exit				[e] Exit (boot local disk)
@@ -39,6 +40,10 @@ goto start
 :failed
 echo Booting failed, dropping to shell
 goto shell
+
+:local
+sanboot --no-describe --drive 0x80 || goto failed  
+goto start
 
 :reboot
 reboot

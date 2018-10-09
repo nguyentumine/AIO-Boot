@@ -1,0 +1,243 @@
+﻿################################################################
+Språk		:	Norsk
+Credits		:	Daniel Dybing (daniel.dybing@gmail.com)
+Date		:	20.08.2018
+Info		:	Vennligst ikke legg til, slett eller flytt linjer. Fjern heller ikke "%s". Hvis du vil sende inn ditt eget språk eller har spørsmål, ikke nøl med å sende en e-post til admin@aioboot.com. Takk for hjelpen!
+################################################################
+
+
+
+##### BEGIN #####
+Norsk
+Hovedmeny
+Legg til
+Om
+Bootloadere
+Start PXE
+Innstillinger
+Verktøy
+Rediger meny
+Hjelp
+Nåværende disk:
+Disk
+Navn
+Type
+Størrelse
+Nåværende stasjon:
+Disk
+Navn
+Filsystem
+Flyttbar stasjon
+Stasjonær stasjon
+RAM disk
+Ukjent
+AIO Boot er et alt-i-ett verktøy for å opprette og konfigurere oppstartbare USB- og HDD-enheter. Det er et av de beste multiboot-verktøyene som finnes!
+Hvis du har spørsmål, ta kontakt med skaperen av programvaren på e-post admin@aioboot.com. Jeg vil gjerne høre fra deg slik at jeg kan fortsette å forbedre verktøyet. 
+Navn
+Versjon
+Hjemmeside
+Kopibeskyttelse
+1. Velg type
+2. Velg fil
+Last ned
+OK
+Velg filen du vil legge til...
+Velg ISO- eller WIM-fil...
+Velg ISO-fil...
+Monter ISO-filen, velg deretter "I386/TXTSETUP.SIF" eller "AMD64/TXTSETUP.SIF"...
+Vennligst velg en gyldig fil!
+Filnavnet kan kun inneholde alfanumeriske tegn (bokstaver og tall) og punktum. Vennligst gi filen et nytt navn og prøv igjen.
+Filer større enn 4GB kan ikke lagres på et FAT32-volum.%sBenytt heller exFAT- eller NTFS-filsystem for å unngå dette.
+Behandler, vennligst vent...
+Ikke lukk dette vinduet for operasjonen er ferdig!
+Kunne ikke gjenkjenne denne filen!
+Det har oppstått en feil, kontakt utgiveren av programmet!
+Feilmelding: Vennligst lukk applikasjonen som bruker filen BCD-/WinLegacy-filen og prøv igjen. 
+Feilmelding: Vennligst lukk applikasjonen som bruker filen %s og forsøk på nytt!
+Ugyldig fil!
+Feil: Det er ikke nok plass tilgjengelig!
+Ferdig!
+Feil
+Advarsel
+Informasjon
+Bekreft
+Kopierer
+Kopierer nødvendige filer...
+Pakker ut... 
+Verifiserer filen, vennligst vent...
+Vennligst angi et navn for menyvalget
+Legger til menyvalg...
+Forbereder filer...
+Lukk Regedit.exe for å fortsette!
+Avbryt
+Fortsett
+Rydder opp, vennligst vent...
+På grunn av størrelsen kan ikke denne filen lagres som den er på en FAT32-stasjon.%sFilen vil bli delt opp, vil du fortsette?
+Deler opp
+Ja
+Nei
+Den valgte disken har GPT-partisjonskart. Du må kopiere mappen "EFI" til en partisjon som er formatert med "FAT16"- eller "FAT32"-filsystem. 
+Den valgte disken har GPT-partisjonskart. Kun Grub2, rEFInd og Clover støtter GPT. 
+Denne enheten er foreløpig ikke støttet!
+ble installert...
+er allerede installert...
+%s har ikke blitt installert %s krever at %s er installert.%sØnsker du å installere Grub2 nå?
+Vennligst velg stasjonen hvor nyeste versjon av Windows er installert. 
+For best mulig kompatibilitet, bruk denne funksjonen på Windows 7 eller nyere.
+Fant ikke systempartisjon.
+har blitt gjenopprettet.
+Finner ikke stasjon hvor Windows er installert i %s modus.
+Du må reformatere denne disken for å installere Syslinux. 
+Vennligst formater disken som FAT32 eller NTFS.
+Vennligst velg partisjonen hvor Windows er installert i Legacy/BIOS-modus. 
+Vennligst velg partisjonen hvor Windows er installert i UEFI-modus. 
+Vennligst start opp i UEFI-modus og forsøk igjen..
+Du benytter allerede siste versjon!
+Det er en ny versjon av programmet tilgjengelig. %sVersjon %s, sluppet %s.%sØnsker du å lukke programmet og kjøre oppdatering nå?
+Det er for øyeblikket ingen menyvalg å redigere.
+Slett?
+Navn for menyvalg
+Lagre
+etter at du har redigert.
+Fjerner filer...
+Lagret
+Oppdater
+Standard
+Kun fil
+Clover vil også bli installert for Legacy-modus.
+Velg partisjon for installasjon av Grub2, Clover og rEFInd for UEFI-modus. 
+Du må laste ned siste versjon av AIO Boot og repartisjonere denne disken for å fortsette. 
+Disker med GPT-partisjonskart støtter kun UEFI-modus.%sHvis du kun planlegger å benytte UEFI-modus behøver du ikke foreta deg noe. 
+For at Grub2, Clover, rEFInd og UEFI shell skal være støttet i UEFI-modus, så er det nødvendig å opprette en FAT32- eller FAT16-partisjon på denne disken. 
+Du kan benytte for eksempel DiskPart eller GParted for å opprette partisjonen.%sPrøv på nytt etter at du har opprettet partisjonen.
+Det er nødvendig å kopiere mappen "EFI" til "EFI System Partition (ESP)". Ønsker du å gjøre dette nå? 
+%s: Du vil starte med Grub2 hver gang du starter maskinen.%s: Du må velge filen "/EFI/Grub2/bootx64.efi" for å starte Grub2. 
+For å støtte Legacy/BIOS-modus på denne disken med GPT-partisjonskart, så det opprettes en ny, dedikert partisjon. 
+1. Denne partisjonen er så liten som mulig. Cirka 1MB eller større, men ikke større enn 10MB.%s2. Alle data på denne partisjonen vil gå tapt. Det er derfor nødvendig å opprette en ny partisjon. 
+Fortsett etter at du har opprettet den nødvendige partisjonen.
+Min datamaskin har 32-bit UEFI. 
+Ikke spør meg om å navngi menyvalg. 
+Ikke verifiser filer.
+Konfigurer PXE for UEFI-modus. 
+Angi
+Her er en liste over Grub2's støttede språk. Hvilket vil du bruke? 
+Vennligst velg et valg fra rullgardinmenyen.
+Innstillingene har blitt lagret!
+Vennligst reformater denne stasjonen til FAT32-filsystem.%sAlternativt, installer Grub2 og velg valget om å installere Clover. 
+Installer bootloader
+Gjenopprett Windows Bootloader
+Tiny PXE Server kjører allerede, vennligst lukk programmet og prøv igjen!
+UEFI eller Legacy?
+Velg 32-bit eller 64-bit versjon.  
+Kun Windows
+Alle andre
+WinPE kreves
+Følg stegene nedenfor først:%s1. Last ned "boot%s.wim".%s2. Kopier filen til "%s\AIO\WinPXE\sources\".%sDu kan laste ned filen her: 
+Secure Boot er aktivert. Dette kan forhindre oppstart av andre systemer enn Windows. Vennligst deaktiver dette valget i BIOS/UEFI for best støtte. 
+Grub2 Språk
+Fontstørrelse
+Liten
+Stor
+Opprett nytt passord for Grub2.
+Opprett nytt
+Endre eller fjerne passord for Grub2. 
+Fjern
+Ønsker du å opprette et nytt passord eller fjerne eksisterende passord?
+Nytt Brukernavn
+Nytt Passord
+Verdien kan ikke inneholde mellomrom i begynnelsen eller på slutten. 
+Brukernavnet kan bare inneholde bokstavene A-Z, tallene 0-9 og mellomrom ['' ''].
+Nytt brukernavn og passord har blitt lagret. 
+Avinstaller
+Forsikre deg om at du ikke allerede bruker AIO Boot's Grub2 til å starte maskinen din.Hvis du avinstallerer, og maskinen din er avhengig av AIO Boot's Grub2, så vil du oppleve problemer ved neste oppstart.%sFor å gjenopprette Windows sin oppstartslaster, åpne "Bootloadere" menyen eller bruk en Windows installasjons-DVD.%sFortsett bare dersom du er sikker på at AIO Boot's Grub2 ikke er nødvendig for å starte opp din datamaskin. 
+Deler opp filen
+Pakker ut filen
+Oppdaterer filer...
+Legger til ekstra filer
+Avbryter
+Avbrutt
+Slettet
+Gjenkjenn automatisk
+Andre
+Andre systemer
+Klarte ikke å gjenkjenne denne filen, vennligst velg systemet fra listen.
+Dette systemer støtter lagring.%sDette gjør det mulig å lagre data mellom hver økt, slik at filer du oppretter og endringer du gjør blir lagret til neste gang.%sHastigheten er avhengig av lagringsmediet.%sØnsker du å opprette en 4GB-fil for lagring? 
+Dette systemet støtter lagring.%sDette gjør det mulig å lagre data mellom hver økt, slik at filer du oppretter og endringer du gjør blir lagret til neste gang.%sHastigheten er avhengig av lagringsmediet.%sVi vil opprette en fil for lagring på størrelsen du ønsker.
+Grub2 bakgrunn
+Tusen takk til:--Alle brukere av dette verktøyet.--Google.--GNU (Grub2 Development Team).--Skaperne av Clover, rEFInd, Grub4dos and Syslinux.--Skaperne av 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot og WinSetupFromUSB.--Språkoversetterne: Denis Cojocaru (Russisk og rumensk), Stoian Bahchevanski (Bulgarsk), Pascal BIMAS Perso (Fransk), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Tyrkisk), Michał Smajdor, Andrzej Gicala (Polsk), Alessandro Santini (Italiensk), Txema, Alacran (Spansk), Frettt (Tysk), Tenhon (Tradisjonell kinesisk), CloverGit, Sun Wei (Forenklet kinesisk), Hanuware (Koreansk), Renato "donalld" Pejon (Brasiliansk portugisisk), Daniel Dybing (Norsk).
+Partisjonsbehandling
+Størrelse i MB
+Kildefil
+Målfil
+Klikk her for å velge ISO-fil...
+Klikk her for å velge hvor du vil lagre ".PartIMG"-filen...
+Opprett
+Denne filen er tom.
+Kunne ikke hente informasjon om denne filen.
+Denne filen vil kanskje ikke fungere. Ønsker du likevel å fortsette?
+Vennligst oppgi en størrelse for filen du ønsker å opprette.
+Angi et stasjonsnavn for denne filen. 
+Målfilen eksisterer allerede, vil du overskrive den eksisterende filen?
+Vennligst oppgi en størrelse som er minst %s.
+Det er ikke nok plass på stasjonen %s. 
+Stasjonen %s har FAT32 filsystem og kan kun lagre filer på opptil 4GB.
+ImDisk er ikke installert, ønsker du å installere ImDisk nå?
+ImDisk ble ikke installert.
+Oppretter og monterer fil...
+Pakker ut ISO-fil...
+Oppdaterer konfigurasjonsfiler...
+PartIMG-filen er ikke stor nok. Øk størrelsen til ca %s og prøv igjen. 
+Kunne ikke sette stasjonsnavn for PartIMG-filen.
+Stasjonen %s kunne ikke avmonteres, vennligst gjør dette manuelt.%sTil slutt sletter du PartIMG-filen. 
+Monter ISO, velg deretter filen sources\install.wim i den monterte stasjonen...
+Klikk her for å velge sources\install.wim-filen...
+Klikk her for å velge hvor du vil lagre ".VHD"-filen...
+Kun Windows 7 og nyere er støttet.
+Oppretter og monterer VHD-fil...
+Skriver diskavbildning...
+Avmonterer VHD-fil...
+VHD-fil kunne ikke opprettes eller monteres. 
+Kan ikke skrive avbildning til VHD-filen. 
+Størrelsen på VHD-filen er ikke stor nok, vennligst øk størrelsen og forsøk igjen. 
+Stasjon %s kunne ikke avmonteres, vennligst gjør dette manuelt.%sTil slutt sletter du VHD-filen. 
+Velg versjon
+Pakk ut alle WIM-filene under "\sources" og legg dem til som "WinPE 7/8.1/10". 
+Legg til som WinPE?
+Vennligst pakk ut alle filene til rotmappen på USB-disk eller harddisk først!%sBesøk hjemmesiden for mer informasjon. 
+Egendefinert
+Oppretter
+Filen kan ikke være større enn 4GB, FAT32-filsystem. 
+Installer Grub4Dos som primær oppstartslaster?%sDu bør bare installere Grub4Dos dersom Grub2 ikke er kompatibel med din maskin, eller dersom du ønsker å eksperimentere.%sBruk Grub2 for best støtte. 
+Primær oppstartslaster i UEFI-modus. 
+Kun ReactOS liveCD er støttet. Sjekk ut hjemmesiden for instruksjoner om integrering av ReactOS Setup. 
+Opprett ISO
+Velg hvor ISO-filen skal lagres.
+Blogg: https://www.aioboot.com.
+Vennligst velg modus
+Test BOOT [QEMU]
+Ønsker du å teste denne stasjonen eller en ISO-fil?? 
+Denne stasjonen
+ISO-fil
+Minne (MB)
+Vennligst velg et gyldig tall. 
+Vennligst velg en størrelse som er større enn 0 og mindre enn %sMB. 
+QEMU-filer vil bli kopiert til %s\QEMU-mappen. Vil du fortsette? 
+Ønsker du å teste denne ISO-filen?
+Pakk ut WIM for Windows installasjon.
+Pakk om Windows ISO-fil.
+Pakker om ISO-fil.
+Laster ned oppdatering
+Det ser ut som denne ISO-filen benytter ISOLINUX oppstartslaster, som ikke støtter NTFS-filsystemet.%sFor å støtte oppstart i Legacy/BIOS-modus, benytt FAT32-filsystem.%sØnsker du å fortsette?
+Det er mulig at dette systemet støtter lagring.%sDette gjør at data og endringer blir lagret mellom hver økt.%sØnsker du å å aktivere denne funksjonen? 
+Inneholder denne VHD-filen et 32-bit eller 64-bit system?
+Ikke integrer USB 3.0 drivere for Windows 7. 
+Ikke spør igjen
+Sjekk instruksjonene
+Vennligst lukk alle programmer på stasjon %s før oppdatering kjøres.
+For å spare diskplass vil denne filen bli flyttet, ikke kopiert. Er du enig?
+Installer Grub2 [Legacy]
+Merk at du bør reinstallere Grub2 etter hver gang du defragmenterer denne disken. 
+Du kan bare legge til en (1) instans av dette systemet. Fjern systemet fra menyen og forsøk igjen dersom du ønsker å legge til systemet på nytt. Alternativt, bruk Partition Image Mapper.  
+Det er ikke nok plass tilgjengelig. 
+Ingen tilgang. Forsøk å deaktivere antivirusprogram og prøv på nytt.
+##### END #####

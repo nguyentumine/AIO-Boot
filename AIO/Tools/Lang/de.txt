@@ -31,7 +31,7 @@ Wechselmedium
 Festplatten
 RAM-Disk
 Unbekannt
-AIO Boot is an All-in-One bootable software for USB and HDD. Is one of the best Multiboot USB Creator for Windows.
+AIO Boot ist eines der besten Werkzeuge zum Erstellen von Multi-Boot USB- und HDD-Laufwerken für Windows.
 Vergesst nicht mich zu kontaktieren falls ihr Hilfe braucht, eMail an admin@aioboot.com schicken. Ich würde mich freuen von euch zu hören damit ich AIO Boot weiter verbessern kann.
 Name
 Version
@@ -165,7 +165,7 @@ Dieses Betriebssystem unterstützt Persistenz.%sDas bedeutet: ALLE Änderungen w
 Dieses Betriebssystem unterstützt Persistenz.%sDas bedeutet: ALLE Änderungen werden nach jeder Sitzung gespeichert.%sDie Geschwindigkeit des Systems hängt von der Lese- und Schreibgeschwindigkeit des Laufwerks ab.%sWir werden eine Datei in einer Größe entsprechend der Daten erstellen die du speichern willst.
 Grub2 Hintergrundbild
 Herzlichen Dank an:--Alle die dieses Werkzeug benutzen.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot und WinSetupFromUSB.--Übersetzer der Sprachdateien: Denis Cojocaru (Russian und Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), Daniel Dybing (Norwegian).
-Partitions Manage
+Partition-Management
 Größe in MB
 Eingabedatei
 Ausgabedatei
