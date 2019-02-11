@@ -1,0 +1,60 @@
+################################################################
+Language	:	Czech
+Credits		:	zenobit
+Date		:	11.02.2019
+Info		:	Please do not add, delete or move the line, do not remove "%s". If you want to submit your own or have any questions, do not forget to send an email to admin@aioboot.com. Thank for help!
+################################################################
+
+
+
+##### BEGIN #####
+Vyberte jednotku pro rozbalení souborů:
+Stáhnout AIOBoot.7z 
+Automatické rozdělení
+Instaluji
+Formátovat jako FAT32
+Formátuji...
+Zformátováno...
+Automaticky instalovat Bootloader
+Rozbaluji...
+Kopíruji soubory
+Varování
+Varování:%sVšechna data na disku %s budou ztacena.%sTento oddíl bude zformátován jako FAT32.
+Nic
+Chyba
+Chyba, prosím kontaktujte autora pro podporu!
+Chyba, nemohu naformátovat tento disk!
+Informace
+Zrušeno
+Zrušit
+Spouštím AIOCreator.exe...
+Soubor uložen v ./AIOBoot.7z (Heslo: aioboot)
+Potřebuje rozdělit
+Rozdělování
+Tento disk potřebuje rozdělit.%sChecte pomoci s automatickým rozdělením?%sAlternativně můžete použít Diskpart nebo GParted nebo jakýkoli jiný nástroj, který chcete.
+Zde je seznam disků které můžete rozdělit
+V počítači není podporován žádný pevný disk.% STento nástroj podporuje pouze odnímatelná zařízení, jako jsou USB a karty SD.
+Pouze FAT32
+FAT32 && NTFS/exFAT
+Vyčistit disk
+Odstraní veškeré formátování diskových oddílů nebo svazků z vybraného disku.%sNa discích (MBR) jsou přepsány pouze informace o rozdělení MBR a skryté informace o sektoru.%sTato možnost je zde doporučena.
+Tato funkce není podporována v operačním systému Windows XP nebo starším.%sProsím použijte Windows 7 nebo novější.
+Doporučeno
+Tato volba není podporována.
+Zvolte jednu z možností 1 nebo 2.
+Používáte %s.%sPro použití možnosti "%s"musíte zapnout volbu "Optimalizovat pro výkon" USB.%sNabootovat do Windows 7 nebo novějších pro pokračování.%sZeptejte se Googlu jak zapnout možnost Optimalizace výkonu a zkuste to znovu.
+Vytváření prvního oddílu
+Vytváření druhého oddílu
+Vytváření nového oddílu
+Něco je špatně, prosím odpojte a znovu připojte USB.
+Velikost oddílu FAT32 by měly být mezi 160MB a %s.
+Pro oddíl FAT32 je třeba zadat velikost.
+Použít pevný disk
+Budeme automaticky instalovat Grub2 a Clover [pouze FAT32] na tento disk!
+Varování:%s1. Všechny oddíly %s a data na tomto disku budou ztracena.%s2. Vytvoříme nový oddíl ve formátu FAT32.%sChcete li uložit soubory větší 4GB, zkuste "FAT32 && NTFS/exFAT".
+Varování:%s1. Všechny oddíly %s a data na tomto disku budou ztracena.%s2. Vytvoříme dva nové oddíly (FAT32 && NTFS/exFAT). Oddíl FAT32 bude skryt.%s3. Automaticky nainstalovat Clover a Chameleon na oddíl FAT32.%sPokud v UEFI módu boot nefunguje, zkuste "%s" možnost.
+hotovo
+Velikost FAT32
+Čištění disku
+Soubor %s je spuštěn, zavřete ho a zkuste to znovu.
+##### END #####
