@@ -22,7 +22,7 @@ if %IMDISK_VALID_DEVICES% GTR 0 (
   echo.
   if not "%IMDISK_SILENT_SETUP%" == "1" (
     pause
-    start control imdisk.cpl
+    start "" "%SystemRoot%\system32\control.exe" ""%SystemRoot%\system32\imdisk.cpl"
   )
   endlocal
   goto :eof
@@ -30,13 +30,13 @@ if %IMDISK_VALID_DEVICES% GTR 0 (
 
 echo Number of existing ImDisk virtual disks: %IMDISK_TOTAL_DEVICES%
 if %IMDISK_TOTAL_DEVICES% == 0 (
-  net stop imdsksvc
-  net stop awealloc
-  net stop imdisk
-  if exist "%SystemRoot%\system32\taskkill.exe" taskkill /F /IM imdsksvc.exe
+  "%SystemRoot%\system32\net.exe" stop imdsksvc
+  "%SystemRoot%\system32\net.exe" stop awealloc
+  "%SystemRoot%\system32\net.exe" stop imdisk
+  if exist "%SystemRoot%\system32\taskkill.exe" "%SystemRoot%\system32\taskkill.exe" /F /IM imdsksvc.exe
 )
 
-start rundll32.exe setupapi.dll,InstallHinfSection DefaultUninstall 132 %SystemRoot%\inf\imdisk.inf
+start "" "%SystemRoot%\system32\rundll32.exe" setupapi.dll,InstallHinfSection DefaultUninstall 132 %SystemRoot%\inf\imdisk.inf
 
 endlocal
 
@@ -44,7 +44,7 @@ goto :eof
 
 :addline
 
-imdisk -l -u %~1 > nul 2>&1
+"%SystemRoot%\system32\imdisk.exe" -l -u %~1 > nul 2>&1
 
 if errorlevel 1 (
   set /a IMDISK_PENDING_REMOVAL_DEVICES=%IMDISK_PENDING_REMOVAL_DEVICES% + 1 > nul

@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Badruzeus</string>
 	<key>Description</key>
-	<string>A colorful Clover theme with flat material icons and long shadow effect. Version: 3.2</string>
+	<string>Colorful Clover theme with flat material icons and long shadow effect. Version: 3.9</string>
 	<key>Theme</key>
 	<dict>
 		<key>Background</key>
@@ -52,30 +52,13 @@
 		<key>Font</key>
 		<dict>
 			<key>CharWidth</key>
-			<integer>11</integer>
+			<integer>10</integer>
 			<key>Path</key>
-			<string>Font_CPMono_16pt_White.png</string>
+			<string>Font_DroidSans_16pt_WhiteFx.png</string>
 			<key>Proportional</key>
 			<false/>
 			<key>Type</key>
 			<string>Load</string>
-		</dict>
-		<key>Layout</key>
-		<dict>
-			<key>BannerOffset</key>
-			<integer>40</integer>
-			<key>ButtonOffset</key>
-			<integer>32</integer>
-			<key>SelectionBigWidth</key>
-			<integer>180</integer>
-			<key>SelectionSmallWidth</key>
-			<integer>72</integer>
-			<key>TileXSpace</key>
-			<integer>40</integer>
-			<key>TileYSpace</key>
-			<integer>36</integer>
-			<key>Vertical</key>
-			<false/>
 		</dict>
 		<key>Origination</key>
 		<dict>
@@ -91,7 +74,7 @@
 			<key>ChangeNonSelectedGrey</key>
 			<false/>
 			<key>Color</key>
-			<string>0x064288FF</string>
+			<string>0xFFFFFF24</string>
 			<key>OnTop</key>
 			<false/>
 			<key>Small</key>
@@ -99,8 +82,8 @@
 		</dict>
 	</dict>
 	<key>Version</key>
-	<string>3.2</string>
+	<string>3.9</string>
 	<key>Year</key>
-	<string>2018</string>
+	<string>2019</string>
 </dict>
 </plist>
