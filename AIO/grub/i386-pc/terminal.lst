@@ -1,6 +1,7 @@
 iat_keyboard: at_keyboard
 iserial: serial
 iserial_*: serial
+iusb_gamepad: usb_gamepad
 oaudio: morse
 ocbmemc: cbmemc
 ogfxterm: gfxterm

@@ -164,7 +164,7 @@ Grub2使用语言
 当前操作系统支持 persistent mode , %s这意味着您的数据将会在每次会话后保存.%s操作系统的速度取决于硬盘的读写速度.%s需要创建一个4Gb文件用于支持persistent mode吗？
 此操作系统支持 persistent mode , %s这意味着您的数据将会在每次会话后保存.%s操作系统的速度取决于硬盘的读写速度.%s将创建一个与您要保存的数据相对应大小的文件
 Grub2 壁纸
-衷心感谢:--所有使用此工具的朋友(顺序不分先后).--Google.--GNU (Grub2 开发团队).--Clover, rEFInd, Grub4dos 及 Syslinux 开发团队.-- 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, WinSetupFromUSB的作者们.--各语种翻译者: Denis Cojocaru (俄语和罗马尼亚语), Stoian Bahchevanski (保加利亚语), Pascal BIMAS Perso (法语), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (土耳其语), Michał Smajdor, Andrzej Gicala (波兰语), Alessandro Santini (意大利语), Txema, Alacran (西班牙语), Frettt (德语), Tenhon (正体中文), CloverGit, Sun Wei (简体中文), Hanuware (韩语), Renato "donalld" Pejon (巴西葡萄牙语), Daniel Dybing (Norwegian).
+衷心感谢:--所有使用此工具的朋友(顺序不分先后).--Google.--GNU (Grub2 开发团队).--Clover, rEFInd, Grub4dos 及 Syslinux 开发团队.-- 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM, WinSetupFromUSB的作者们.--各语种翻译者: Denis Cojocaru (俄语和罗马尼亚语), Stoian Bahchevanski (保加利亚语), Pascal BIMAS Perso (法语), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (土耳其语), Michał Smajdor, Andrzej Gicala (波兰语), Alessandro Santini (意大利语), Txema, Alacran (西班牙语), Frettt (德语), Tenhon (正体中文), CloverGit, Sun Wei (简体中文), Hanuware (韩语), Renato "donalld" Pejon (巴西葡萄牙语), thamer mousa (Arabic), Daniel Dybing (Norwegian).
 分区管理
 大小以MB为单位
 输入文件

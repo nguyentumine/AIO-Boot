@@ -164,7 +164,7 @@ Special Pack
 此作業系統支援持續模式，%s這意味著資料可以在每個工作階段之後被儲存。%s作業的速度端賴於硬碟的讀寫速度，%s要為持續模式建立一個 4Gb 的檔案嗎？
 此作業系統支援持續模式，%s這意味著資料可以在每個工作階段之後被儲存。%s作業的速度端賴於硬碟的讀寫速度，%s將建立一個與要儲存的資料大小相對應的檔案。
 Grub2 背景
-真誠感謝:--所有使用此工具的人。--Google.--GNU (Grub2 研發團隊).--Clover, rEFInd, Grub4dos 與 Syslinux 的研發團隊。--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot 與 WinSetupFromUSB 的作者們。--各語種的翻譯者: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), Daniel Dybing (Norwegian).
+真誠感謝:--所有使用此工具的人。--Google.--GNU (Grub2 研發團隊).--Clover, rEFInd, Grub4dos 與 Syslinux 的研發團隊。--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM 與 WinSetupFromUSB 的作者們。--各語種的翻譯者: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Daniel Dybing (Norwegian).
 分割區管理
 MB 大小
 輸入檔案

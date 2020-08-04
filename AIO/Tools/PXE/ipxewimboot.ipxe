@@ -63,14 +63,10 @@ goto shell
 
 :wimboot
 initrd ${boot-url}${wimfile}											boot.wim || goto missingfile
-kernel ${boot-url}/AIO/Tools/MS/PXE/wimboot.${arch2}					rawbcd
-initrd ${boot-url}/AIO/Tools/MS/PXE/boot/fonts/segmono_boot.ttf			segmono_boot.ttf
-initrd ${boot-url}/AIO/Tools/MS/PXE/boot/fonts/segoe_slboot.ttf			segoe_slboot.ttf
-initrd ${boot-url}/AIO/Tools/MS/PXE/boot/fonts/segoen_slboot.ttf		segoen_slboot.ttf
-initrd ${boot-url}/AIO/Tools/MS/PXE/boot/fonts/wgl4_boot.ttf			wgl4_boot.ttf
+kernel ${boot-url}/AIO/Tools/MS/PXE/${arch2}/wimboot					rawbcd
 isset ${legacy} && initrd ${boot-url}/AIO/Tools/MS/PXE/bootmgr			bootmgr || ###
 isset ${legacy} && initrd ${boot-url}/AIO/Tools/MS/PXE/bootmgr.exe		bootmgr.exe || initrd ${boot-url}/AIO/Tools/MS/PXE/${arch2}/bootmgr.efi
-isset ${legacy} && initrd ${boot-url}/AIO/Tools/MS/PXE/boot/bcd			BCD || initrd ${boot-url}/AIO/Tools/MS/PXE/efi/microsoft/boot/bcd			BCD
+isset ${legacy} && initrd ${boot-url}/AIO/Tools/MS/PXE/bcd				BCD || initrd ${boot-url}/AIO/Tools/MS/PXE/bcdefi			BCD
 initrd ${boot-url}/AIO/Tools/MS/boot.sdi								boot.sdi
 boot || goto failed
 goto start
