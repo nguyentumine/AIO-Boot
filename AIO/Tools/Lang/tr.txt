@@ -239,5 +239,5 @@ Grub2 yi Kur
 Eğer sürücü üzerinde disk birleştirme işlemi yaparsanız,bu durumuda Grub2 yi tekrar kurmanız/yüklemeniz gerekir.
 Paketin yalnızca bir versiyonunu entegre edebilirsiniz. Paketin yeni versiyonunu entegre etmek için Menü Düzenle butonuna tıklayın,Menü Düzenle ekranında,paketin mevcut versiyonunu kaldırın ve yeni paketi tekrar kurun.Yada Part Image Mapper özelliğini kullanın.
 Bu sürücünün başındaki boş alan yeterli değil.
-Erişim engelleniyor.Lütfen mevcut antivirüs yazılımınızı pasif hale getirin ve tekrar deneyin.ccess is denied.
+Erişim engelleniyor.Lütfen mevcut antivirüs yazılımınızı pasif hale getirin ve tekrar deneyin.
 ##### END #####
