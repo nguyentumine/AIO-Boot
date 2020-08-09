@@ -1,7 +1,7 @@
 ﻿################################################################
 Dil	        :	Turkish
 Kredi		:	Erhan Kültür (ekultur@gmail.com), Murat ATICI, Tayfun Akkoyun.
-Tarih		:	14.05.2017
+Tarih		:	09.08.2020
 Info		:	Lütfen satır ekleme, silme veya taşıma yapmayın, "%s" yi kaldırmayın.Kendi bildiriminizi göndermek veya herhangi bir sorunuz olmasını istiyorsanız, admin@aioboot.com adresine bir e-posta göndermeyi unutmayın. Yardım için teşekkürler!
 ################################################################
 
@@ -237,7 +237,7 @@ Eğer güncelleme yapacaksınız,güncellemeden önce %s sürücüsü üzerindek
 Disk alanından kazanmak için,bu dosya kopyalanmak yerine taşınacaktır.Emin misiniz?
 Grub2 yi Kur
 Eğer sürücü üzerinde disk birleştirme işlemi yaparsanız,bu durumuda Grub2 yi tekrar kurmanız/yüklemeniz gerekir.
-You can only integrate one version for this package. Click the Menu Editor button to delete the current version and re-integrate it. Or use the Partition Image Mapper.
-The free space left on this drive is not enough.
-Access is denied. Try disabling the antivirus software and try again.
+Paketin yalnızca bir versiyonunu entegre edebilirsiniz. Paketin yeni versiyonunu entegre etmek için Menü Düzenle butonuna tıklayın,Menü Düzenle ekranında,paketin mevcut versiyonunu kaldırın ve yeni paketi tekrar kurun.Yada Part Image Mapper özelliğini kullanın.
+Bu sürücünün başındaki boş alan yeterli değil.
+Erişim engelleniyor.Lütfen mevcut antivirüs yazılımınızı pasif hale getirin ve tekrar deneyin.ccess is denied.
 ##### END #####
