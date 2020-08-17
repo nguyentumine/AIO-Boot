@@ -1,0 +1,8 @@
+!BAT
+
+:: AIO Boot - www.aioboot.com
+
+find --set-root --ignore-floppies --ignore-cd %1
+map %1 (0xff) || map --mem %1 (0xff)
+map --hook
+chainloader (0xff)
