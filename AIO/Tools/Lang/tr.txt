@@ -9,7 +9,7 @@ Info		:	Lütfen satır ekleme, silme veya taşıma yapmayın, "%s" yi kaldırmay
 
 ##### BEGIN #####
 Türkçe
-Ana
+Ana Menü
 Entegrasyon
 Hakkında
 Bootloader'lar
@@ -18,7 +18,7 @@ Ayarlar
 Araçlar
 MENÜ Düzenle
 Yardım
-Geçerli Disk:
+Disk Bilgileri:
 Disk
 İsim
 Tip
@@ -26,18 +26,18 @@ Boyut
 Mevcut Sürücü:
 Sürücü
 Etiket
-Dosya Sistemi
+Dosya türü
 Çıkarılabilir Medya
 Sabit Sürücü
 RAM disk
 Bilinmiyen
-AIO Boot is an All-in-One bootable software for USB and HDD. Is one of the best Multiboot USB Creator for Windows.
+AIO Boot, USB ve HDD için Hepsi Bir Arada önyüklenebilir bir yazılımdır. Windows için en iyi Multiboot USB Creator'lardan biridir.
 Herhangi bir sorunuz varsa yazarla iletişim kurmayı unutmayın, admin@aioboot.com adresine e-posta atın. Sizden gelen istekler ve yardımlar ile bu aracı daha iyi geliştirebiliriz. Her şey için teşekkürler!
 Isim
 Sürüm
 Anasayfa
 Telif Hakkı
-1. Aşağıdan bir Paket Seçin
+1. Aşağıdan Sisteminizi Seçin
 2. Entegre edeceğiniz ISO dosyasını seçin
 Indir
 Tamam
@@ -116,8 +116,8 @@ Bir sabit sürücüye GPT stilinde Eski BIOS modunu desteklemek için. Yeni bir 
 1. Oluşturulacak bölüm boyutu mümkün olduğunca küçük olacak;yaklaşık olarak 1MB veya biraz daha büyük fakat 10MB'dan daha büyük olmayacak.%s2. Bu bölümdeki tüm veriler kaybolacak. Bu nedenle, yeni bir bölüm oluşturmanız gerekir.
 Lütfen gerekli olan bu partisyonu oluşturduktan sonra devam edin.
 Bilgisayarım 32bit UEFI firmware sahip
-MENU adlandırması isteme
-Dosya doğrulamasını yapma
+MENU adlandırması otomatik olsun
+Dosya doğrulaması yapmasın
 UEFI modu için PXE Önyüklemesini yapılandır.
 Kaydet
 Grub2'nin desteklediği dillerin listesi. Diliniz nedir?
@@ -125,7 +125,7 @@ Lütfen açılır listeden bir öğe seçin
 Ayarlarınız kaydedildi!
 Lütfen sürücüyü FAT32'ye göre biçimlendirin.%sYa da Grub2'yi kurun ve Clover'ı kurma seçeneğini seçin.
 Bootloader Yükle
-Windows Bootloader'ı Geri Yükle
+Windows Bootloader Belirleyici
 Tiny PXE sunucusu şu an çalışıyor, sunucuyu yeniden başlatmak için üst taraftaki "Offline" tuşuna basın.
 Hangi BCD menüyü düzenleme modunda açmak istiyorsunuz? (UEFI Menü | LEGACY Menü)
 Lütfen 32 bit veya 64 bit sürümünü seçin
@@ -137,7 +137,7 @@ BIOS unuzda "Secure Boot" özelliği açık. Bu durum, Bootloader'ın yüklenmes
 Grub2 Dili
 Yazı Boyutu
 Küçük
-Geniş
+Büyük
 Grub2 için yeni bir şifre oluşturun.
 Yeni oluştur
 Grub2 şifresini değiştir veya kaldır
@@ -163,7 +163,7 @@ Diğerleri
 Bu dosya algılanamadı, lütfen listede yer alan bir paket dosyayı seçin!
 Bu işletim sistemi kalıcı modu destekliyor.%sBu, verilerinizin her oturumdan sonra kaydedileceği anlamına gelir.%sİşletim sisteminin hızı, sabit sürücünün okuma ve yazma hızına bağlıdır.%sKalıcı mod için 4Gb'lik bir dosya oluşturmak ister misiniz?
 Bu işletim sistemi kalıcı modu destekliyor.%sBu, verilerinizin her oturumdan sonra kaydedileceği anlamına gelir.%sİşletim sisteminin hızı, sabit sürücünün okuma ve yazma hızına bağlıdır.%sKaydetmek istediğiniz veri miktarına karşılık gelen bir dosya oluşturulacak.
-Grub2 Arka Planı
+Grub2 Arka Plan Resmini değiştir
 Bu aracı kullanan tüm kullacılara Saygılarımızla:--Google.--GNU (Grub2 Geliştirme Ekibi).--Clover'ın Geliştirme Ekibi, rEFInd, Grub4dos ve Syslinux.--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM ve WinSetupFromUSB'nin Yazarları Sunucu.--Dil çevirmenleri: Denis Cojocaru (Rusça ve Rumence), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kültür, Murat ATICI, Tayfun Akkoyun (Türkçe), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Daniel Dybing (Norwegian).
 Partisyonları Yönet
 MB Boyut
