@@ -1,0 +1,23 @@
+### Start
+### ADD12_en-US.iso (build 12.0.3297 - 21.07.2017)
+set iso_path=""
+set timeout=0
+menuentry "[1] Acronis Disk Director" --hotkey=1 {
+	set gfxpayload=1024x768x32,1024x768x24,1024x768x16,1024x768,auto
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	if [ -e (loop)/dat5.dat ]; then
+		linux	(loop)/dat5.dat quiet force_modules=usbhid
+		initrd	(loop)/dat4.dat
+	else
+		if cpuid -l; then
+			linux	(loop)/dat6.dat quiet force_modules=usbhid
+			initrd	(loop)/dat7.dat (loop)/dat8.dat
+		else
+			linux	(loop)/dat2.dat quiet force_modules=usbhid
+			initrd	(loop)/dat3.dat (loop)/dat4.dat
+		fi
+	fi
+	loopback -d loop
+}
+### End

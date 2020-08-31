@@ -7,7 +7,6 @@
 *btrfs-get-default-subvol: btrfs
 *btrfs-list-subvols: btrfs
 *cat: cat
-*cdboot: dp
 *chainloader: chain
 *clear_menu: normal
 *cpuid: cpuid
@@ -47,6 +46,7 @@
 *ini_get: ini
 *inl: iorw
 *inw: iorw
+*isotools: map
 *keystatus: keystatus
 *kfreebsd: bsd
 *knetbsd: bsd

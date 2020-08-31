@@ -164,13 +164,13 @@ AIO Boot의 Grub2를 사용하지 않고 컴퓨터가 부팅되었는지 확인�
 이 운영 체제는 영구 모드를 지원합니다. %s 이것은 각 세션 후에 데이터가 저장된다는 것을 의미합니다. %s 운영 체제의 속도는 하드 드라이브의 읽기 및 쓰기 속도에 따라 다릅니다. %s 영구적으로 4Gb 파일을 만드시겠습니까 방법?
 이 운영 체제는 영구 모드를 지원합니다. %s 이것은 각 세션 후에 데이터가 저장된다는 것을 의미합니다. %s 운영 체제의 속도는 하드 드라이브의 읽기 및 쓰기 속도에 따라 다릅니다. %s 저장하려는 데이터
 Grub2 배경
-진심으로 감사합니다:--All these users are using this tool.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM and WinSetupFromUSB.--Translators of languages: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Daniel Dybing (Norwegian).
+진심으로 감사합니다:--All these users are using this tool.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM and WinSetupFromUSB.--Translators of languages: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian).
 파티션 관리
 크기(MB)
 입력 파일
 출력 파일
 ISO 파일을 선택하려면 여기를 클릭하십시오...
-PartIMG 저장 위치를 ​​선택하십시오...
+IMG 저장 위치를 ​​선택하십시오...
 만들기
 이 파일은 비어 있습니다.
 이 파일의 정보를 얻을 수 없습니다.
@@ -186,9 +186,9 @@ ImDisk가 설치되지 않았습니다.
 파일 생성 및 마운트 중...
 ISO 파일 추출 중...
 구성 파일 업데이트 중...
-PartIMG 파일의 크기가 충분하지 않습니다. 약 %s 정도로 늘리고 다시 시도하십시오.
-PartIMG 파일에 Label을 설정할 수 없습니다.
-%s 마운트 해제 할 수 없습니다, 수동으로 %s 선택한 PartIMG 파일을 삭제하십시오.
+IMG 파일의 크기가 충분하지 않습니다. 약 %s 정도로 늘리고 다시 시도하십시오.
+IMG 파일에 Label을 설정할 수 없습니다.
+%s 마운트 해제 할 수 없습니다, 수동으로 %s 선택한 IMG 파일을 삭제하십시오.
 ISO를 마운트 한 다음 해당 드라이브의 sources\install.wim 파일을 선택하십시오.
 드라이브 sources\install.wim 파일을 선택하려면 여기를 클릭하십시오.
 VHD 저장 위치를 ​​선택하십시오

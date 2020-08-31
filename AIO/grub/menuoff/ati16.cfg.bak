@@ -1,0 +1,18 @@
+### Start
+### AcronisTrueImage2016.iso (build 6571 - 11.08.2016)
+set iso_path=""
+set timeout=0
+menuentry "[1] Acronis True Image" --hotkey=1 {
+	set gfxpayload=1024x768x32,1024x768
+	booting ${iso_path}
+	loopback loop ${iso_path}
+	if cpuid -l; then
+		linux	(loop,msdos1)/dat10.dat force_modules=usbhid quiet
+		initrd	(loop,msdos1)/dat11.dat (loop,msdos1)/dat12.dat
+	else
+		linux	(loop,msdos1)/dat2.dat force_modules=usbhid quiet
+		initrd	(loop,msdos1)/dat3.dat (loop,msdos1)/dat4.dat
+	fi
+	loopback -d loop
+}
+### End

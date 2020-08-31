@@ -32,8 +32,6 @@ map --mem (rd)+1 (fd1)
 
 echo Loading %img% ...
 map %img% (0xff) || map --mem %img% (0xff)
-map (hd0) (hd1)
-map (hd1) (hd0)
 map --hook
 
 echo Install Windows XP - STEP %step%

@@ -164,13 +164,13 @@ Paquete especial
 Este sistema operativo es compatible con el modo persistente.%sEsto significa que sus datos serán guardados después de cada sesión.%sLa velocidad del sistema operativo depende de la velocidad de lectura y escritura del disco duro.%s¿Te gustaría crear un archivo de 4 Gb para el modo persistente?
 Este sistema operativo es compatible con el modo persistente.%sEsto significa que sus datos serán guardados después de cada sesión.%sLa velocidad del sistema operativo depende de la velocidad de lectura y escritura del disco duro.%sCrearemos un archivo de tamaño correspondiente a los datos que desee guardar.
 Fondo Grub2
-Sincerely thanks to:--All these users are using this tool.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM and WinSetupFromUSB.--Translators of languages: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Daniel Dybing (Norwegian).
+Sincerely thanks to:--All these users are using this tool.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM and WinSetupFromUSB.--Translators of languages: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian).
 Administrar particiones
 Tamaño en MB
 Archivo de entrada
 Archivo de salida
 Haga clic aquí para seleccionar el archivo ISO en su unidad...
-Haga clic aquí para elegir dónde guardará el archivo ".PartIMG" en su disco...
+Haga clic aquí para elegir dónde guardará el archivo ".IMG" en su disco...
 Crear
 Este archivo está vacío.
 No se puede obtener información de este archivo.
@@ -186,8 +186,8 @@ ImDisk no fue instalado.
 Creando y montando archivo...
 Extrayendo archivo ISO...
 Actualizando archivos de configuración...
-El tamaño del archivo PartIMG no es suficiente, por favor increméntelo a aproximadamente %s e intentar de nuevo.
-No se pudo establecer la etiqueta para el archivo PartIMG.
+El tamaño del archivo IMG no es suficiente, por favor increméntelo a aproximadamente %s e intentar de nuevo.
+No se pudo establecer la etiqueta para el archivo IMG.
 Incapaz de desmontar %s, por favor haz esto manualmente.%sA continuación, elimine el archivo PartING donde elija.
 Monte ISO, luego seleccione el archivo sources\install.wim en esa unidad...
 Haga clic aquí para seleccionar el archivo sources\install.wim en su disco...
