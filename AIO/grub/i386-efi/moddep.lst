@@ -135,6 +135,7 @@ pata: ata
 mul_test: functional_test
 adler32: crypto
 terminal:
+shim_lock: verifiers
 div:
 ehci: cs5536 usb boot
 crypto:
