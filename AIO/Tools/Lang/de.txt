@@ -164,7 +164,7 @@ Kann die Datei nicht finden, bitte Paket von der Liste wählen!
 Dieses Betriebssystem unterstützt Persistenz.%sDas bedeutet: ALLE Änderungen werden nach jeder Sitzung gespeichert.%sDie Geschwindigkeit des Systems hängt von der Lese- und Schreibgeschwindigkeit des Laufwerks ab.%sWillst du eine 4Gb große Datei für Persistenz?
 Dieses Betriebssystem unterstützt Persistenz.%sDas bedeutet: ALLE Änderungen werden nach jeder Sitzung gespeichert.%sDie Geschwindigkeit des Systems hängt von der Lese- und Schreibgeschwindigkeit des Laufwerks ab.%sWir werden eine Datei in einer Größe entsprechend der Daten erstellen die du speichern willst.
 Grub2 Hintergrundbild
-Herzlichen Dank an:--Alle die dieses Werkzeug benutzen.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM und WinSetupFromUSB.--Übersetzer der Sprachdateien: Denis Cojocaru (Russian und Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian).
+Herzlichen Dank an:--Alle die dieses Werkzeug benutzen.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM und WinSetupFromUSB.--Übersetzer der Sprachdateien: Denis Cojocaru (Russian und Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian), VenusGirl (한국어).
 Partition-Management
 Größe in MB
 Eingabedatei
@@ -240,4 +240,5 @@ Please note that you should reinstall Grub2 every time you defragment on this dr
 You can only integrate one version for this package. Click the Menu Editor button to delete the current version and re-integrate it. Or use the Partition Image Mapper.
 The free space left on this drive is not enough.
 Access is denied. Try disabling the antivirus software and try again.
+Grub2 Font
 ##### END #####
