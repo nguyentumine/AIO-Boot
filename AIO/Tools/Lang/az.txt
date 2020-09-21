@@ -1,0 +1,244 @@
+################################################################
+Language	:	Azerbaijani
+Credits		:	Tofiq(tofiqrustamov2005@gmail.com)
+Date		:	18.09.2020
+Info		:	Please do not add, delete or move the line, do not remove "%s". If you want to submit your own or have any questions, do not forget to send an email to admin@aioboot.com. Thank for help!
+################################################################
+
+
+
+##### BEGIN #####
+Azərbaycanca
+Əsas
+Inteqrasiya
+Haqqında
+Bootloader'lar
+PXE'ni işə sal
+Tənzimləmələr
+Alətlər
+MENYU Editoru
+Kömək
+Mövcut Disk:
+Disk
+Ad
+Tip
+Ölçü
+Mövcut Kart:
+Kart
+Disk adı
+FaylSistemi
+Daşınabilən medya
+Sabit medya
+RAM disk
+Bilinməyən
+AIO Boot USB və Hard Disk üçün hər şey bir arada boot proqramıdır.Ən yaxşı USB multiboot yaradıcılarından biri.
+Əgər sualınız varsa, müəlliflə əlaqə saxlamağı unutmayın,email admin@aioboot.com .Əgər proqramı inkişaf elətdirməyə kömək eləsəniz buna sevinərdim.
+Ad
+Versiya
+Anasəhifə
+Müəllif hüquqları
+1. Paketi seç
+2. Faylı seç
+Endir
+Tamam
+Zəhmət olmasa diskinizdəki faylı seçin...
+Diskinizdəki  ISO və ya WIM faylını seçin...
+Diskinizdəki ISO faylını seçin...
+ISO faylını sonra isə "I386/TXTSETUP.SIF" və ya	"AMD64/TXTSETUP.SIF" faylını seçin...
+Zəhmət olmasa etibarlı fayl seçin!
+Fayl adı yalnız rəqəm və hərflər iştirak edə bilər.Faylı yenidən adlandırın və yenidən cəhd edin!
+FAT32 hissəsində 4GBdan böyük fayllar saxlanıla bilməz.%sHissəni exFAT və ya NTFS olaraq formatlamaq bunu həə edəcəkdir...
+Emal olunur...Zəhmət olmasa gözləyin!
+Qurtarana qədər bu səhifəni bağlamayın!
+Bu fayl aşkarlana bilmədi!
+Xəta, zəhmət olmasa dəstək üçün müəlliflə əlaqə saxlayın!
+Xəta: Zəhmət olmasa	BCD / WinLegacy faylını oxumaq üçün istifadə etdiyiniz tətbiqi bağlayın və yenidən cəhd edin!
+Xəta: %s faylını oxumaq üçün istifadə etdiyiniz tətbiqi bağlayın və yenidən cəhd edin!
+Etibarsız fayl!
+Xəta: Qalan yer yetərsizdir! 
+Tamamlandı.Paket müvəffəqiyyətlə yükləndi.
+Xəta
+Xəbərdarlıq
+Məlumat
+Təsdiqlə
+Kopyalanır
+Lazımlı fayllar kopyalanır...
+Çıxarılır
+Fayl yoxlanılır,zəhmət olmasa gözləyin!
+Zəhmət olmasa menyunun adını yazın...
+Menyu əlavə olunur...
+Fayllar hazırlanır...
+Zəhmət olmasa davam etmək üçün Regedit.exe'yi bağlayın!
+Imtina et
+Davam et
+Təmizlənilir,zəhmət olmasa gğzləyin...
+Çünki faylın ölçüsü FAT32 bölməsində saxlanılmasına icazə vermir.%sBu fayl bölünəcək,razısınızmı?
+Bölünür
+Ha
+Yox
+Seçilmiş disk GPT tipindədir. "EFI" qovluğunu "FAT32" və ya "FAT16" formatlı bir hissəyə kopyalamalısınız.
+Seçilmiş disk GPT tipindədir. Sadəcə Grub2 , rEFInd və Clover dəstəklənir...
+Hal-hazırda bu cihaz dəstəklənmir..
+quruldu...	
+hal-hazırda quruludu...
+%s quraşdırılmayıb. %s %s-nin quraşdırılmasını tələb edir.%s Grub2-ni dərhal quraşdırmaq istəyirsiniz?
+Zəhmət olmasa ən son Windows versiyasını quraşdırdığınız diski seçin.
+Mümkünsə, ən yaxşı dəstəyi almaq üçün bu xüsusiyyəti Windows 7 və ya daha yeni versiyada sınayın.
+Sistem bölgüsü tapılmadı
+bərpa edildi...
+Windows-un %s rejimində quraşdırılmış hər hansı bir disk tapılmadı.
+Syslinux'u yükləyə bilmək üçün	diski  yenidən formatlamaq lazımdır
+Zəhmət olmasa diski NTFS və ya FAT32yə formatlayın.
+Zəhmət olmasa Windows'u Legacy BIOS rejimində quraşdırdığınız bölməni seçin.
+Zəhmət olmasa Windows'u UEFI rejimində quraşdırdığınız bölməni seçin.
+Zəhmət olmasa UEFI rejimində açın və yenidən cəhd edin!
+Son versiyadan istifadə edirsiniz!
+Hal-hazırda yeniləyə biləcəyiniz yeni bir versiyamız var. %sVersion %s, %s-də çıxdı. %sBu tətbiqi bağlamaq və indi yeniləmək istəyirsiniz?
+Hazırda düzəliş edə bilinəcək bir MENYU yoxdur.
+Sil?
+Menyunun adı
+Yadda saxla
+redaktə edildikdən sonra.
+Fayllar silinir...
+Yadda saxlanıldı
+Yenilə
+Varsayılan
+Sadəcə Fayl
+Clover həmçinin Legacy mod üçündə qurula bilər.
+Zəhmət olmasa UEFI rejimində Grub2, Clover və rEFInd quraşdırmaq üçün hissə seçin.
+Davam etmək üçün AIO Boot-un ən son versiyasını yükləməlisiniz və bu diski yenidən bölməlisiniz.
+GPT stili sabit disk yalnız UEFI rejimini dəstəkləyir. %s Əgər yalnız UEFI rejimindən istifadə edirsinizsə, hazırda bir şey etməyinizə ehtiyac yoxdur.
+UEFI rejimində Grub2, Clover, rEFInd və UEFI Shell-i dəstəkləmək üçün bu sabit diskdə FAT32 və ya FAT16 formatında bir bölüm yaratmalısınız.
+Yeni bölüm yaratmaq üçün DiskPart və ya GParted istifadə edə bilərsiniz.%sYeni bir bölüm yaratdıqdan sonra yenidən cəhd edin.
+Seçilmiş disk GPT stilindədir. "EFI" qovluğu "EFI Sistem Bölməsinə (ESP)" köçürülməlidir.Bunun həyata keçirilməsini dərhal istəyirsinizmi?
+%s: Komputeri hər dəfə açanda birbaşa Grub2'yə önyükləmə eləyirsiz.%s: Grub2'yə önyükləmə elmək üçün "/EFI/Grub2/bootx64.efi" fayllarını seçməniz lazımdır.
+GPT stilindəki hard diskdə Legacy BIOS rejimini dəstəkləmək üçün yeni bölmə yaratmaq lazımdır.
+1. Bu bölmə ölçüsü mümkün qədər kiçikdir. Təxminən 1 MB və ya daha böyük, amma 10 MB-dan kiçik.%s2. Bu bölümdəki bütün məlumatlar itiriləcəkdir. Buna görə yeni bir bölmə yaratmalısınız.
+Zəhmət olmasa bu bölümü yaratdıqdan sonra davam edin.
+Kompüterimdə 32 bitlik UEFI proqram təminatı var.
+Məndən MENYU adını daxil etməyimi istəməyin.
+Faylı doğrulamağa ehtiyac yoxdur.
+UEFI rejimi üçün PXEni konfiqurasiya edin.
+Təyin et
+Grub2-nin dəstəklədiyi dillərin siyahısı budur. Diliniz nədir?
+Zəhmət olmasa siyahıdan bir maddə seçin.
+Tənzimlənmələriniz yadda saxlanıldı.
+Zəhmət olmasa  bu diski FAT32 olaraq formatlayın.%svə ya Grub2 yükləyin və Clover quraşdırmaq seçimini seçin.
+Bootloader qur
+Windows Bootloaderı bərpa et
+Tiny PXE Server işləyir, yenidən işlətmək istəyirsinizsə lütfən bağlayın!
+UEFI və ya Legacy mod?
+Zəhmət olmasa 32 bit və ya 64 bit versiyasını seçin
+sadəcə Windows
+Bütün başqaları
+WinPE Lazımdır
+Zəhmət olmasa əvvəlcə aşağıdakı addımları izləyin: %s1. "boot%s.wim" faylını yükləyin.%s2.Yüklədiyiniz faylı "%s\AIO\WinPXE\sources\"qovluğuna kopyalayın.%sBuradan yükləyə bilərsiniz:
+BIOS`unuzda "Secure Boot" özəlliyi açıqdır.Bu "Bootloader"ların yüklənməsinin qarşısını ala bilər.Zəhmət olmasa bu özəlliyi BIOSdan bağlayın.
+Grub2 Dili
+Font Ölçüsü
+Balaca
+Böyük
+Grub2 üçün yeni şifrə yarat.
+Yeni Yarat
+Grub2 şifrəsini dəyiş və ya qaldır.
+Qaldır
+Yeni şifrə yaradacaq və ya siləcəksinizmi?
+Yeni İstifadəçi Adı
+Yeni Şifrə
+Əvvəlində və ya axrında boşluq olmamalıdır.
+İstifadəçi adı yalnız rəqəm,hərf və boşluqdan ibarət ola bilər.
+İstifadəçi adı və şifrə yaradıldı.
+Proqramı qaldır
+Komputerinizin AIOBoot`un Grub2`sindən önyükləmə(boot) eləmədiyindən əmin olun. Əgər komputeriniz yalnız AIOBoot`un Grub2`si ilə önyükləmə(boot) edə bilirsə, proqramı qaldırmaq önyükləməni uğursuzluqla nəticələndirəcək.%sWindows Bootloader`ı bərpa etmək üçün Bootloader`lardan və ya DVDdən istifadə edin.%sƏməliyyat sistemini AIOBoot`un Grub2`si olmadan aça bildiyiniz zaman DAVAM ETə basın.
+Fayl bölünür
+Fayl çıxarılır
+Faylların son versiyası yüklənilir
+Əlavə fayllar əlavə olunur
+Ləğv olunur
+Ləğv olundu
+Silindi
+Avtomtik Aşkarlama
+Başqaları
+Xüsüsi Paketlər
+Bu fayl aşkarlana bilmədi,zəhmət olmasa siyahıdaki fayllardan birini seçin.
+Bu əməliyyat sistemi qalıcı(persistent) modu dəstəkliyir.%sBu, hər seansdan sonra məlumatlarınızın qeyd olunacağı deməkdir.%sƏməliyyat sisteminin sürəti sabit diskin oxuma və yazma sürətlərindən asılıdır.%sQalıcı(persistent) mod üçün 4GB`lıq fayl yaratmaq istəyirsinizmı?
+Bu əməliyyat sistemi qalıcı(persistent) modu dəstəkləyir.%sBu, hər seansdan sonra məlumatlarınızın qeyd olunacağı deməkdir.%sƏməliyyat sisteminin sürəti sabit diskin oxuma və yazma sürətlərindən asılıdır.%sQorumaq istədiyiniz məlumatlara uyğun bir ölçülü bir fayl yaradılacaq.
+Grub2 Arxaplanı
+Səmimi təşəkkürlər:--Bu proqramı işlədən bütün istifadəçilərə--Google.--GNU (Grub2 İnkişaf Qrubu).--Clover, rEFInd, Grub4dos və Syslinux`un inşif qrubu--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM və WinSetupFromUSB`nin müəllifləri--Tərcüməçılər: Denis Cojocaru (Rusca və Rumın), Stoian Bahchevanski (Bulgarca), Pascal BIMAS Perso (Fransızca), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Türkcə), Michał Smajdor, Andrzej Gicala (Lehcə), Alessandro Santini (İtalyanca), Txema, Alacran (İspanyolca), Frettt (Almanca), Tenhon (Ənənəvi Çincə), CloverGit, Sun Wei (Sadələşdirilmiş Çincə), Hanuware (Korecə), Renato "donalld" Pejon (Brazilya Portuqliyacası), thamer mousa (Ərəbcə), Ida Bagus Anom Sanjaya (Indoneziya) Daniel Dybing (Norveç), VenusGirl (한국어), Tofiq (Azerbaijani).
+Bölmələri idarə edin
+MB olaraq ölçü
+Giriş faylı
+Çıxış faylı
+Diskinizdəki ISO faylını seçmək üçün klikləyin...
+Diskinizdə ".IMG" faylını harada yadda saxlayacağınızı seçmək üçün klikləyin...
+Yarat
+Bu fayl boşdur.
+Bu sənəd haqqında məlumat əldə etmək mümkün deyil.
+Bu fayl önyükləməni(boot) dəstəkləməyə bilər. Davam etmək istəyirsiniz?
+Yaratmaq istədiyiniz fayl üçün ölçü yazın.
+Yaratmaq istədiyiniz fayl üçün ad yazın.
+Çıxış faylı hal-hazırda mövcuddur,faylı əvəz etmək istəyirsiniz?
+Ən az %s olacaq şəkildə ölçü yazın.
+%s diskindəki boş yer yetərli deyil.
+%s diski FAT32 olaraq formatlanıb,o ancaq 4GB`dan kiçik faylları saxlaya bilər.
+ImDisk qurulmayıb,ImDisk`i dərhal qurmaq istəyirsinizmi?
+ImDisk qurulmadı.
+Fayl yaradılır və "mount" edilir...
+ISO faylı çıxarılır...
+Konfiqurasiya faylları yenilənir...
+IMG faylının ölçüsü yetərli deyil, zəhmət olmasa ölçüsünü təxminən %s eləyin və yenidən cəhd edin.
+IMG faylı üçün ad təyin edilə bilmədi.
+%s çıxarıla bilmir, zəhmət olmasa əl ilə çıxarın.%sSonra seçdiyiniz yerdəki IMG faylını silin.
+ISO`nu çıxarın, sonra o diskdəki sources\install.wim faylını seçin...
+Diskinizdə sources\install.wim faylını seçmək üçün buraya klikləyin ...
+Diskinizdə ".VHD" faylını harada yadda saxlayacağınızı seçmək üçün burayı klikləyin...
+Sadəcə Windows 7 və sonraki versiyaları dəstəkləyir..
+VHD faylı yaradılır və çıxarılır(mount)...
+Təsvir tətbiq edilir...
+VHD fatlı "unmount" edilir...
+VHD faylı yaradıla və çıxarıla bilmədi.
+Təsvir VHD bölməsinə tətbiq edilə bilmədi.
+VHD faylının ölçüsü yetərli deyil, zəhmət olmasa artırın və yenidən cəhd edin.
+%s diski "unmount" edilə bilmədi, zəhmət olmasa bunu əl ilə edin.%sSonra seçdiyiniz yerdəki VHD faylını silin.
+Versiya seç
+Zəhmət olamasa bütün "sources\*.wim" fayllarını çıxarın və onları "WinPE 7/8.1/10" seçimiylə inteqrasiya edin.
+Bu paket WinPE olaraq inteqrasiya edilsin?
+Zəhmət olmasa əvvəlcə bütün faylları USB və ya sabit diskinizin kök qovluğuna çıxarın!%sDaha çox məlumat üçün ana səhifəyə baxın.
+Özəl
+Yaradılır
+FAT32 bölməsində 4GB`dan böyük fayllar yaradıla bilmir.
+Grub4Dos əsas "bootloader" olaraq qurulsun mu?%sGrub4Dos'u yalnız Grub2 cihazınızda uyğun deyilsə və ya yalnız test üçün quraşdırmalısınız.%sXüsusiyyəti tam dəstəkləmək üçün Grub2`dən istifadə edin.
+UEFI modundaki varsayılan Bootloader
+Sadəcə ReactOS LiveCD dəstəklənir.ReactOS Setup`ı necə inteqrasiya ediləcəyini öyrənmək üçün əsas səhifəni yoxlayın.
+ISO yarat
+ISO faylının yadda saxlanılacağı yeri seçin.
+Blog: https://www.aioboot.com.
+Zəhmət olmasa rejimi seçin:
+BOOT`u test elə [QEMU]
+Bu diskimi yoxsa ISO faylınımı test etmək istəyirsiniz?
+Bu Disk
+ISO faylı
+RAM miqdarı (MB)
+Zəhmət olmasa etibarlı  müsbət nömrə daxil edin.
+Zəhmət olmasa 0`dan böyük %sMB`dan kiçik ölçü daxil edin.
+QEMU faylları %s\QEMU qovluğuna kopyalanacaq. Razısınızmı?
+ISO faylını test etmə istəyirsiniz?
+Windows qurulumu üçün WIM`i çıxar.
+Windows ISO faylını yenidən paketlə.
+ISO faylı yenidən paketlənir
+Yenilənmə endirilir...
+Görünür ISO faylı ISOLINUX Bootloader`dan istifadə edir. Bu zaman o NTFS formatını dəstəkləmir.%sLegacy modda açılışı dəstəkləmək üçün FAT32 formatından istifadə edin.%sDavam etmək istəyirsinizmi?
+Bu əməliyyat sistemi qalıcı (persistent) modu dəstəkləyə bilər.%sBu, hər seansdan sonra məlumatlarınızın qeyd olunacağı deməkdir.%sBu modu aktifləşdirmək istəyirsiniz?
+Bu VHD faylı 64 bit və ya 32 bit əməliyyat sistemi ilə quraşdırılıb?
+USB 3.0 "Driver"nı Windows 7`yə daxil etmə.
+Yenidən soruşma
+İnstruksiyaları gör
+Yenilənmədən əvvəl %s diski üzərində işləyən bütün proqramları bağlayın.
+Disk boşluğuna qənaət etmək üçün bu faylı kopyalamaq əvəzinə hərəkət etdirəcəyik.Razısınızmı?
+Grub2`ni qur [Legacy]
+Unutmayın ki, bu diskdə hər dəfə birləşdirdiyiniz zaman Grub2-ni yenidən qurmalısınız.
+Bu paket üçün yalnız bir versiyanı inteqrasiya edə bilərsiniz. Mövcud versiyanı silmək və yenidən birləşdirmək üçün MENYU Editoru düyməsini basın.Və ya Partition Image Mapper`dan istifadə edin.
+Bu diskdə qalan boş yer yetərli deyil.
+Giriş rədd edildi. Antivirus proqramını söndürməyə çalışın və yenidən cəhd edin.
+Grub2 Font'u
+##### END #####

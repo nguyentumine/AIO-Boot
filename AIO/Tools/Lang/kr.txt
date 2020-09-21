@@ -164,7 +164,7 @@ AIO Boot의 Grub2를 사용하지 않고 컴퓨터를 부팅해야 합니다. �
 이 운영 체제는 영구 모드를 지원합니다.%s각 세션 후 데이터가 저장됨을 의미합니다.%s운영 체제의 속도는 하드 드라이브의 읽기 및 쓰기 속도에 따라 달라집니다.%s영구 모드용 4Gb 파일을 생성하시겠습니까?
 이 운영 체제는 영구 모드를 지원합니다.%s각 세션 후 데이터가 저장됨을 의미합니다.%s운영 체제의 속도는 하드 드라이브의 읽기 및 쓰기 속도에 따라 달라집니다.%s저장하려는 데이터에 해당하는 크기의 파일을 만듭니다.
 Grub2 배경
-진심으로 감사합니다:--모든 사용자가 이 도구를 사용하고 있습니다.--Google.--GNU (Grub2 개발팀).--Clover, rEFInd, Grub4dos 및 Syslinux의 개발 팀입니다.--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM 및 WinSetupFromUSB의 작성자입니다.--언어 번역가 : Denis Cojocaru (러시아어 및 루마니아어), Stoian Bahchevanski (불가리아어), Pascal BIMAS Perso (프랑스어), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (터키어), Michał Smajdor, Andrzej Gicala (폴란드어), Alessandro Santini (이탈리아어) ), Txema, Alacran (스페인어), Frettt (독일어), Tenhon (중국어 번체), CloverGit, Sun Wei (중국어 간체), VenusGirl (한국어), Renato "donalld"Pejon (Portugues do Brasil), thamer mousa (아랍어) , Ida Bagus Anom Sanjaya (인도네시아) Daniel Dybing (노르웨이어), VenusGirl (한국어).
+진심으로 감사합니다:--모든 사용자가 이 도구를 사용하고 있습니다.--Google.--GNU (Grub2 개발팀).--Clover, rEFInd, Grub4dos 및 Syslinux의 개발 팀입니다.--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM 및 WinSetupFromUSB의 작성자입니다.--언어 번역가 : Denis Cojocaru (러시아어 및 루마니아어), Stoian Bahchevanski (불가리아어), Pascal BIMAS Perso (프랑스어), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (터키어), Michał Smajdor, Andrzej Gicala (폴란드어), Alessandro Santini (이탈리아어) ), Txema, Alacran (스페인어), Frettt (독일어), Tenhon (중국어 번체), CloverGit, Sun Wei (중국어 간체), VenusGirl (한국어), Renato "donalld"Pejon (Portugues do Brasil), thamer mousa (아랍어) , Ida Bagus Anom Sanjaya (인도네시아) Daniel Dybing (노르웨이어), VenusGirl (한국어), Tofiq (Azerbaijani).
 파티션 관리
 크기(MB)
 입력 파일
@@ -240,5 +240,5 @@ Grub2 설치 [레거시]
 이 패키지에는 하나의 버전만 통합할 수 있습니다. 메뉴 편집기 버튼을 클릭하여 현재 버전을 삭제하고 다시 통합하십시오. 또는 파티션 이미지 매퍼를 사용하십시오.
 이 드라이브에 남은 여유 공간이 충분하지 않습니다.
 액세스가 거부되었습니다. 바이러스 백신 소프트웨어를 비활성화하고 다시 시도하십시오.
-Grub2 Font
+Grub2 글꼴
 ##### END #####

@@ -1,7 +1,7 @@
-﻿################################################################
+################################################################
 Dil	        :	Turkish
 Kredi		:	Erhan Kültür (ekultur@gmail.com), Murat ATICI, Tayfun Akkoyun.
-Tarih		:	09.08.2020
+Tarih		:	17.09.2020
 Info		:	Lütfen satır ekleme, silme veya taşıma yapmayın, "%s" yi kaldırmayın.Kendi bildiriminizi göndermek veya herhangi bir sorunuz olmasını istiyorsanız, admin@aioboot.com adresine bir e-posta göndermeyi unutmayın. Yardım için teşekkürler!
 ################################################################
 
@@ -164,7 +164,7 @@ Bu dosya algılanamadı, lütfen listede yer alan bir paket dosyayı seçin!
 Bu işletim sistemi kalıcı modu destekliyor.%sBu, verilerinizin her oturumdan sonra kaydedileceği anlamına gelir.%sİşletim sisteminin hızı, sabit sürücünün okuma ve yazma hızına bağlıdır.%sKalıcı mod için 4Gb'lik bir dosya oluşturmak ister misiniz?
 Bu işletim sistemi kalıcı modu destekliyor.%sBu, verilerinizin her oturumdan sonra kaydedileceği anlamına gelir.%sİşletim sisteminin hızı, sabit sürücünün okuma ve yazma hızına bağlıdır.%sKaydetmek istediğiniz veri miktarına karşılık gelen bir dosya oluşturulacak.
 Grub2 Arka Plan Resmini değiştir
-Bu aracı kullanan tüm kullacılara Saygılarımızla:--Google.--GNU (Grub2 Geliştirme Ekibi).--Clover'ın Geliştirme Ekibi, rEFInd, Grub4dos ve Syslinux.--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM ve WinSetupFromUSB'nin Yazarları Sunucu.--Dil çevirmenleri: Denis Cojocaru (Rusça ve Rumence), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kültür, Murat ATICI, Tayfun Akkoyun (Türkçe), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian), VenusGirl (한국어).
+Bu aracı kullanan tüm kullacılara Saygılarımızla:--Google.--GNU (Grub2 Geliştirme Ekibi).--Clover'ın Geliştirme Ekibi, rEFInd, Grub4dos ve Syslinux.--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM ve WinSetupFromUSB'nin Yazarları Sunucu.--Dil çevirmenleri: Denis Cojocaru (Rusça ve Rumence), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kültür, Murat ATICI, Tayfun Akkoyun (Türkçe), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian), VenusGirl (한국어), Tofiq (Azerbaijani).
 Partisyonları Yönet
 MB Boyut
 Giriş dosyası
@@ -240,5 +240,5 @@ Eğer sürücü üzerinde disk birleştirme işlemi yaparsanız,bu durumuda Grub
 Paketin yalnızca bir versiyonunu entegre edebilirsiniz. Paketin yeni versiyonunu entegre etmek için Menü Düzenle butonuna tıklayın,Menü Düzenle ekranında,paketin mevcut versiyonunu kaldırın ve yeni paketi tekrar kurun.Yada Part Image Mapper özelliğini kullanın.
 Bu sürücünün başındaki boş alan yeterli değil.
 Erişim engelleniyor.Lütfen mevcut antivirüs yazılımınızı pasif hale getirin ve tekrar deneyin.
-Grub2 Font
+Grub2 Yazı Tipi
 ##### END #####

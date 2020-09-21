@@ -216,7 +216,7 @@ kernel:
 vhd: extcmd
 usbtest: usb
 relocator: mmap
-acpi: extcmd mmap
+acpi: extcmd procfs mmap
 tga: bufio bitmap
 reboot: relocator
 serial: extcmd terminfo
