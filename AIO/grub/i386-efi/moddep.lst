@@ -135,7 +135,7 @@ pata: ata
 mul_test: functional_test
 adler32: crypto
 terminal:
-shim_lock: verifiers
+shim_lock: sbpolicy verifiers
 div:
 ehci: cs5536 usb boot
 crypto:
@@ -172,10 +172,10 @@ strtoull_test: functional_test
 bitmap:
 ntfs: fshelp
 multiboot: net linux video boot relocator mmap
-wimboot: lua map sbpolicy extcmd normal procfs xzio
+wimboot: lua map extcmd normal procfs xzio
 tpm: verifiers
 gcry_crc: crypto
-efiload: extcmd
+efiload: sbpolicy linuxefi extcmd
 png: bufio bitmap
 json:
 jpeg: bufio bitmap
@@ -290,8 +290,8 @@ lzmaio:
 ufs1:
 mdraid09: diskfilter
 lvm: diskfilter
-chain: net extcmd efinet normal boot
 cbfs: archelp
+chain: net sbpolicy linuxefi extcmd efinet normal boot
 ufs2:
 time:
 setpci: extcmd
