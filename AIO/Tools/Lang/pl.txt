@@ -164,13 +164,13 @@ Nie udało się wykryć tego pliku, wybierz dystrybucje z listy!
 Ten system operacyjny obsługuje tryb trwały.%sOznacza to, że dane zostaną zapisane po każdej sesji.%sPrędkość systemu operacyjnego zależy od prędkości odczytu i zapisu dysku twardego.%sCzy chcesz utworzyć plik 4 GB dla trybu trwałego?
 Ten system operacyjny obsługuje tryb trwały.%sOznacza to, że dane zostaną zapisane po każdej sesji.%sPrędkość systemu operacyjnego zależy od prędkości odczytu i zapisu dysku twardego.%sTworzymy plik o rozmiarze odpowiadającym danym, które chcesz zapisać.
 Tło Grub2 
-Szczególne podziękowanie dla:--Wszystkich użytkowników używających tego narzędzia.--Google.--GNU (Grub2 Zespół Deweloperów).--Zespół Deweloperów Clover, rEFInd, Grub4dos oraz Syslinux.--Autorów 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot oraz WinSetupFromUSB.--Tłumaczy języków: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), Daniel Dybing (Norwegian).
+Szczególne podziękowanie dla:--Wszystkich użytkowników używających tego narzędzia.--Google.--GNU (Grub2 Zespół Deweloperów).--Zespół Deweloperów Clover, rEFInd, Grub4dos oraz Syslinux.--Autorów 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM oraz WinSetupFromUSB.--Tłumaczy języków: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian), VenusGirl (한국어), Tofiq (Azerbaijani).
 Menadżer partycji 
 Wielkość w MB
 Plik wejściowy
 Plik wyjściwoy
 Kliknij tutaj, aby wybrać plik ISO z dysku...
-Kliknij tutaj, aby wybrać gdzie zapisać plik ".PartIMG" na dysku...
+Kliknij tutaj, aby wybrać gdzie zapisać plik ".IMG" na dysku...
 Stwórz
 Ten plik jest pusty.
 Nie można uzyskać informacji o tym pliku.
@@ -186,9 +186,9 @@ ImDisk nie jest zainstalowany.
 Tworzenie i monotwanie pliku...
 Wypakowywanie pliku ISO...
 Aktualizowanie konfiguracji plików...
-Wielkość pliku PartIMG nie jest wystarczająca, proszę zwiększyć ją do %s i spróbować ponownie.
-Nie można ustawić etykiety dla pliku PartIMG.
-Nie można odmontować %s, proszę zrobić to ręcznie.%sNastępnie usuń plik PartIMG tam gdzie go wybrałeś.
+Wielkość pliku IMG nie jest wystarczająca, proszę zwiększyć ją do %s i spróbować ponownie.
+Nie można ustawić etykiety dla pliku IMG.
+Nie można odmontować %s, proszę zrobić to ręcznie.%sNastępnie usuń plik IMG tam gdzie go wybrałeś.
 Zamontuj plik ISO, następnie wybierz sources\install.wim dla pliku na dysku...
 Naciśnij tutaj, aby wybrać sources\install.wim dla pliku na dysku...
 Kliknij tutaj, aby wybrać gdzie zapisać plik ".VHD" na dysku...
@@ -237,4 +237,5 @@ Please note that you should reinstall Grub2 every time you defragment on this dr
 You can only integrate one version for this package. Click the Menu Editor button to delete the current version and re-integrate it. Or use the Partition Image Mapper.
 The free space left on this drive is not enough.
 Access is denied. Try disabling the antivirus software and try again.
+Grub2 Font
 ##### END #####

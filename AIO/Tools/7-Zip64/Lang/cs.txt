@@ -2,7 +2,7 @@
 ;  4.30 : Milan Hrubý
 ;  4.33 : Michal Molhanec
 ;  9.07 : Jiří Malák
-;
+; 15.00 : Kryštof Černý
 ;
 ;
 ;
@@ -62,6 +62,8 @@ Porovnat soubory
 Vytvořit složku
 Vytvořit soubor
 &Konec
+Odkázat
+&Alternate Streams
 600
 Vybrat &vše
 Zrušit výběr vše
@@ -84,6 +86,7 @@ Otevřít kořenovou složku
 O úroveň výš
 Historie složek...
 &Obnovit
+Automatické obnovení
 750
 Archivační lišta
 Standardní lišta
@@ -139,7 +142,7 @@ Dílů
 
 64-bit
 Big-endian
-Pocesor
+Procesor
 Fyzická velikost
 Velikost hlaviček
 Kontrolní součet
@@ -158,6 +161,38 @@ Velikost clusteru
 Označení
 Místní název
 Poskytovatel
+NT Zabezpečení
+Alternate Stream
+Aux
+Odstraněný
+Is Tree
+
+
+Typ chyby
+Chyby
+Chyby
+Upozornění
+Upozornění
+Streams
+Alternate Streams
+Alternate Streams Size
+Virtuální velikost
+Rozbalená velikost
+Celková fyzická velikost
+Volume Index
+SubType
+Short Comment
+Code Page
+
+
+
+Tail Size
+Embedded Stub Size
+Link
+Hard Link
+iNode
+
+Jen pro čtení
 2100
 Možnosti
 Jazyk
@@ -168,10 +203,12 @@ Program pro &porovnání souborů:
 2200
 Systém
 Asociovat 7-Zip s:
+Všichni uživatelé
 2301
 &Integrovat 7-Zip do kontextového menu
 S&tupňovité kontextové menu
 &Položky kontextového menu:
+Ikony v kontextovém menu
 2320
 <Složka>
 <Archiv>
@@ -223,12 +260,25 @@ Operace nemůže být provedena ze složky s dlouhou cestou.
 Musíte vybrat jeden soubor
 Musíte vybrat jeden nebo více souborů
 Příliš mnoho položek
+Nelze otevřít soubor jako {0} archiv
+Soubor je otevřen jako {0} archiv
+Archiv je otevřen s offsetem
 3300
 Rozbalování
 Komprimování
-Konrola
+Kontrola
 Otevírání...
 Prohledávání...
+Odebírání
+3320
+Přidávání
+Aktualizování
+Analyzování
+Replikace
+Přebalování
+Přeskakování
+Odstraňování
+Vytváření hlavičky
 3400
 Rozbalit
 &Rozbalit do:
@@ -237,6 +287,8 @@ Vyberte umístění pro rozbalené soubory.
 Cesty
 Plné cesty
 Bez cesty
+Absolutní cesty
+Relativní cesty
 3420
 Způsob přepisování
 Zeptat se před přepisem
@@ -244,6 +296,9 @@ Přepsat bez výzvy
 Přeskočit existující soubory
 Automatické přejmenování
 Automatické přejmenování existujících souborů
+3430
+Eliminovat duplikaci kořenové složky
+Obnovit zabezpečení souborů
 3500
 Potvrzení nahrazení souboru
 Cílová složka již obsahuje zpracovaný soubor.
@@ -257,13 +312,32 @@ Chyba dat v '{0}'. Soubor je poškozený.
 Chyba CRC v '{0}'. Soubor je poškozený.
 Chyba dat v zakódovaném souboru '{0}'. Chybné heslo?
 Chyba CRC v zakódovaném souboru '{0}'. Chybné heslo?
+3710
+Špatné heslo?
+3721
+Nepodporovaná komprimační metoda
+Chyba dat
+CRC selhal
+Nedostupná data
+Neočekávaný konec dat
+Jsou přítomny nějaké data po konci payload dat
+Není archiv
+Chyba hlavičky
+Špatné heslo
+3763
+Nedostupný start archivu
+Nepotvrzený start archivu
+
+
+
+Nepodporovaná funkce
 3800
 Vložit heslo
 Vložit heslo:
 Potvrzení hesla:
 Zobrazit he&slo
 Heslo nesouhlasí
-Pro heslo použíjte pouze anglická písmena, číslice a speciální znaky (!, #, $, ...)
+Pro heslo použijte pouze anglická písmena, číslice a speciální znaky (!, #, $, ...)
 Heslo je příliš dlouhé
 Heslo
 3900
@@ -295,6 +369,12 @@ Metoda zakódování:
 Zakódovat &názvy souborů
 Spotřeba paměti pro zabalení:
 Spotřeba paměti pro rozbalení:
+Odstranit soubory po zabalení
+4040
+Uložit symbolické odkazy
+Uložit pevné odkazy
+Store alternate data streams
+Uložit zabezpečení souborů
 4050
 Skladovací
 Nejrychlejší
@@ -402,3 +482,14 @@ Výsledné
 Využití procesoru
 Výkon / Využití
 Průchodů:
+7700
+Odkázat1
+Odkázat2
+Odkázat z:
+Odkázat na:
+7710
+Typ odkázání
+Pevný odkaz
+Symbolický odkaz souboru
+Symbolický odkaz složky
+Spojení složek

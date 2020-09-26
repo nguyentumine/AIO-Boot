@@ -164,13 +164,13 @@ Grub2使用语言
 当前操作系统支持 persistent mode , %s这意味着您的数据将会在每次会话后保存.%s操作系统的速度取决于硬盘的读写速度.%s需要创建一个4Gb文件用于支持persistent mode吗？
 此操作系统支持 persistent mode , %s这意味着您的数据将会在每次会话后保存.%s操作系统的速度取决于硬盘的读写速度.%s将创建一个与您要保存的数据相对应大小的文件
 Grub2 壁纸
-衷心感谢:--所有使用此工具的朋友(顺序不分先后).--Google.--GNU (Grub2 开发团队).--Clover, rEFInd, Grub4dos 及 Syslinux 开发团队.-- 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, WinSetupFromUSB的作者们.--各语种翻译者: Denis Cojocaru (俄语和罗马尼亚语), Stoian Bahchevanski (保加利亚语), Pascal BIMAS Perso (法语), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (土耳其语), Michał Smajdor, Andrzej Gicala (波兰语), Alessandro Santini (意大利语), Txema, Alacran (西班牙语), Frettt (德语), Tenhon (正体中文), CloverGit, Sun Wei (简体中文), Hanuware (韩语), Renato "donalld" Pejon (巴西葡萄牙语), Daniel Dybing (Norwegian).
+衷心感谢:--所有使用此工具的朋友(顺序不分先后).--Google.--GNU (Grub2 开发团队).--Clover, rEFInd, Grub4dos 及 Syslinux 开发团队.-- 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM, WinSetupFromUSB的作者们.--各语种翻译者: Denis Cojocaru (俄语和罗马尼亚语), Stoian Bahchevanski (保加利亚语), Pascal BIMAS Perso (法语), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (土耳其语), Michał Smajdor, Andrzej Gicala (波兰语), Alessandro Santini (意大利语), Txema, Alacran (西班牙语), Frettt (德语), Tenhon (正体中文), CloverGit, Sun Wei (简体中文), Hanuware (韩语), Renato "donalld" Pejon (巴西葡萄牙语), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian), VenusGirl (한국어), Tofiq (Azerbaijani).
 分区管理
 大小以MB为单位
 输入文件
 输出文件
 点此选择磁盘上的ISO文件...
-点此选择".PartIMG"文件保存位置...
+点此选择".IMG"文件保存位置...
 创建
 此文件是空的
 无法获取该文件的信息
@@ -186,9 +186,9 @@ ImDisk 已安装.
 正在创建并挂载文件...
 正在提取ISO文件...
 正在更新配置文件...
-PartIMG文件太小, 请扩容到约 %s 后再试.
-无法为PartIMG文件设置标签.
-无法挂载 %s，请手动挂载.%s然后删除所选的PartIMG文件.
+IMG文件太小, 请扩容到约 %s 后再试.
+无法为IMG文件设置标签.
+无法挂载 %s，请手动挂载.%s然后删除所选的IMG文件.
 挂载ISO文件, 然后选择 挂载位置\sources 目录下的 install.wim 文件...
 点击这里选择 sources\install.wim 文件...
 点击这里选择 ".VHD" 文件保存位置...
@@ -240,4 +240,5 @@ Blog: https://www.aioboot.com
 您只能为此程序包集成一个版本, 单击“编辑菜单”按钮以删除当前版本并重新集成或使用Partition Image Mapper
 此驱动器上剩余的可用空间不足
 访问被拒绝。尝试禁用防病毒软件，然后重试
+Grub2 Font
 ##### END #####

@@ -164,13 +164,13 @@ Nu s-a putut detecta acest fișier, vă rugăm să selectați un pachet enumerat
 Acest sistem de operare acceptă modul persistent.%sAcest lucru înseamnă că datele vor fi salvate după fiecare sesiune.%sViteza sistemului de operare depinde de viteza de citire și scriere a hard discului.%sDoriți să creați un fișier 4Gb pentru modul persistent?
 Acest sistem de operare acceptă modul persistent.%sAcest lucru înseamnă că datele vor fi salvate după fiecare sesiune.%sViteza sistemului de operare depinde de viteza de citire și scriere a hard discului.%sVom crea un fișier de dimensiune corespunzătoare pentru datele care doriți să salvați.
 Imagini de fundal pentru Grub2
-Cu sinceritate, datorită:--oamenilor care folosesc acest instrument.--Google.--GNU (echipa de dezvoltare Grub2).--Echipa de dezvoltare Clover, rEFInd, Grub4dos și Syslinux.--Autorii al 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot și WinSetupFromUSB.--Traducător de limbi: Denis Cojocaru (rusă și română), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), Daniel Dybing (Norwegian).
+Cu sinceritate, datorită:--oamenilor care folosesc acest instrument.--Google.--GNU (echipa de dezvoltare Grub2).--Echipa de dezvoltare Clover, rEFInd, Grub4dos și Syslinux.--Autorii al 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM și WinSetupFromUSB.--Traducător de limbi: Denis Cojocaru (rusă și română), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian), VenusGirl (한국어), Tofiq (Azerbaijani).
 Managementul partițiilor
 Mărime în MB
 Fișier de intrare
 Fisier de iesire
 Faceți clic aici pentru a selecta fișierul ISO de pe unitatea dvs. ...
-Faceți clic aici pentru a alege unde veți salva fișierul ".PartIMG" pe unitatea dvs. ...
+Faceți clic aici pentru a alege unde veți salva fișierul ".IMG" pe unitatea dvs. ...
 Crează
 Acest fișier este gol.
 Imposibil de obținut informații despre acest fișier.
@@ -186,9 +186,9 @@ ImDiskul nu a fost instalat.
 Crearea și montarea fișierului ...
 Dezarhivarea fișierului ISO ...
 Actualizarea fișierelor de configurare ...
-Dimensiunea fișierului PartIMG nu este suficientă, creșteți-l la aproximativ %s și încercați din nou.
-Nu s-a putut seta marca pentru fișierul PartIMG.
-Nu se poate demonta %s, faceți acest lucru manual.%sApoi ștergeți fișierul PartIMG.
+Dimensiunea fișierului IMG nu este suficientă, creșteți-l la aproximativ %s și încercați din nou.
+Nu s-a putut seta marca pentru fișierul IMG.
+Nu se poate demonta %s, faceți acest lucru manual.%sApoi ștergeți fișierul IMG.
 Montați ISO, apoi selectați fișierul sources\install.wim pe această unitate ...
 Faceți clic aici pentru a selecta fișierul sources\install.wim în unitatea dvs. ...
 Faceți clic aici pentru a alege unde veți salva fișierul ".VHD" pe unitatea dvs. ...
@@ -240,4 +240,5 @@ Vă rugăm să rețineți că trebuie să reinstalați Grub2 de fiecare dată c�
 Aveţi posibilitatea să integraţi o singură versiune pentru acest pachet. Faceţi clic pe butonul Menu Editor pentru a şterge versiunea curentă şi reintegraţi-o. Sau utilizaţi Partition Image Mapper.
 Spațiul liber rămas pe această unitate nu este suficient.
 Accesul este refuzat. Încercați să dezactivați software-ul antivirus și încercați din nou.
+Grub2 Font
 ##### END #####

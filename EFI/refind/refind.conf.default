@@ -244,6 +244,9 @@ timeout 20
 #                     tool, MokManager.efi, used on Secure Boot systems
 #  csr_rotate       - adjusts Apple System Integrity Protection (SIP)
 #                     policy. Requires "csr_values" to be set.
+#  install          - an option to install rEFInd from the current location
+#                     to another ESP
+#  bootorder        - adjust the EFI's (NOT rEFInd's) boot order
 #  about            - an "about this program" option
 #  hidden_tags      - manage hidden tags
 #  exit             - a tag to exit from rEFInd
@@ -257,7 +260,7 @@ timeout 20
 #  netboot          - launch the ipxe.efi tool for network (PXE) booting
 # Default is shell,memtest,gdisk,apple_recovery,windows_recovery,mok_tool,about,hidden_tags,shutdown,reboot,firmware,fwupdate
 #
-#showtools shell, gdisk, memtest, mok_tool, apple_recovery, windows_recovery, about, hidden_tags, reboot, exit, firmware, fwupdate
+#showtools shell, bootorder, gdisk, memtest, mok_tool, apple_recovery, windows_recovery, about, hidden_tags, reboot, exit, firmware, fwupdate
 
 # Tool binaries to be excluded from the tools line, even if the
 # general class is specified in showtools. This enables trimming an
@@ -390,6 +393,9 @@ timeout 20
 # TextMode.efi,ebounce.efi,GraphicsConsole.efi,MokManager.efi,HashTool.efi,
 # HashTool-signed.efi,bootmgr.efi,fb{arch}.efi
 # (where "{arch}" is the architecture code, like "x64").
+# If you want to keep these defaults but add to them, be sure to
+# specify "+" as the first item in the new list; if you don't, then
+# items from the default list are likely to appear.
 #
 #dont_scan_files shim.efi,MokManager.efi
 
@@ -399,9 +405,9 @@ timeout 20
 # that end in ".efi", particularly if the kernels are stored on a
 # filesystem that the EFI can read. When set to "1", "true", or "on", this
 # option causes all files in scanned directories with names that begin with
-# "vmlinuz" or "bzImage" to be included as loaders, even if they lack ".efi"
-# extensions. Passing this option a "0", "false", or "off" value causes
-# kernels without ".efi" extensions to NOT be scanned.
+# "vmlinuz", "bzImage", or "kernel" to be included as loaders, even if they
+# lack ".efi" extensions. Passing this option a "0", "false", or "off" value
+# causes kernels without ".efi" extensions to NOT be scanned.
 # Default is "true" -- to scan for kernels without ".efi" extensions.
 #
 #scan_all_linux_kernels false
@@ -478,7 +484,7 @@ timeout 20
 # The symptom on Windows is Hyper-V not working even if the CPU
 # meets the minimum requirements (HW assisted virtualization and SLAT)
 # DO NOT SET THIS EXCEPT ON INTEL CPUs THAT SUPPORT VMX! See
-# http://www.thomas-krenn.com/en/wiki/Activating_the_Intel_VT_Virtualization_Feature!
+# http://www.thomas-krenn.com/en/wiki/Activating_the_Intel_VT_Virtualization_Feature
 # for more on this subject.
 # The default is false: Don't try to enable and lock the MSR.
 #

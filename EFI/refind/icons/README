@@ -78,6 +78,8 @@ arrow_left.png -- AwOken/clear/128x128/actions/go-previous.png
 arrow_right.png -- AwOken/clear/128x128/actions/go-next.png
 boot_linux.png -- AwOken/clear/128x128/apps/supertux.png
 func_about.png -- AwOkenWhite/clear/128x128/actions/info2.png
+func_install.png -- AwOken/AwOkenWhite/clear/24x24/actions/document-import.png
+func_bootorder.png -- AwOkenWhite/clear/128x128/actions/format-list-ordered.png
 func_exit.png -- AwOkenWhite/clear/128x128/actions/application-exit2.png
 func_firmware.png -- AwOkenWhite/clear/128x128/status/indicator-cpufreq.png
 func_reset.png -- AwOkenWhite/clear/128x128/apps/gnome-session-reboot2.png

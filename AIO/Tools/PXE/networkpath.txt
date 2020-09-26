@@ -1,0 +1,17 @@
+### BEGIN Note ###
+# If you only use a single computer to initialize the PXE server, you only need to enter the Network Path once. AIO Boot v0.9.8.7 supports reading Network Path from /AIO/networkpath.txt. Just add the Network Path to this file, you can add multiple Network Paths by adding multiple lines. The tool will try one by one.
+# \\yourcomputername\sharename
+#
+# If your computer has an account and password, add them behind the Network Path separated by a vertical bar (|).
+# \\yourcomputername\sharename|youraccount|yourpassword
+#
+# If you then initialize the PXE server on another computer, this means that the Network Path, user name, and password have changed. Just enter the new information in /AIO/networkpath.txt.
+#
+# You can delete these lines but don't leave the file empty.
+#
+# Read more: https://www.aioboot.com/en/network-boot/
+### END Note ###
+#
+### Enter the Network Paths in the new lines below:
+
+

@@ -1,0 +1,28 @@
+!BAT
+
+### Start \AIO\WS\XPx861
+set ISOPATH=%1
+if NOT %DPMS%==1 map --unhook
+if NOT %DPMS%==1 map --unmap=0:0xff  && map --rehook
+savedefault +1
+#ls /AIO/Tools/grub4dos/shifthd.bat > nul || find --set-root --devices=hf /AIO/Tools/grub4dos/shifthd.bat
+/AIO/Tools/grub4dos/shifthd.bat
+root (hd%RDSK%,0)
+ls %ISOPATH% > nul || find --set-root --devices=h %ISOPATH%
+map --mem %ISOPATH% (0xff)
+map --e820cycles=3
+map --rehook
+ls (0xff)/ > nul && root (0xff)
+ls (0xff)/ > nul || echo Fatal error while creating virtual disk 0xFF...
+if "%RDSK%"=="" pause Fatal error while swapping hard disk order, cannot continue! && kernel /AIO/grub/i386-pc/core.img
+if not %RDSK%==1 ls (0xff)/I386/TXTSETUP.SIF > nul && cat --locatei=rdisk(1) --replace=rdisk(%RDSK%) (0xff)/I386/TXTSETUP.SIF
+if not %RDSK%==1 ls (0xff)/AMD64/TXTSETUP.SIF > nul && cat --locatei=rdisk(1) --replace=rdisk(%RDSK%) (0xff)/AMD64/TXTSETUP.SIF
+if %LOADFIRA%==1 ls (0xff)/I386/TXTSETUP.SIF > nul && cat --locatei=;;FIRA;; --replace=;;FIRA\r\n (0xff)/I386/TXTSETUP.SIF
+ls /I386/SETUPLDR.BIN > nul && set LDR=/I386/SETUPLDR.BIN
+chainloader %LDR%
+pause --wait=1 Launching Setup from (hd%RDSK%,0)
+boot
+#we should not get here but just in case of errors above...
+map --unhook
+map --unmap=0:0xff && map --rehook
+### End \AIO\WS\XPx861

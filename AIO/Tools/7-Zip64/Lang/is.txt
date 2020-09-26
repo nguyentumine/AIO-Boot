@@ -1,5 +1,5 @@
 ;!@Lang2@!UTF-8!
-; 16.04 : 2017-03-15 : Stefán Örvar Sigmundsson
+; 18.06 : 2019-01-24 : Stefán Örvar Sigmundsson
 ;
 ;
 ;
@@ -50,13 +50,13 @@ Opna að &utanverðu
 S&koða
 &Breyta
 &Endurnefna
-&Afrita í…
-&Færa í…
+&Afrita í...
+&Færa í...
 E&yða
-K&ljúfa skrá
-S&ameina skrár
+K&ljúfa skrá...
+S&ameina skrár...
 E&iginleikar
-&Gera athugasemd
+&Gera athugasemd...
 Reikna samtölu
 Mismunur
 Skapa &möppu
@@ -68,8 +68,8 @@ Skapa &skrá
 &Velja allt
 &Afvelja allt
 &Umsnúa vali
-&Velja
-&Afvelja
+&Velja...
+&Afvelja...
 &Velja eftir tegund
 &Afvelja eftir tegund
 700
@@ -84,7 +84,7 @@ Sm&áatriði
 &Verkfærastikur
 &Opna rótarmöppu
 &Upp um eitt stig
-M&öppusaga
+M&öppusaga...
 &Endurglæða
 S&jálfendurglæðun
 750
@@ -96,11 +96,11 @@ Sýna takkatexta
 &Bæta við möppu í uppáhald sem
 Bókamerki
 900
-&Valmöguleikar
+&Valmöguleikar...
 &Afkastaprófa
 960
-&Efnisyfirlit
-&Um 7-Zip
+&Efnisyfirlit...
+&Um 7-Zip...
 1003
 Slóð
 Nafn
@@ -134,7 +134,7 @@ Möppur
 Skrár
 Útgáfa
 Bindi
-Fjölbinda
+Fjölbindi
 Afsetning
 Tenglar
 Bálkar
@@ -147,7 +147,7 @@ Efnisleg stærð
 Höfðastærð
 Samtala
 Einkenni
-Sýndarvistfang
+Sýndarstaðfang
 Auðkenni
 Stutt nafn
 Skaparahugbúnaður
@@ -187,7 +187,7 @@ Kóðasíða
 
 
 Halastærð
-Innfallin stubbastærð
+Innfelld stubbastærð
 Tengill
 Harðtengill
 Skráhnútur
@@ -213,13 +213,13 @@ Samhengisvalmyndaratriði:
 <Mappa>
 <Safn>
 Opna safn
-Afþjappa skrár
-Bæta í safn
+Útdraga skrár...
+Bæta í safn...
 Prófa safn
-Afþjappa hér
-Afþjappa í „{0}“
+Útdraga hér
+Útdraga í „{0}“
 Bæta við í „{0}“
-Þjappa og senda í rafpósti
+Þjappa og senda í rafpósti...
 Þjappa í „{0}“ og senda í rafpósti
 2400
 Möppur
@@ -234,7 +234,7 @@ Stillingar
 Sýna „..“ &atriði
 Sýna &raunverulegar skráartáknmyndir
 Sýna &kerfisvalmynd
-&Fullraðaval
+&Heildarraðaval
 Sýna &töflulínur
 &Einsmella til að opna atriði
 Annars konar &valhamur
@@ -264,21 +264,21 @@ Getur ekki opnað skrána sem „{0}“-safn
 Skráin er opin sem „{0}“-safn
 Safnið er opið með afsetningu
 3300
-Afþjappar
-Þjappar
-Prófar
-Opnar
-Skimar
-Fjarlægir
+Útdragandi
+Þjappandi
+Prófandi
+Opnandi...
+Skimandi...
+Fjarlægandi
 3320
-Viðbætir
-Uppfærir
-Greinir
-Endurtekur
-Endurpakkar
-Sleppir
-Eyðir
-Skapar höfuð
+Bætandi við
+Uppfærandi
+Greinandi
+Endurtakandi
+Endurpakkandi
+Sleppandi
+Eyðandi
+Skapandi höfuð
 3400
 Afþjappa
 Afþjappa í:
@@ -337,7 +337,7 @@ Ritaðu aðgangsorðið:
 Endurritaðu aðgangsorðið:
 Sýna aðgangsorðið
 Aðgangsorðin samsvarast ekki
-Notaðu einungis enska stafi, tölur og sérstök rittákn (!, #, $, o.s.frv.) í aðgangsorðunum
+Notaðu einungis enska stafi, tölur og sérstök rittákn (!, #, $, ...) í aðgangsorðunum
 Aðgangsorðið er of langt
 Aðgangsorð
 3900
@@ -397,9 +397,9 @@ Afrita
 Færa
 Afrita í:
 Færa í:
-Afritar
-Færir
-Endurnefnir
+Afritandi...
+Færandi...
+Endurnefnandi...
 Veldu móttökumöppu.
 Aðferðin er ekki stutt fyrir þessa möppu.
 Villa við endurnefnun skráar eða möppu
@@ -412,7 +412,7 @@ Staðfesta fjölskráaeyðingu
 Ert þú viss um að þú viljir eyða „{0}“?
 Ert þú viss um að þú viljir eyða möppunni „{0}“ og öllu innihaldinu hennar?
 Ert þú viss um að þú viljir eyða þessum {0} atriðum?
-Eyðir
+Eyðandi...
 Villa við eyðingu skráar eða möppu
 Kerfið getur ekki fært skrá með langri slóð í Recycle Bin
 6300
@@ -452,7 +452,7 @@ Upplýsingar
 Kljúfa skrá
 Kljúfa í:
 Kljúfa í bindi, bæti:
-Klýfur
+Kljúfandi...
 Staðfesta klofning
 Ert þú viss um að þú viljir kjúfa skrána í {0} bindi?
 Bindisstærð verður að vera minni en stærðin á upprunalegu skránni
@@ -461,20 +461,20 @@ Tilgreindu bindisstærð: {0} bæti.\nErt þú viss um að þú viljir kljúfa s
 7400
 Sameina skrár
 Sameina í:
-Sameinar
+Sameinandi...
 Veldu einungis fyrsta hlutann af klofningsskránni
 Get ekki greint skrána sem hluta af klofningsskránni
 Get ekki fundið meira en einn hluta af klofningsskránni
 7500
-Reiknar samtölu
+Reiknar samtölu...
 Samtöluupplýsingar
 CRC-samtala fyrir gögn:
 CRC-samtala fyrir gögn og nöfn:
 7600
 Afkastapróf
 Minnisnotkun:
-Þjöppun
-Afþjöppun
+Þjappandi
+Afþjappandi
 Niðurstaða
 Heildarniðurstaða
 Núverandi

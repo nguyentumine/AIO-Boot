@@ -1,0 +1,8 @@
+!BAT
+
+:: AIO Boot - www.aioboot.com
+
+find --set-root --ignore-floppies --ignore-cd %2
+map --mem /AIO/Tools/grub4dos/ntboot.iso (0xff)
+map --hook
+(0xff)/NTBOOT %1=%2

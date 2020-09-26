@@ -164,13 +164,13 @@ Special Pack
 此作業系統支援持續模式，%s這意味著資料可以在每個工作階段之後被儲存。%s作業的速度端賴於硬碟的讀寫速度，%s要為持續模式建立一個 4Gb 的檔案嗎？
 此作業系統支援持續模式，%s這意味著資料可以在每個工作階段之後被儲存。%s作業的速度端賴於硬碟的讀寫速度，%s將建立一個與要儲存的資料大小相對應的檔案。
 Grub2 背景
-真誠感謝:--所有使用此工具的人。--Google.--GNU (Grub2 研發團隊).--Clover, rEFInd, Grub4dos 與 Syslinux 的研發團隊。--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot 與 WinSetupFromUSB 的作者們。--各語種的翻譯者: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), Daniel Dybing (Norwegian).
+真誠感謝:--所有使用此工具的人。--Google.--GNU (Grub2 研發團隊).--Clover, rEFInd, Grub4dos 與 Syslinux 的研發團隊。--7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM 與 WinSetupFromUSB 的作者們。--各語種的翻譯者: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian), VenusGirl (한국어), Tofiq (Azerbaijani).
 分割區管理
 MB 大小
 輸入檔案
 輸出檔案
 點這裡選擇在磁碟中的 ISO 檔...
-點這裡選擇要儲存 ".PartIMG" 檔到磁碟...
+點這裡選擇要儲存 ".IMG" 檔到磁碟...
 建立
 此檔案是空的。
 無法取得此檔案的資訊。
@@ -186,9 +186,9 @@ ImDisk 已經安裝。
 正在建立與掛載檔案...
 正在提取 ISO 檔案...
 正在更新設置擋...
-此 PartIMG 檔大小不足，請增大到約 %s 後再試一次。
-無法為 PartIMG 檔設置標籤。
-無法掛載 %s 請手動設置。%s然後刪除所選的 PartIMG 檔。
+此 IMG 檔大小不足，請增大到約 %s 後再試一次。
+無法為 IMG 檔設置標籤。
+無法掛載 %s 請手動設置。%s然後刪除所選的 IMG 檔。
 掛載 ISO 檔，然後選擇磁碟中的來源 \install.wim 檔...
 點此選擇磁碟中的來源 \install.wim 檔...
 點此選擇要儲存的的 ".VHD" 檔位置...
@@ -240,4 +240,5 @@ Please note that you should reinstall Grub2 every time you defragment on this dr
 You can only integrate one version for this package. Click the Menu Editor button to delete the current version and re-integrate it. Or use the Partition Image Mapper.
 The free space left on this drive is not enough.
 Access is denied. Try disabling the antivirus software and try again.
+Grub2 Font
 ##### END #####

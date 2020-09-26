@@ -1,7 +1,7 @@
 ﻿;!@Lang2@!UTF-8!
 ;        : Francisco Jr
 ;  4.37  : Fabricio Biazzotto 
-;  15.07 : Atualizado por Felipe
+;  18.05 : Atualizado por Felipe
 ;
 ;
 ;
@@ -134,7 +134,7 @@ Pastas
 Arquivos
 Versão
 Volume
-Multivolume
+Multi-volume
 Offset
 Links
 Blocos
@@ -177,7 +177,7 @@ Correntes
 Correntes Alternantes
 Tamanho das Correntes Alternantes
 Tamanho Virtual
-Tempo Descompactado
+Tamanho Descompactado
 Total do Tamanho Físico
 Índice do Volume
 Sub-Tipo
@@ -228,7 +228,7 @@ Pastas
 &Atual
 &Especificada:
 Usar só pra drives removíveis
-Especifique um local pros arquivos compactados temporários.
+Especifique um local pros arquivos do arquivo compactado temporário.
 2500
 Configurações
 Mostrar o item ".."
@@ -241,7 +241,7 @@ Clique único pra abrir um item
 Usar &grandes páginas de memória
 2900
 Sobre o 7-Zip
-7-Zip é um software grátis
+O 7-Zip é um software grátis
 3000
 O sistema não pôde alocar a quantia requerida de memória
 Não há erros
@@ -249,7 +249,7 @@ Não há erros
 Não pôde criar a pasta '{0}'
 Operações de atualização não são suportadas por este arquivo compactado.
 Não pôde abrir o arquivo '{0}' como arquivo compactado
-Não pôde abrir o arquivo compactado encriptado '{0}'. Senha errada?
+Não pôde abrir o arquivo compactado criptografado '{0}'. Senha errada?
 Tipo de arquivo compactado não suportado
 O arquivo {0} já existe
 O arquivo '{0}' foi modificado.\nVocê quer atualizá-lo no arquivo compactado?
@@ -308,10 +308,10 @@ por este?
 A&uto-Renomear
 3700
 Método de compressão não suportado por '{0}'.
-Erro nos dados de '{0}'. O arquivo está danificado.
-O CRC falhou em '{0}'. O arquivo está danificado.
-Erros nos dados do arquivo encriptado '{0}'. Senha errada?
-O CRC falhou no arquivo encriptado '{0}'. Senha errada?
+Erro nos dados do '{0}'. O arquivo está danificado.
+O CRC falhou no '{0}'. O arquivo está danificado.
+Erros nos dados do arquivo criptografado '{0}'. Senha errada?
+O CRC falhou no arquivo criptografado '{0}'. Senha errada?
 3710
 Senha errada?
 3721
@@ -337,7 +337,7 @@ Inserir senha:
 Re-inserir a senha:
 &Mostrar senha
 As senhas não combinam
-Usar apenas letras em Inglês, números e caracteres especiais (!, #, $, ...) para a senha
+Usar apenas letras em inglês, números e caracteres especiais (!, #, $, ...) para a senha
 A senha é muito longa
 Senha
 3900
@@ -368,7 +368,7 @@ Encriptação
 Método de encriptação:
 Criptografar os &nomes dos arquivos
 Uso de memória pra Compressão:
-Uso de memória para Descompressão:
+Uso de memória pra Descompressão:
 Apagar arquivos após a compressão
 4040
 Armazenar links simbólicos
@@ -450,7 +450,7 @@ Apagar
 Info
 7300
 Dividir Arquivo
-&Dividir para:
+&Dividir em:
 Dividir em &volumes, bytes:
 Dividindo...
 Confirmar a Divisão
@@ -468,8 +468,8 @@ Não pôde achar mais do que uma parte do arquivo dividido
 7500
 Calculando checksum...
 Informação do checksum
-Checksum do CRC pros dados:
-Checksum do CRC pros dados e nomes:
+Checksum do CRC pelos dados:
+Checksum do CRC pelos dados e nomes:
 7600
 Benchmark
 Uso da memória:
@@ -481,7 +481,7 @@ Atual
 Resultando
 Uso da CPU
 Avaliação / Uso
-Passos:
+Passes:
 7700
 Link
 Link

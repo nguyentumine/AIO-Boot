@@ -1,0 +1,22 @@
+!BAT
+
+:: AIO Boot - www.aioboot.com
+
+find --set-root --ignore-floppies --ignore-cd %2
+
+set dev=(fd0) && set chain=+1
+if /I "%1"=="CD" set dev=(0xff) && set chain=
+if /I "%1"=="HD" set dev=(hd-1) && set chain=+1
+
+map %2 %dev% || echo Load fail && echo Try default arg && map --mem %2 %dev% || echo && echo Error image && goto :exit
+map --hook || goto :exit
+rootnoverify %dev% || goto :exit
+chainloader %chain% || echo Not a bootable img && goto :exit
+boot || echo Not a bootable img && goto :exit
+
+:exit
+echo
+echo
+pause Press any key to return to the Grub2 menu...
+find --set-root --ignore-floppies --ignore-cd /AIO/grub/i386-pc/core.img
+kernel /AIO/grub/i386-pc/core.img

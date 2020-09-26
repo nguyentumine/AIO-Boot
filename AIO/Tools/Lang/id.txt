@@ -1,0 +1,244 @@
+################################################################
+Language	:	Indonesia
+Credits		:	Ida Bagus Anom Sanjaya (www.fb.me/Anom.Sanjaya17)
+Date		:	29.08.2020
+Info		:	Mohon untuk tidak menambah, menghapus atau memindahkan garis, tidak menghapus "%s". Apabila anda ingin mengajukan sesuatu atau mempunyai pertanyaan, jangan lupa kirimkan email ke admin@aioboot.com. Terima kasih telah membantu!
+################################################################
+
+
+
+##### BEGIN #####
+Indonesia
+Menu
+Integrasi
+Tentang
+Bootloader
+Jalankan PXE
+Setelan
+Alat
+Sunting MENU
+Bantuan
+Disk sekarang:
+Disk
+Nama
+Jenis
+Ukuran
+Drive sekarang:
+Drive
+Label
+Brks Sistem
+Media lepas/pasang
+Media tetap
+RAM disk
+Tidak diketahui
+AIO Boot adalah program bootable All-in-One untuk USB & HDD. Salah satu pembuat multiboot USB yang terbaik untuk Windows.
+Jangan lupa menghubungi kepada pembuatnya apabila memiliki pertanyaan ke admin@aioboot.com. Saya sangat menghargai anda sehingga saya bisa membuat alat ini lebih baik.
+Nama
+Versi
+Laman Depan
+Hak Cipta
+1. Pilih Paket
+2. Pilih Berkas
+Unduh
+OK
+Pilih berkas di drive anda...
+Pilih berkas ISO atau WIM di drive anda...
+Pilih berkas ISO di drive anda...
+Buka berkas ISO, lalu pilih "I386/TXTSETUP.SIF" atau "AMD64/TXTSETUP.SIF"...
+Pilih berkas yang tepat!
+Nama berkas hanya mengandung karakter alfanumerik (huruf dan angka). Silakan ganti nama berkasnya dan coba lagi!
+Berkas yang lebih dari 4GB TIDAK muat di FAT32 volume.%sFormat-kan partisi sebagai exFAT atau NTFS akan mengatasi masalah ini.
+Memproses, silakan tunggu...
+Jangan menutup jendela ini hingga operasinya selesai!
+Tidak dapat mendeteksi berkas ini!
+Kesalahan, silakan hubungi kepada pembuatnya untuk meminta dukungan!
+Kesalahan: Silakan keluarkan aplikasi yang anda pakai untuk membaca berkas BCD/WinLegacy dan coba lagi!
+Kesalahan: Silakan keluarkan aplikasi yang anda pakai untuk membaca %s dan coba lagi! 
+Berkas tidak tepat!
+Kesalahan: Ruang penyimpanan yang tersisa tidak cukup!
+Selesai. Silakan mencoba!
+Kesalahan
+Peringatan
+Informasi
+Konfirmasi
+Menyalin
+Menyalin berkas yang diperlukan...
+Mengekstrak
+Memeriksa berkas, silakan tunggu...
+Silakan masukkan nama pada menu
+Menambahkan menu...
+Persiapan berkas...
+Keluarkan Regedit.exe untuk melanjutkan!
+Batal
+lanjut
+Pembersihan, silakan tunggu...
+Karena ukuran berkasnya tidak bisa tersimpan di partisi FAT32.%sKita akan memecahkan berkasnya, anda setuju?
+Memecahkan
+Ya
+Tidak
+Disk yang dipilih merupakan partisi GPT. Anda perlu menyalin folder "EFI" ke partisi ber-format "FAT32" atau "FAT16".
+. Hanya mendukung Grub2, rEFInd dan Clover.
+Kita tidak dapat mendukung perangkat ini sekarang!
+Sedang memasang...
+Sudah dipasang...
+%s tidak terpasang. %s membutuhkan %s yang harus dipasang.%sAnda ingin memasang Grub2 sekarang?
+Pilih drive yang dimana anda memasang versi Windows terakhir kali.
+Apabila memungkinkan, cobalah fitur ini di Windows 7 atau keatasnya untuk mendapatkan dukungan terbaik
+Tidak dapat menemukan partisi sistem.
+Sudah dikembalikan.
+Tidak menemukan berkas yang terpasang Windows dalam mode %s.
+Anda perlu mem-format ulang drive ini untuk bisa memasang Syslinux.
+Silakan format-kan drive ke FAT32 atau NTFS.
+Silakan pilih partisi yang terpasang Windows pada mode legacy BIOS.
+ilakan pilih partisi yang terpasang Windows pada mode UEFI.
+Silakan booting ke mode UEFI dan coba lagi.
+Anda menggunakan versi terakhir!
+Kita memiliki versi baru yang anda bisa perbaruinya sekarang.%sVersi %s, dirilis pada %s.%sAnda ingin keluarkan aplikasi ini dan memperbaruinya?
+Sekarang, tidak ada MENU yang bisa disunting.
+Buang?
+Nama MENU
+Simpan
+setelah anda menyunting.
+Menghapus berkas...
+Tersimpan
+Perbarui
+Standar
+Hanya Berkas
+Clover akan terpasang untuk mode Legacy
+Silakan pilih partisi untuk memasang Grub2, Clover dan rEFInd untuk mode UEFI.
+Anda perlu mengunduh AIO Boot versi terakhir dan mempartisi ulang disk ini untuk melanjutkannya.
+GPT-style hard disk hanya mendukung mode UEFI.%sApabila hanya memakai mode UEFI, anda tidak perlu melakukan apapun sekarang.
+Untuk mendukung Grub2, CLover, rEFInd dan UEFI Shell dalam mode UEFI, anda perlu membuat partisi ber-format FAT16 atau FAT32 pada hard disk ini.
+Anda bisa gunakan DiskPart atau GParted untuk membuat partisi baru.%sSilakan coba lagi setelah anda sudah membuat partisi baru.
+Disk yang dipilih merupakan partisi GPT. Kita perlu menyalin folder "EFI" ke EFI System Partition (ESP)". Anda ingin lakukan itu sekarang?
+%s: Anda akan langsung boot ke Grub2 setiap kali anda menyalakan komputer.%s: Anda perlu memilih berkas "/EFI/Grub2/bootx64.efi" untuk boot ke Grub2.
+Untuk mendukung mode BIOS Legacy pada hard disk berpartisi GPT. Kita perlu membuat partisi tersendiri.
+1.Ukuran partisi ini harus sekecil mungkin. Minimal 1MB atau maksimal 10MB.%s2. Anda perlu membuat partisi baru, karena semua data di partisi ini akan hilang.
+Silakan lanjutkan setelah anda sudah membuat partisi yang diperlukan.
+Komputer saya merupakan preangkat firma 32-bit UEFI.
+Jangan tanya saya lagi untuk memasukkan nama MENU.
+Tidak perlu verifikasi berkas.
+Mengatur PXE Boot untuk UEFI mode.
+Atur
+Di sini ada sejumlah bahasa yang didukung oleh Grub2. Apa bahasa anda?
+Silakan pilih item pada daftar tarik-turun.
+Setelan anda sudah tersimpan!
+Silakan format-kan Drive ini ke FAT32.%satau pasang Grub2 dan pilih opsi untuk memasang Clover.
+Pasang Bootloader
+Kembalikan Windows Bootloader
+Tiny PXE Server sedang berjalan, silakan tutup itu apabila anda ingin kembali!
+Mode UEFI atau Legacy?
+Silakan pilih versi 32-bit atau 64-bit
+Hanya Windows
+Semua lainnya
+Diperlukan WinPE
+Silakan ikuti tahapan lebih dulu:%s1. Unduh "boot%s.wim".%s2. salinkan ke "%s\AIO\WinPXE\sources\".%sAnda bisa mengunduhnya dari sini:
+Secure Boot aktif. Ini mungkin akan mencegah booting ke sistem non-Windows. Silakan matikan fitur ini di BIOS.
+Bahasa Grub2
+Ukuran Font
+Kecil
+Besar
+Buat kata sandi untuk Grub2.
+Membuat Baru
+Ganti atau buang kata sandi Grub2.
+Buang
+Anda akan membuat kata sandi baru atau membuangnya?
+Nama Pengguna Baru
+Kata Sandi Baru
+Nilai harus tidak mengandung spasi di awal atau di akhir.
+Nama Pengguna harus mengandung karakter [A-Z], digit [0-9] dan spasi ['' ''].
+Nama pengguna dan kata sandi baru sudah dibuat.
+Copot
+Pastikan komputer anda booting tanpa menggunakan Grub2 AIO Boot. Apabila komputer anda hanya bisa booting melalui Grub2 AIO Boot, mencopotnya akan menyebabkan komputer anda gagal booting.%sUntuk mengembalikan Windows boot loader, silakan gunakan tombol Bootloader atau gunakan DVD.%sKlik lanjutkan ketika anda bisa bisa booting tanpa perlu melalui Grub2 AIO Boot.
+Memecahkan berkas
+Mengekstrak berkas
+Memperbarui berkas
+Menambahkan berkas tambahan
+Membatalkan
+Dibatalkan
+Terhapus
+Deteksi Otomatis
+Lainnya
+Paket Spesial
+Tidak dapat mendeteksi berkas ini, silakan pilih paket yang ada di daftar!
+Sistem operasi ini mendukung mode persisten.%sIni berarti data anda akan tersimpan pada sesiap sesi.%sKecepatan sistem operasi bergantung pada kecepatan baca dan tulis hard drive.%sAnda ingin membuat berkas 4GB untuk mode persisten?
+Sistem operasi ini mendukung mode persisten.%sIni berarti data anda akan tersimpan pada sesiap sesi.%sKecepatan sistem operasi bergantung pada kecepatan baca dan tulis hard drive.%sKita akan membuat berkas yang ukurannya mengacu pada data yang ingin anda simpan.
+Latar belakang Grub2
+Ucapan terima kasih kepada:--Semua orang yang menggunakan alat ini.--Google.--GNU (Tim Pengembang Grub2).--Tim Pengembang Clover, rEFInd, Grub4dos dan Syslinux.--Pembuat 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM dan WinSetupFromUSB.--Penerjemah bahasa: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian), VenusGirl (한국어), Tofiq (Azerbaijani).
+Pengatur Partisi
+Ukuran (MB)
+Berkas masukkan
+Berkas keluaran
+Klik di sini untuk memilih berkas ISO di drive anda...
+Klik di sini untuk memilih tempat menyimpan berkas ".IMG" di drive anda...
+Buat
+Berkas ini kosong.
+Tidak dapat menemukan informasi berkas ini.
+Mungkin berkas ini tidak mendukung untuk booting. Anda ingin lanjutkan?
+Silakan masukkan jumlah ukuran berkas yang ingin anda buat.
+Silakan masukkan nama label berkas yang ingin anda buat.
+Berkas keluaran sudah ada saat ini, anda ingin mengganti berkasnya?
+Silakan masukkan jumlah ukuran berkas setidaknya %s.
+Ruang penyimpanan tersisa drive %s tidak cukup.
+Drive %s ber-format-kan FAT32, hanya bisa menyimpan berkas hingga 4GB.
+ImDisk tidak terpasang, anda ingin memasang ImDisk sekarang?
+ImDisk tidak terpasang.
+Membuat dan memuat berkas...
+Mengekstrak berkas ISO...
+Memperbarui berkas konfigurasi...
+Ukuran berkas PartIMG tidak cukup, silakan memperbesarkannya sekitar %s dan coba lagi.
+Tidak dapat mengatur label berkas PartIMG.
+Tidak dapat menutup %s, silakan lakukan secara manual.%sLalu hapus berkas PartIMG yang dipilih.
+Membuka berkas ISO, lalu pilih berkas sources\install.wim di drive itu...
+Klik di sini untuk memilih berkas sources\install.wim di drive anda...
+Klik di sini untuk memilih tempat berkas ".VHD" tersimpan di drive anda...
+Hanya Mendukung Windows 7 dan keatasnya.
+Membuat dan memuat berkas VHD...
+Menerapkan Image...
+Menutup berkas VHD...
+Tidak dapat membuat dan memuat berkas VHD.
+Tidak dapat menerapkan image ke partisi VHD.
+Ukuran berkas VHD tidak cukup, silakan memperbesarkannya dan coba lagi.
+Tidak dapat menutup drive %s, silakan melakukannya secara manual.%sLalu menghapus berkas VHD yang anda pilih.
+Pilih versi
+Silakan mengekstrak semua berkas "sources\*.wim" dan mengintegrasikan ke "WinPE 7/8.1/10".
+Integrasikan paket ini sebagai WinPE?
+Silakan mengekstrak semua berkas ke direktori utama di USB atau hard drive anda terlebih dulu!%sLihat ke laman depan untuk informasi lebih lanjut.
+Ubahsuai
+Membuat
+Tidak dapat membuat berkas lebih besar dari 4GB di partisi FAT32.
+Pasangkan Grub4Dos sebagai Boot Loader standar?%sAnda hanya perlu memasang Grub4Dos apabila Grub2 tidak kompatibel di komputer anda atau hanya sekadar ujicobag.%sGunakan Grub2 untuk mendapatkan fitur penuh.
+Bootloader standar pada mode UEFI
+Hanya mendukung ReactOS LiveCD. Silakan cek ke laman depan bagaimana cara untuk mengintegrasi ReactOS Setup.
+Membuat ISO
+Silakan pilih dimana akan menyimpan berkas ISO.
+Blog: https://www.aioboot.com.
+Silakan pilih mode
+Uji coba BOOT [QEMU]
+Ingin uji coba drive ini atau berkas ISO?
+Drive ini
+Berkas ISO
+Memori (MB)
+Silakan masukkan angka yang tepat.
+Silakan masukkan angka pada memori lebih dari 0 dan kurang dari %sMB.
+Kita akan membuat salinan berkas QEMU ke direktori %s\QEMU. Anda setuju?
+Apakah anda ingin uji coba berkas ISO?
+Mengekstrak WIM untuk Windows Setup.
+Mengepak ulang berkas ISO Windows.
+Mengepak ulang berkas ISO
+Mengunduh pembaruan
+Kelihatannya berkas ISO ini menggunakan bootloader dari ISOLINUX. Dalam kasus ini, tidak kompatibel dengan ber-format NTFS.%sUntuk mendukung booting pada mode Legacy, silakan gunakan format FAT32.%sAnda ingin melanjutkannya?
+Mungkin sistem operasi ini mendukung mode persisten .%sIni berarti bahwa data anda akan tersimpan setiap setelah sesi.%sAnda ingin mengaktifkan mode ini?
+Berkas VHD ini terpasang dengan sistem operasi 64-bit atau 32-bit?
+Jangan mengintegrasikan Driver USB 3.0 untuk Windows 7.
+Jangan tanya lagi
+Lihat instruksinya
+Silakan menutup semua aplikasi yang berjalan pada drive %s sebelum memperbaruinya.
+Untuk menghemat ruang kosong, kita akan langsung memindahkan berkas ini daripada menyalinnya. Anda setuju?
+Pasangkan Grub2 [Legacy]
+Ingat! anda harus memasang ulang Grub2 setiap kali anda mendefragmentasikan drive ini.
+Anda hanya bisa mengintegrasikannya satu versi untuk paket ini. klik tombol Sunting Menu untuk menghapus versi sekarang dan mengintegrasikan ulang. Atau gunakan Partition Image Mapper.
+Ruang kosong tersisa pada drive ini tidak cukup.
+Akses ditolak. Silakan mematikan program antivirus dan coba lagi.
+Grub2 Font
+##### END #####

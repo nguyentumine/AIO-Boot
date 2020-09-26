@@ -7,7 +7,7 @@ Info		:	Por favor, não adicione, delete ou mova nenhuma linha, não remova o "%
 
 
 
-##### INÍCIO #####
+##### BEGIN #####
 Português do Brasil
 Principal
 Integração
@@ -164,13 +164,13 @@ Não foi possível encontrar o arquivo, por favor, selecione um pacote da lista!
 Esse sistema operacional suporta o modo persistente.%sIsso quer dizer que seus dados serão salvos após cada sessão.%sA velocidade do sistema operacional depende ta velocidade de leitura e escrita do HD.%sVocê deseja criar um arquivo de 4Gb para o modo persistente?
 Esse sistema operacional suporta o modo persistente.%sIsso quer dizer que seus dados serão salvos após cada sessão.%sA velocidade do sistema operacional depende ta velocidade de leitura e escrita do HD.%sVamos criar um arquivo com o tamanho correspondente aos dados que você quer salvar.
 Plano de fundo do Grub2
-Agradecimentos sinceros para:--Todos os usuários dessa ferramenta.--Google.--GNU (Equipe de desenvolvimento do Grub2).--Equipes de desenvolvimento do Clover, rEFInd, Grub4dos e Syslinux.--Criadores do 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot e WinSetupFromUSB.--Tradutores : Denis Cojocaru (Russo e Romeno), Stoian Bahchevanski (Búlgaro), Pascal BIMAS Perso (Franês), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turco), Michał Smajdor, Andrzej Gicala (Polonês), Alessandro Santini (Italiano), Txema, Alacran (Espanhol), Frettt (Alemão), Tenhon (Chinês Tradicional), CloverGit, Sun Wei (Chinês Simplificado), Hanuware (Coreano), Renato "donalld" Pejon (Português do Brasil), Daniel Dybing (Norwegian).
+Agradecimentos sinceros para:--Todos os usuários dessa ferramenta.--Google.--GNU (Equipe de desenvolvimento do Grub2).--Equipes de desenvolvimento do Clover, rEFInd, Grub4dos e Syslinux.--Criadores do 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM e WinSetupFromUSB.--Tradutores : Denis Cojocaru (Russo e Romeno), Stoian Bahchevanski (Búlgaro), Pascal BIMAS Perso (Franês), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turco), Michał Smajdor, Andrzej Gicala (Polonês), Alessandro Santini (Italiano), Txema, Alacran (Espanhol), Frettt (Alemão), Tenhon (Chinês Tradicional), CloverGit, Sun Wei (Chinês Simplificado), Hanuware (Coreano), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian), VenusGirl (한국어), Tofiq (Azerbaijani).
 Gerenciar partições
 Tamanho em MB
 Arquivo de entrada
 Arquivo de saída
 Clique aqui para selecionar o arquivo ISO em seu drive...
-Clique aqui para escolher onde salvar o arquivo ".PartIMG" em seu drive...
+Clique aqui para escolher onde salvar o arquivo ".IMG" em seu drive...
 Criar
 O arquivo está vazio.
 Não foi possível obter informações sobre esse arquivo.
@@ -186,9 +186,9 @@ O ImDisk não foi instalado.
 Criando e montando arquivo...
 Extraindo arquivo ISO...
 Atualizando arquivos de configuração...
-O tamanho do arquivo PartIMG não é suficiente, por favor, aumente seu tamanho para aproximadamente %s e tente novamente.
-Não foi possível criar o rótulo do arquivo PartIMG.
-Não foi possível desmontar %s, por favor, faça isso manualmente.%sE então exclua o arquivo PartIMG onde você escolheu.
+O tamanho do arquivo IMG não é suficiente, por favor, aumente seu tamanho para aproximadamente %s e tente novamente.
+Não foi possível criar o rótulo do arquivo IMG.
+Não foi possível desmontar %s, por favor, faça isso manualmente.%sE então exclua o arquivo IMG onde você escolheu.
 Monte o ISO, e então selecione o arquivo sources\install.wim neste drive...
 Clique aqui para selecionar o arquivo sources\install.wim no seu drive...
 Clique aqui para escolher onde salvar o arquivo ".VHD" no seu drive...
@@ -240,4 +240,5 @@ Saiba que você precisará reinstalar o Grub2 toda vez que fragmentar este disco
 Você só pode integrar uma versão neste pacotee. Clique no botão Editor de MENU para excluir a versão atual e reintegrá-la. Ou use o Partition Image Mapper.
 O espaço restante neste drive não é suficiente.
 Acesso negado. Tente desabilitar o anti-vírus e tente novamente.
-##### FIM #####
+Grub2 Font
+##### END #####

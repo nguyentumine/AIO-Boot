@@ -1,8 +1,0 @@
-!BAT
-
-:: AIO Boot - www.aioboot.com
-
-map %1 (fd0) || map --mem %1 (fd0)
-map --hook
-root (fd0)
-chainloader (fd0)+1 
