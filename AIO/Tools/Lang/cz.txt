@@ -1,6 +1,6 @@
 ################################################################
 Language	:	Czech
-Credits		:	zenobit
+Credits		:	zenobit (https://github.com/zen0bit)
 Date		:	11.02.2019
 Info		:	Please do not add, delete or move the line, do not remove "%s". If you want to submit your own or have any questions, do not forget to send an email to admin@aioboot.com. Thank for help!
 ################################################################
@@ -240,4 +240,5 @@ Vezměte prosím na vědomí, že byste měli přeinstalovat Grub2 při každém
 Pro tento balíček lze integrovat pouze jednu verzi. Klepnutím na tlačítko Editoru nabídky zrušíte aktuální verzi a znovu ji začleníte. Nebo použijte mapovač oddílů obrazu.
 Volný prostor na tomto disku není dost.
 Přístup odepřen. Zkuste zakázat antivirový software a zkuste to znovu.
+Grub2 Font
 ##### END #####
