@@ -1,7 +1,7 @@
 ################################################################
 Language	:	Czech
 Credits		:	zenobit (https://github.com/zen0bit)
-Date		:	11.02.2019
+Date		:	26.09.2020
 Info		:	Please do not add, delete or move the line, do not remove "%s". If you want to submit your own or have any questions, do not forget to send an email to admin@aioboot.com. Thank for help!
 ################################################################
 
