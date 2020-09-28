@@ -25,19 +25,19 @@ Typ
 Velikost
 Aktuální disk:
 Řídit
-Označení
+Název
 Systém
 Vyjímatelná média
 Pevná média
 RAM disk
 Neznáme
-AIO Boot je zaváděcí software typu All-in-One pro USB a pevný disk. Je jedním z nejlepších Multiboot USB Creator pro Windows.
-Nezapomeňte kontaktovat autora, pokud máte nějaké dotazy, napište admin@aioboot.com. Rád bych vás slyšel, abych tento nástroj lépe zlepšil.
+AIO Boot je zaváděcí software typu All-in-One pro USB a pevný disk. Je jedním z nejlepších pro Windows.
+Nezapomeňte kontaktovat autora pokud máte nějaké dotazy. Napište admin@aioboot.com. Rád bych vás slyšel, abych tento nástroj zlepšil.
 název
 Verze
 Domovská stránka
 autorská práva
-1. Vyberte položku Pack
+1. Vyberte položku
 2. Zvolte Soubor
 Stažení
 OK
