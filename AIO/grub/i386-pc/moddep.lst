@@ -280,7 +280,7 @@ linux16: linux video boot relocator mmap
 cat: extcmd
 ahci: ata boot pci
 pgp: crypto verifiers extcmd mpi gcry_sha1
-normal: net terminal crypto verifiers bufio datetime extcmd boot gettext
+normal: net terminal crypto verifiers bufio datetime extcmd boot cpuid gettext
 lzmaio:
 ufs1:
 mdraid09: diskfilter
