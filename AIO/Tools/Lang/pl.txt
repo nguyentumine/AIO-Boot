@@ -1,7 +1,7 @@
-﻿################################################################
+################################################################
 Language	:	Polish
-Credits		:	Michał Smajdor
-Date		:	18.06.2017
+Credits		:	Bartosz Duk (dukeapk.tk)
+Date		:	19.10.2020
 Info		:	Proszę nie dodawaj, nie usuwaj lub nie przenoś lini,a także nie usuwaj "%s". Jeśli chcesz podsumować albo masz pytania, nie zapomnij napisać maila na adres: admin@aioboot.com. Dzięki za pomoc!
 ################################################################
 
@@ -31,12 +31,12 @@ Nośnik wymienny
 Fixed media
 Dysk RAM
 Nieznany
-AIO Boot is an All-in-One bootable software for USB and HDD. Is one of the best Multiboot USB Creator for Windows.
+AIO Boot to oprogramowanie rozruchowe typu wszystko w jednym dla USB i HDD. Jest jednym z najlepszych kreatorów Multiboot USB dla systemu Windows.
 Nie zapomnij skontaktować się z autorem jeślli masz jakieś pytania. Adres email: admin@aioboot.com. Chciałbym usłyszeć Twoje propozycje co mógłbym poprawić aby te narzedzię stało się jeszcze lepsze.
 Nazwa
 Wersja
 WWW
-Copyright
+Prawa autorskie
 1. Wybierz Dystrybucje
 2. Wybierz Plik
 Pobierz
@@ -112,8 +112,8 @@ Aby używać Grub2, Clover, rEFInd oraz UEFI Shell w trybie UEFI, musisz stworzy
 Możesz uzyć narzedzia DiskPart lub GParted aby stworzyć nową patycje.%sSpróbuj pózniej po tym jak stworzysz partycje.
 Wybrany dysk ma styl partycji GPT. Musimy skopiować folder "EFI" do "EFI System Partition (ESP)". Czy chcesz to zrobić w tej chwili?
 %s: Twój kompter bedzię bootował bezpośrednio do Grub2 za każdym razem gdy go włączysz.%s: Musisz wybrać te pliki "/EFI/Grub2/bootx64.efi" aby zbootować do Grub2.
-Aby używać trybu Legacy BIOS na dysky w stylu partycji GPT style. Musimy wybrać nową partycję.
-1. Ten rozmiar partycji jest możliwie najmniejszy. Około 1MB lub większa, ale nie większa niż 10 MB.%s2. Wszystkie dane na tej partycji zostaną stracone. Dlatego musisz utworzyć nową partycję.
+Obsługa trybu Legacy BIOS na dysku twardym na partycji w stylu GPT. Musimy przeznaczyć na to nową partycję.
+1. Tak mały rozmiar partycji, jak to możliwe. Około 1 MB lub więcej, ale nie więcej niż 10 MB.%s2. Wszystkie dane na tej partycji zostaną stracone. Dlatego musisz utworzyć nową partycję.
 Proszę kontynuować po utworzeniu tej partycji wymagane.
 Mój komputer ma 32-bitowe oprogramowanie UEFI.
 Nie pytaj mnie o wpisanie nazwy MENU.
@@ -133,7 +133,7 @@ Tylko Windows
 Wszystkie inne
 WinPE wymagany
 Najpierw wykonaj poniższe kroki:%s1. Pobierz "boot%s.wim".%s2. Kopiuj to do "%s\AIO\WinPXE\sources\".%sMożesz go pobrać stąd:
-Secure Boot jest włączony. To może zapobiec  bootowaniu nieWindowsowych systemów operacyjncyh. Wyłącz tą opcje w BIOS.
+Secure Boot (Bezpieczny rozruch) jest włączony. Może to uniemożliwić uruchomienie w systemach operacyjnych innych niż Windows. Wyłącz tę opcję w systemie BIOS.
 Jezyk Grub2
 Rozmiar czcionki
 Mała
@@ -149,7 +149,7 @@ Wartoś nie może zawierać spacji na początku ani na końcu.
 Nazwa użytkownika może zawierać tylko litery [A-Z], liczby [0-9] i spacje [" "].
 Nowa nazwa użytkownika i hasło zostały utworzone.
 Odinstaluj
-Upewnij się, że komputer jest uruchamiany bez użycia programu AIO Boot's Grub2. Jeśli komputer można uruchomić tylko przy użyciu programu AIO Boot's Grub2, jego deinstalacja spowoduje, że komputer się nie uruchomi.%sAby przywrócić program ładujący systemu Windows, użyj przycisku Bootloadera lub użyj dysku DVD.%sKliknij przycisk Kontynuuj, jeśli możesz uruchomić system operacyjny bez użycia programu Grub2.
+Upewnij się, że komputer został uruchomiony bez korzystania z programu AIO Boot's Grub2. Jeśli twój komputer może uruchomić się tylko przez AIO Boot's Grub2, jego odinstalowanie spowoduje, że twój komputer się nie uruchomi.%sAby przywrócić program ładujący systemu Windows, użyj przycisku Bootloadera lub użyj dysku DVD.%sKliknij Kontynuuj, gdy będziesz mógł uruchomić system operacyjny bez korzystania z Grub2 z AIO Boot.
 Dzielenie pliku
 Wypakowywanie pliku
 Aktualizowanie plików
@@ -161,10 +161,10 @@ Automatyczne Wykrywanie
 Inne
 Specjalna Dystrybucja
 Nie udało się wykryć tego pliku, wybierz dystrybucje z listy!
-Ten system operacyjny obsługuje tryb trwały.%sOznacza to, że dane zostaną zapisane po każdej sesji.%sPrędkość systemu operacyjnego zależy od prędkości odczytu i zapisu dysku twardego.%sCzy chcesz utworzyć plik 4 GB dla trybu trwałego?
-Ten system operacyjny obsługuje tryb trwały.%sOznacza to, że dane zostaną zapisane po każdej sesji.%sPrędkość systemu operacyjnego zależy od prędkości odczytu i zapisu dysku twardego.%sTworzymy plik o rozmiarze odpowiadającym danym, które chcesz zapisać.
+Ten system operacyjny obsługuje tryb trwały.%sOznacza to, że dane będą zapisywane po każdej sesji.%sSzybkość systemu operacyjnego zależy od prędkości odczytu i zapisu dysku twardego.%sCzy chcesz utworzyć plik 4 GB dla trybu trwałego?
+Ten system operacyjny obsługuje tryb trwały.%sOznacza to, że dane będą zapisywane po każdej sesji.%sSzybkość systemu operacyjnego zależy od prędkości odczytu i zapisu dysku twardego.%sStworzymy plik o rozmiarze odpowiadającym danym, które chcesz zapisać.
 Tło Grub2 
-Szczególne podziękowanie dla:--Wszystkich użytkowników używających tego narzędzia.--Google.--GNU (Grub2 Zespół Deweloperów).--Zespół Deweloperów Clover, rEFInd, Grub4dos oraz Syslinux.--Autorów 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM oraz WinSetupFromUSB.--Tłumaczy języków: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian), VenusGirl (한국어), Tofiq (Azerbaijani).
+Szczególne podziękowania dla:--Wszystkich użytkowników używających tego narzędzia.--Google.--GNU (Grub2 Zespół Deweloperów).--Zespół Deweloperów Clover, rEFInd, Grub4dos oraz Syslinux.--Autorów 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM oraz WinSetupFromUSB.--Tłumaczy języków: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian), VenusGirl (한국어), Tofiq (Azerbaijani).
 Menadżer partycji 
 Wielkość w MB
 Plik wejściowy
@@ -223,19 +223,22 @@ Wprowadź prawidłoy numer dodatni.
 Wprowadź wartość pamięci wiekszą niż 0 i mniejszą niż %sMB.
 Będziemy kopiować pliki QUMU do katalogu %s\QEMU. Zgadasz się?
 Chcesz przetestować ten plik ISO?
-Wyodrębnij WIM dla Instalatora Windows.
-It looks like this ISO file uses the ISOLINUX bootloader. It does not support NTFS format in this case.%sTo support booting in Legacy mode, please use the FAT32 format.%sDo you want to continue?
-Maybe this operating system supports persistent mode.%sThis means that your data will be saved after each session.%sDo you want to enable this mode?
-This VHD file is installed with 64-bit or 32-bit operating system?
-Don't integrate USB 3.0 Driver for Windows 7.
-Don't ask again
-See instructions
-Please close all applications running on drive %s before updating.
-To save disk space, we will move this file instead of copying it. Do you agree?
-Install Grub2 [Legacy]
-Please note that you should reinstall Grub2 every time you defragment on this drive.
-You can only integrate one version for this package. Click the Menu Editor button to delete the current version and re-integrate it. Or use the Partition Image Mapper.
-The free space left on this drive is not enough.
-Access is denied. Try disabling the antivirus software and try again.
+Wyodrębnij WIM dla Instalatora systemu Windows.
+Przepakuj plik ISO systemu Windows.
+Przepakowywanie pliku ISO
+Pobieranie aktualizacji
+Wygląda na to, że ten plik ISO używa programu ładującego ISOLINUX. W tym przypadku nie obsługuje formatu NTFS.%sAby obsługiwać uruchamianie w trybie starszego typu, użyj formatu FAT32.%sCzy chcesz kontynuować?
+Może ten system operacyjny obsługuje tryb trwały.%sOznacza to, że dane będą zapisywane po każdej sesji.%sCzy chcesz włączyć ten tryb?
+Ten plik VHD jest instalowany w 64-bitowym lub 32-bitowym systemie operacyjnym?
+Nie integruj sterownika USB 3.0 dla systemu Windows 7.
+Nie pytaj ponownie
+Zobacz instrukcje
+Przed aktualizacją zamknij wszystkie aplikacje działające na dysku %s.
+Aby zaoszczędzić miejsce na dysku, przeniesiemy ten plik zamiast go kopiować. Czy sie zgadzasz?
+Zainstaluj Grub2 [Legacy]
+Pamiętaj, że za każdym razem, gdy defragmentujesz dysk na tym dysku, powinieneś ponownie zainstalować Grub2.
+Możesz zintegrować tylko jedną wersję tego pakietu. Kliknij przycisk Edytor menu, aby usunąć bieżącą wersję i ponownie ją zintegrować. Lub użyj mapowania obrazu partycji.
+Wolne miejsce na tym dysku nie jest wystarczające.
+Odmowa dostępu. Spróbuj wyłączyć oprogramowanie antywirusowe i spróbuj ponownie.
 Grub2 Font
 ##### END #####
