@@ -1,0 +1,244 @@
+################################################################
+Language	:	Czech
+Credits		:	zenobit (https://github.com/zen0bit)
+Date		:	26.09.2020
+Info		:	Please do not add, delete or move the line, do not remove "%s". If you want to submit your own or have any questions, do not forget to send an email to admin@aioboot.com. Thank for help!
+################################################################
+
+
+
+##### BEGIN #####
+Čeština
+Hlavní
+Integrace
+O
+Bootloadery
+Spusťte PXE
+Nastavení
+Nástroje
+MENU Editor
+Pomoc
+Aktuální disk:
+Disk
+název
+Typ
+Velikost
+Aktuální disk:
+Řídit
+Název
+Systém
+Vyjímatelná média
+Pevná média
+RAM disk
+Neznáme
+AIO Boot je zaváděcí software typu All-in-One pro USB a pevný disk. Je jedním z nejlepších pro Windows.
+Nezapomeňte kontaktovat autora pokud máte nějaké dotazy. Napište admin@aioboot.com. Rád bych vás slyšel, abych tento nástroj zlepšil.
+název
+Verze
+Domovská stránka
+autorská práva
+1. Vyberte položku
+2. Zvolte Soubor
+Stažení
+OK
+Vyberte prosím soubor na disku ...
+Vyberte soubor ISO nebo soubor WIM na disku ...
+Vyberte soubor ISO na disku ...
+Nainstalujte soubor ISO a vyberte "I386 / TXTSETUP.SIF" nebo "AMD64 / TXTSETUP.SIF" ...
+Vyberte prosím platný soubor!
+Název souboru může obsahovat pouze alfanumerické znaky (písmena, čísla) a. Soubor přejmenujte a zkuste to znovu!
+Soubory větší než 4 GB Nelze uložit do svazku FAT32.%sFormatování oddílu jako exFAT nebo NTFS vyřeší tento problém.
+Zpracování, čekejte prosím ...
+Neotvírejte toto okno, dokud to nebude hotovo!
+Nelze zjistit tento soubor!
+Chyba, kontaktujte prosím autora pro podporu!
+Chyba: Zavřete aplikaci, kterou používáte, abyste si přečetli soubor BCD / WinLegacy a zkuste to znovu!
+Chyba: Zavřete aplikaci, kterou používáte, pro čtení souboru%s a zkuste to znovu!
+Neplatný soubor!
+Chyba: Zbývající prostor je nedostatečný!
+Hotovo. Happy bootování!
+Chyba
+Varování
+Informace
+Potvrdit
+Kopírování
+Kopírování požadovaných souborů ...
+Extrakce
+Kontrola souboru, čekejte prosím ...
+Zadejte prosím název nabídky
+Přidáním nabídky ...
+Příprava souborů ...
+Zavřete prosím Regedit.exe a pokračujte!
+zrušení
+Pokračovat
+Čištění, čekejte ...
+Vzhledem k tomu, že velikost souboru neumožňuje uložení na oddílu FAT32.%sBudete tento soubor rozdělit, souhlasíte?
+Rozdělení
+Ano
+Ne
+Vybraný disk je ve stylu oddílu GPT. Musíte zkopírovat složku "EFI" do oddílu je formátován v "FAT32" nebo "FAT16".
+Vybraný disk je ve stylu oddílu GPT. Podporovány jsou pouze Grub2, rEFInd a Clover.
+V současné době nepodporujeme toto zařízení!
+byl nainstalován ...
+je již nainstalován ...
+%s nebyl nainstalován. %s vyžaduje, aby byl nainstalován% s.% sChcete-li nainstalovat Grub2 hned?
+Vyberte prosím jednotku, na které jste nainstalovali nejnovější verzi systému Windows.
+Pokud je to možné, vyzkoušejte tuto funkci v systému Windows 7 nebo novější, abyste získali nejlepší podporu.
+Systémový oddíl nebyl nalezen.
+byl obnoven.
+Nenašli jste žádnou jednotku, ve které je systém Windows nainstalován v režimu%s.
+Chcete-li nainstalovat systém Syslinux, musíte přeformátovat jednotku.
+Formátujte prosím disk FAT32 nebo NTFS.
+Vyberte oddíl, na kterém jste nainstalovali systém Windows v režimu Legacy BIOS.
+Vyberte prosím oddíl, na kterém jste nainstalovali systém Windows v režimu UEFI.
+Zavádějte prosím do režimu UEFI a zkuste to znovu.
+Používáte nejnovější verzi!
+Máme novou verzi, kterou můžete nyní aktualizovat.%sVersion%s, povoleno na%s.%s Chcete tuto aplikaci ukončit a nyní aktualizovat?
+V současné době není k dispozici žádné MENU, které by bylo možné upravovat.
+Odstranit?
+Název MENU
+Uložit
+po úpravě.
+Mazání souborů ...
+Uložené
+Aktualizace
+Výchozí nastavení
+Pouze soubor
+Clover bude také nainstalován pro režim Legacy
+Zvolte oddíl pro instalaci modulů Grub2, Clover a rEFInd pro režim UEFI.
+Chcete-li pokračovat, musíte nejnovější verzi systému AIO spustit a znovu rozdělit tento disk.
+Pevný disk ve stylu GPT podporuje pouze režim UEFI.%sPokud používáte pouze režim UEFI, nemusíte dělat nic hned.
+Chcete-li podporovat režimy Grub2, Clover, rEFInd a UEFI Shell v režimu UEFI, musíte na tomto pevném disku vytvořit oddíl ve formátu FAT32 nebo FAT16.
+Pomocí nástroje DiskPart nebo GParted můžete vytvořit nový oddíl.%sProsím zkuste znovu po vytvoření nového oddílu.
+Vybraný disk je ve stylu oddílu GPT. Potřebujeme zkopírovat složku "EFI" do "EFI System Partition (ESP)". Chcete to udělat právě teď?
+%s: Budete zavádět přímo do Grub2 při každém zapnutí počítače.%s: Musíte vybrat soubory "/EFI/Grub2/bootx64.efi" pro spuštění do Grub2.
+Podpora režimu Legacy BIOS na pevném disku ve stylu GPT. Musíme věnovat nový oddíl.
+1. Tato velikost oddílu je co nejmenší. Přibližně 1 MB nebo větší, ale ne větší než 10 MB. Všechna data v tomto oddílu budou ztracena. Proto musíte vytvořit nový oddíl.
+Pokračujte po vytvoření této oblasti podle potřeby.
+Můj počítač má 32bitový firmware UEFI.
+Neptejte se mě, abych zadal jméno MENU.
+Není třeba ověřit soubor.
+Nakonfigurujte PXE Boot pro režim UEFI.
+Soubor
+Zde je seznam jazyků, které podporuje Grub2. Jaký je váš jazyk?
+Z rozevíracího seznamu vyberte položku
+Vaše nastavení bylo uloženo!
+Formátujte prosím tento disk na FAT32.%sNainstalujte Grub2 a vyberte možnost nainstalovat Clover.
+Nainstalujte aplikaci Bootloader
+Obnovení systému Windows Bootloader
+Tiny PXE Server běží, zavřete ho, pokud chcete znovu spustit!
+UEFI nebo Legacy režim?
+Zvolte 32bitovou nebo 64bitovou verzi
+Pouze Windows
+Všichni ostatní
+WinPE Požadováno
+Postupujte prosím nejprve v následujících krocích:%s1. Stáhněte si "boot%s.wim".%s2. Zkopírujte jej do "%s \ AIO \ WinPXE \ sources \".%sMůžete si ho stáhnout zde:
+Secure Boot je zapnuto. To může zabránit bootování operačních systémů jiných než Windows. Zakažte tuto možnost v systému BIOS.
+Jazyk Grub2
+Velikost písma
+Malý
+Velký
+Vytvořte nové heslo pro Grub2.
+Vytvořit nový
+Změňte nebo odeberte heslo Grub2.
+Odstranit
+Vytvoříte nové heslo nebo jej odstraníte?
+Nové uživatelské jméno
+nové heslo
+Hodnota nesmí obsahovat mezery na začátku nebo na konci.
+Uživatelské jméno musí obsahovat pouze znaky [A-Z], číslice [0-9] a mezeru ['' ''].
+Bylo vytvořeno nové uživatelské jméno a heslo.
+Odinstalovat
+Ujistěte se, že je počítač spuštěn bez použití Grub2 systému AIO Boot. Pokud se počítač může spustit pouze pomocí Grub2 systému AIO Boot, odinstalování způsobí, že se počítač nespustí.%sPro obnovení zavaděče systému Windows, použijte tlačítko Bootloadery nebo použijte disk DVD.%sKlikněte na Pokračovat, operační systém bez použití Grub2 AIO Boot.
+Rozdělení souboru
+Extrahování souboru
+Aktualizace souborů
+Přidávání dalších souborů
+Zrušení
+Zrušeno
+Vymazáno
+Auto detekce
+Ostatní
+Speciální balení
+Tento soubor nebyl nalezen, vyberte balíček uvedený v seznamu!
+Tento operační systém podporuje trvalý režim.%sZnamená to, že vaše data budou uložena po každé relaci.%sRychlost operačního systému závisí na rychlosti čtení a zápisu na pevném disku.%sChcete-li vytvořit soubor 4Gb pro trvalý režim?
+Tento operační systém podporuje trvalý režim.%sZnamená to, že vaše data budou uložena po každé relaci.%sRychlost operačního systému závisí na rychlosti čtení a zápisu na pevném disku.%sPřizpůsobíme soubor velikosti odpovídající data, která chcete uložit.
+Grub2 Pozadí
+S pozdravem díky: - všichni tito uživatelé používají tento nástroj. - Google. - GNU (vývojový tým Grub2). - vývojový tým Clover, rEFInd, Grub4dos a Syslinux. - Autoři 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot a WinSetupFromUSB. - Překladatelé jazyků: Denis Cojocaru (rusky a rumunský), Stoian Bahchevanski (bulharský), Pascal BIMAS Perso, Erhan Kultur, Murat ATICI , Tayfun Akkoyun (Turečtina), Michał Smajdor, Andrzej Gicala (polský), Alessandro Santini (Italština), Txema, Alacran (španělština), Frettt (Němčina), Tenhon (tradiční čínština), CloverGit, (Korejština), Renato "donalld" Pejon (Português do Brasil), Daniel Dybing (norský).
+Správa oblastí
+Velikost v MB
+Vložte soubor
+Výstupní soubor
+Klikněte zde pro výběr souboru ISO na disku ...
+Klikněte zde pro výběr, kam uložíte soubor ".PartIMG" na disk ...
+Vytvořit
+Tento soubor je prázdný.
+Nelze získat informace o tomto souboru.
+Možná, že tento soubor nebude podporován pro bootování. Chceš pokračovat?
+Zadejte prosím velikost souboru, který chcete vytvořit.
+Zadejte štítek souboru, který chcete vytvořit.
+Výstupní soubor již existuje, chcete tento soubor nahradit?
+Zadejte prosím velikost minimálně%s.
+Volný prostor na disku%s není dost.
+Jednotka%s je formátována jako FAT32, ukládá pouze soubory velikosti až 4 GB.
+ImDisk není nainstalován, chcete nainstalovat ImDisk právě teď?
+ImDisk nebyl nainstalován.
+Vytváření a instalace souboru ...
+Extrahování souboru ISO ...
+Aktualizace konfiguračních souborů ...
+Velikost souboru PartIMG nestačí, zvětšete ho asi na%s a zkuste to znovu.
+Nelze nastavit štítek pro soubor PartIMG.
+Nelze odpojit%s, proveďte to ručně.%sPak odstraníte soubor PartIMG, který jste vybrali.
+Nainstalujte ISO a vyberte soubor sources \ install.wim na této jednotce ...
+Klikněte zde pro výběr souboru sources \ install.wim ve vaší jednotce ...
+Klikněte zde pro výběr, kam uložíte soubor ".VHD" na disk ...
+Podporujte pouze systém Windows 7 a novější.
+Vytváření a instalace souboru VHD ...
+Použití obrázku ...
+Odpojení souboru VHD ...
+Nelze vytvořit a připojit soubor VHD.
+Aplikace nelze použít na oddíl VHD.
+Velikost souboru VHD nestačí, zvětšete ho a zkuste to znovu.
+Nepodařilo se odpojit disk%s, proveďte to ručně.%sPak vymazat soubor VHD, který jste vybrali.
+Vyberte verzi
+Vymažte všechny soubory "sources \ *. Wim" a integrujte je do "WinPE 7 / 8.1 / 10".
+Integrace tohoto balíčku jako WinPE?
+Vyjměte prosím všechny soubory do kořenového adresáře vašeho USB nebo pevného disku!%sPřečtěte si domovskou stránku pro více informací.
+Zvyk
+Vytváření
+Nelze vytvořit soubor větší než 4 GB na oddílu FAT32.
+Nainstalujte Grub4Dos jako výchozí zaváděcí zavaděč?%sMěli byste nainstalovat Grub4Dos pouze tehdy, pokud Grub2 není kompatibilní s vaším strojem nebo jen pro testování.%sPoužívejte Grub2 k plné podpoře funkce.
+Výchozí zavaděč v režimu UEFI
+Podporujte pouze aplikaci ReactOS LiveCD. Podívejte se na domovskou stránku, jak integrovat instalaci ReactOS.
+Vytvořte ISO
+Zvolte, kde chcete uložit soubor ISO.
+Blog: https://www.aioboot.com.
+Vyberte prosím režim
+Test BOOT [QEMU]
+Chcete testovat tento disk nebo soubor ISO?
+Tento disk
+ISO soubor
+Paměť (MB)
+Zadejte platné kladné číslo.
+Zadejte prosím paměť větší než 0 a méně než%sMB.
+Soubory QEMU zkopírujeme do adresáře%s \ QEMU. Souhlasíš?
+Chcete tento soubor ISO otestovat?
+Extrahujte WIM pro instalaci systému Windows.
+Nahraďte ISO soubor Windows.
+Přebalení souboru ISO
+Stažení aktualizace
+Zdá se, že tento soubor ISO používá zaváděcí program ISOLINUX. V tomto případě nepodporuje formát NTFS.%sPro podporu bootování v režimu Legacy použijte prosím formát FAT32.%sChcete pokračovat?
+Možná tento operační systém podporuje trvalý režim.%sTo znamená, že vaše data budou uložena po každé relaci.%sChcete povolit tento režim?
+Tento soubor VHD je nainstalován s 64bitovým nebo 32bitovým operačním systémem?
+Neinstalujte ovladač USB 3.0 pro systém Windows 7.
+Neptejte se znovu
+Viz pokyny
+Před aktualizací zavřete všechny aplikace běžící na jednotce%s.
+Chcete-li ušetřit místo na disku, tento soubor přesuneme namísto jeho kopírování. Souhlasíš?
+Nainstalovat Grub2 [Legacy]
+Vezměte prosím na vědomí, že byste měli přeinstalovat Grub2 při každém defragmentaci na této jednotce.
+Pro tento balíček lze integrovat pouze jednu verzi. Klepnutím na tlačítko Editoru nabídky zrušíte aktuální verzi a znovu ji začleníte. Nebo použijte mapovač oddílů obrazu.
+Volný prostor na tomto disku není dost.
+Přístup odepřen. Zkuste zakázat antivirový software a zkuste to znovu.
+Grub2 Font
+##### END #####
