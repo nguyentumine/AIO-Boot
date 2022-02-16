@@ -47,13 +47,13 @@ Pilih berkas ISO di drive anda...
 Buka berkas ISO, lalu pilih "I386/TXTSETUP.SIF" atau "AMD64/TXTSETUP.SIF"...
 Pilih berkas yang tepat!
 Nama berkas hanya mengandung karakter alfanumerik (huruf dan angka). Silakan ganti nama berkasnya dan coba lagi!
-Berkas yang lebih dari 4GB TIDAK muat di FAT32 volume.%sFormat-kan partisi sebagai exFAT atau NTFS akan mengatasi masalah ini.
+Berkas yang lebih dari 4GB TIDAK muat di volume FAT32.%sMem-format partisi sebagai exFAT atau NTFS akan mengatasi masalah ini.
 Memproses, silakan tunggu...
 Jangan menutup jendela ini hingga operasinya selesai!
 Tidak dapat mendeteksi berkas ini!
 Kesalahan, silakan hubungi kepada pembuatnya untuk meminta dukungan!
-Kesalahan: Silakan keluarkan aplikasi yang anda pakai untuk membaca berkas BCD/WinLegacy dan coba lagi!
-Kesalahan: Silakan keluarkan aplikasi yang anda pakai untuk membaca %s dan coba lagi! 
+Kesalahan: Silakan tutup aplikasi yang anda pakai untuk membaca berkas BCD/WinLegacy dan coba lagi!
+Kesalahan: Silakan tutup aplikasi yang anda pakai untuk membaca %s dan coba lagi! 
 Berkas tidak tepat!
 Kesalahan: Ruang penyimpanan yang tersisa tidak cukup!
 Selesai. Silakan mencoba!
@@ -68,11 +68,11 @@ Memeriksa berkas, silakan tunggu...
 Silakan masukkan nama pada menu
 Menambahkan menu...
 Persiapan berkas...
-Keluarkan Regedit.exe untuk melanjutkan!
+Tutup Regedit.exe untuk melanjutkan!
 Batal
 lanjut
 Pembersihan, silakan tunggu...
-Karena ukuran berkasnya tidak bisa tersimpan di partisi FAT32.%sKita akan memecahkan berkasnya, anda setuju?
+Karena ukuran berkasnya tidak bisa tersimpan di partisi FAT32.%sKami akan memecahkan berkasnya, anda setuju?
 Memecahkan
 Ya
 Tidak
@@ -108,14 +108,14 @@ Clover akan terpasang untuk mode Legacy
 Silakan pilih partisi untuk memasang Grub2, Clover dan rEFInd untuk mode UEFI.
 Anda perlu mengunduh AIO Boot versi terakhir dan mempartisi ulang disk ini untuk melanjutkannya.
 GPT-style hard disk hanya mendukung mode UEFI.%sApabila hanya memakai mode UEFI, anda tidak perlu melakukan apapun sekarang.
-Untuk mendukung Grub2, CLover, rEFInd dan UEFI Shell dalam mode UEFI, anda perlu membuat partisi ber-format FAT16 atau FAT32 pada hard disk ini.
-Anda bisa gunakan DiskPart atau GParted untuk membuat partisi baru.%sSilakan coba lagi setelah anda sudah membuat partisi baru.
-Disk yang dipilih merupakan partisi GPT. Kita perlu menyalin folder "EFI" ke EFI System Partition (ESP)". Anda ingin lakukan itu sekarang?
+Untuk mendukung Grub2, Clover, rEFInd dan UEFI Shell dalam mode UEFI, anda perlu membuat partisi ber-format FAT16 atau FAT32 pada hard disk ini.
+Anda bisa menggunakan DiskPart atau GParted untuk membuat partisi baru.%sSilakan coba lagi setelah anda sudah membuat partisi baru.
+Disk yang dipilih merupakan partisi GPT. Kami perlu menyalin folder "EFI" ke "EFI System Partition (ESP)". Anda ingin lakukan itu sekarang?
 %s: Anda akan langsung boot ke Grub2 setiap kali anda menyalakan komputer.%s: Anda perlu memilih berkas "/EFI/Grub2/bootx64.efi" untuk boot ke Grub2.
-Untuk mendukung mode BIOS Legacy pada hard disk berpartisi GPT. Kita perlu membuat partisi tersendiri.
+Untuk mendukung mode BIOS Legacy pada hard disk berpartisi GPT, kami perlu membuat partisi tersendiri.
 1.Ukuran partisi ini harus sekecil mungkin. Minimal 1MB atau maksimal 10MB.%s2. Anda perlu membuat partisi baru, karena semua data di partisi ini akan hilang.
 Silakan lanjutkan setelah anda sudah membuat partisi yang diperlukan.
-Komputer saya merupakan preangkat firma 32-bit UEFI.
+Komputer saya merupakan perangkat firma 32-bit UEFI.
 Jangan tanya saya lagi untuk memasukkan nama MENU.
 Tidak perlu verifikasi berkas.
 Mengatur PXE Boot untuk UEFI mode.
@@ -123,7 +123,7 @@ Atur
 Di sini ada sejumlah bahasa yang didukung oleh Grub2. Apa bahasa anda?
 Silakan pilih item pada daftar tarik-turun.
 Setelan anda sudah tersimpan!
-Silakan format-kan Drive ini ke FAT32.%satau pasang Grub2 dan pilih opsi untuk memasang Clover.
+Silakan format-kan drive ini ke FAT32.%satau pasang Grub2 dan pilih opsi untuk memasang Clover.
 Pasang Bootloader
 Kembalikan Windows Bootloader
 Tiny PXE Server sedang berjalan, silakan tutup itu apabila anda ingin kembali!
@@ -174,14 +174,14 @@ Klik di sini untuk memilih tempat menyimpan berkas ".IMG" di drive anda...
 Buat
 Berkas ini kosong.
 Tidak dapat menemukan informasi berkas ini.
-Mungkin berkas ini tidak mendukung untuk booting. Anda ingin lanjutkan?
+Berkas ini mungkin tidak mendukung untuk booting. Ingin melanjutkan?
 Silakan masukkan jumlah ukuran berkas yang ingin anda buat.
 Silakan masukkan nama label berkas yang ingin anda buat.
 Berkas keluaran sudah ada saat ini, anda ingin mengganti berkasnya?
 Silakan masukkan jumlah ukuran berkas setidaknya %s.
 Ruang penyimpanan tersisa drive %s tidak cukup.
-Drive %s ber-format-kan FAT32, hanya bisa menyimpan berkas hingga 4GB.
-ImDisk tidak terpasang, anda ingin memasang ImDisk sekarang?
+Drive %s ber-format-kan FAT32 hanya bisa menyimpan berkas hingga 4GB.
+ImDisk tidak terpasang, apakah anda ingin memasang ImDisk sekarang?
 ImDisk tidak terpasang.
 Membuat dan memuat berkas...
 Mengekstrak berkas ISO...
@@ -192,9 +192,9 @@ Tidak dapat menutup %s, silakan lakukan secara manual.%sLalu hapus berkas PartIM
 Membuka berkas ISO, lalu pilih berkas sources\install.wim di drive itu...
 Klik di sini untuk memilih berkas sources\install.wim di drive anda...
 Klik di sini untuk memilih tempat berkas ".VHD" tersimpan di drive anda...
-Hanya Mendukung Windows 7 dan keatasnya.
+Hanya mendukung Windows 7 dan keatasnya.
 Membuat dan memuat berkas VHD...
-Menerapkan Image...
+Menerapkan image...
 Menutup berkas VHD...
 Tidak dapat membuat dan memuat berkas VHD.
 Tidak dapat menerapkan image ke partisi VHD.
@@ -207,7 +207,7 @@ Silakan mengekstrak semua berkas ke direktori utama di USB atau hard drive anda 
 Ubahsuai
 Membuat
 Tidak dapat membuat berkas lebih besar dari 4GB di partisi FAT32.
-Pasangkan Grub4Dos sebagai Boot Loader standar?%sAnda hanya perlu memasang Grub4Dos apabila Grub2 tidak kompatibel di komputer anda atau hanya sekadar ujicobag.%sGunakan Grub2 untuk mendapatkan fitur penuh.
+Pasangkan Grub4Dos sebagai Boot Loader standar?%sAnda hanya perlu memasang Grub4Dos apabila Grub2 tidak kompatibel di komputer anda atau hanya sekadar ujicoba.%sGunakan Grub2 untuk mendapatkan fitur penuh.
 Bootloader standar pada mode UEFI
 Hanya mendukung ReactOS LiveCD. Silakan cek ke laman depan bagaimana cara untuk mengintegrasi ReactOS Setup.
 Membuat ISO
@@ -228,7 +228,7 @@ Mengepak ulang berkas ISO Windows.
 Mengepak ulang berkas ISO
 Mengunduh pembaruan
 Kelihatannya berkas ISO ini menggunakan bootloader dari ISOLINUX. Dalam kasus ini, tidak kompatibel dengan ber-format NTFS.%sUntuk mendukung booting pada mode Legacy, silakan gunakan format FAT32.%sAnda ingin melanjutkannya?
-Mungkin sistem operasi ini mendukung mode persisten .%sIni berarti bahwa data anda akan tersimpan setiap setelah sesi.%sAnda ingin mengaktifkan mode ini?
+Mungkin sistem operasi ini mendukung mode persisten.%sIni berarti bahwa data anda akan tersimpan setiap setelah sesi.%sIngin mengaktifkan mode ini?
 Berkas VHD ini terpasang dengan sistem operasi 64-bit atau 32-bit?
 Jangan mengintegrasikan Driver USB 3.0 untuk Windows 7.
 Jangan tanya lagi
@@ -236,7 +236,7 @@ Lihat instruksinya
 Silakan menutup semua aplikasi yang berjalan pada drive %s sebelum memperbaruinya.
 Untuk menghemat ruang kosong, kita akan langsung memindahkan berkas ini daripada menyalinnya. Anda setuju?
 Pasangkan Grub2 [Legacy]
-Ingat! anda harus memasang ulang Grub2 setiap kali anda mendefragmentasikan drive ini.
+Ingat! Anda harus memasang ulang Grub2 setiap kali anda mendefragmentasikan drive ini.
 Anda hanya bisa mengintegrasikannya satu versi untuk paket ini. klik tombol Sunting Menu untuk menghapus versi sekarang dan mengintegrasikan ulang. Atau gunakan Partition Image Mapper.
 Ruang kosong tersisa pada drive ini tidak cukup.
 Akses ditolak. Silakan mematikan program antivirus dan coba lagi.
