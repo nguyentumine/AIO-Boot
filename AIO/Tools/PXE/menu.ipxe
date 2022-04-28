@@ -159,12 +159,12 @@ choose --timeout ${submenu-timeout} --default ${submenu-default} selected && got
 
 ################################# Begin My Functions
 :wimboot
-kernel ${boot-url}/Tools/MS/PXE/${arch2}/wimboot					rawbcd
-initrd ${boot-url}/networkpath.txt									networkpath.txt
-isset ${legacy} && initrd ${boot-url}/Tools/MS/PXE/bootmgr			bootmgr || initrd ${boot-url}/Tools/MS/PXE/${arch2}/bootmgfw.efi
-isset ${legacy} && initrd ${boot-url}/Tools/MS/PXE/bcd				BCD || initrd ${boot-url}/Tools/MS/PXE/bcdefi	BCD
-initrd ${boot-url}/Tools/MS/boot.sdi								boot.sdi
-initrd ${boot-url}${wimfile}										boot.wim
+kernel ${boot-url}/Tools/MS/${arch2}/wimboot					rawbcd
+initrd ${boot-url}/networkpath.txt								networkpath.txt
+isset ${legacy} && initrd ${boot-url}/Tools/MS/bootmgr.exe		bootmgr.exe || initrd ${boot-url}/Tools/MS/${arch2}/bootmgfw.efi
+initrd ${boot-url}/Tools/MS/${platform}/bcd						BCD
+initrd ${boot-url}/Tools/MS/boot.sdi							boot.sdi
+initrd ${boot-url}${path_file}									boot.wim
 boot || goto failed
 goto start
 ################################# End My Functions

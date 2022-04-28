@@ -1,4 +1,5 @@
 iat_keyboard: at_keyboard
+ips2mouse: ps2mouse
 iserial: serial
 iserial_*: serial
 iusb_gamepad: usb_gamepad

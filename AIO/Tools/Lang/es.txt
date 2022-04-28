@@ -164,7 +164,7 @@ Paquete especial
 Este sistema operativo es compatible con el modo persistente.%sEsto significa que sus datos serán guardados después de cada sesión.%sLa velocidad del sistema operativo depende de la velocidad de lectura y escritura del disco duro.%s¿Te gustaría crear un archivo de 4 Gb para el modo persistente?
 Este sistema operativo es compatible con el modo persistente.%sEsto significa que sus datos serán guardados después de cada sesión.%sLa velocidad del sistema operativo depende de la velocidad de lectura y escritura del disco duro.%sCrearemos un archivo de tamaño correspondiente a los datos que desee guardar.
 Fondo Grub2
-Sincerely thanks to:--All these users are using this tool.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM and WinSetupFromUSB.--Translators of languages: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian).
+Sincerely thanks to:--All these users are using this tool.--Google.--GNU (Grub2 Development Team).--Development Team of Clover, rEFInd, Grub4dos and Syslinux.--Authors of 7-Zip, Tiny PXE Server, FreeNFS, ImDisk, BOOTICE, mkisofs, wget, wimlib, Easy2Boot, GrubFM and WinSetupFromUSB.--Translators of languages: Denis Cojocaru (Russian and Romanian), Stoian Bahchevanski (Bulgarian), Pascal BIMAS Perso (French), Erhan Kultur, Murat ATICI, Tayfun Akkoyun (Turkish), Michał Smajdor, Andrzej Gicala (Polish), Alessandro Santini (Italian), Txema, Alacran (Spanish), Frettt (German), Tenhon (Traditional Chinese), CloverGit, Sun Wei (Simplified Chinese), Hanuware (Korean), Renato "donalld" Pejon (Português do Brasil), thamer mousa (Arabic), Ida Bagus Anom Sanjaya (Indonesia) Daniel Dybing (Norwegian), VenusGirl (한국어), Tofiq (Azerbaijani).
 Administrar particiones
 Tamaño en MB
 Archivo de entrada
@@ -240,4 +240,5 @@ Tenga en cuenta que debe reinstalar Grub2 cada vez que desfragmente en este disc
 Solo puede integrar una versión para este paquete. Haga clic en el botón Editor de menú para eliminar la versión actual y volver a integrarla. O use el mapeador de imágenes de partición.
 El espacio libre que queda en este disco no es suficiente.
 Acceso denegado. Intente desactivar el software antivirus e intente de nuevo.
+Grub2 Font
 ##### END #####

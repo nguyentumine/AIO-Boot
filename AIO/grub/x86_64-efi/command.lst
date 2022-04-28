@@ -9,6 +9,7 @@
 *cat: cat
 *chainloader: chain
 *clear_menu: normal
+*cmp: cmp
 *cpuid: cpuid
 *crc: hashsum
 *cryptomount: cryptodisk
@@ -18,6 +19,7 @@
 *echo: echo
 *efi_connect_all: efiload
 *efiload: efiload
+*efiusb: dp
 *expr: expr
 *extract_syslinux_entries_configfile: syslinuxcfg
 *extract_syslinux_entries_source: syslinuxcfg
@@ -53,8 +55,7 @@
 *kopenbsd: bsd
 *list_env: loadenv
 *load_env: loadenv
-*load_vt_param: ventoy
-*load_vt_persist: ventoy
+*loadfile: memrw
 *loopback: loopback
 *ls: ls
 *lsacpi: lsacpi
@@ -66,7 +67,6 @@
 *mkinitrd: newc
 *nes: nes
 *ntboot: ntboot
-*ntversion: grubfm
 *partnew: partnew
 *pcidump: pcidump
 *pop_env: normal
@@ -77,6 +77,7 @@
 *read_dword: memrw
 *read_word: memrw
 *regexp: regexp
+*reset: reboot
 *save_env: loadenv
 *sbpolicy: sbpolicy
 *search: search
@@ -103,21 +104,21 @@
 *tr: tr
 *trust: pgp
 *uuid4: uuid
-*ventoy: ventoy
 *verify_detached: pgp
 *vhd: vhd
 *videomode: videoinfo
 *wimboot: wimboot
 *wimtools: wimboot
-*xnu_splash: xnu
 *zfskey: zfscrypt
 .: configfile
 [: test
+alias: alias
 appleloader: appleldr
 authenticate: normal
 background_color: gfxterm_background
 backtrace: backtrace
 badram: mmap
+bcfg: bcfg
 boot: boot
 break: normal
 btrfs-info: btrfs
@@ -126,7 +127,6 @@ cat: minicmd
 cbmemc: cbmemc
 checktime: date
 clear: normal
-cmp: cmp
 commandline: commandline
 configfile: configfile
 continue: normal
@@ -150,7 +150,7 @@ fakebios: loadbios
 false: true
 fix_video: fixvideo
 fixmmap: fixmmap
-fwsetup: efifwsetup
+fwsetup: reboot
 gamepad_dpad: usb_gamepad
 gptrepair: gptrepair
 gptsync: gptsync
@@ -197,6 +197,7 @@ module2: multiboot2
 module: multiboot
 mount: fatfs
 mouse_test: efi_mouse
+mousectl: ps2mouse
 multiboot2: multiboot2
 multiboot: multiboot
 mv: fatfs
@@ -225,6 +226,8 @@ net_ls_routes: net
 net_nslookup: net
 normal: normal
 normal_exit: normal
+nthibr: nttools
+ntversion: nttools
 outb: iorw
 outl: iorw
 outw: iorw
@@ -236,7 +239,6 @@ read: read
 read_file: read
 reboot: reboot
 rename: fatfs
-reset: reboot
 return: normal
 rm: fatfs
 rmmod: minicmd
@@ -260,6 +262,7 @@ time: time
 touch: fatfs
 true: true
 umount: fatfs
+unalias: alias
 usb: usbtest
 version: version
 videoinfo: videoinfo
@@ -270,14 +273,6 @@ write_dword: memrw
 write_file: fatfs
 write_word: memrw
 wrmsr: wrmsr
-xnu_devprop_load: xnu
-xnu_kernel64: xnu
-xnu_kernel: xnu
-xnu_kext: xnu
-xnu_kextdir: xnu
-xnu_mkext: xnu
-xnu_ramdisk: xnu
-xnu_resume: xnu
 xnu_uuid: xnu_uuid
 zfs-bootfs: zfsinfo
 zfsinfo: zfsinfo
